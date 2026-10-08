@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/doctor.mjs*)",
+      "Bash(node scripts/verify.mjs*)",
+      "Bash(node scripts/list.mjs*)",
+      "Bash(node scripts/creatives.mjs*)",
+      "Bash(node scripts/launch.mjs spec *)",
+      "Bash(node scripts/launch.mjs verify *)",
+      "Bash(node scripts/launch.mjs build * --dry-run)",
+      "Bash(node scripts/render-overlay.mjs*)",
+      "Bash(node scripts/video-finish.mjs*)",
+      "Bash(node scripts/ig-fetch.mjs*)",
+      "Bash(node --test *)",
+      "Bash(.venv/bin/meta --version)",
+      "Bash(.venv/bin/meta auth status*)",
+      "Bash(.venv/bin/meta -o json --no-input ads adaccount *)",
+      "Bash(.venv/bin/meta -o json --no-input ads page list*)",
+      "Bash(.venv/bin/meta -o json --no-input ads dataset list*)",
+      "Bash(.venv/bin/meta -o json --no-input ads campaign list*)",
+      "Bash(.venv/bin/meta -o json --no-input ads campaign get *)",
+      "Bash(.venv/bin/meta -o json --no-input ads adset list*)",
+      "Bash(.venv/bin/meta -o json --no-input ads adset get *)",
+      "Bash(.venv/bin/meta -o json --no-input ads ad list*)",
+      "Bash(.venv/bin/meta -o json --no-input ads ad get *)",
+      "Bash(.venv/bin/meta -o json --no-input ads creative list*)",
+      "Bash(.venv/bin/meta -o json --no-input ads creative get *)",
+      "Bash(.venv/bin/meta -o json --no-input ads insights get*)",
+      "Bash(.venv/bin/meta -o json --no-input ads guidance list*)",
+      "Bash(ffprobe *)",
+      "Bash(magick identify *)",
+      "Bash(git lfs *)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.secrets/**)",
+      "Bash(cat .env*)",
+      "Bash(cat .secrets/*)"
+    ]
+  }
+}

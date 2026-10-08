@@ -1,0 +1,40 @@
+concept: brows
+lang: pl
+tone: "informal Ty; spoken Warsaw Polish; brows with Ksenia; regulacja brwi 70 zł, laminacja brwi 70 zł (30 min); cross-sell with manicure"
+headlines:
+  h01: "Brwi od 70 zł, Wola"
+  h02: "Laminacja brwi 70 zł, 30 minut"
+  h03: "Regulacja brwi u Ksenii, 70 zł"
+  h04: "Paznokcie i brwi w jednej wizycie"
+  h05: "Brwi, które leżą same"
+  h06: "30 minut i wychodzisz z brwiami"
+  h07: "Wolny termin na brwi dziś?"
+  h08: "Brwi, które pasują do Ciebie"
+primaries:
+  p01: "Przyszłam na hybrydę, wyszłam z hybrydą i brwiami. Ksenia dołożyła laminację w pół godziny. Teraz zawsze razem 🧡"
+  p02: "Koleżanka zapytała, czy zrobiłam coś z twarzą. Zrobiłam. Brwi u Ksenii, SVORA NAILS, Wola, 70 zł. Tyle"
+  p03: "Szukałam kogoś, kto nie wyrwie mi połowy brwi. Znalazłam Ksenię. Regulacja 70 zł, Wola, rezerwacja na Fresha 🤍"
+  p04: "Co robi laminacja? Układa brwi tak, jak chcesz, i trzyma je tam bez żelu. 30 minut, 70 zł. Ksenia, SVORA NAILS, Wola"
+  p05: "Brwi widać na każdym zdjęciu, a paznokcie tylko na niektórych. Czas to wyrównać. Brwi od 70 zł. SVORA, Jana Kazimierza 25B"
+  p06: "Jedna wizyta, dwie rzeczy: hybryda u Maryny, brwi u Ksenii. Wychodzisz i widać różnicę. SVORA NAILS, Wola"
+  p07: "Regulacja brwi 70 zł, laminacja 70 zł. SVORA NAILS, Wola, codziennie 9–21. Zarezerwuj online na Fresha 🧡"
+  p08: "Dołóż brwi do manicure w jednej rezerwacji na Fresha. 30 minut więcej, 70 zł. SVORA NAILS, Jana Kazimierza 25B, Wola"
+descriptions:
+  d01: "Brwi od 70 zł. Wola"
+  d02: "Laminacja brwi 70 zł"
+  d03: "Rezerwacja online na Fresha"
+  d04: "Ksenia, brow artist"
+overlays:
+  o01: "BRWI OD <b>70 ZŁ</b>"
+  o02: "<b>LAMINACJA</b> 30 MINUT"
+  o03: "PAZNOKCIE + <b>BRWI</b>. JEDNA WIZYTA"
+  o04: "BRWI, KTÓRE <b>LEŻĄ SAME</b>"
+  o05: "<b>KSENIA</b> · BROW ARTIST"
+  o06: "WOLNY TERMIN <b>DZIŚ</b>"
+  o07: "<b>WOLA</b> · JANA KAZIMIERZA 25B"
+  o08: "REGULACJA <b>70 ZŁ</b>"
+ctas:
+  c01: "Zarezerwuj brwi"
+  c02: "Dołóż brwi"
+  c03: "Sprawdź terminy"
+  c04: "Zarezerwuj online"

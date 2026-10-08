@@ -1,0 +1,14 @@
+# Launch defaults — launch.mjs reads these when a campaign spec leaves a field out.
+currency: PLN
+budget_cents_per_pln: 100           # Meta budgets are integer minor units: 150 PLN → 15000
+daily_budget_pln: { min: 50, default: 150, max: 500 }   # outside the range launch.mjs refuses
+bid_strategy: LOWEST_COST_WITHOUT_CAP
+placements: advantage               # Advantage+ placements; override per ad set with `placements: ig-only`
+placement_presets:
+  advantage: null
+  ig-only: { publisher_platforms: [instagram], instagram_positions: [stream, story, reels, explore, profile_feed] }
+  ig-reels-stories: { publisher_platforms: [instagram], instagram_positions: [story, reels] }
+status: PAUSED                      # everything is built paused; activation is a separate GO
+cta_default: BOOK_NOW               # Graph CTA type; needs object_story_spec (the CLI shortcut list lacks it)
+cta_by_optgoal: { purchase: BOOK_NOW, ic: BOOK_NOW, lpv: LEARN_MORE, clicks: LEARN_MORE, msgs: MESSAGE_PAGE, reach: LEARN_MORE }
+advantage_creative: false           # keep Meta's creative enhancements off while testing creatives

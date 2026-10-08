@@ -1,0 +1,39 @@
+{
+  "batch": "2026-10-b00-smoke",
+  "created": "2026-10-08T20:25:00.207Z",
+  "creatives": [
+    {
+      "name": "classic_found_legacy-rich_vd_n001_v1_9x16_ua",
+      "file": "classic_found_legacy-rich_vd_n001_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "classic",
+      "hook": "found",
+      "hook_text": "Нарешті знайшла свій салон у Варшаві",
+      "source": "legacy-rich",
+      "v": 1,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/legacy/videos/rich.mp4",
+          "overlay": "creatives/_work/test-overlay.png",
+          "overlay_from": 0.5,
+          "trim": "0:8",
+          "music": null,
+          "mute": true,
+          "loop_to": null,
+          "format": "9x16",
+          "size": "1080x1920",
+          "created": "2026-10-08T20:22:37.144Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-08T20:25:00.260Z",
+      "notes": ""
+    }
+  ],
+  "updated": "2026-10-08T20:25:00.310Z"
+}

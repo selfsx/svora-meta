@@ -1,0 +1,15 @@
+# Smoke-test spec: exercises launch.mjs end to end with --dry-run. Never build it for real.
+number: 0
+camptype: test
+budget: { type: abo }
+optgoal: ic
+geo: wola6km
+lang: uaru
+concept: classic
+date: 2026-10-20
+destination: site-ua
+adsets:
+  - audience: broad
+    daily_pln: 100
+    creatives: ["classic_*_ua"]
+    copy: { headline: h01, primary: p01, description: d01 }

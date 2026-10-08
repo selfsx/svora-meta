@@ -1,0 +1,36 @@
+# Where an ad sends people, and how the click is attributed.
+# Rule: the destination goes in the creative's `link`; the UTM block goes in `url_tags` (never glued to the link).
+
+destinations:
+  booking:        { url: "https://www.fresha.com/a/svora-nails-warszawa-jana-kazimierza-25b-y1pu4bte/booking", domain: fresha.com, note: "Fresha booking flow; Purchase/InitiateCheckout fire here via the Fresha pixel add-on" }
+  booking-hybrid: { url: "https://www.fresha.com/a/svora-nails-warszawa-jana-kazimierza-25b-y1pu4bte/booking?offerItemId=s:25463425", domain: fresha.com, note: "hybrid manicure preselected" }
+  booking-ext:    { url: "https://www.fresha.com/a/svora-nails-warszawa-jana-kazimierza-25b-y1pu4bte/booking?offerItemId=s:25463370", domain: fresha.com, note: "extensions preselected" }
+  booking-crazy:  { url: "https://www.fresha.com/a/svora-nails-warszawa-jana-kazimierza-25b-y1pu4bte/booking?offerItemId=s:25463372", domain: fresha.com, note: "Extra Long & Crazy Shape preselected" }
+  site:           { url: "https://svora.place/",    domain: svora.place, note: "PL homepage; fires BookingClick custom event; carries fbclid+utm on to Fresha links" }
+  site-ua:        { url: "https://svora.place/ua/", domain: svora.place, note: "UA homepage (Russian speakers land here too)" }
+  site-en:        { url: "https://svora.place/en/", domain: svora.place, note: "EN homepage" }
+  site-manicure:  { url: "https://svora.place/manicure-warszawa/", domain: svora.place }
+  site-nailart:   { url: "https://svora.place/nail-art-warszawa/", domain: svora.place }
+  site-extensions: { url: "https://svora.place/przedluzanie-paznokci-warszawa/", domain: svora.place }
+  instagram:      { url: "https://www.instagram.com/svora.nails/", domain: instagram.com, note: "profile visits / DM objective only" }
+
+# Which destination each language defaults to when the spec does not say.
+default_by_lang: { pl: site, ua: site-ua, ru: site-ua, en: site-en, uaru: site-ua, multi: site }
+
+# Optimization goal presets → ad set fields. `event` is the pixel custom_event_type.
+optgoals:
+  purchase: { objective: OUTCOME_SALES,      optimization_goal: OFFSITE_CONVERSIONS, event: PURCHASE,            billing: IMPRESSIONS, conversion_domain: fresha.com }
+  ic:       { objective: OUTCOME_SALES,      optimization_goal: OFFSITE_CONVERSIONS, event: INITIATED_CHECKOUT,  billing: IMPRESSIONS, conversion_domain: fresha.com }
+  lpv:      { objective: OUTCOME_TRAFFIC,    optimization_goal: LANDING_PAGE_VIEWS,  event: null,                billing: IMPRESSIONS, conversion_domain: null }
+  clicks:   { objective: OUTCOME_TRAFFIC,    optimization_goal: LINK_CLICKS,         event: null,                billing: IMPRESSIONS, conversion_domain: null }
+  msgs:     { objective: OUTCOME_ENGAGEMENT, optimization_goal: CONVERSATIONS,       event: null,                billing: IMPRESSIONS, conversion_domain: null, destination_type: INSTAGRAM_DIRECT }
+  reach:    { objective: OUTCOME_AWARENESS,  optimization_goal: REACH,               event: null,                billing: IMPRESSIONS, conversion_domain: null }
+
+# UTM block → creative url_tags. {{campaign}} {{adset}} {{ad}} are Meta's own dynamic macros.
+utm: "utm_source=meta&utm_medium=paid&utm_campaign={{campaign.name}}&utm_content={{ad.name}}&utm_term={{adset.name}}"
+
+# EU DSA transparency — required on every ad set delivering in the EU.
+dsa: { beneficiary: SVORA NAILS, payor: SVORA NAILS }
+
+# Attribution window pinned for every number this repo reports.
+attribution: { reporting: 7d_click, note: "7-day click; 1-day view ignored. Bookings are decided within days, not instantly." }

@@ -1,0 +1,19 @@
+# Prospecting, Polish UI. Same structure as 001; the hook leads with the art/crazy niche nobody in Wola
+# markets (research/competitors-warsaw.md §6) and names the service + price instead of a discount.
+number: 2
+camptype: test
+budget: { type: abo }
+optgoal: ic
+geo: wola6km
+lang: pl
+concept: mix
+date: 2026-10-20
+destination: site
+adsets:
+  - audience: broad
+    daily_pln: 75
+    creatives:
+      - "crazy_*_pl"
+      - "art_*_pl"
+      - "classic_*_pl"
+    copy: { headline: h01, primary: p01, description: d01 }   # copy/mix/pl.yaml

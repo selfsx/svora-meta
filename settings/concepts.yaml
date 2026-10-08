@@ -1,0 +1,31 @@
+# Creative concepts — the vocabulary for creative names, copy files and campaign specs.
+# A concept is "what we show + what we promise". Hooks are the first 1–3 seconds / the headline angle.
+
+concepts:
+  classic: { label: "Nude, French, milky, glazed — clean premium manicure", services: [hybrid-manicure, clean-manicure, french], copy_dir: copy/classic }
+  art:     { label: "Hand-painted designs, florals, chrome, textures", services: [hybrid-manicure, advanced-art], copy_dir: copy/art }
+  crazy:   { label: "3D forms, extra long, cat claws, sculpted — the signature", services: [extra-long-crazy, cat-claws, crazy-art, extensions], copy_dir: copy/crazy }
+  pedi:    { label: "Pedicure — clean and hybrid", services: [clean-pedicure, hybrid-pedicure], copy_dir: copy/pedi }
+  brows:   { label: "Brow shaping, lamination, tinting (Ksenia)", services: [brow-shaping, brow-lamination], copy_dir: copy/brows }
+  brand:   { label: "The studio itself: team, interior, Ukrainian-speaking, Wola, online booking", services: [], copy_dir: copy/brand }
+  mix:     { label: "Portfolio mix across styles (carousels, montage reels)", services: [], copy_dir: copy/mix }
+
+hooks:
+  reveal:     "slow reveal of the finished set (hand enters frame, turns, light catches the gloss)"
+  process:    "ASMR process cut: filing / painting / top coat → result"
+  before-after: "before → after on the same hand"
+  pov:        "POV: you booked SVORA — client walks in, sits, shows nails"
+  social:     "'everyone asks where I did my nails' — social-proof angle"
+  found:      "'finally found my salon in Warsaw' — relocation/diaspora angle"
+  price:      "price anchor up front (hybrid 190 zł, clean 120 zł)"
+  speed:      "book online in 1 minute / slots today"
+  art-closeup: "macro close-up on one nail's art, then pull out"
+  team:       "the master at work, face visible, speaks the client's language"
+
+formats:
+  9x16: { w: 1080, h: 1920, placements: [reels, stories], primary: true }
+  4x5:  { w: 1080, h: 1350, placements: [feed] }
+  1x1:  { w: 1080, h: 1080, placements: [feed, carousel] }
+
+types: { vd: video, st: static, cr: carousel-card }
+langs: [pl, ua, ru, en]

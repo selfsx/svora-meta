@@ -1,0 +1,40 @@
+concept: mix
+lang: pl
+tone: "informal Ty; spoken Warsaw Polish; portfolio mix across styles for carousels and montage reels; Nude & Crazy under one roof"
+headlines:
+  h01: "Nude & Crazy. Wszystko w jednym salonie"
+  h02: "Przesuń. Każdy slajd to inny styl"
+  h03: "Od milky nude do form 3D"
+  h04: "Hybryda 190 zł, Crazy Shape 380 zł"
+  h05: "Który slajd to Ty?"
+  h06: "Jeden salon, dziesięć stylów"
+  h07: "Portfolio SVORA, Wola"
+  h08: "Wybierz styl, resztę zrobimy"
+primaries:
+  p01: "Za każdym razem przychodzę z innym pomysłem i za każdym razem wychodzę zadowolona. Nude, French, 3D, raz nawet pazury. Wola 🧡"
+  p02: "Wysłałam koleżance pięć zdjęć z SVORA, żeby wybrała styl, a ona zapytała o adres. Jana Kazimierza 25B, Wola"
+  p03: "W pracy nude, na weekend chrome, na urodziny formy 3D. Jeden salon ogarnia wszystko. SVORA NAILS, Wola. Polecam 💅"
+  p04: "Przesuń w prawo. Wszystkie te paznokcie wyszły z jednego salonu na Woli. Który zestaw jest Twój? SVORA NAILS"
+  p05: "Milky nude i Cat Claws robi ta sama ekipa. Jak? Przyjdź i zobacz. Jana Kazimierza 25B, codziennie 9–21"
+  p06: "Zapisz tę karuzelę, a potem po prostu pokaż slajd, który Ci się podoba. Nude, art, crazy. SVORA NAILS, Wola"
+  p07: "Hybryda 190 zł, CLEAN 120 zł, pedicure od 175 zł, Crazy Shape 380 zł, brwi od 70 zł. Wola, 9–21. Rezerwuj na Fresha"
+  p08: "Wybierz styl ze slajdów, wybierz godzinę na Fresha. Wolne terminy widać od razu. SVORA NAILS, Jana Kazimierza 25B 💅"
+descriptions:
+  d01: "Nude & Crazy. Wola"
+  d02: "Hybryda 190 zł, Crazy 380 zł"
+  d03: "Rezerwacja online na Fresha"
+  d04: "Codziennie 9:00–21:00"
+overlays:
+  o01: "NUDE & <b>CRAZY</b>"
+  o02: "<b>PRZESUŃ</b>. INNY STYL"
+  o03: "OD <b>MILKY</b> DO 3D"
+  o04: "JEDEN SALON. <b>DZIESIĘĆ</b> STYLÓW"
+  o05: "KTÓRY SLAJD <b>TO TY</b>?"
+  o06: "HYBRYDA <b>190 ZŁ</b>"
+  o07: "<b>WOLA</b> · JANA KAZIMIERZA 25B"
+  o08: "POKAŻ <b>SLAJD</b>. ZROBIMY"
+ctas:
+  c01: "Zarezerwuj online"
+  c02: "Zobacz więcej"
+  c03: "Sprawdź terminy"
+  c04: "Wybierz styl"

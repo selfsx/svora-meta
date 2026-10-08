@@ -1,0 +1,32 @@
+# Audience and geo presets. launch.mjs turns these into the ad set `targeting` JSON.
+# Locale ids are Meta's adlocale keys — `mise run verify` re-resolves them and warns if they differ.
+
+geo:
+  wola10km:   { type: radius, lat: 52.22312, lng: 20.94488, km: 10, label: "10 km around the studio (most of Warsaw)" }
+  wola6km:    { type: radius, lat: 52.22312, lng: 20.94488, km: 6,  label: "6 km — Wola/Bemowo/Ochota/Śródmieście west" }
+  warsaw:     { type: city,   key: "2498152", name: Warsaw, label: "Warsaw city key (verify.mjs re-checks the key)" }
+  warsaw25km: { type: radius, lat: 52.22312, lng: 20.94488, km: 25, label: "Warsaw + suburbs" }
+
+location_types: [home, recent]   # people living here or recently here
+
+# Language presets → Meta `locales`. A missing lang means no language filter (Advantage+ decides).
+languages:
+  ua:    { locales: [52],        label: "Ukrainian UI" }
+  ru:    { locales: [17],        label: "Russian UI" }
+  uaru:  { locales: [52, 17],    label: "Ukrainian or Russian UI — the diaspora core" }
+  pl:    { locales: [34],        label: "Polish UI" }
+  en:    { locales: [24, 6],     label: "English UK/US UI" }
+  multi: { locales: [],          label: "no language filter" }
+
+# Audience presets. `advantage: true` lets Meta expand beyond the inputs (age/gender/interests become signals).
+audiences:
+  broad:       { age: [18, 54], genders: [2], advantage: true,  interests: [],                         label: "women 18–54, Advantage+ audience" }
+  broad-all:   { age: [18, 54], genders: [],  advantage: true,  interests: [],                         label: "all genders 18–54, Advantage+" }
+  int-nails:   { age: [18, 54], genders: [2], advantage: true,  interests: [6003207735213, 6003393893179], label: "interest signals: Nail art, Manicure (ids re-resolved by verify.mjs)" }
+  retarget-30: { age: [18, 54], genders: [],  advantage: false, custom_audiences: [site-visitors-30d, ig-engagers-90d], label: "warm — site visitors 30d + IG engagers 90d (custom audiences created in Ads Manager, ids in .env or verify output)" }
+
+# Vocabulary used in names (naming-conventions.md). Keep in sync with the keys above.
+vocab:
+  geo: [wola10km, wola6km, warsaw, warsaw25km]
+  lang: [ua, ru, uaru, pl, en, multi]
+  audience: [broad, broad-all, int-nails, retarget-30]

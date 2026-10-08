@@ -1,0 +1,67 @@
+# SVORA NAILS — the facts every agent may state in copy. Nothing else is a fact.
+# Source of truth for prices: ../svora-landing/src/settings/pricelist.json (synced 2026-09-27).
+# When Fresha prices change: update here AND re-check every copy file that quotes a price.
+
+business:
+  name: SVORA NAILS
+  tagline: Nude & Crazy
+  address: Jana Kazimierza 25B/U3, 01-248 Warszawa (Wola)
+  district: Wola
+  nearby: [Wola, Bemowo, Koło, Ulrychów, Odolany, Ochota, Młynów]
+  coordinates: { lat: 52.22312, lng: 20.94488 }
+  phone: "+48 577 201 900"
+  hours: Daily 9:00–21:00
+  founded: 2025
+  rating: { value: 5.0, count: 117, source: Fresha }
+  site: https://svora.place
+  instagram: https://www.instagram.com/svora.nails/
+  tiktok: https://www.tiktok.com/@svora.nails
+  fresha: https://www.fresha.com/a/svora-nails-warszawa-jana-kazimierza-25b-y1pu4bte
+  booking: https://www.fresha.com/a/svora-nails-warszawa-jana-kazimierza-25b-y1pu4bte/booking
+  languages_spoken: [uk, ru, pl, en]
+
+team:
+  - { name: Mariana, role: founder }
+  - { name: Maryna, role: top stylist, hybrid manicure }
+  - { name: Karina, role: extensions & bold design }
+  - { name: Veronika, role: fast creative manicure, extensions, pedicure }
+  - { name: Ksenia, role: brow artist }
+
+# Prices in PLN. `from: true` means "od / from / від".
+services:
+  - { id: hybrid-manicure,  fresha: "s:25463425", price: 190, from: false, duration: 1h55, name: { pl: Manicure hybrydowy, en: Hybrid manicure, ua: Гібридний манікюр, ru: Гибридный маникюр } }
+  - { id: clean-manicure,   fresha: "s:25463427", price: 120, from: false, duration: 50min, name: { pl: CLEAN manicure, en: CLEAN manicure, ua: CLEAN манікюр, ru: CLEAN маникюр } }
+  - { id: clean-pedicure,   fresha: "s:25463368", price: 175, from: false, duration: 1h15, name: { pl: CLEAN pedicure, en: CLEAN pedicure, ua: CLEAN педикюр, ru: CLEAN педикюр } }
+  - { id: hybrid-pedicure,  fresha: "s:25463369", price: 235, from: false, duration: 1h55, name: { pl: Pedicure hybrydowy, en: Hybrid pedicure, ua: Гібридний педикюр, ru: Гибридный педикюр } }
+  - { id: extensions,       fresha: "s:25463370", price: 300, from: true,  duration: 2h45, name: { pl: Przedłużanie paznokci, en: Nail extensions, ua: Нарощування нігтів, ru: Наращивание ногтей } }
+  - { id: extra-long-crazy, fresha: "s:25463372", price: 380, from: false, duration: 3h30, name: { pl: Extra Long & Crazy Shape, en: Extra Long & Crazy Shape, ua: Extra Long & Crazy Shape, ru: Extra Long & Crazy Shape } }
+  - { id: cat-claws,        fresha: "s:25463372", price: 420, from: true,  duration: 3h30, name: { pl: Cat Claws, en: Cat Claws, ua: Cat Claws, ru: Cat Claws } }
+  - { id: french,           fresha: "s:25463432", price: 40,  from: false, duration: 20min, name: { pl: French, en: French, ua: Френч, ru: Френч } }
+  - { id: easy-art,         fresha: "s:25463431", price: 10,  from: true,  duration: 10min, name: { pl: Easy art, en: Easy art, ua: Easy art, ru: Easy art } }
+  - { id: advanced-art,     fresha: "s:25463428", price: 25,  from: true,  duration: 15min, name: { pl: Advanced art, en: Advanced art, ua: Advanced art, ru: Advanced art } }
+  - { id: crazy-art,        fresha: "s:25463430", price: 45,  from: true,  duration: 25min, name: { pl: Crazy art — formy 3D, en: Crazy art — 3D forms, ua: Crazy art — 3D-форми, ru: Crazy art — 3D-формы } }
+  - { id: brow-shaping,     fresha: "s:25463377", price: 70,  from: false, duration: 30min, name: { pl: Regulacja brwi, en: Brow shaping, ua: Корекція брів, ru: Коррекция бровей } }
+  - { id: brow-lamination,  fresha: "s:25463381", price: 70,  from: false, duration: 30min, name: { pl: Laminacja brwi, en: Brow lamination, ua: Ламінування брів, ru: Ламинирование бровей } }
+
+# Visual identity — see brand/ for files. Hex values are the only allowed brand colors.
+colors:
+  orange: "#FF8030"   # Vivid Orange — primary
+  peach:  "#FFBE98"   # Peach Fuzz — secondary
+  cream:  "#F7F1EB"   # backgrounds, text on dark
+  white:  "#FFFFFF"
+  black:  "#1A1A1A"
+fonts:
+  display:  { family: Antonio, file: brand/fonts/antonio/Antonio-Bold.ttf, scripts: [latin, latin-ext], note: "NO Cyrillic — Latin headlines only (PL/EN)" }
+  text:     { family: Roboto Condensed, file: brand/fonts/roboto-condensed/RobotoCondensed.ttf, scripts: [latin, latin-ext, cyrillic], note: "variable weight 100–900; use for every UA/RU overlay and all body text" }
+  accent:   { family: Smile Power, file: brand/fonts/smile-power/SmilePowerRegular.ttf, scripts: [latin-basic], note: "decorative; ASCII only — no Polish diacritics, no Cyrillic" }
+logos:
+  wordmark: { orange: brand/logos/orange.png, light: brand/logos/light.png, black: brand/logos/black.png }
+  submark:  { orange: brand/logos/orange-submark.png, light: brand/logos/light-submark.png, peach: brand/logos/peach-submark.png, black: brand/logos/black-submark.png }
+  s:        { orange: brand/logos/orange-s.png, light: brand/logos/light-s.png, white: brand/logos/white-s.png, black: brand/logos/black-s.png, orange_3d: brand/logos/orange-s-3d.png }
+
+# Offers. Only a confirmed offer may appear in an ad; `confirmed: false` means "seen, not verified with the owner".
+offers:
+  - { id: first-visit-20, text: "-20% na pierwszą wizytę", seen: "Instagram post DaxwkGBtqcU (2026-07-14)", confirmed: false, note: "ask the owner whether it still runs and how Fresha applies it before any ad quotes it" }
+
+# Claims that are NOT allowed (not verified or not true): awards, "best in Warsaw", years of experience,
+# product brand names, medical claims, guarantees ("lasts 4 weeks guaranteed"), discount codes that do not exist in Fresha.

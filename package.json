@@ -1,0 +1,18 @@
+{
+  "name": "svora-meta",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SVORA NAILS — Meta ads: research, creative pipeline, campaign launches (agent-operated)",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "doctor": "node scripts/doctor.mjs",
+    "verify": "node scripts/verify.mjs",
+    "list": "node scripts/list.mjs",
+    "test": "node --test scripts/lib/*.test.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.56.1",
+    "yaml": "2.8.1"
+  }
+}

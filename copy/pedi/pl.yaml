@@ -1,0 +1,40 @@
+concept: pedi
+lang: pl
+tone: "informal Ty; spoken Warsaw Polish; pedicure clean and hybrid; CLEAN pedicure 175 zł (75 min), pedicure hybrydowy 235 zł; Veronika"
+headlines:
+  h01: "Pedicure od 175 zł, Wola"
+  h02: "CLEAN pedicure 175 zł w 75 minut"
+  h03: "Pedicure hybrydowy 235 zł"
+  h04: "Pedicure bez kombinowania"
+  h05: "Wolny termin na pedicure dziś?"
+  h06: "Mani + pedi w jednym miejscu"
+  h07: "Pedicure na Woli, 9–21 codziennie"
+  h08: "Gładkie pięty, czysty kolor"
+primaries:
+  p01: "Od roku chodzę do SVORA na hybrydę i w końcu zapisałam się na pedicure. Powinnam była wcześniej. Veronika, dziękuję 🧡"
+  p02: "Koleżanka zrobiła pedicure przed wyjazdem i wysłała mi zdjęcie stóp. Serio, zdjęcie stóp. SVORA NAILS, Wola, od 175 zł"
+  p03: "Mani i pedi jednego dnia, w jednym miejscu, bez biegania po mieście. Wola, Jana Kazimierza 25B. Mój nowy rytuał 💅"
+  p04: "75 minut. Tyle trwa CLEAN pedicure w SVORA. Gładkie pięty, równe płytki, z kolorem albo bez, jak wolisz. Od 175 zł, Wola"
+  p05: "Dlaczego pedicure robi się raz w roku, a dłonie co trzy tygodnie? Veronika też tego nie rozumie. SVORA, Wola, od 175 zł"
+  p06: "Pedicure hybrydowy 235 zł: pięty, skórki, kolor, w jednej wizycie. Prawie dwie godziny tylko dla Ciebie. SVORA NAILS, Wola"
+  p07: "CLEAN pedicure 175 zł, hybrydowy 235 zł. Codziennie 9:00–21:00 na Woli. Wybierz termin na Fresha, to minuta 🧡"
+  p08: "Pedicure na Woli bez dzwonienia i czekania na oddzwonienie. Wolne godziny widać na Fresha. SVORA NAILS, Jana Kazimierza 25B"
+descriptions:
+  d01: "Pedicure od 175 zł. Wola"
+  d02: "Pedicure hybrydowy 235 zł"
+  d03: "Rezerwacja online na Fresha"
+  d04: "Codziennie 9:00–21:00"
+overlays:
+  o01: "PEDICURE OD <b>175 ZŁ</b>"
+  o02: "<b>CLEAN</b> PEDICURE. 75 MINUT"
+  o03: "HYBRYDOWY <b>235 ZŁ</b>"
+  o04: "MANI + PEDI <b>W JEDNYM MIEJSCU</b>"
+  o05: "GŁADKIE <b>PIĘTY</b>. CZYSTY KOLOR"
+  o06: "WOLNY TERMIN <b>DZIŚ</b>"
+  o07: "<b>WOLA</b> · JANA KAZIMIERZA 25B"
+  o08: "DWIE GODZINY <b>DLA SIEBIE</b>"
+ctas:
+  c01: "Zarezerwuj pedicure"
+  c02: "Sprawdź terminy"
+  c03: "Zarezerwuj online"
+  c04: "Zobacz cennik"

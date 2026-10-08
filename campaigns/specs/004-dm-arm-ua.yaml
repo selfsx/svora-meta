@@ -1,0 +1,20 @@
+# Control arm for the hypothesis that the diaspora books by Instagram DM rather than through Fresha
+# (research/meta-ads-playbook.md §7, competitors-warsaw.md §4). Engagement → Instagram Direct, Conversations.
+# Every DM → booking is logged by hand by the studio; compare cost per confirmed booking with 001 at week 4.
+number: 4
+camptype: test
+budget: { type: abo }
+optgoal: msgs
+geo: wola10km
+lang: ua
+concept: crazy
+date: 2026-10-27
+destination: instagram
+comment: dm-arm
+adsets:
+  - audience: broad
+    daily_pln: 30
+    placements: ig-reels-stories
+    creatives:
+      - "crazy_*_ua"          # overlays with the DM CTA (copy/crazy/ua.yaml → ctas)
+    copy: { headline: h08, primary: p08, description: d01 }

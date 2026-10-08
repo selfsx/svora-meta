@@ -1,0 +1,40 @@
+concept: pedi
+lang: en
+tone: "British English for expats and international students in Warsaw; pedicure clean and hybrid; CLEAN pedicure 175 zł (75 min), hybrid pedicure 235 zł; Veronika"
+headlines:
+  h01: "Pedicure from 175 zł, Wola"
+  h02: "CLEAN pedicure 175 zł, 75 minutes"
+  h03: "Hybrid pedicure 235 zł"
+  h04: "Pedicure without the faff"
+  h05: "Free pedicure slot today?"
+  h06: "Mani + pedi, one place, one visit"
+  h07: "Pedicure on Wola, daily 9–21"
+  h08: "Smooth heels, clean colour"
+primaries:
+  p01: "Been going to SVORA for my hybrid for a year and finally booked a pedicure. Should've done it sooner. Thank you Veronika 🧡"
+  p02: "A friend got a pedicure before her holiday and sent me a photo of her feet. An actual photo of feet. SVORA, Wola, from 175 zł"
+  p03: "Mani and pedi on the same day, same place, no running across Warsaw. Wola, Jana Kazimierza 25B. My new ritual 💅"
+  p04: "75 minutes. That's a CLEAN pedicure at SVORA. Smooth heels, tidy nails, colour or no colour, your call. From 175 zł, Wola"
+  p05: "Why do hands get done every three weeks and feet once a year? Veronika doesn't get it either. SVORA, Wola, from 175 zł"
+  p06: "Hybrid pedicure 235 zł: heels, cuticles, colour, one visit. Nearly two hours that are only about you. SVORA NAILS, Wola"
+  p07: "CLEAN pedicure 175 zł, hybrid 235 zł. Open daily 9:00–21:00 on Wola. Pick a slot on Fresha, takes a minute, in English 🧡"
+  p08: "Pedicure on Wola without calling or waiting for a call back. Free times are on Fresha. SVORA NAILS, Jana Kazimierza 25B"
+descriptions:
+  d01: "Pedicure from 175 zł. Wola"
+  d02: "Hybrid pedicure 235 zł"
+  d03: "Book online on Fresha"
+  d04: "Open daily 9:00–21:00"
+overlays:
+  o01: "PEDICURE FROM <b>175 ZŁ</b>"
+  o02: "<b>CLEAN</b> PEDICURE. 75 MINUTES"
+  o03: "HYBRID PEDICURE <b>235 ZŁ</b>"
+  o04: "MANI + PEDI <b>ONE VISIT</b>"
+  o05: "SMOOTH <b>HEELS</b>. CLEAN COLOUR"
+  o06: "FREE SLOT <b>TODAY</b>"
+  o07: "<b>WOLA</b> · WARSAW"
+  o08: "TWO HOURS <b>FOR YOU</b>"
+ctas:
+  c01: "Book a pedicure"
+  c02: "Check slots"
+  c03: "Book online"
+  c04: "See prices"

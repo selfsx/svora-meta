@@ -1,0 +1,39 @@
+# Toolchain for svora-meta — pinned so every machine and every agent context gets
+# the same tools. `mise trust && mise install && mise run setup` is the whole setup.
+
+[tools]
+node = "22"      # every script in scripts/ (plain ESM, two dependencies: playwright, yaml)
+python = "3.13"  # only for the official Meta Ads CLI (`meta`) — it ships wheels for 3.12/3.13 only
+jq = "1"
+
+[env]
+# A project-local venv for the Meta Ads CLI. `.claude/settings.json` allowlists
+# `.venv/bin/meta` by this exact path.
+_.python.venv = { path = ".venv", create = true }
+_.file = ".env"   # OPENROUTER_API_KEY, ACCESS_TOKEN, AD_ACCOUNT_ID, … (gitignored)
+
+[tasks.setup]
+description = "Install the Meta Ads CLI, Node deps, Playwright Chromium, git-lfs hooks"
+run = '''
+set -e
+python -m pip install --quiet --upgrade pip
+python -m pip install --quiet "meta-ads>=1.2,<2"
+echo "meta: $(meta --version)"
+npm ci --silent 2>/dev/null || npm install --silent
+npx playwright install chromium
+git lfs install --local
+[ -f .env ] || { cp .env.example .env; chmod 600 .env; echo ".env created from .env.example — fill it in"; }
+echo "done — run: mise run doctor"
+'''
+
+[tasks.doctor]
+description = "Check every tool and credential the agents need"
+run = "node scripts/doctor.mjs"
+
+[tasks.verify]
+description = "Meta account readiness (read-only): token, account, page, pixel"
+run = "node scripts/verify.mjs"
+
+[tasks.list]
+description = "Performance listing on a pinned attribution basis (read-only)"
+run = "node scripts/list.mjs"

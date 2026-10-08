@@ -1,0 +1,40 @@
+concept: brows
+lang: en
+tone: "British English for expats and international students in Warsaw; brows with Ksenia; brow shaping 70 zł, brow lamination 70 zł (30 min); cross-sell with manicure"
+headlines:
+  h01: "Brows from 70 zł, Wola"
+  h02: "Brow lamination 70 zł, 30 minutes"
+  h03: "Brow shaping with Ksenia, 70 zł"
+  h04: "Nails and brows in one visit"
+  h05: "Brows that stay put"
+  h06: "30 minutes, brows sorted"
+  h07: "Free brow slot today?"
+  h08: "Brows that suit your face"
+primaries:
+  p01: "Came in for a hybrid, left with a hybrid and brows. Ksenia added lamination in half an hour. Always together now 🧡"
+  p02: "A friend asked if I'd done something to my face. I had. Brows with Ksenia, SVORA NAILS, Wola, 70 zł. That's it"
+  p03: "I wanted someone who wouldn't rip out half my brows and who speaks English. Found Ksenia. Shaping 70 zł, Wola 🤍"
+  p04: "What does lamination do? Sets your brows the way you want them and keeps them there without gel. 30 min, 70 zł. SVORA, Wola"
+  p05: "Brows are in every photo, nails only in some. Time to even that out. Brows from 70 zł. SVORA, Jana Kazimierza 25B, Warsaw"
+  p06: "One visit, two things: hybrid with Maryna, brows with Ksenia. You walk out and people notice. SVORA NAILS, Wola"
+  p07: "Brow shaping 70 zł, lamination 70 zł. SVORA NAILS, Wola, open daily 9–21. Book online on Fresha, English-speaking team 🧡"
+  p08: "Add brows to your manicure in one Fresha booking. 30 minutes more, 70 zł. SVORA NAILS, Jana Kazimierza 25B, Wola"
+descriptions:
+  d01: "Brows from 70 zł. Wola"
+  d02: "Brow lamination 70 zł"
+  d03: "Book online on Fresha"
+  d04: "Ksenia, brow artist"
+overlays:
+  o01: "BROWS FROM <b>70 ZŁ</b>"
+  o02: "<b>LAMINATION</b> IN 30 MINUTES"
+  o03: "NAILS + <b>BROWS</b>. ONE VISIT"
+  o04: "BROWS THAT <b>STAY PUT</b>"
+  o05: "<b>KSENIA</b> · BROW ARTIST"
+  o06: "FREE SLOT <b>TODAY</b>"
+  o07: "<b>WOLA</b> · WARSAW"
+  o08: "SHAPING <b>70 ZŁ</b>"
+ctas:
+  c01: "Book brows"
+  c02: "Add brows"
+  c03: "Check slots"
+  c04: "Book online"

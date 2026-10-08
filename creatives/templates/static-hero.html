@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<style>
+  /* Full static ad: the photo fills the frame, a dark gradient at the bottom carries the copy. */
+  @font-face { font-family: 'Roboto Condensed'; src: url('{{fontsDir}}/roboto-condensed/RobotoCondensed.ttf'); font-weight: 100 900; }
+  @font-face { font-family: 'Antonio'; src: url('{{fontsDir}}/antonio/Antonio-Bold.ttf'); font-weight: 700; }
+  html, body { margin: 0; width: {{w}}px; height: {{h}}px; background: {{color_black}}; overflow: hidden; }
+  .stage { position: relative; width: {{w}}px; height: {{h}}px; font-family: 'Roboto Condensed', sans-serif; color: {{color_cream}}; }
+  .photo { position: absolute; inset: 0; background: url('{{image}}') center / cover no-repeat; }
+  .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26,26,26,.15) 0%, rgba(26,26,26,0) 30%, rgba(26,26,26,0) 50%, rgba(26,26,26,.85) 100%); }
+  .logo { position: absolute; left: 56px; top: 56px; width: 240px; filter: drop-shadow(0 2px 10px rgba(0,0,0,.5)); }
+  .badge { position: absolute; right: 56px; top: 64px; background: {{color_orange}}; color: {{color_black}}; font-weight: 800; font-size: 34px; padding: 12px 24px; border-radius: 999px; text-transform: uppercase; }
+  .copy { position: absolute; left: 56px; right: 56px; bottom: 72px; }
+  .hook { font-weight: 800; font-size: 84px; line-height: 1.02; text-transform: uppercase; letter-spacing: -0.01em; }
+  .hook b { color: {{color_orange}}; }
+  .sub { margin-top: 20px; font-size: 40px; font-weight: 500; color: {{color_peach}}; }
+  .row { margin-top: 36px; display: flex; align-items: center; gap: 28px; }
+  .cta { background: {{color_orange}}; color: {{color_black}}; font-weight: 800; font-size: 42px; padding: 20px 40px; border-radius: 999px; text-transform: uppercase; white-space: nowrap; }
+  .price { font-size: 40px; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="photo"></div>
+  <div class="shade"></div>
+  <img class="logo" src="{{logosDir}}/light.png" alt="">
+  <div class="badge" style="display:{{badge}}">{{badge}}</div>
+  <div class="copy">
+    <div class="hook">{{hook}}</div>
+    <div class="sub">{{sub}}</div>
+    <div class="row"><div class="cta">{{cta}}</div><div class="price">{{price}}</div></div>
+  </div>
+</div>
+</body>
+</html>

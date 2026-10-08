@@ -1,0 +1,4 @@
+# Append-only ledger of every Meta write made from this repo (written by scripts/launch.mjs).
+# Add a `decision:` line under an entry by hand when you pause or kill something — say why.
+# The next campaign number is the highest here + 1.
+entries:

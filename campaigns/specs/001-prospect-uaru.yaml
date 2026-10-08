@@ -1,0 +1,20 @@
+# Prospecting, Ukrainian/Russian-speaking Warsaw. Sales objective on svora.place/ua, optimised for Fresha
+# InitiateCheckout (Purchase volume is too low to learn on at this budget — research/meta-ads-playbook.md §1).
+# One ad set so events pool. Widen geo to wola10km if "Learning Limited" after 7 days.
+number: 1
+camptype: test
+budget: { type: abo }
+optgoal: ic
+geo: wola6km
+lang: uaru
+concept: mix
+date: 2026-10-20          # set to the approval date before `launch.mjs spec`
+destination: site-ua
+adsets:
+  - audience: broad
+    daily_pln: 100
+    creatives:
+      - "crazy_*_ua"        # replace globs with the approved names the creative-director ranked
+      - "classic_*_ua"
+      - "brand_*_ua"
+    copy: { headline: h01, primary: p01, description: d01 }   # copy/mix/ua.yaml

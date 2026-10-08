@@ -1,0 +1,40 @@
+concept: classic
+lang: pl
+tone: "informal Ty; warm, spoken Warsaw Polish; clean premium nude, French, milky, glazed; prices from settings/brand.yaml"
+headlines:
+  h01: "Manicure hybrydowy 190 zł, Wola"
+  h02: "Nude, French, glazed — czysto i równo"
+  h03: "Wolny termin dziś? Sprawdź na Fresha"
+  h04: "CLEAN manicure 120 zł w 50 minut"
+  h05: "Paznokcie jak z Pinteresta 🤍"
+  h06: "Rezerwacja online w minutę"
+  h07: "Twój nowy salon na Woli"
+  h08: "Idealny nude istnieje"
+primaries:
+  p01: "Koleżanka podrzuciła mi SVORA i od tamtej pory nie szukam dalej. Czysty nude, równa linia, zero kombinowania. Wola, Fresha 🤍"
+  p02: "Wszyscy pytają, gdzie robię paznokcie. SVORA NAILS na Woli, manicure hybrydowy 190 zł. No to już wiecie 💅"
+  p03: "Przeprowadziłam się na Wolę i w końcu mam swój salon. Hybryda 190 zł, codziennie 9–21, rezerwacja online. Polecam"
+  p04: "Jak oni robią tak równą linię przy skórkach? Przyjdź i zobacz z bliska. SVORA NAILS, Jana Kazimierza 25B, Wola"
+  p05: "Milky, glazed czy French? Jest taki nude, który wygląda jak własne paznokcie po dobrym śnie. SVORA NAILS, Wola"
+  p06: "50 minut i wychodzisz z czystym, zadbanym manicure bez koloru. CLEAN manicure 120 zł. Czasem tyle wystarczy. SVORA, Wola"
+  p07: "Manicure hybrydowy 190 zł, CLEAN 120 zł, French +40 zł. Codziennie 9:00–21:00 na Woli. Zarezerwuj online przez Fresha 💅"
+  p08: "Wolne terminy na dziś i jutro widać od razu na Fresha. Wybierasz godzinę, klikasz, gotowe. SVORA NAILS, Jana Kazimierza 25B"
+descriptions:
+  d01: "Hybryda 190 zł. Wola, 9–21"
+  d02: "Rezerwacja online na Fresha"
+  d03: "CLEAN manicure 120 zł"
+  d04: "Jana Kazimierza 25B, Wola"
+overlays:
+  o01: "<b>NUDE</b> KTÓRY WYGLĄDA JAK TWÓJ"
+  o02: "HYBRYDA <b>190 ZŁ</b>"
+  o03: "<b>CLEAN</b> MANICURE 120 ZŁ"
+  o04: "WOLNY TERMIN <b>DZIŚ</b>"
+  o05: "RÓWNO. CZYSTO. <b>NATURALNIE</b>."
+  o06: "FRENCH JAK <b>Z PINTERESTA</b>"
+  o07: "<b>WOLA</b> · JANA KAZIMIERZA 25B"
+  o08: "REZERWUJ <b>ONLINE</b> W MINUTĘ"
+ctas:
+  c01: "Zarezerwuj online"
+  c02: "Sprawdź terminy"
+  c03: "Zarezerwuj na Fresha"
+  c04: "Zobacz cennik"

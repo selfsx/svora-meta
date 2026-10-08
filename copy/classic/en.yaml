@@ -1,0 +1,40 @@
+concept: classic
+lang: en
+tone: "British English for expats and international students in Warsaw; short, benefit-led; book online; English-speaking team"
+headlines:
+  h01: "Hybrid manicure 190 zł, Wola"
+  h02: "Nude, French, glazed. Done properly"
+  h03: "English-speaking nail studio, Warsaw"
+  h04: "Free slot today? Check on Fresha"
+  h05: "CLEAN manicure 120 zł, 50 minutes"
+  h06: "Book online in a minute"
+  h07: "Your nail place in Warsaw"
+  h08: "The nude that looks like yours"
+primaries:
+  p01: "Moved to Warsaw in spring and finally found my nail place. Clean nude, neat cuticles, team speaks English. SVORA, Wola 🤍"
+  p02: "Everyone at the office asks where I get my nails done. SVORA NAILS on Wola, hybrid manicure 190 zł. Now you know too"
+  p03: "A friend sent me the Fresha link and I've been going ever since. No awkward pointing at photos, they just get it. Wola"
+  p04: "How do they get the line at the cuticle that clean? Come and see up close. SVORA NAILS, Jana Kazimierza 25B, Wola"
+  p05: "Milky, glazed or French? There's a nude that looks like your own nails after a good night's sleep. SVORA, Warsaw"
+  p06: "50 minutes, no colour, hands that look sorted. CLEAN manicure 120 zł. Sometimes that's all it takes. SVORA, Wola"
+  p07: "Hybrid manicure 190 zł, CLEAN 120 zł, French +40 zł. Open daily 9:00–21:00 on Wola. Book online via Fresha, in English 💅"
+  p08: "Free slots for today and tomorrow are right there on Fresha. Pick a time, tap, done. SVORA NAILS, Jana Kazimierza 25B"
+descriptions:
+  d01: "Hybrid 190 zł. Wola, 9–21"
+  d02: "Book online on Fresha"
+  d03: "English-speaking team"
+  d04: "Jana Kazimierza 25B, Wola"
+overlays:
+  o01: "<b>NUDE</b> THAT LOOKS LIKE YOURS"
+  o02: "HYBRID MANICURE <b>190 ZŁ</b>"
+  o03: "<b>CLEAN</b> MANICURE 120 ZŁ"
+  o04: "FREE SLOT <b>TODAY</b>"
+  o05: "NEAT. CLEAN. <b>NATURAL</b>."
+  o06: "WE SPEAK <b>ENGLISH</b>"
+  o07: "<b>WOLA</b> · WARSAW"
+  o08: "BOOK ONLINE <b>IN A MINUTE</b>"
+ctas:
+  c01: "Book online"
+  c02: "Check slots"
+  c03: "Book on Fresha"
+  c04: "See prices"

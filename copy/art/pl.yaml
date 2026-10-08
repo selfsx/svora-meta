@@ -1,0 +1,40 @@
+concept: art
+lang: pl
+tone: "informal Ty; spoken Warsaw Polish; hand-painted designs, florals, chrome, textures; hybrid 190 zł + easy art od 10 zł / advanced art od 25 zł"
+headlines:
+  h01: "Ręcznie malowany nail art, Wola"
+  h02: "Kwiaty, chrome, aura — pokaż zdjęcie"
+  h03: "Hybryda 190 zł + art od 10 zł"
+  h04: "Zbliż się. Tak, to malowane ręcznie"
+  h05: "Jak z Pinteresta, zrobione na Woli"
+  h06: "Dziesięć paznokci, dziesięć pomysłów"
+  h07: "Pokaż inspirację, resztę zrobimy"
+  h08: "Twój design, nasze pędzelki"
+primaries:
+  p01: "Pokazałam Karinie zdjęcie z Pinteresta i wyszło lepiej niż w oryginale. Ręcznie malowane kwiaty, zero naklejek. SVORA, Wola 🎨"
+  p02: "W pracy trzy osoby już zapytały o salon. SVORA NAILS, Wola. Hybryda 190 zł plus art od 10 zł. Teraz wiecie wszyscy"
+  p03: "Chrome na milky, mały kwiatek na serdecznym. Maryna wie, kiedy mniej znaczy lepiej. Chodzę do SVORA od wiosny i zostaję 🤍"
+  p04: "Zbliż się do ekranu. Każdy płatek malowany pędzelkiem. Advanced art od 25 zł do hybrydy 190 zł. SVORA NAILS, Wola"
+  p05: "Masz w telefonie 40 zrzutów ekranu z paznokciami? Przynieś jeden. Resztę zrobi Karina. SVORA NAILS, Jana Kazimierza 25B"
+  p06: "Chrome na milky? Mikro-kwiatki na French? Da się, i to tak, że nikt nie zgadnie, ile to kosztowało. Art od 10 zł. SVORA, Wola"
+  p07: "Hybryda 190 zł + easy art od 10 zł lub advanced art od 25 zł. Codziennie 9–21 na Woli. Wybierz termin na Fresha 🎨"
+  p08: "Chcesz design na konkretny dzień? Wolne terminy widać na Fresha od razu. SVORA NAILS, Jana Kazimierza 25B, Wola"
+descriptions:
+  d01: "Hybryda 190 zł + art od 10 zł"
+  d02: "Malowane ręcznie. Wola"
+  d03: "Rezerwacja online na Fresha"
+  d04: "Codziennie 9:00–21:00"
+overlays:
+  o01: "MALOWANE <b>RĘCZNIE</b>"
+  o02: "POKAŻ <b>ZDJĘCIE</b>. ZROBIMY"
+  o03: "ART OD <b>10 ZŁ</b>"
+  o04: "HYBRYDA <b>190 ZŁ</b> + ART"
+  o05: "<b>CHROME</b> NA MILKY"
+  o06: "KWIATY MALOWANE <b>PĘDZELKIEM</b>"
+  o07: "<b>WOLA</b> · JANA KAZIMIERZA 25B"
+  o08: "ZBLIŻ SIĘ. <b>SERIO</b>."
+ctas:
+  c01: "Zarezerwuj online"
+  c02: "Zarezerwuj termin"
+  c03: "Sprawdź na Fresha"
+  c04: "Zarezerwuj art"

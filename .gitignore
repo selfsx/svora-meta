@@ -147,3 +147,16 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# --- svora-meta ---
+.venv/
+# Playwright storage state for Instagram, anything token-shaped
+.secrets/
+# full Instagram dump (re-downloadable; selected items are copied up a level)
+sources/instagram/raw/
+# intermediate renders, frames, AI drafts not yet selected
+creatives/_work/
+# launch.mjs build state, ad-hoc exports
+scratch/
+.playwright/
+*.tmp

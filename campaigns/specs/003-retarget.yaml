@@ -1,0 +1,20 @@
+# Retargeting: people who visited svora.place in 30 days, engaged with @svora.nails in 90 days, or opened the
+# Fresha booking flow without reserving (14 d). Optimise for Purchase (small volume, highest intent).
+# Create the three custom audiences in Ads Manager > Audiences first and paste their ids below.
+number: 3
+camptype: retarget
+budget: { type: abo }
+optgoal: purchase
+geo: warsaw25km
+lang: multi
+concept: mix
+date: 2026-10-27
+destination: site
+adsets:
+  - audience: retarget-30
+    daily_pln: 30
+    custom_audience_ids: []   # REQUIRED: site-visitors-30d, ig-engagers-90d, ic-not-reservation-14d
+    creatives:
+      - "mix_*_pl"
+      - "mix_*_ua"
+    copy: { headline: h02, primary: p04, description: d02 }   # copy/mix/ua.yaml (multi → ua file); add a PL ad set when budget allows

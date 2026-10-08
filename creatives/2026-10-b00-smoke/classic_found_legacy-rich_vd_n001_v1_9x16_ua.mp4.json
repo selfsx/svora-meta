@@ -1,0 +1,13 @@
+{
+  "step": "finish",
+  "input": "sources/legacy/videos/rich.mp4",
+  "overlay": "creatives/_work/t3-overlay.png",
+  "overlay_from": 0.5,
+  "trim": "0:8",
+  "music": null,
+  "mute": true,
+  "loop_to": null,
+  "format": "9x16",
+  "size": "1080x1920",
+  "created": "2026-10-08T20:31:14.436Z"
+}
