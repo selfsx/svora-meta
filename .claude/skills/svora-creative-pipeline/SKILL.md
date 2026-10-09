@@ -87,7 +87,9 @@ node scripts/wave.mjs creatives/waves/2026-10-A.yaml         # make + register (
 node scripts/wave.mjs creatives/waves/2026-10-A.yaml --redo --only V12 --langs ru   # v+1 after a rejection
 node scripts/review.mjs build                                 # the operator's page
 ```
-Job shapes and the template list: `.claude/other/creatives.md` → Waves. Base videos that several jobs share (pick
+Job shapes and the template list: `.claude/other/creatives.md` → Waves. Video jobs carry `intro: { seconds: 1.2, vars: {bg, place: middle, hook_size: 120} }`
+(hook card first, body with CTA only); photo statics use `static-card` with `place: under`, `tile_h` per format via `vars_4x5` / `vars_9x16`.
+Text on top of the nails was rejected twice by the operator — do not go back to it. Base videos that several jobs share (pick
 sequence, price body) live in `creatives/_work/base/` and are rebuilt by hand (see `creatives/waves/*.yaml` comments).
 
 ## Rules that save money and rejections

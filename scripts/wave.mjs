@@ -97,13 +97,16 @@ function renderArgs(job, lang, format, text, outPng, transparent) {
 
 function buildStatic(job, lang, format, text, jobKey) {
   const out = path.join(work, `${jobKey}.png`);
+  if (job.template === 'static-card' && !text.kicker && text.sub) text = {...text, kicker: text.sub, sub: ''};  // photo cards: the sub line becomes the kicker
   run('node', renderArgs(job, lang, format, text, out, false));
   return out;
 }
 
 function buildVideo(job, lang, text, jobKey) {
   const ov = path.join(work, `${jobKey}-ov.png`);
-  run('node', renderArgs(job, lang, '9x16', text, ov, true));
+  // intro: the hook lives on a 1-second card up front; the body overlay carries only the CTA (+meta) so the product stays clean
+  const bodyText = job.intro ? {...text, hook: '', sub: ''} : text;
+  run('node', renderArgs(job, lang, '9x16', bodyText, ov, true));
   const args = ['scripts/video-finish.mjs', '--in', job.clip, '--overlay', ov, '--overlay-from', String(job.overlay_from ?? 0.3)];
   if (job.cuts) args.push('--cuts', String(job.cuts));
   if (job.mute) args.push('--mute');
@@ -116,16 +119,38 @@ function buildVideo(job, lang, text, jobKey) {
     args.push('--subs', ass);
   }
   let out = path.join(work, `${jobKey}.mp4`);
-  if (job.endcard) {
-    // finish the clip, render the card for this language, append it as a 1.5 s tail
+  if (job.intro) {
     const body = path.join(work, `${jobKey}-body.mp4`);
     run('node', [...args, '--out', body]);
+    const card = path.join(work, `${jobKey}-intro.png`);
+    const cardJob = {...job, template: job.intro.template || 'static-card', image: job.intro.image || null, vars: {...(job.intro.vars || {}), cta: ''}};
+    run('node', renderArgs(cardJob, lang, '9x16', {kicker: text.sub || '', hook: text.hook, cta: '', meta: ''}, card, false));
+    const sec = job.intro.seconds || 1.2;
+    const withIntro = path.join(work, `${jobKey}-intro.mp4`);
+    const a = ['-y', '-v', 'error', '-loop', '1', '-t', String(sec), '-i', card, '-i', body];
+    const hasA = spawnSync('ffprobe', ['-v', 'error', '-select_streams', 'a:0', '-show_entries', 'stream=codec_name', '-of', 'csv=p=0', body], {encoding: 'utf8'}).stdout.trim().length > 0;
+    const fc = hasA
+      ? `[0:v]scale=720:1280,fps=30,format=yuv420p,setsar=1[c];anullsrc=r=48000:cl=stereo,atrim=0:${sec}[sa];[c][sa][1:v][1:a]concat=n=2:v=1:a=1[v][a]`
+      : `[0:v]scale=720:1280,fps=30,format=yuv420p,setsar=1[c];[c][1:v]concat=n=2:v=1:a=0[v]`;
+    a.push('-filter_complex', fc, '-map', '[v]');
+    if (hasA) a.push('-map', '[a]', '-c:a', 'aac', '-b:a', '128k'); else a.push('-an');
+    a.push('-c:v', 'libx264', '-preset', 'slow', '-crf', '19', '-movflags', '+faststart', withIntro);
+    run('ffmpeg', a);
+    args.length = 0; args.push('__done__', withIntro);
+  }
+  if (job.endcard) {
+    // finish the clip, render the card for this language, append it as a 1.5 s tail
+    const body = args[0] === '__done__' ? args[1] : path.join(work, `${jobKey}-body.mp4`);
+    if (args[0] !== '__done__') run('node', [...args, '--out', body]);
     const card = path.join(work, `${jobKey}-card.png`);
     run('node', renderArgs({...job, template: job.endcard.template, image: job.endcard.image, vars: {...(job.vars || {}), ...(job.endcard.vars || {})}}, lang, '9x16', text, card, false));
     const sec = job.endcard.seconds || 1.5;
     run('ffmpeg', ['-y', '-v', 'error', '-i', body, '-loop', '1', '-t', String(sec), '-i', card, '-filter_complex',
       `[1:v]scale=720:1280,fps=30,format=yuv420p,setsar=1[c];[0:v][c]concat=n=2:v=1:a=0[v]`, '-map', '[v]', '-an', '-c:v', 'libx264', '-preset', 'slow', '-crf', '19', '-movflags', '+faststart', out]);
     writeFileSync(`${out}.json`, JSON.stringify({step: 'finish', input: job.clip, overlay: ov, cuts: job.cuts || null, endcard: {template: job.endcard.template, seconds: sec}, created: new Date().toISOString()}, null, 2));
+  } else if (args[0] === '__done__') {
+    out = args[1];
+    writeFileSync(`${out}.json`, JSON.stringify({step: 'finish', input: job.clip, overlay: ov, cuts: job.cuts || null, intro: {template: job.intro.template || 'static-card', seconds: job.intro.seconds || 1.2}, created: new Date().toISOString()}, null, 2));
   } else {
     run('node', [...args, '--out', out]);
   }

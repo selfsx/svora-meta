@@ -56,11 +56,12 @@ h1{font-size:18px;margin:0 0 10px}
 .row{display:flex;gap:8px}.row button{flex:1;cursor:pointer;border:0;border-radius:8px;padding:10px;font-weight:700;font-size:14px}.ok-b{background:#59c26a}.bad-b{background:#e05252}
 textarea{width:100%;box-sizing:border-box;min-height:64px;border-radius:8px;border:1px solid #444;background:#111;color:#f7f1eb;padding:8px;font:13px system-ui;resize:vertical}
 #export{background:#ff8030;color:#1a1a1a;border:0;border-radius:8px;padding:8px 12px;font-weight:700;cursor:pointer}
+#clear{background:#444;color:#f7f1eb;border:0;border-radius:8px;padding:8px 12px;cursor:pointer}
 #out{width:100%;height:90px;background:#111;color:#ccc;border:1px solid #444;display:none;margin-top:8px}
 </style>
 <h1>SVORA creative review — ${data.length} masters · ${rows.length} files (${flag('--status', 'draft')})</h1>
 <div class="bar">
-  <button id="export">Export verdicts (copies JSON)</button><span id="count"></span>
+  <button id="export">Export verdicts (copies JSON)</button><button id="clear" title="forget every mark and note on this page">Clear all</button><span id="count"></span>
   <label>angle <select id="f-angle"><option value="">all</option>${[...new Set(data.map((d) => d.angle))].sort().map((a) => `<option>${a}</option>`).join('')}</select></label>
   <label>type <select id="f-type"><option value="">all</option><option value="vd">video</option><option value="st">static</option></select></label>
   <label>batch <select id="f-batch"><option value="">all</option>${[...new Set(data.map((d) => d.batch))].sort().map((a) => `<option>${a}</option>`).join('')}</select></label>
@@ -70,8 +71,9 @@ textarea{width:100%;box-sizing:border-box;min-height:64px;border-radius:8px;bord
 <div class="grid" id="grid"></div>
 <script>
 const DATA = ${JSON.stringify(data)};
-const V = JSON.parse(localStorage.getItem('svora-review-v2') || '{}');
-const save = () => localStorage.setItem('svora-review-v2', JSON.stringify(V));
+const KEY = 'svora-review-' + ${JSON.stringify(new Date().toISOString().slice(0, 16))};  // marks live per build, so a remade set starts clean
+let V = JSON.parse(localStorage.getItem(KEY) || '{}');
+const save = () => localStorage.setItem(KEY, JSON.stringify(V));
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (ch) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[ch]));
 const grid = document.getElementById('grid');
 for (const g of DATA) {
@@ -115,6 +117,7 @@ document.getElementById('export').onclick = async () => {
   const txt = JSON.stringify({reviewed: new Date().toISOString().slice(0, 10), masters: Object.values(V).filter((v) => v.ok !== undefined).length, verdicts}, null, 1);
   const o = document.getElementById('out'); o.style.display = 'block'; o.value = txt; try { await navigator.clipboard.writeText(txt); } catch (e) {} o.select();
 };
+document.getElementById('clear').onclick = () => { if (!confirm('Clear every mark and note on this page?')) return; V = {}; save(); for (const g of DATA) g.el.querySelector('textarea').value = ''; paint(); };
 paint();
 </script>`;
   const out = path.join(dir, 'index.html');

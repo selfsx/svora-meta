@@ -102,3 +102,12 @@
   C4dzm1rLo84). Rejected files were deleted from disk and manifests (the verdict file is the record); approved ones kept.
 - Wave C = re-run of waves A+B with the new layout; ua/pl versions of the b01/b02 masters are now produced in b03 so
   every master has all its languages in one place.
+
+## 2026-10-09 — second operator pass → wave D (hook card + clean body; photo cards)
+
+- Operator on the rebuilt drafts: "positioning of the layouts still not very great" and the review page showed the
+  first round's marks (localStorage keyed per master) — fixed: marks keyed per build + "Clear all" button.
+- Decision: stop placing text on the product. Videos = 1.2 s hook card (static-card, brand bg) + clip with CTA only;
+  hero/price/seasonal statics = `static-card` photo cards (tile 54% at 4:5, 44% at 9:16, text under) — the construction
+  the operator approved for the pick trios. `wave.mjs` gained `intro:`; sub → kicker mapping for cards.
+- 120 drafts dropped and remade (wave D). Approved set (35) untouched.
