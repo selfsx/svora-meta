@@ -159,3 +159,26 @@
   outro card, body CTA row (free band only), static-card, static-pick, S7/S8/V13 price angle. Ratings: new copy ids (brand h09/d05/p09,
   classic ua/ru d05, overlay ids via copy-sync); copy-lint counts a star run as one emoji.
 - The 28 v2 drafts of 2026-10-b03-wavea were deleted and regenerated as v2 (no model calls, $0). Review pages rebuilt.
+
+## 2026-10-09 — System User token in; /verify, account history, launch schedule (nothing built)
+- `/verify`: **NOT launchable**. Account act_362995589550515 ACTIVE · PLN · Europe/Warsaw · lifetime spent 3,877.69 PLN.
+  Pixel 1194380562291350 last fired 2026-10-08T20:07:45Z. Problems reported: Polish locale is Meta key **15** (settings and
+  `verify.mjs` say 34), Warsaw city key **1881861** (settings say 2498152). Not reported by the script, but found: Page
+  194765280381084 has **no Instagram account linked**. The business and ad account list 0 Instagram accounts, and the
+  pinned `META_INSTAGRAM_ACTOR_ID` does not resolve for the System User. `.env` was not edited: page and pixel ids
+  were already pinned and match; the IG id cannot be confirmed until the owner links it.
+- Pixel: Fresha events arrive since 2026-10-05 (7 d: 88 InitiateCheckout, 9 AddPaymentInfo, 6 Reservation, 6 Purchase, all
+  organic), so pre-flight 2 is effectively confirmed. The site's old `Schedule` event stopped on 10-05; `BookingClick` replaced it.
+  A second pixel 2337099316770915 "svora.place (Booksy)" never fired; do not use it.
+- History (`campaigns/reports/2026-10-09-account-history.md`): 31 campaigns, 0 IC and 0 Purchase ever attributed (7d click).
+  67 % of spend went to profile visits, DMs and Page likes. No campaign ran more than 5 days except a 14-day Page-like boost.
+  Website campaigns optimised ViewContent/Schedule, never a Fresha event (none existed). The best paid baseline: 3.80 PLN/LPV and
+  29 Schedule at 29.21 PLN (March 2026, PL locale 15, 2-mile pin).
+- `launch.mjs spec` on 001/002 (local resolution only) refuses: all 20 v2 creatives are `draft`. 002 targeting carries
+  `locales:[34]`, the wrong language.
+- Plan (`.claude/specs/06-launch-schedule.md`, operator to confirm): build both PAUSED on Mon 2026-10-12; activate 001 at about 09:00
+  that day; activate 002 on Wed 10-14 after a 48 h canary proving ad → site → Fresha → IC attribution (never proven before).
+  Expect "Learning Limited": the derived estimate is 9–28 IC/week for 001 and 7–21 for 002, against 50 needed.
+  Widening to wola10km = a new `retest` spec, since `launch.mjs` cannot edit targeting.
+- Incident: one read-only probe printed a raw Graph `paging.next` URL, which embeds the access token, into this session's tool
+  output. It was not written to any file or commit. The operator may want to rotate the System User token. Backlog item added.

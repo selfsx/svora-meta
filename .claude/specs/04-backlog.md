@@ -4,10 +4,15 @@ Edited in place. Move an item to the journal when it is done.
 
 ## Blocked on the operator / owner
 
-- [ ] `.env`: `OPENROUTER_API_KEY`, `ACCESS_TOKEN` (System User; assets: ad account, Page, pixel; permissions
-      `ads_management`, `ads_read`, `business_management`, `pages_read_engagement`, `instagram_basic`), `AD_ACCOUNT_ID`.
-- [ ] `mise run verify` → pin `META_PAGE_ID`, `META_INSTAGRAM_ACTOR_ID`, `META_PIXEL_ID` in `.env`.
-- [ ] Events Manager → Test Events: confirm Fresha events arrive after consent (`02-month-1-test-plan.md` pre-flight 2).
+- [x] `.env`: all keys present (2026-10-09). `META_PAGE_ID` 194765280381084 and `META_PIXEL_ID` 1194380562291350 match `/verify`.
+- [ ] **Instagram identity (blocks 001/002)**: Page 194765280381084 has no linked Instagram; the business and ad account list 0
+      Instagram accounts; the pinned `META_INSTAGRAM_ACTOR_ID` (17841402079737028) does not resolve for the System User. Owner,
+      in Business Settings: Accounts → Instagram accounts → Add @svora.nails → Connected assets → ad account; Users → System
+      users → Assign assets → Instagram; Page Settings → Linked accounts → Instagram. Then `/verify` and re-pin the id.
+- [ ] Events Manager → Test Events: one click-through after consent. Pixel `/stats` already shows Fresha InitiateCheckout/
+      AddPaymentInfo/Reservation/Purchase since 2026-10-05 (pre-flight 2 effectively met).
+- [ ] Approve the 20 v2 creatives in specs 001/002 (`launch.mjs spec` refuses: all `draft`, 2026-10-09).
+- [ ] Yes/no on the settings key fix below (Polish 34→15, Warsaw 2498152→1881861); `/verify` stays NOT launchable until then.
 - [ ] Custom audiences created in Ads Manager; ids into `campaigns/specs/003-retarget.yaml`.
 - [ ] Instagram session for the full archive: `node scripts/ig-login.mjs` (operator types the password).
 - [ ] Confirm or drop the "-20% first visit" offer (`settings/brand.yaml → offers`).
@@ -32,6 +37,23 @@ Edited in place. Move an item to the journal when it is done.
 
 ## Known gaps / ideas
 
+- **Wrong Meta keys in settings (blocks 002 and `/verify`)**: Meta `adlocale` Polish = **15** (settings `languages.pl.locales`
+  = 34, `scripts/verify.mjs` `localeChecks` = 34, `.claude/other/tools.md` says pl_PL 34). Warsaw city = **1881861**
+  (settings `geo.warsaw.key` = 2498152). Fix all three files in one commit once the operator says yes.
+- `verify.mjs` does not flag a Page without `instagram_business_account`, nor check that `META_INSTAGRAM_ACTOR_ID` resolves.
+  Make both a problem (the build passes `instagram_user_id`). If `META_PIXEL_ID` is unset it pins `pixels.rows[0]`, which on this
+  account is the dead Booksy pixel 2337099316770915. Pin by name or by `last_fired_time` instead.
+- **Token hygiene**: Graph `paging.next` URLs embed `access_token` (and came back as v26.0 although `graph.mjs` pins v24.0).
+  `graph.mjs` should strip `paging` from what it returns and redact `access_token=` from any URL it logs. One probe on
+  2026-10-09 printed one into a session transcript; consider rotating the System User token.
+- `list.mjs` has no learning status: add `learning_stage_info` (ad set level) so "Learning Limited" (the §7 day-7 trigger)
+  is readable without Ads Manager. It also lacks a `lifetime` mention in its usage line (the preset exists: `-d lifetime`).
+- `launch.mjs` cannot edit targeting. Widening 6 km → 10 km means a new `retest` spec plus a pause; decide whether that is the
+  intended path or whether an `update-geo` command (with its own GO) is wanted.
+- Specs 001/002 carry 10 ads per ad set; playbook §4 cites Meta's "no more than six". At about 10 IC/week the per-creative cut
+  rule cannot separate 10 creatives in week 1. Watch it, and keep it in mind if the operator re-picks.
+- Old campaigns used locale 54 (Belarusian) with UA/RU. `settings/audiences.yaml → languages.uaru` has no 54; this is a decision
+  for the operator, not a fix.
 - `verify.mjs` resolves interest ids but `settings/audiences.yaml → int-nails` holds placeholders until the first run.
 - No script creates custom audiences; add `scripts/audiences.mjs` (Graph `customaudiences`) if the owner prefers it scripted.
 - Meta multi-language ads for Sales → Website: check availability on the account; it would replace split language ad sets.
