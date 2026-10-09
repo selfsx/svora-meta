@@ -61,7 +61,12 @@ async function profile() {
     try {
       walk(JSON.parse(text), (node) => {
         if (node && typeof node === 'object' && typeof node.code === 'string' && /^[A-Za-z0-9_-]{8,12}$/.test(node.code) && (node.taken_at || node.media_type || node.__typename)) {
-          if (!found.has(node.code)) found.set(node.code, {taken_at: node.taken_at || null, is_video: node.media_type === 2 || node.is_video || false});
+          if (node.product_type === 'carousel_item') return; // a slide, not a post
+          const prev = found.get(node.code) || {};
+          // Timeline nodes carry most of what a post page would: keep it so `posts` can download
+          // straight from the URLs without visiting each page.
+          const summary = summarise(node);
+          if (!prev.taken_at || (summary.media && summary.media.length && !(prev.media && prev.media.length))) found.set(node.code, {...prev, ...summary});
         }
       });
     } catch { /* not JSON */ }
@@ -87,7 +92,10 @@ async function profile() {
   }
   let added = 0;
   for (const [code, meta] of found) {
-    if (!index.posts[code]) { index.posts[code] = {code, ...meta, fetched: false}; added++; } else Object.assign(index.posts[code], meta);
+    if (!index.posts[code]) { index.posts[code] = {code, ...meta, fetched: false}; added++; } else {
+      const cur = index.posts[code];
+      for (const [k, v] of Object.entries(meta)) if (v !== null && v !== undefined && v !== '' && !(Array.isArray(v) && !v.length)) cur[k] = v;
+    }
   }
   saveIndex();
   console.log(`index: ${Object.keys(index.posts).length} posts (${added} new) → ${path.relative(rel(), indexFile)}`);
@@ -103,7 +111,8 @@ async function posts() {
   for (const code of codes) {
     n++;
     try {
-      const info = await fetchPost(page, code);
+      const known = index.posts[code];
+      const info = known && known.media_urls && known.media_urls.length && !argv.includes('--visit') ? await fetchFromUrls(known) : await fetchPost(page, code);
       index.posts[code] = {...(index.posts[code] || {}), ...info, fetched: true, fetched_at: new Date().toISOString()};
       saveIndex();
       console.log(`[${n}/${codes.length}] ${code} ${info.is_video ? 'video' : 'photo'} ×${info.media.length} · ${info.taken_at ? new Date(info.taken_at * 1000).toISOString().slice(0, 10) : '?'} · ${(info.caption || '').slice(0, 60).replace(/\n/g, ' ')}`);
@@ -112,8 +121,34 @@ async function posts() {
       saveIndex();
       console.log(`[${n}/${codes.length}] ${code} FAILED: ${e.message}`);
     }
-    await sleep(delay + Math.random() * 2000);
+    await sleep((index.posts[code] && index.posts[code].via === 'cdn' ? delay / 4 : delay) + Math.random() * 1000);
   }
+}
+
+/** Downloads straight from the CDN URLs the profile scrape stored — no page visit, far gentler. */
+async function fetchFromUrls(known) {
+  const code = known.code;
+  const dir = path.join(rawDir, code);
+  mkdirSync(dir, {recursive: true});
+  const media = [];
+  for (const m of known.media_urls) {
+    const entry = {i: m.i, is_video: m.is_video};
+    if (m.image_url) {
+      const f = path.join(dir, `${code}_${String(m.i + 1).padStart(2, '0')}.jpg`);
+      if (!existsSync(f)) await download(m.image_url, f);
+      entry.image = path.relative(rel(), f); entry.width = m.width; entry.height = m.height;
+    }
+    if (m.video_url) {
+      const f = path.join(dir, `${code}_${String(m.i + 1).padStart(2, '0')}.mp4`);
+      if (!existsSync(f)) await download(m.video_url, f);
+      entry.video = path.relative(rel(), f); entry.vwidth = m.vwidth; entry.vheight = m.vheight;
+    }
+    media.push(entry);
+  }
+  const info = {code, taken_at: known.taken_at, is_video: known.is_video, caption: known.caption || '', like_count: known.like_count, comment_count: known.comment_count,
+    play_count: known.play_count, product_type: known.product_type, media, url: `https://www.instagram.com/p/${code}/`, via: 'cdn'};
+  writeFileSync(path.join(dir, 'post.json'), JSON.stringify(info, null, 2));
+  return info;
 }
 
 async function fetchPost(page, code) {
@@ -167,6 +202,26 @@ async function fetchPost(page, code) {
   };
   writeFileSync(path.join(dir, 'post.json'), JSON.stringify({...info, raw_keys: Object.keys(item)}, null, 2));
   return info;
+}
+
+/** Compact view of a media node (timeline or post page): meta + direct media URLs. */
+function summarise(node) {
+  const slides = node.carousel_media && node.carousel_media.length ? node.carousel_media : [node];
+  const media = slides.map((s, i) => {
+    const img = s.image_versions2 && s.image_versions2.candidates && s.image_versions2.candidates[0];
+    const vid = s.video_versions && s.video_versions[0];
+    return {i, is_video: !!vid, image_url: img ? img.url : null, width: img ? img.width : null, height: img ? img.height : null,
+      video_url: vid ? vid.url : null, vwidth: vid ? vid.width : null, vheight: vid ? vid.height : null};
+  }).filter((m) => m.image_url || m.video_url);
+  return {
+    code: node.code, taken_at: node.taken_at || null,
+    is_video: node.media_type === 2 || !!(node.video_versions && node.video_versions.length),
+    is_carousel: !!(node.carousel_media && node.carousel_media.length),
+    caption: node.caption && node.caption.text || '', like_count: node.like_count ?? null, comment_count: node.comment_count ?? null,
+    play_count: node.play_count ?? node.ig_play_count ?? null, product_type: node.product_type || null,
+    owner: (node.user && node.user.username) || (node.owner && node.owner.username) || null, // tagged/collab posts show up in the grid feed too
+    media_urls: media,
+  };
 }
 
 function findItem(obj, code) {
