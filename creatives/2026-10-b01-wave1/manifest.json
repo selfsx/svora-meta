@@ -269,7 +269,267 @@
       "cost_usd": 1.9220013,
       "created": "2026-10-09T09:44:22.055Z",
       "notes": ""
+    },
+    {
+      "name": "art_art-closeup_Ddv-7k6DQJg_st_n005_v1_4x5_ua",
+      "file": "art_art-closeup_Ddv-7k6DQJg_st_n005_v1_4x5_ua.png",
+      "type": "st",
+      "format": "4x5",
+      "lang": "ua",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "Один ніготь. Ближче.",
+      "source": "Ddv-7k6DQJg",
+      "v": 1,
+      "status": "draft",
+      "copy": {
+        "headline": "h01",
+        "primary": "p01",
+        "description": "d01"
+      },
+      "pipeline": [
+        {
+          "template": "static-hero",
+          "format": "4x5",
+          "image": "sources/instagram/raw/Ddv-7k6DQJg/Ddv-7k6DQJg_01.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "ua",
+            "hook": "Один ніготь. <b>Ближче</b>.",
+            "sub": "Nail art · хром, cat-eye, текстури",
+            "cta": "Записатись",
+            "price": "гібрид 190 zł + арт"
+          },
+          "created": "2026-10-09T10:59:42.439Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T11:00:02.592Z",
+      "notes": ""
+    },
+    {
+      "name": "art_reveal_Ddv-7k6DQJg_st_n006_v1_9x16_ua",
+      "file": "art_reveal_Ddv-7k6DQJg_st_n006_v1_9x16_ua.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "art",
+      "hook": "reveal",
+      "hook_text": "Арт, який помічають",
+      "source": "Ddv-7k6DQJg",
+      "v": 1,
+      "status": "draft",
+      "copy": {
+        "headline": "h01",
+        "primary": "p01",
+        "description": "d01"
+      },
+      "pipeline": [
+        {
+          "template": "static-hero",
+          "format": "9x16",
+          "image": "sources/instagram/raw/Ddv-7k6DQJg/Ddv-7k6DQJg_01.jpg",
+          "transparent": false,
+          "vars": {
+            "layout": "copy-top",
+            "lang": "ua",
+            "hook": "Арт, який <b>помічають</b>",
+            "sub": "SVORA NAILS · Воля",
+            "cta": "Записатись",
+            "price": "гібрид 190 zł + арт"
+          },
+          "created": "2026-10-09T10:59:43.265Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T11:00:02.644Z",
+      "notes": ""
+    },
+    {
+      "name": "crazy_reveal_DY99E3XjWQK_st_n007_v1_9x16_ua",
+      "file": "crazy_reveal_DY99E3XjWQK_st_n007_v1_9x16_ua.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "crazy",
+      "hook": "reveal",
+      "hook_text": "Не фільтр. Реальні нігті",
+      "source": "DY99E3XjWQK",
+      "v": 1,
+      "status": "draft",
+      "copy": {
+        "headline": "h01",
+        "primary": "p01",
+        "description": "d01"
+      },
+      "pipeline": [
+        {
+          "template": "static-hero",
+          "format": "9x16",
+          "image": "sources/instagram/raw/DY99E3XjWQK/DY99E3XjWQK_02.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "ua",
+            "hook": "Не фільтр. <b>Реальні</b> нігті",
+            "sub": "Cat Claws · Crazy Shape",
+            "cta": "Хочу такі",
+            "price": "від 420 zł"
+          },
+          "created": "2026-10-09T10:59:44.079Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T11:00:02.693Z",
+      "notes": ""
+    },
+    {
+      "name": "classic_price_DV5ZDohDBx0_st_n008_v1_4x5_pl",
+      "file": "classic_price_DV5ZDohDBx0_st_n008_v1_4x5_pl.png",
+      "type": "st",
+      "format": "4x5",
+      "lang": "pl",
+      "concept": "classic",
+      "hook": "price",
+      "hook_text": "Hybryda 190 zł",
+      "source": "DV5ZDohDBx0",
+      "v": 1,
+      "status": "draft",
+      "copy": {
+        "headline": "h01",
+        "primary": "p01",
+        "description": "d01"
+      },
+      "pipeline": [
+        {
+          "template": "static-hero",
+          "format": "4x5",
+          "image": "sources/instagram/raw/DV5ZDohDBx0/DV5ZDohDBx0_01.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "pl",
+            "hook": "HYBRYDA <b>190 ZŁ</b>",
+            "sub": "Równo. Czysto. Naturalnie.",
+            "cta": "Zarezerwuj online",
+            "price": "Wola · Jana Kazimierza 25B"
+          },
+          "created": "2026-10-09T10:59:44.699Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T11:00:02.744Z",
+      "notes": ""
+    },
+    {
+      "name": "classic_reveal_DOofqjpDaTt_st_n009_v1_4x5_pl",
+      "file": "classic_reveal_DOofqjpDaTt_st_n009_v1_4x5_pl.png",
+      "type": "st",
+      "format": "4x5",
+      "lang": "pl",
+      "concept": "classic",
+      "hook": "reveal",
+      "hook_text": "Równo. Czysto. Naturalnie.",
+      "source": "DOofqjpDaTt",
+      "v": 1,
+      "status": "draft",
+      "copy": {
+        "headline": "h01",
+        "primary": "p01",
+        "description": "d01"
+      },
+      "pipeline": [
+        {
+          "template": "static-blur-pad",
+          "format": "4x5",
+          "image": "sources/instagram/raw/DOofqjpDaTt/DOofqjpDaTt_02.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "pl",
+            "hook": "RÓWNO. CZYSTO. <b>NATURALNIE</b>.",
+            "sub": "Milky glazed · hybryda 190 zł",
+            "cta": "Sprawdź terminy",
+            "price": "Wola · Jana Kazimierza 25B"
+          },
+          "created": "2026-10-09T10:59:45.248Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T11:00:02.798Z",
+      "notes": ""
+    },
+    {
+      "name": "classic_reveal_DOofqjpDaTt_st_n010_v1_9x16_pl",
+      "file": "classic_reveal_DOofqjpDaTt_st_n010_v1_9x16_pl.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "classic",
+      "hook": "reveal",
+      "hook_text": "Równo. Czysto. Naturalnie.",
+      "source": "DOofqjpDaTt",
+      "v": 1,
+      "status": "draft",
+      "copy": {
+        "headline": "h01",
+        "primary": "p01",
+        "description": "d01"
+      },
+      "pipeline": [
+        {
+          "template": "static-blur-pad",
+          "format": "9x16",
+          "image": "sources/instagram/raw/DOofqjpDaTt/DOofqjpDaTt_02.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "pl",
+            "hook": "RÓWNO. CZYSTO. <b>NATURALNIE</b>.",
+            "sub": "Milky glazed · hybryda 190 zł",
+            "cta": "Sprawdź terminy",
+            "price": "Wola · Jana Kazimierza 25B"
+          },
+          "created": "2026-10-09T10:59:45.850Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T11:00:02.851Z",
+      "notes": ""
+    },
+    {
+      "name": "art_art-closeup_DZqf93TDGOU_st_n011_v1_4x5_pl",
+      "file": "art_art-closeup_DZqf93TDGOU_st_n011_v1_4x5_pl.png",
+      "type": "st",
+      "format": "4x5",
+      "lang": "pl",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "Zbliż się. Serio.",
+      "source": "DZqf93TDGOU",
+      "v": 1,
+      "status": "draft",
+      "copy": {
+        "headline": "h01",
+        "primary": "p01",
+        "description": "d01"
+      },
+      "pipeline": [
+        {
+          "template": "static-hero",
+          "format": "4x5",
+          "image": "sources/instagram/raw/DZqf93TDGOU/DZqf93TDGOU_01.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "pl",
+            "hook": "ZBLIŻ SIĘ. <b>SERIO</b>.",
+            "sub": "Cat-eye · chrome · ręcznie",
+            "cta": "Zarezerwuj online",
+            "price": "art od 10 zł"
+          },
+          "created": "2026-10-09T10:59:46.508Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T11:00:02.901Z",
+      "notes": ""
     }
   ],
-  "updated": "2026-10-09T09:44:22.055Z"
+  "updated": "2026-10-09T11:00:02.902Z"
 }

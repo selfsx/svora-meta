@@ -40,7 +40,11 @@ node scripts/creatives.mjs add 2026-10-b01-crazy --file creatives/_work/<code>-u
   --pipeline creatives/_work/<code>-clip.mp4.json --pipeline creatives/_work/<code>-ua-found.mp4.json
 ```
 
-Statics: `render-overlay.mjs --template static-hero --image <photo> --format 4x5 …` → `creatives.mjs add … --type st`.
+Statics (free — no generation): `render-overlay.mjs --template static-hero --image <photo> --format 4x5|9x16 …` →
+`creatives.mjs add … --format 4x5`. `static-hero` = photo cover-cropped, copy at the bottom; pass `--var layout=copy-top`
+when the nails sit low in the photo (9:16 from a 3:4 source). `static-blur-pad` = square/landscape photo fitted whole
+over a blurred copy of itself (4:5 and 9:16). Both place logo/copy inside the 9:16 safe zone automatically; `badge` is
+hidden unless set. Sources with text baked into the photo (e.g. DJZ8KfbtZS8) are not usable as statics.
 Reels from Instagram (already video): skip 1–2; `video-finish.mjs --in <code>_01.mp4 --trim 0:8 …`.
 
 ## Rules that save money and rejections

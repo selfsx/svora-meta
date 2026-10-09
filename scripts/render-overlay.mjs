@@ -43,8 +43,12 @@ const vars = {
   logosDir: pathToFileURL(rel('brand', 'logos')).href,
   image: o.image ? pathToFileURL(path.resolve(o.image)).href : '',
   w: fmt.w, h: fmt.h, format: o.format, lang: 'pl', hook: '', sub: '', cta: '', price: '', badge: '',
+  // Layout defaults per format for the static templates: 9:16 keeps copy above the bottom 35% Meta UI zone.
+  ...(o.format === '9x16' ? {copy_bottom: '37%', photo_top: '15%', photo_h: '34%', copy_top: '51%', logo_top: '15%'} : {copy_bottom: '72px', photo_top: '14%', photo_h: '52%', copy_top: '69%', logo_top: '56px'}),
+  layout: '',  // static-hero: 'copy-top' puts the copy under the logo instead of at the bottom (nails low in the photo)
   ...o.vars,
 };
+vars.badge_display = vars.badge ? 'inline-block' : 'none';
 const html = readFileSync(tplFile, 'utf8').replace(/\{\{(\w+)\}\}/g, (_, k) => (vars[k] ?? ''));
 
 mkdirSync(path.dirname(o.out), {recursive: true});

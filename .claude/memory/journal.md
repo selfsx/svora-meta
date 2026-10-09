@@ -17,3 +17,14 @@
 - Visual pass on every own post since 2024 → `index.json → tags` (253 tagged, 83 A-grade). Analysis: `research/instagram-archive-analysis.md`.
 - Operator cap for the first batch: $25; first 4 videos for verification before the rest. Spent ≈ $7.8 (4 clips + 5 stills); 4 creatives registered as `draft` in `creatives/2026-10-b01-wave1` (raw clips in `raw/`).
 - Learned: Seedance audio copyright filter (auto-retry without audio added), "nude" rejected in prompts, one lap-framed source refused → swapped to DbMR6_ttcnF.
+
+## 2026-10-09 — first statics (wave 1)
+
+- Operator viewed the 4 test clips; next ask was "generate a few static ones". Produced 7 statics at $0 (render only) into
+  `creatives/2026-10-b01-wave1/` (n005–n011): art Ddv-7k6DQJg 4:5 + 9:16 ua, crazy DY99E3XjWQK 9:16 ua, classic DV5ZDohDBx0
+  4:5 pl (price), classic DOofqjpDaTt 4:5 + 9:16 pl via `static-blur-pad` (landscape source), art DZqf93TDGOU 4:5 pl. All `draft`.
+- Template fixes found in review: empty badge rendered as an orange pill (now hidden unless set); 9:16 statics kept copy
+  and logo inside the Meta UI zone, so `render-overlay.mjs` now sets per-format layout defaults and `static-hero` has
+  `layout=copy-top` for photos with the nails low in the frame.
+- Skipped DJZ8KfbtZS8 (red cat claws, 300 likes) for statics: the photo has "CLAWS"/"WTF" text baked in.
+- Overlay facts used: hybryda 190 zł, Cat Claws od 420 zł, art od 10 zł, address Jana Kazimierza 25B — all from `settings/brand.yaml`.
