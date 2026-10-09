@@ -60,7 +60,7 @@ Edited in place. Move an item to the journal when it is done.
 - Ad Library competitor scan needs a logged-in browser (`/research` with Playwright + session), fetch is blocked.
 - Fresha has no API: a weekly manual export of confirmed bookings is the reconciliation input for `/report`.
 - `scripts/list.mjs` reads `BookingClick` (custom event) only via `offsite_conversion.custom.*` ids — add once the id is known.
-- **SVME20 on the landing** (svora-landing): when `utm_source=meta` is in the URL (the attribution script already reads
+- ~~**SVME20 on the landing**~~ DONE 2026-10-09 (svora-landing `PromoBanner.astro`, not deployed yet): when `utm_source=meta` is in the URL (the attribution script already reads
   it), show a sticky line "Kod SVME20 = -20%" above the Book buttons, in the page language. Fresha cannot prefill a
   code from a link, so this is the only place between the ad and the checkout where the code can be repeated.
 - **SVME20 in Fresha**: the owner checks the promotion is valid for online bookings, all services, all clients (not
