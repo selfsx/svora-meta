@@ -187,3 +187,7 @@
   001/002 use the wola6km radius, so only 002's language filter was affected — before any launch.
 - A read-only probe by the campaign agent echoed a Graph paging URL carrying the access token into its own
   transcript (not into any file or commit); the transcript was masked. Rotation of the System User token recommended.
+- Operator on the retail promo pass: "strange dot in the -20" (the tag's punched eyelet) and "negative right margin
+  in CTA" (tag 2.5× + chip + Cyrillic CTA overflowed the 968 px band). Fixed in `_type.css` (plain ticket, offer row
+  capped at 100% with wrap) and `render-overlay.mjs` (body tag 2.0× the CTA); the 20 regenerated as v2 again.
+- Operator: both campaigns launch **today (2026-10-09)**, same day; spec dates set; schedule spec notes the shift.

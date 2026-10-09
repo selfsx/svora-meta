@@ -1,6 +1,10 @@
 # 06 — Launch schedule for 001 (uaru) and 002 (pl)
 
-Written 2026-10-09. **Status: plan. Nothing has been built or activated.** No GO has been given; the ledger is
+Written 2026-10-09. **Operator decision 2026-10-09: both campaigns launch today, same day, not staggered** — the
+Mon 12 / Wed 14 proposal below is superseded; every date in the decision table shifts by -3 days (CTR check Thu 10-12 / Sat 10-12,
+7-day cut-or-widen Fri 10-16 reported Mon 10-19, budget change earliest Mon 10-26). Preconditions still open at
+writing: Instagram identity linked (owner), the 20 v2 creatives approved, music beds for the 5 silent videos (or
+accept silent), a target cost per booking. **Status: plan. Nothing has been built or activated.** No GO has been given; the ledger is
 empty. Inputs: `node scripts/verify.mjs` (2026-10-09), `campaigns/reports/2026-10-09-account-history.md`,
 `research/meta-ads-playbook.md` §1.2, §4 and §7, specs `campaigns/specs/001-prospect-uaru.yaml` and `002-prospect-pl.yaml`.
 

@@ -8,7 +8,7 @@ optgoal: ic
 geo: wola6km
 lang: uaru
 concept: mix
-date: 2026-10-20          # set to the approval date before `launch.mjs spec`
+date: 2026-10-09          # approval day (operator: "we launch today", 2026-10-09)
 destination: site-ua
 adsets:
   - audience: broad

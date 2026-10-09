@@ -7,7 +7,7 @@ optgoal: ic
 geo: wola6km
 lang: pl
 concept: mix
-date: 2026-10-20
+date: 2026-10-09          # approval day (operator: "we launch today", 2026-10-09)
 destination: site
 adsets:
   - audience: broad

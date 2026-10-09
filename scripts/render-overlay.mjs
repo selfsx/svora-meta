@@ -89,7 +89,7 @@ const num = (x, d) => (Number.isFinite(Number(x)) && Number(x) > 0 ? Number(x) :
 vars.tag_size ??= Math.round(num(vars.hook_size, 84) * 1.4);
 vars.chip_size ??= Math.round(num(vars.hook_size, 84) * 0.56);
 vars.price_size ??= Math.round(num(vars.hook_size, 84) * 0.95);
-vars.tag_cta_size ??= Math.round(num(vars.cta_size, 48) * 2.5);
+vars.tag_cta_size ??= Math.round(num(vars.cta_size, 48) * 2.0);  // 2.5× overflowed the 968 px band next to a Cyrillic CTA (operator: "negative right margin")
 vars.chip_cta_size ??= Math.round(num(vars.cta_size, 48) * 0.72);
 if (o.template === 'static-pick' && o.vars.offer_pct && !o.vars.pick_h) vars.pick_h = v916 ? '19%' : '29%';  // room for the tag row under the tiles
 vars.tag_display = vars.offer_pct ? 'inline-flex' : 'none';
