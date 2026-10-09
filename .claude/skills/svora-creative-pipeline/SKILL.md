@@ -1,6 +1,6 @@
 ---
 name: svora-creative-pipeline
-description: Make SVORA ad creatives from Instagram sources — Nano Banana stills, Seedance 2.5 image-to-video via OpenRouter, HTML-rendered overlays with brand fonts (PL/UA/RU/EN), ffmpeg finishing to 1080×1920/1080×1350/1080×1080, and manifest registration. Use for any "make creatives", "animate this post", "add overlays", "re-cut", "localise this video" task.
+description: Make SVORA ad creatives from Instagram sources — Nano Banana stills, Seedance 2.5 image-to-video via OpenRouter, HTML-rendered overlays with brand fonts (PL/UA/RU/EN), ffmpeg finishing to 720p video (9:16 Reels first) and 1080 statics, and manifest registration. Use for any "make creatives", "animate this post", "add overlays", "re-cut", "localise this video" task.
 ---
 
 # Creative pipeline
@@ -29,7 +29,7 @@ node scripts/render-overlay.mjs --template overlay-hook-cta --format 9x16 --tran
   --var hook="Нарешті знайшла <b>свій</b> салон" --var sub="Nude & Crazy · Wola" --var cta="Записатися онлайн" \
   --var price="від 190 zł" --out creatives/_work/<code>-ua-found.png
 
-# 4. finish (crop/upscale to 1080×1920, overlay from 0.6 s, keep generated audio)
+# 4. finish (720×1280 as generated — no upscale; overlay scaled onto it from 0.6 s; keep generated audio)
 node scripts/video-finish.mjs --in creatives/_work/<code>-clip.mp4 --overlay creatives/_work/<code>-ua-found.png \
   --overlay-from 0.6 --out creatives/_work/<code>-ua-found.mp4
 
@@ -46,7 +46,7 @@ Reels from Instagram (already video): skip 1–2; `video-finish.mjs --in <code>_
 ## Rules that save money and rejections
 
 - One generation per source; languages and hooks are overlays. 60 clips ≈ $110 at 720p; test prompts at 480p.
-- Seedance: 4–30 s, 480p/720p, **no 4:5 and no 1080p** — finish upscales/crops. `frame_images` beats
+- Seedance: 4–30 s, 480p/720p, **no 4:5 and no 1080p**; we deliver video at 720p (Meta accepts it; Reels are 9:16 vertical), finish only crops. `frame_images` beats
   `input_references` (the latter is ignored when a first frame is given). Prompt = camera + hand motion +
   "design stays identical"; never ask for text, logos or a second hand.
 - Nano Banana: `gemini-3.1-flash-image` for edits, `gemini-3-pro-image` for composites; never for text/logos.

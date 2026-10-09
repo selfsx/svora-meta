@@ -22,10 +22,11 @@ hooks:
   art-closeup: "macro close-up on one nail's art, then pull out"
   team:       "the master at work, face visible, speaks the client's language"
 
+# Statics render at 1080; videos are delivered at 720p (Seedance's native 720x1280 — enough for an ad, no upscaling).
 formats:
-  9x16: { w: 1080, h: 1920, placements: [reels, stories], primary: true }
-  4x5:  { w: 1080, h: 1350, placements: [feed] }
-  1x1:  { w: 1080, h: 1080, placements: [feed, carousel] }
+  9x16: { w: 1080, h: 1920, video: { w: 720, h: 1280 }, placements: [reels, stories], primary: true }
+  4x5:  { w: 1080, h: 1350, video: { w: 720, h: 900 },  placements: [feed] }
+  1x1:  { w: 1080, h: 1080, video: { w: 720, h: 720 },  placements: [feed, carousel] }
 
 types: { vd: video, st: static, cr: carousel-card }
 langs: [pl, ua, ru, en]

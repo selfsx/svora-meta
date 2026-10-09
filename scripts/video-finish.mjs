@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
  * @fileoverview Finishes a clip for Meta: scale/crop to the target format
- * (1080×1920 / 1080×1350 / 1080×1080), composite a transparent overlay PNG
+ * (video sizes from settings/concepts.yaml: 720×1280 / 720×900 / 720×720 —
+ * 720p is the delivery standard here, no upscaling), composite a transparent overlay PNG
  * (from render-overlay.mjs), optional trim, optional music, H.264 + AAC,
  * faststart. Also `--still` to grab a poster frame.
  *
@@ -29,7 +30,8 @@ if (argv.includes('--still')) {
   process.exit(0);
 }
 
-const fmt = concepts().formats[flag('--format', '9x16')];
+const fmtAll = concepts().formats[flag('--format', '9x16')];
+const fmt = fmtAll.video || fmtAll; // videos ship at 720p; statics are rendered at 1080 separately
 const overlay = flag('--overlay');
 const overlayFrom = Number(flag('--overlay-from', 0));
 const trim = flag('--trim');
@@ -49,7 +51,7 @@ if (music) args.push('-i', music);
 const filters = [`[0:v]scale=${fmt.w}:${fmt.h}:force_original_aspect_ratio=increase,crop=${fmt.w}:${fmt.h},fps=30,setsar=1[v0]`];
 let v = '[v0]';
 if (overlay) {
-  filters.push(`[1:v]format=rgba[ov]`);
+  filters.push(`[1:v]scale=${fmt.w}:${fmt.h}:flags=lanczos,format=rgba[ov]`); // overlays are rendered at 1080 and scaled down
   filters.push(`${v}[ov]overlay=0:0:enable='gte(t,${overlayFrom})'[v1]`);
   v = '[v1]';
 }

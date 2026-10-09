@@ -60,7 +60,7 @@ has a `@fileoverview` stating what it reads and whether it writes. `node --test 
 
 - Video: `POST /api/v1/videos` → poll `GET /api/v1/videos/{id}` → `GET …/content?index=0`.
   Seedance 2.5: 4–30 s, 480p/720p, sizes 720×1280 (9:16), 960×960 (1:1), 834×1112 (3:4); **no 4:5,
-  no 1080p** — finish upscales to 1080×1920. First frame via `frame_images[].frame_type=first_frame`;
+  no 1080p** — video is delivered at 720×1280 as generated (decision 2026-10-09: 720p is enough for ads; no upscaling). First frame via `frame_images[].frame_type=first_frame`;
   `input_references` is ignored when `frame_images` is set. ≈ $0.23/s at 720p (8 s ≈ $1.8), ≈ $0.11/s at 480p.
 - Images: `POST /api/v1/images` with `input_references` for edits, `aspect_ratio`, `resolution`.
   `google/gemini-2.5-flash-image` is retired (2026-10-02); use `gemini-3.1-flash-image` (~$0.07) or

@@ -51,7 +51,7 @@ function validate() {
     if (p && !C.concepts[p.concept]) why.push(`unknown concept ${p.concept}`);
     if (p && !C.hooks[p.hook]) why.push(`unknown hook ${p.hook}`);
     if (existsSync(c.path)) {
-      const want = C.formats[c.format];
+      const want = C.formats[c.format] && (c.type === 'vd' ? (C.formats[c.format].video || C.formats[c.format]) : C.formats[c.format]);
       const pr = spawnSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height,duration', '-of', 'csv=p=0', c.path], {encoding: 'utf8'}).stdout.trim().split(',');
       const [w, h, dur] = pr.map(Number);
       if (want && (w !== want.w || h !== want.h)) why.push(`is ${w}×${h}, ${c.format} needs ${want.w}×${want.h}`);

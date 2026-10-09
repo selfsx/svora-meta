@@ -14,7 +14,7 @@ assets, one generation per source, the rest overlays:
 | Nano Banana still (clean/extend) | 0–1 | ~$0.07 |
 | Seedance 2.5 clip, 8 s, 720×1280 | 1 | ~$1.8 |
 | overlays: 2 hooks × 4 languages | 8 | free |
-| finishing to 9:16 (+ 4:5 / 1:1 crops of statics) | 8–12 | free |
+| finishing: video stays 720×1280 (9:16 Reels, the primary format; decision 2026-10-09), statics 1080 (+ 4:5 / 1:1 crops) | 8–12 | free |
 
 60 sources → ~60 clips (~$110) + ~60 statics (~$5) → ~500 creatives. Cap live ads at ~15 per concept
 and promote winners; the rest is a bench.
