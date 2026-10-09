@@ -210,3 +210,18 @@
   ad set type cr15; both resolve with `launch.mjs spec`. Instagram: @svora.nails (17841402079737028) is in the Business
   with the System User assigned (screenshot), but the token still cannot read it (no instagram_basic; ad-account
   connection unverified) — the build will tell: creative creation carries instagram_user_id.
+
+## 2026-10-09 — budgets, CPA expectation, 001 + 002 BUILT PAUSED
+
+- Operator: "100/75 seems small… suggest, then build 001, 002 in paused state. I'll then check and verify." Treated
+  as the build GO for both specs (activation still needs its own GO each).
+- `campaigns/reports/2026-10-09-budget-cpa.md`: from the account's own March data (CPM 23–32 PLN, 3.80 PLN per
+  landing-page view, 1 in 8 visitors started a booking) and Fresha's organic funnel (6.8 % IC → booking) the central
+  expectation is ≈ 29 PLN per InitiateCheckout and ≈ 240 PLN per first booking in week 1 (80 optimistic, 750
+  pessimistic); the marketplaces price a new client at 40–85 PLN; proposed target ≤ 120 PLN per first booking.
+  Learning floor ≈ 50 IC/week → budgets raised to **150 (001) / 100 (002) PLN/day**, 7,000 PLN for 4 weeks.
+- Build: Meta refused `age_max` under Advantage+ audience ("add a lower maximum age as a suggestion instead") →
+  `launch.mjs` drops age_max for `advantage: true` audiences (the ad sets read 18–65; Meta also adds
+  `frequently_in` to location_types). Instagram identity 17841402079737028 accepted on every creative.
+- Built PAUSED: 001 campaign 120254683053800007 / ad set 120254683057860007 / 15 ads; 002 campaign
+  120254683096960007 / ad set 120254683097140007 / 15 ads. `launch.mjs verify` matches both specs. Nothing active.

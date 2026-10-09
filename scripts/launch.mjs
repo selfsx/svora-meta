@@ -156,7 +156,9 @@ function resolveCopy(concept, lang, ref, fail, n) {
 }
 
 function buildTargeting(geo, lang, aud, placements, as) {
-  const t = {age_min: aud.age[0], age_max: aud.age[1]};
+  // Advantage+ audience takes only a minimum age as a hard constraint; Meta refuses age_max there
+  // (API error 100 "You can add a lower maximum age as a suggestion instead", seen on the first build 2026-10-09).
+  const t = aud.advantage ? {age_min: aud.age[0]} : {age_min: aud.age[0], age_max: aud.age[1]};
   if (aud.genders && aud.genders.length) t.genders = aud.genders;
   if (geo.type === 'radius') {
     t.geo_locations = {custom_locations: [{latitude: geo.lat, longitude: geo.lng, radius: geo.km, distance_unit: 'kilometer'}], location_types: A.location_types};

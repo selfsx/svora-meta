@@ -20,7 +20,7 @@ languages:
 
 # Audience presets. `advantage: true` lets Meta expand beyond the inputs (age/gender/interests become signals).
 audiences:
-  broad:       { age: [18, 54], genders: [2], advantage: true,  interests: [],                         label: "women 18–54, Advantage+ audience" }
+  broad:       { age: [18, 54], genders: [2], advantage: true,  interests: [],                         label: "women 18+ (54 is the intent; Advantage+ ignores a hard max age), Advantage+ audience" }
   broad-all:   { age: [18, 54], genders: [],  advantage: true,  interests: [],                         label: "all genders 18–54, Advantage+" }
   int-nails:   { age: [18, 54], genders: [2], advantage: true,  interests: [6003207735213, 6003393893179], label: "interest signals: Nail art, Manicure (ids re-resolved by verify.mjs)" }
   retarget-30: { age: [18, 54], genders: [],  advantage: false, custom_audiences: [site-visitors-30d, ig-engagers-90d], label: "warm — site visitors 30d + IG engagers 90d (custom audiences created in Ads Manager, ids in .env or verify output)" }

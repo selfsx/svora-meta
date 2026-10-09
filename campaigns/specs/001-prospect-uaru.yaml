@@ -12,7 +12,7 @@ date: 2026-10-09          # approval day (operator: "we launch today", 2026-10-0
 destination: site-ua
 adsets:
   - audience: broad
-    daily_pln: 100
+    daily_pln: 150   # 2026-10-09 budget analysis (campaigns/reports/2026-10-09-budget-cpa.md §5); was 100
     creatives:
       # 15 ads, operator verdict 2026-10-09 (scratch/review-2026-10-09-d.json): 9 of the first 10 (before-after rejected) + 6 from the owner's own footage (wave C). 8 video + 7 static, 9:16, SVME20 offer on every one.
       - "crazy_reveal_DbT_EsKDTDo_vd_n085_v2_9x16_ua"
