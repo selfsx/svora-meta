@@ -13,7 +13,15 @@ adsets:
   - audience: broad
     daily_pln: 75
     creatives:
-      - "crazy_*_pl"
-      - "art_*_pl"
-      - "classic_*_pl"
+      # 10 ads = 9 distinct angles + a second hero in a different visual world (nude static vs dark art video), 6 video + 4 static, 9:16. Picked 2026-10-09.
+      - "art_art-closeup_Ddv-7k6DQJg_vd_n090_v1_9x16_pl"
+      - "mix_social_DbMR6_ttcnF_vd_n110_v1_9x16_pl"
+      - "classic_process_DZKRjmJNiHR_vd_n098_v1_9x16_pl"
+      - "classic_before-after_C3Sy533oeEN_vd_n118_v1_9x16_pl"
+      - "crazy_price_DZTCpxHDUJE_vd_n126_v1_9x16_pl"
+      - "brand_pov_DdnxYOft2B2_vd_n106_v1_9x16_pl"
+      - "brand_social_DZqf93TDGOU_st_n116_v1_9x16_pl"
+      - "brand_social_gen_st_n109_v1_9x16_pl"
+      - "classic_reveal_DPZE72BjF50_st_n136_v1_9x16_pl"
+      - "classic_found_C4dzm1rLo84_st_n100_v1_9x16_pl"
     copy: { headline: h01, primary: p01, description: d01 }   # copy/mix/pl.yaml

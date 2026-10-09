@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * @fileoverview The operator's review loop for creatives.
- *   node scripts/review.mjs build [--status draft] [--batch x]   → creatives/_work/review/index.html (local page:
+ *   node scripts/review.mjs build [--status draft|all] [--batch x] [--pick names.txt] [--out first20.html]   → creatives/_work/review/index.html (local page:
  *        one card per MASTER with language/format switches, sound on, 👍 / 👎 + a note that covers all its
  *        localisations; filters by angle/type/batch; "Export" copies a JSON of verdicts expanded to every file)
  *   node scripts/review.mjs apply <verdicts.json>                 → status approved|rejected + notes in the manifests
@@ -24,10 +24,13 @@ if (cmd === 'build') {
   let rows = allCreatives();
   if (flag('--status', 'draft') !== 'all') rows = rows.filter((c) => c.status === flag('--status', 'draft'));
   if (flag('--batch')) rows = rows.filter((c) => c.batch === flag('--batch'));
+  // --pick <file>: one creative name per line (a campaign's ad list) → only those, in that order, one card each
+  const pickList = flag('--pick') ? readFileSync(flag('--pick'), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')) : null;
+  if (pickList) rows = pickList.map((n) => rows.find((c) => c.name === n)).filter(Boolean);
   const dir = rel('creatives', '_work', 'review');
   mkdirSync(dir, {recursive: true});
   // One card per master: all languages and formats of the same job (b03) or of the same source+angle+hook+type.
-  const masterKey = (c) => [c.source, c.angle || '-', c.concept, c.type].join('|');  // across batches: a ua hero in b01 and its pl/ru/en twins in b03 are one master
+  const masterKey = (c) => pickList ? c.name : [c.source, c.angle || '-', c.concept, c.type].join('|');  // across batches: a ua hero in b01 and its pl/ru/en twins in b03 are one master
   const hasAudio = (c) => c.type !== 'vd' ? null : spawnSync('ffprobe', ['-v', 'error', '-select_streams', 'a:0', '-show_entries', 'stream=codec_name', '-of', 'csv=p=0', c.path], {encoding: 'utf8'}).stdout.trim().length > 0;
   const groups = {};
   for (const c of rows) (groups[masterKey(c)] ||= []).push(c);
@@ -59,7 +62,7 @@ textarea{width:100%;box-sizing:border-box;min-height:64px;border-radius:8px;bord
 #clear{background:#444;color:#f7f1eb;border:0;border-radius:8px;padding:8px 12px;cursor:pointer}
 #out{width:100%;height:90px;background:#111;color:#ccc;border:1px solid #444;display:none;margin-top:8px}
 </style>
-<h1>SVORA creative review — ${data.length} masters · ${rows.length} files (${flag('--status', 'draft')})</h1>
+<h1>SVORA creative review — ${pickList ? `${rows.length} ads for ${path.basename(flag('--pick'))}` : `${data.length} masters · ${rows.length} files (${flag('--status', 'draft')})`}</h1>
 <div class="bar">
   <button id="export">Export verdicts (copies JSON)</button><button id="clear" title="forget every mark and note on this page">Clear all</button><span id="count"></span>
   <label>angle <select id="f-angle"><option value="">all</option>${[...new Set(data.map((d) => d.angle))].sort().map((a) => `<option>${a}</option>`).join('')}</select></label>
@@ -120,7 +123,7 @@ document.getElementById('export').onclick = async () => {
 document.getElementById('clear').onclick = () => { if (!confirm('Clear every mark and note on this page?')) return; V = {}; save(); for (const g of DATA) g.el.querySelector('textarea').value = ''; paint(); };
 paint();
 </script>`;
-  const out = path.join(dir, 'index.html');
+  const out = path.join(dir, flag('--out', 'index.html'));
   writeFileSync(out, html);
   console.log(`${data.length} masters / ${rows.length} files → ${out}\nopen: ${pathToFileURL(out).href}`);
 } else if (cmd === 'apply') {
