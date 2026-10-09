@@ -8,12 +8,14 @@
  *
  *   node scripts/video-finish.mjs --in clip.mp4 --out creatives/<batch>/<name>.mp4 [--format 9x16]
  *        [--overlay overlay.png] [--overlay-from 0.6] [--trim 0:8] [--music brand/music/x.mp3] [--music-gain 0.8]
- *        [--mute] [--loop-to 8] [--pad blur] [--no-loudnorm]
+ *        [--mute] [--loop-to 8] [--pad blur] [--no-loudnorm] [--cuts 0:13.5,40.5:50.3] [--subs x.ass]
  *   node scripts/video-finish.mjs --still --in clip.mp4 --out poster.jpg [--at 1.5]
  * Audio: the output is loudness-normalised to -14 LUFS (Reels level) unless --no-loudnorm. --music lays a
  * bed under the clip's own audio (ducked to 35%) or alone when the clip is silent/--mute; the bed fades
  * out over the last second. --pad blur fits a non-9:16 source whole over a blurred, dimmed copy of itself
  * (MAAG tuning: σ28, dim 18%, foreground 92% wide) instead of cover-cropping.
+ * --cuts keeps several segments of the source (seconds) and joins them (hard cuts); --subs burns an .ass
+ * caption file (from subs.mjs) with the brand fonts. Both run before the overlay.
  * Meta limits honoured: ≤ 4 GB, H.264, yuv420p, 30 fps, AAC 128 kbps, ≤ 60 s for Reels recommended.
  */
 
@@ -45,6 +47,9 @@ const musicGain = Number(flag('--music-gain', 0.8));
 const mute = argv.includes('--mute');
 const loopTo = flag('--loop-to');
 const pad = flag('--pad');
+const cuts = flag('--cuts') ? flag('--cuts').split(',').map((c) => c.split(':').map(Number)) : null;
+const subs = flag('--subs');
+if (subs && !existsSync(subs)) { console.error(`missing subs ${subs}`); process.exit(2); }
 const loudnorm = !argv.includes('--no-loudnorm');
 if (music && !existsSync(music)) { console.error(`missing music ${music}`); process.exit(2); }
 
@@ -58,16 +63,33 @@ args.push('-i', input);
 if (overlay) args.push('-i', overlay);
 if (music) args.push('-i', music);
 const filters = [];
+const useClipAudio = hasAudio && !mute;
+let src = '[0:v]', asrc = '[0:a]';
+if (cuts) {
+  // trim each segment (video + audio), then concat
+  const parts = [];
+  cuts.forEach(([a, b], i) => {
+    filters.push(`[0:v]trim=${a}:${b},setpts=PTS-STARTPTS[cv${i}]`);
+    if (useClipAudio) filters.push(`[0:a]atrim=${a}:${b},asetpts=PTS-STARTPTS[ca${i}]`);
+    parts.push(useClipAudio ? `[cv${i}][ca${i}]` : `[cv${i}]`);
+  });
+  filters.push(`${parts.join('')}concat=n=${cuts.length}:v=1:a=${useClipAudio ? 1 : 0}[cutv]${useClipAudio ? '[cuta]' : ''}`);
+  src = '[cutv]'; asrc = '[cuta]';
+}
 if (pad === 'blur') {
   const fgW = Math.round(fmt.w * 0.92 / 2) * 2;
-  filters.push(`[0:v]split=2[bgsrc][fgsrc]`);
+  filters.push(`${src}split=2[bgsrc][fgsrc]`);
   filters.push(`[bgsrc]scale=${fmt.w}:${fmt.h}:force_original_aspect_ratio=increase,crop=${fmt.w}:${fmt.h},gblur=sigma=28,colorlevels=rimax=0.82:gimax=0.82:bimax=0.82[bg]`);
   filters.push(`[fgsrc]scale=${fgW}:-2[fg]`);
   filters.push(`[bg][fg]overlay=(W-w)/2:(H-h)/2,fps=30,setsar=1[v0]`);
 } else {
-  filters.push(`[0:v]scale=${fmt.w}:${fmt.h}:force_original_aspect_ratio=increase,crop=${fmt.w}:${fmt.h},fps=30,setsar=1[v0]`);
+  filters.push(`${src}scale=${fmt.w}:${fmt.h}:force_original_aspect_ratio=increase,crop=${fmt.w}:${fmt.h},fps=30,setsar=1[v0]`);
 }
 let v = '[v0]';
+if (subs) {
+  filters.push(`${v}subtitles=${subs.replace(/([:\\'])/g, '\\$1')}:fontsdir=brand/fonts/roboto-condensed[vs]`);
+  v = '[vs]';
+}
 if (overlay) {
   filters.push(`[1:v]scale=${fmt.w}:${fmt.h}:flags=lanczos,format=rgba[ov]`); // overlays are rendered at 1080 and scaled down
   filters.push(`${v}[ov]overlay=0:0:enable='gte(t,${overlayFrom})'[v1]`);
@@ -76,21 +98,20 @@ if (overlay) {
 filters.push(`${v}format=yuv420p[vout]`);
 // Audio graph: clip audio (unless --mute) + optional music bed, then loudness normalisation.
 const dur = Number(spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', input], {encoding: 'utf8'}).stdout) || 8;
-const outDur = loopTo ? Number(loopTo) : trim ? Number(trim.split(':')[1]) - Number(trim.split(':')[0]) : dur;
-const useClipAudio = hasAudio && !mute;
+const outDur = loopTo ? Number(loopTo) : trim ? Number(trim.split(':')[1]) - Number(trim.split(':')[0]) : cuts ? cuts.reduce((t, [a, b]) => t + (b - a), 0) : dur;
 const musicIdx = overlay ? 2 : 1;
 const norm = loudnorm ? ',loudnorm=I=-14:TP=-1.5:LRA=11' : '';
 let aout = null;
 if (music && useClipAudio) {
   filters.push(`[${musicIdx}:a]atrim=0:${outDur},asetpts=PTS-STARTPTS,volume=${musicGain},afade=t=out:st=${Math.max(0, outDur - 1)}:d=1[bed]`);
-  filters.push(`[0:a]volume=0.35[clip]`);
+  filters.push(`${asrc}volume=0.35[clip]`);
   filters.push(`[clip][bed]amix=inputs=2:duration=first:dropout_transition=0${norm}[aout]`);
   aout = '[aout]';
 } else if (music) {
   filters.push(`[${musicIdx}:a]atrim=0:${outDur},asetpts=PTS-STARTPTS,volume=${musicGain},afade=t=out:st=${Math.max(0, outDur - 1)}:d=1${norm}[aout]`);
   aout = '[aout]';
-} else if (useClipAudio && loudnorm) {
-  filters.push(`[0:a]loudnorm=I=-14:TP=-1.5:LRA=11[aout]`);
+} else if (useClipAudio && (loudnorm || cuts)) {
+  filters.push(`${asrc}${loudnorm ? 'loudnorm=I=-14:TP=-1.5:LRA=11' : 'anull'}[aout]`);
   aout = '[aout]';
 }
 args.push('-filter_complex', filters.join(';'), '-map', '[vout]');
@@ -103,7 +124,7 @@ if (aout || useClipAudio) args.push('-c:a', 'aac', '-b:a', '128k', '-ar', '48000
 else args.push('-an');
 args.push(out);
 run(args);
-writeFileSync(`${out}.json`, JSON.stringify({step: 'finish', input, overlay: overlay || null, overlay_from: overlayFrom, trim: trim || null, music: music || null, music_gain: music ? musicGain : null, mute, loop_to: loopTo || null, pad: pad || null, loudnorm, format: flag('--format', '9x16'), size: `${fmt.w}x${fmt.h}`, created: new Date().toISOString()}, null, 2));
+writeFileSync(`${out}.json`, JSON.stringify({step: 'finish', input, overlay: overlay || null, overlay_from: overlayFrom, trim: trim || null, cuts: cuts || null, subs: subs || null, music: music || null, music_gain: music ? musicGain : null, mute, loop_to: loopTo || null, pad: pad || null, loudnorm, format: flag('--format', '9x16'), size: `${fmt.w}x${fmt.h}`, created: new Date().toISOString()}, null, 2));
 const info = spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration,size', '-of', 'csv=p=0', out], {encoding: 'utf8'}).stdout.trim();
 console.log(`${out} · ${fmt.w}×${fmt.h} · duration,size ${info}`);
 

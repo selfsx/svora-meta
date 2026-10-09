@@ -33,6 +33,7 @@ overlays:
   o06: "<b>PIĘĆ</b> DZIEWCZYN. JEDEN SALON"
   o07: "JANA KAZIMIERZA <b>25B</b>"
   o08: "REZERWUJ <b>ONLINE</b> W MINUTĘ"
+  o09: "Weszłaś. Usiadłaś. <b>Odetchnęłaś</b>."
 ctas:
   c01: "Zarezerwuj online"
   c02: "Poznaj zespół"

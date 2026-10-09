@@ -33,6 +33,7 @@ overlays:
   o06: "HYBRYDA <b>190 ZŁ</b>"
   o07: "<b>WOLA</b> · JANA KAZIMIERZA 25B"
   o08: "POKAŻ <b>SLAJD</b>. ZROBIMY"
+  o09: "Którą wybierasz: <b>1, 2 czy 3</b>?"
 ctas:
   c01: "Zarezerwuj online"
   c02: "Zobacz więcej"

@@ -46,3 +46,17 @@
   studio/pick cuts from archive reels, free), not more heroes.
 - Facts recorded: Seedance audio ≈ −27 dB mean before normalisation; 2 of 4 clips had audio dropped by the
   copyright filter — a music bed is required for consistent sound.
+
+## 2026-10-09 — operator "go": wave-1 angles batch (2026-10-b02-angles)
+
+- 15 drafts, $0 generation (transcripts ≈ $0.05 total): founder ×2 (ua, captions burned from the transcript),
+  meme ×1 (en, as-is), studio ×4 (ua/pl + brows), process ×4 (ua/pl × 2 sources), pick statics ×4 (ua/pl × 4:5/9:16).
+  Portfolio by angle now: hero 11 · price 1 · founder 2 · meme 1 · studio 4 · process 4 · pick 4.
+- New tools: `transcribe.mjs` (OpenRouter audio input, Gemini 2.5 Flash), `subs.mjs` (.ass captions, brand font),
+  `video-finish --cuts/--subs`, `static-pick` template. Shell gotcha recorded: zsh does not word-split `$p` — use `${=p}`.
+- Decisions taken without asking: all Instagram-library-music reels muted (licence does not cover ads); the course-promo
+  reel DJ3rTq8NxFW skipped (heavy baked typography); the "free brows" sign segment of DdljeKAtree skipped (unconfirmed offer).
+- Not done on purpose: no more hero clips from the remaining cap — the research caps heroes at 2 per ad set and we hold 11.
+  Spend the cap on a Seedance before/after or on nothing until the owner's footage arrives.
+- Open: the founder's captions drift ≈ 1 s vs speech on DdJn2Wrsad- (Gemini timestamps); acceptable for review, fix by
+  nudging segment times if the operator wants it tighter. No music beds yet (`brand/music/`).

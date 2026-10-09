@@ -54,11 +54,15 @@ const vars = {
   // static-blur-pad: foreground width / vertical position (MAAG tuning for 9:16; smaller + higher for 4:5 so the copy fits under)
   fg_w: v916 ? '92%' : '70%', fg_top: v916 ? '15%' : '56px', fg_shift: '-50%, 0',  // top of the safe zone; copy goes under/over per `place`
   photo_pos: 'center',
+  // static-pick: the three-tile row (between the hook group and the CTA group)
+  pick_top: v916 ? '38%' : '30%', pick_h: v916 ? '16%' : '46%',
   ...o.vars,
 };
+for (const k of ['image2', 'image3']) if (vars[k] && !vars[k].startsWith('file:')) vars[k] = pathToFileURL(path.resolve(vars[k])).href;
 if (vars.price && !vars.meta) vars.meta = vars.price;  // older callers passed --var price=
 vars.badge_display = vars.badge ? 'inline-block' : 'none';
 vars.sub_display = vars.sub ? 'inline-block' : 'none';
+vars.hook_display = vars.hook ? 'block' : 'none';
 vars.meta_display = vars.meta ? 'inline-block' : 'none';
 mkdirSync(path.dirname(o.out), {recursive: true});
 // The shared stylesheet is itself a template: substitute, write beside the page, link it.

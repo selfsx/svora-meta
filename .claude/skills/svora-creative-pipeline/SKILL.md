@@ -62,6 +62,22 @@ copy of itself (MAAG Snap tuning) — foreground anchored at the top of the safe
 Non-9:16 *videos*: `video-finish.mjs --pad blur` does the same fit.
 Reels from Instagram (already video): skip 1–2; `video-finish.mjs --in <code>_01.mp4 --trim 0:8 …`.
 
+## Re-cutting the owner's reels (founder · studio · process · meme angles — free)
+
+```bash
+node scripts/transcribe.mjs sources/instagram/raw/<code>/<code>_01.mp4          # timed UA/RU/PL/EN transcript (≈ $0.005/min), prints the quotable lines
+node scripts/describe-image.mjs sources/instagram/raw/<code>/<code>_01.mp4 --at 5   # place/tone/baked_text for the frame
+node scripts/subs.mjs --transcript <code>_01.mp4.transcript.json --cuts 0:13.5,40.5:50.3 --out x.ass   # captions remapped to the cut
+node scripts/video-finish.mjs --in <code>_01.mp4 --cuts 0:13.5,40.5:50.3 --subs x.ass --overlay ov.png --overlay-from 2 --out x.mp4
+```
+
+- Pick 10–25 s: one claim, one quotable line; cut on pauses from the transcript. Transcript timing can drift ≈ 1 s —
+  check a frame where a caption is on screen.
+- Talking heads: `--var group_top=15% --var hook_size=92` so the hook sits on the logo line and off the face; captions at 60%.
+- Reels with Instagram library music must be **`--mute`** (that licence does not cover ads); add a bed from `brand/music/` when one exists.
+- Reels with baked captions: keep ours above theirs (they sit in the bottom UI zone) or use the clip as-is (the EN meme).
+- Studio reels about other services (brows, makeup) are still SVORA footage — register them under that concept, not `brand`.
+
 ## Rules that save money and rejections
 
 - One generation per source; languages and hooks are overlays. 60 clips ≈ $110 at 720p; test prompts at 480p.

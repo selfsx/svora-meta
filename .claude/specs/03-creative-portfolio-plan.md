@@ -30,14 +30,15 @@ by **angle** (`settings/concepts.yaml → angles`), not by concept × hook × la
 | --- | --- | --- | --- | --- |
 | 1 | hero | 2 per ad set (max) | A-grade close-ups — done (11 drafts, keep the best 2 per language) | ready |
 | 2 | before-after | 1 | needs a "before" photo or mid-process still from the owner | blocked: footage |
-| 3 | process | 1 | studio-life reels in the archive (filing/painting cuts) — re-cut | can do |
-| 4 | founder | 1–2 | the founder's UA talking-head reels (3.6k-like humour reels) — re-cut, subtitles | can do (UA only) |
-| 5 | studio | 1 | studio/interior reels in the archive — re-cut | can do |
+| 3 | process | 1 | DZKRjmJNiHR, C3Sy533oeEN re-cut (ua + pl) | done 2026-10-09 (b02) |
+| 4 | founder | 1–2 | DdJn2Wrsad- (price objection), DcTIH-QNseO (5 masters) re-cut with captions | done 2026-10-09 (b02), ua only |
+| 5 | studio | 1 | DdljeKAtree, DdnxYOft2B2 (ua + pl), Ddvm5oBNL8_ (brows) re-cut, muted | done 2026-10-09 (b02) |
 | 6 | ugc | 1 | 26 tagged client posts — needs written permission | blocked: permission |
 | 7 | review | 1 | real reviews (Fresha/Google) as text cards | blocked: owner supplies reviews |
 | 8 | price | 1 | `settings/brand.yaml` prices on a photo background — done (1 draft) | ready |
-| 9 | pick | 1 | three A-grade sets side by side, question hook | can do |
+| 9 | pick | 1 | `static-pick` template, 4:5 + 9:16, ua + pl | done 2026-10-09 (b02) |
 | 10 | location | 1 | Wola street / entrance footage | blocked: footage |
+| 11 | meme | 1 | DdmSmmSNy4f (EN, baked captions) as-is + CTA | done 2026-10-09 (b02), en only |
 
 Minimum for a launchable `uaru` ad set: angles 1, 3, 4, 5, 8, 9 (six) — all possible from the archive now.
 Angles 2, 6, 7, 10 need owner input (listed in `04-backlog.md`). PL needs its own founder/process cuts with

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{typeCss}}">
+<style>
+  /* "Which would you pick?" — three sets side by side, numbered, question hook on top, CTA below.
+     Vars: image, image2, image3 (file paths via --image, --var image2=, --var image3=), hook, cta, meta. */
+  html, body { margin: 0; width: {{w}}px; height: {{h}}px; background: {{color_black}}; overflow: hidden; }
+  .stage { position: relative; width: {{w}}px; height: {{h}}px; background: {{color_cream}}; }
+  .row { position: absolute; left: 40px; right: 40px; top: {{pick_top}}; height: {{pick_h}}; display: flex; gap: 20px; }
+  .tile { flex: 1; position: relative; border-radius: 22px; overflow: hidden; background: #ddd center / cover no-repeat; box-shadow: 0 14px 30px rgba(0,0,0,.25); }
+  .tile .n { position: absolute; left: 18px; top: 18px; width: 64px; height: 64px; border-radius: 50%; background: {{color_orange}}; color: {{color_black}}; font-weight: 800; font-size: 40px; display: flex; align-items: center; justify-content: center; }
+  .group { align-items: center; text-align: center; }
+  .stage .hook { background: {{color_black}}; }
+  .logo { right: auto; left: 50%; transform: translateX(-50%); filter: none; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <img class="logo" src="{{logosDir}}/black.png" alt="">
+  <div class="group top" style="right:56px">
+    <div class="hook-wrap" style="display:{{hook_display}}"><span class="hook">{{hook}}</span></div>
+  </div>
+  <div class="row">
+    <div class="tile" style="background-image:url('{{image}}')"><div class="n">1</div></div>
+    <div class="tile" style="background-image:url('{{image2}}')"><div class="n">2</div></div>
+    <div class="tile" style="background-image:url('{{image3}}')"><div class="n">3</div></div>
+  </div>
+  <div class="group bottom" style="right:56px">
+    <div class="cta">{{cta}}</div>
+    <div class="meta" style="display:{{meta_display}}">{{meta}}</div>
+  </div>
+</div>
+</body>
+</html>

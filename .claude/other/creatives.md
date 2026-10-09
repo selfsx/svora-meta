@@ -53,6 +53,10 @@ source photo/reel ──(gen-image: clean bg / extend to 9:16)──► still �
 7. **Review**: the creative-director agent (or the operator) sets `status=approved|rejected`. Only
    approved creatives can be launched.
 
+Re-cuts of the owner's own reels skip steps 2–3 entirely: `transcribe.mjs` (timed transcript) → `subs.mjs` (captions for
+the chosen cut) → `video-finish.mjs --cuts a:b,c:d --subs x.ass --overlay …`. This is how the founder, studio, process and
+meme angles are made; it costs nothing but the transcript (≈ $0.005/min).
+
 Every variant is cheap after step 3: one clip × 4 languages × 2 hooks = 8 creatives for one video job.
 
 ## Manifest schema — `creatives/<batch>/manifest.json`
