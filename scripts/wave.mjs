@@ -13,7 +13,7 @@
  *     - id: V1   type: video   angle: hero   concept: crazy   hook: reveal   source: DbT_EsKDTDo
  *       clip: creatives/_work/w1/DbT_EsKDTDo-clip.mp4   [cuts: "0:13.5,40.5:50.3"] [mute: true] [overlay_from: 0.3]
  *       [subs: {transcript: x.json, y: 0.6}]  [endcard: {template: static-hero, image: x.jpg, seconds: 1.5}]
- *       vars: { place: top, tone: dark }                   # any render-overlay var
+ *       vars: { place: top, tone: dark }                   # any render-overlay var; vars_4x5 / vars_9x16 override per format
  *       langs: { ua: {hook: "@o01", sub: "…"}, pl: {…} }     # "@o01"/"@c01" = copy/<concept>/<lang>.yaml ids
  *     - id: S8   type: static  template: static-card  formats: [4x5, 9x16]  image: … vars: {…} langs: {…}
  * Existing (job, lang, format) entries are skipped unless --redo (then v+1). Everything lands as `draft`.
@@ -91,7 +91,7 @@ function renderArgs(job, lang, format, text, outPng, transparent) {
   const a = ['scripts/render-overlay.mjs', '--template', job.template || 'overlay-hook-cta', '--format', format, '--out', outPng, '--var', `lang=${lang}`];
   if (transparent) a.push('--transparent');
   if (job.image) a.push('--image', job.image);
-  for (const [k, v] of Object.entries({...(job.vars || {}), ...text})) a.push('--var', `${k}=${v}`);
+  for (const [k, v] of Object.entries({...(job.vars || {}), ...(job[`vars_${format}`] || {}), ...text})) a.push('--var', `${k}=${v}`);
   return a;
 }
 

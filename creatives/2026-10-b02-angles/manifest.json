@@ -3,114 +3,6 @@
   "created": "2026-10-09T11:59:22.620Z",
   "creatives": [
     {
-      "name": "brand_price_DdJn2Wrsad-_vd_n001_v1_9x16_ua",
-      "file": "brand_price_DdJn2Wrsad-_vd_n001_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "brand",
-      "hook": "price",
-      "hook_text": "«У вас страшно дорого»",
-      "angle": "founder",
-      "source": "DdJn2Wrsad-",
-      "v": 1,
-      "look": {
-        "place": "bottom",
-        "tone": "light",
-        "avoid": "face, cat toy, hand with nails",
-        "baked_text": true,
-        "risks": "Baked Cyrillic text overlay ('на наш') visible in image - may confuse branding or look unprofessional; face visible with piercings may not align with all brand aesthetics; focus is on toy not nails"
-      },
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DdJn2Wrsad-/DdJn2Wrsad-_01.mp4",
-          "overlay": "creatives/_work/re/ov-price.png",
-          "overlay_from": 2.4,
-          "trim": null,
-          "cuts": [
-            [
-              0,
-              13.5
-            ],
-            [
-              40.5,
-              50.3
-            ]
-          ],
-          "subs": "creatives/_work/re/price.ass",
-          "music": null,
-          "music_gain": null,
-          "mute": false,
-          "loop_to": null,
-          "pad": null,
-          "loudnorm": true,
-          "format": "9x16",
-          "size": "720x1280",
-          "created": "2026-10-09T12:01:47.008Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T12:01:52.538Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_team_DcTIH-QNseO_vd_n002_v1_9x16_ua",
-      "file": "brand_team_DcTIH-QNseO_vd_n002_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "brand",
-      "hook": "team",
-      "hook_text": "5 майстрів. Один салон",
-      "angle": "founder",
-      "source": "DcTIH-QNseO",
-      "v": 1,
-      "look": {
-        "place": "bottom",
-        "tone": "light",
-        "avoid": "face, hand with phone showing nails, ivy plants",
-        "baked_text": false,
-        "risks": "none"
-      },
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DcTIH-QNseO/DcTIH-QNseO_01.mp4",
-          "overlay": "creatives/_work/re/ov-team.png",
-          "overlay_from": 0.5,
-          "trim": null,
-          "cuts": [
-            [
-              31.4,
-              45.3
-            ],
-            [
-              101.4,
-              104.7
-            ]
-          ],
-          "subs": "creatives/_work/re/team.ass",
-          "music": null,
-          "music_gain": null,
-          "mute": false,
-          "loop_to": null,
-          "pad": null,
-          "loudnorm": true,
-          "format": "9x16",
-          "size": "720x1280",
-          "created": "2026-10-09T12:01:50.309Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T12:01:52.578Z",
-      "notes": ""
-    },
-    {
       "name": "brand_pov_DdmSmmSNy4f_vd_n003_v1_9x16_en",
       "file": "brand_pov_DdmSmmSNy4f_vd_n003_v1_9x16_en.mp4",
       "type": "vd",
@@ -129,7 +21,7 @@
         "baked_text": true,
         "risks": "Baked-in text creates clutter and competes with ad copy; image is lifestyle/fashion focused rather than nail-focused; no nails clearly visible; existing message may confuse ad intent; not professional nail studio imagery"
       },
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -158,295 +50,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T12:01:52.617Z",
-      "notes": ""
-    },
-    {
-      "name": "brows_team_Ddvm5oBNL8__vd_n004_v1_9x16_ua",
-      "file": "brows_team_Ddvm5oBNL8__vd_n004_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "brows",
-      "hook": "team",
-      "hook_text": "Ламінування брів 70 zł",
-      "angle": "studio",
-      "source": "Ddvm5oBNL8_",
-      "v": 1,
-      "look": {
-        "place": "bottom",
-        "tone": "mixed",
-        "avoid": "the face, eyes, and existing Cyrillic text overlay",
-        "baked_text": true,
-        "risks": "This image shows a face/skincare treatment, NOT nails or nail services. Completely wrong content for a nail studio ad. The baked-in Cyrillic text cannot be removed. Image shows close-up facial features which may trigger Meta's sensitive content filters. Unprofessional for nail studio branding - no nails visible whatsoever."
-      },
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/Ddvm5oBNL8_/Ddvm5oBNL8__01.mp4",
-          "overlay": "creatives/_work/re/ov-brows.png",
-          "overlay_from": 0.5,
-          "trim": null,
-          "cuts": [
-            [
-              4,
-              14
-            ]
-          ],
-          "subs": null,
-          "music": null,
-          "music_gain": null,
-          "mute": true,
-          "loop_to": null,
-          "pad": null,
-          "loudnorm": true,
-          "format": "9x16",
-          "size": "720x1280",
-          "created": "2026-10-09T12:00:20.497Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T12:01:52.652Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_pov_DdljeKAtree_vd_n005_v1_9x16_ua",
-      "file": "brand_pov_DdljeKAtree_vd_n005_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "brand",
-      "hook": "pov",
-      "hook_text": "Кава, музика, свої люди",
-      "angle": "studio",
-      "source": "DdljeKAtree",
-      "v": 1,
-      "look": {
-        "place": "bottom",
-        "tone": "mixed",
-        "avoid": "face, mirror lights, hands applying makeup",
-        "baked_text": false,
-        "risks": "This image shows makeup application, not nail services - misaligned with nail studio branding; could confuse audience about business offering"
-      },
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DdljeKAtree/DdljeKAtree_01.mp4",
-          "overlay": "creatives/_work/re/ov-studio.png",
-          "overlay_from": 0.5,
-          "trim": null,
-          "cuts": [
-            [
-              6,
-              14
-            ]
-          ],
-          "subs": null,
-          "music": null,
-          "music_gain": null,
-          "mute": true,
-          "loop_to": null,
-          "pad": null,
-          "loudnorm": true,
-          "format": "9x16",
-          "size": "720x1280",
-          "created": "2026-10-09T12:00:21.882Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T12:01:52.689Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_pov_DdnxYOft2B2_vd_n006_v1_9x16_ua",
-      "file": "brand_pov_DdnxYOft2B2_vd_n006_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "brand",
-      "hook": "pov",
-      "hook_text": "Прийшла. Сіла. Видихнула.",
-      "angle": "studio",
-      "source": "DdnxYOft2B2",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DdnxYOft2B2/DdnxYOft2B2_01.mp4",
-          "overlay": "creatives/_work/re/ov-pov-ua.png",
-          "overlay_from": 0.5,
-          "trim": null,
-          "cuts": [
-            [
-              24,
-              40
-            ]
-          ],
-          "subs": null,
-          "music": null,
-          "music_gain": null,
-          "mute": true,
-          "loop_to": null,
-          "pad": null,
-          "loudnorm": true,
-          "format": "9x16",
-          "size": "720x1280",
-          "created": "2026-10-09T12:00:24.370Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T12:01:52.727Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_pov_DdnxYOft2B2_vd_n007_v1_9x16_pl",
-      "file": "brand_pov_DdnxYOft2B2_vd_n007_v1_9x16_pl.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "brand",
-      "hook": "pov",
-      "hook_text": "Weszłaś. Usiadłaś. Odetchnęłaś.",
-      "angle": "studio",
-      "source": "DdnxYOft2B2",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DdnxYOft2B2/DdnxYOft2B2_01.mp4",
-          "overlay": "creatives/_work/re/ov-pov-pl.png",
-          "overlay_from": 0.5,
-          "trim": null,
-          "cuts": [
-            [
-              24,
-              40
-            ]
-          ],
-          "subs": null,
-          "music": null,
-          "music_gain": null,
-          "mute": true,
-          "loop_to": null,
-          "pad": null,
-          "loudnorm": true,
-          "format": "9x16",
-          "size": "720x1280",
-          "created": "2026-10-09T12:00:26.919Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T12:01:52.766Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_process_DZKRjmJNiHR_vd_n008_v1_9x16_ua",
-      "file": "classic_process_DZKRjmJNiHR_vd_n008_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "classic",
-      "hook": "process",
-      "hook_text": "Кожен ніготь — вручну",
-      "angle": "process",
-      "source": "DZKRjmJNiHR",
-      "v": 1,
-      "look": {
-        "place": "bottom",
-        "tone": "mixed",
-        "avoid": "the nails being worked on, the brush application process, the fingers with black caps",
-        "baked_text": false,
-        "risks": "none"
-      },
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DZKRjmJNiHR/DZKRjmJNiHR_01.mp4",
-          "overlay": "creatives/_work/re/ov-proc1-ua.png",
-          "overlay_from": 0.5,
-          "trim": null,
-          "cuts": [
-            [
-              0,
-              11
-            ]
-          ],
-          "subs": null,
-          "music": null,
-          "music_gain": null,
-          "mute": true,
-          "loop_to": null,
-          "pad": null,
-          "loudnorm": true,
-          "format": "9x16",
-          "size": "720x1280",
-          "created": "2026-10-09T12:00:28.616Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T12:01:52.807Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_process_DZKRjmJNiHR_vd_n009_v1_9x16_pl",
-      "file": "classic_process_DZKRjmJNiHR_vd_n009_v1_9x16_pl.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "classic",
-      "hook": "process",
-      "hook_text": "Każdy paznokieć ręcznie",
-      "angle": "process",
-      "source": "DZKRjmJNiHR",
-      "v": 1,
-      "look": {
-        "place": "bottom",
-        "tone": "mixed",
-        "avoid": "the nails being worked on, the brush application process, the fingers with black caps",
-        "baked_text": false,
-        "risks": "none"
-      },
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DZKRjmJNiHR/DZKRjmJNiHR_01.mp4",
-          "overlay": "creatives/_work/re/ov-proc1-pl.png",
-          "overlay_from": 0.5,
-          "trim": null,
-          "cuts": [
-            [
-              0,
-              11
-            ]
-          ],
-          "subs": null,
-          "music": null,
-          "music_gain": null,
-          "mute": true,
-          "loop_to": null,
-          "pad": null,
-          "loudnorm": true,
-          "format": "9x16",
-          "size": "720x1280",
-          "created": "2026-10-09T12:00:30.314Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T12:01:52.844Z",
-      "notes": ""
+      "notes": "[review 2026-10-09] but do not know about angle, may be too weak for nail creative",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "but do not know about angle, may be too weak for nail creative"
+      }
     },
     {
       "name": "classic_process_C3Sy533oeEN_vd_n010_v1_9x16_pl",
@@ -561,12 +170,17 @@
       "source": "DV5ZDohDBx0",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [],
       "cost_usd": 0,
       "created": "2026-10-09T12:01:52.955Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "mix_social_DV5ZDohDBx0_st_n013_v1_9x16_ua",
@@ -581,12 +195,17 @@
       "source": "DV5ZDohDBx0",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [],
       "cost_usd": 0,
       "created": "2026-10-09T12:01:52.993Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "mix_social_DV5ZDohDBx0_st_n014_v1_4x5_pl",
@@ -601,12 +220,17 @@
       "source": "DV5ZDohDBx0",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [],
       "cost_usd": 0,
       "created": "2026-10-09T12:01:53.031Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "mix_social_DV5ZDohDBx0_st_n015_v1_9x16_pl",
@@ -621,13 +245,18 @@
       "source": "DV5ZDohDBx0",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [],
       "cost_usd": 0,
       "created": "2026-10-09T12:01:53.068Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     }
   ],
-  "updated": "2026-10-09T12:01:53.068Z"
+  "updated": "2026-10-09T13:38:52.361Z"
 }

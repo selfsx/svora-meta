@@ -49,13 +49,15 @@ const vars = {
   // Layout defaults per format (templates share creatives/templates/_type.css). 9:16 keeps everything
   // inside the Meta safe zone: logo at 15%, group `top` starts under it, group `bottom` ends above 35%.
   place: 'top', tone: 'dark',
-  hook_size: v916 ? 112 : 92, sub_size: v916 ? 46 : 40, cta_size: v916 ? 58 : 50, meta_size: v916 ? 36 : 32,
-  logo_top: v916 ? '15%' : '48px', group_top: v916 ? 'calc(15% + 120px)' : '160px', group_bottom: v916 ? '37%' : '72px',
+  // Sizes after the 2026-10-09 review ("text overlays hands too much"): hook ≈ 8.5% of the width, CTA alone at the bottom.
+  hook_size: v916 ? 92 : 78, sub_size: v916 ? 38 : 34, cta_size: v916 ? 48 : 42, meta_size: v916 ? 28 : 26,
+  logo_top: v916 ? '15%' : '48px', group_top: v916 ? 'calc(15% + 110px)' : '150px', group_bottom: v916 ? '37%' : '72px',
+  hook_bottom: v916 ? 'calc(37% + 150px)' : '220px',  // hook group when place=bottom: sits above the CTA group
   // static-blur-pad: foreground width / vertical position (MAAG tuning for 9:16; smaller + higher for 4:5 so the copy fits under)
   fg_w: v916 ? '92%' : '70%', fg_top: v916 ? '15%' : '56px', fg_shift: '-50%, 0',  // top of the safe zone; copy goes under/over per `place`
   photo_pos: 'center',
   // static-pick: the three-tile row (between the hook group and the CTA group)
-  pick_top: v916 ? '38%' : '30%', pick_h: v916 ? '16%' : '46%',
+  pick_top: v916 ? '38%' : '33%', pick_h: v916 ? '16%' : '40%',
   // static-card: text-led cards. bg=cream (default) or black; the group sits `bottom` under an optional photo tile
   bg: 'cream', tile_h: v916 ? '21%' : '30%', line_size: v916 ? 44 : 38,
   tile_pos: 'center',

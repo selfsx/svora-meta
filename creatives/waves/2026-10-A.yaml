@@ -9,41 +9,33 @@ jobs:
   # ── video: hero clips localised (ua exists in b01) ──────────────────────────────────────────
   - { id: V1, type: video, angle: hero, concept: crazy, hook: reveal, source: DbT_EsKDTDo, clip: creatives/_work/w1/DbT_EsKDTDo-clip.mp4,
       pipeline: [creatives/_work/w1/DbT_EsKDTDo-clip.mp4.json], vars: { place: top, tone: dark },
-      langs: { pl: { hook: "@o08", sub: "Extra Long & Crazy · 380 zł" }, ru: { hook: "@o01", sub: "Extra Long & Crazy · 380 zł" }, en: { hook: "@o08", sub: "Extra Long & Crazy · 380 zł" } } }
+      langs: { ua: { hook: "@o01", sub: "Extra Long & Crazy · 380 zł" }, pl: { hook: "@o08", sub: "Extra Long & Crazy · 380 zł" }, ru: { hook: "@o01", sub: "Extra Long & Crazy · 380 zł" }, en: { hook: "@o08", sub: "Extra Long & Crazy · 380 zł" } } }
   - { id: V2, type: video, angle: hero, concept: art, hook: art-closeup, source: Ddv-7k6DQJg, clip: creatives/_work/w1/Ddv-7k6DQJg-clip.mp4,
       pipeline: [creatives/_work/w1/Ddv-7k6DQJg-clip.mp4.json], vars: { place: top, tone: dark },
-      langs: { pl: { hook: "@o08", sub: "Hybryda 190 zł + art" }, ru: { hook: "@o07", sub: "Гибрид 190 zł + арт" }, en: { hook: "@o06", sub: "Hybrid 190 zł + art" } } }
+      langs: { ua: { hook: "@o07", sub: "Cat-eye · хром · текстури" }, pl: { hook: "@o08", sub: "Hybryda 190 zł + art" }, ru: { hook: "@o07", sub: "Гибрид 190 zł + арт" }, en: { hook: "@o06", sub: "Hybrid 190 zł + art" } } }
   - { id: V3, type: video, angle: hero, concept: classic, hook: found, source: DbMR6_ttcnF, clip: creatives/_work/w1/DbMR6_ttcnF-clip.mp4,
       pipeline: [creatives/_work/w1/DbMR6_ttcnF-clip.mp4.json], vars: { place: top, tone: light },
-      langs: { pl: { hook: "@o05", sub: "Hybryda 190 zł" }, ru: { hook: "@o02", sub: "Гибридный маникюр 190 zł" }, en: { hook: "@o05", sub: "Hybrid manicure 190 zł" } } }
+      langs: { ua: { hook: "@o02", sub: "Гібридний манікюр 190 zł" }, pl: { hook: "@o05", sub: "Hybryda 190 zł" }, ru: { hook: "@o02", sub: "Гибридный маникюр 190 zł" }, en: { hook: "@o05", sub: "Hybrid manicure 190 zł" } } }
   - { id: V4, type: video, angle: hero, concept: crazy, hook: social, source: DZTCpxHDUJE, clip: creatives/_work/w1/DZTCpxHDUJE-clip.mp4,
       pipeline: [creatives/_work/w1/DZTCpxHDUJE-clip.mp4.json], vars: { place: top, tone: light },
-      langs: { pl: { hook: "@o06", sub: "Extra Long & Crazy · 380 zł" }, ru: { hook: "@o04", sub: "Extra Long & Crazy · 380 zł" }, en: { hook: "@o06", sub: "Extra Long & Crazy · 380 zł" } } }
+      langs: { ua: { hook: "@o04", sub: "Extra Long & Crazy · 380 zł" }, pl: { hook: "@o06", sub: "Extra Long & Crazy · 380 zł" }, ru: { hook: "@o04", sub: "Extra Long & Crazy · 380 zł" }, en: { hook: "@o06", sub: "Extra Long & Crazy · 380 zł" } } }
 
   # ── video: re-cuts localised (ua/pl exist in b02) ───────────────────────────────────────────
   - { id: V5, type: video, angle: process, concept: classic, hook: process, source: DZKRjmJNiHR, clip: sources/instagram/raw/DZKRjmJNiHR/DZKRjmJNiHR_01.mp4,
       cuts: "0:11", mute: true, overlay_from: 0.5, vars: { place: top },
-      langs: { ru: { hook: "Каждый ноготь — <b>вручную</b>", sub: "Гибридный маникюр 190 zł" }, en: { hook: "EVERY NAIL <b>BY HAND</b>", sub: "Hybrid manicure 190 zł" } } }
+      langs: { ua: { hook: "Кожен ніготь — <b>вручну</b>", sub: "Гібридний манікюр 190 zł" }, pl: { hook: "Każdy paznokieć <b>ręcznie</b>", sub: "Hybryda 190 zł" }, ru: { hook: "Каждый ноготь — <b>вручную</b>", sub: "Гибридный маникюр 190 zł" }, en: { hook: "EVERY NAIL <b>BY HAND</b>", sub: "Hybrid manicure 190 zł" } } }
   - { id: V6, type: video, angle: process, concept: classic, hook: process, source: C3Sy533oeEN, clip: sources/instagram/raw/C3Sy533oeEN/C3Sy533oeEN_01.mp4,
       cuts: "3:16", mute: true, overlay_from: 0.5, vars: { place: bottom },
-      langs: { ru: { hook: "Процесс, который <b>видно</b>", sub: "Гибридный маникюр 190 zł" }, en: { hook: "THE PROCESS <b>SHOWS</b>", sub: "Hybrid manicure 190 zł" } } }
-  - { id: V7, type: video, angle: founder, concept: brand, hook: price, source: DdJn2Wrsad-, clip: sources/instagram/raw/DdJn2Wrsad-/DdJn2Wrsad-_01.mp4,
-      cuts: "0:13.5,40.5:50.3", overlay_from: 2.4, subs: { transcript: creatives/_work/re/DdJn2Wrsad-.transcript.json, lang: ua, y: 0.6 },
-      vars: { place: top, tone: light, group_top: "15%", hook_size: 92 },
-      langs: { ru: { hook: "«У вас ужасно <b>дорого</b>»" } } }
-  - { id: V8, type: video, angle: founder, concept: brand, hook: team, source: DcTIH-QNseO, clip: sources/instagram/raw/DcTIH-QNseO/DcTIH-QNseO_01.mp4,
-      cuts: "31.4:45.3,101.4:104.7", overlay_from: 0.5, subs: { transcript: creatives/_work/re/DcTIH-QNseO.transcript.json, lang: ua, y: 0.6 },
-      vars: { place: top, tone: light, group_top: "15%", hook_size: 92 },
-      langs: { ru: { hook: "5 мастеров. <b>Один</b> салон", meta: "Воля · Jana Kazimierza 25B" } } }
+      langs: { ua: { hook: "Процес, який <b>видно</b>", sub: "Гібридний манікюр 190 zł" }, pl: { hook: "Proces, który <b>widać</b>", sub: "Hybryda 190 zł" }, ru: { hook: "Процесс, который <b>видно</b>", sub: "Гибридный маникюр 190 zł" }, en: { hook: "THE PROCESS <b>SHOWS</b>", sub: "Hybrid manicure 190 zł" } } }
   - { id: V9, type: video, angle: studio, concept: brand, hook: pov, source: DdnxYOft2B2, clip: sources/instagram/raw/DdnxYOft2B2/DdnxYOft2B2_01.mp4,
       cuts: "24:40", mute: true, overlay_from: 0.5, vars: { place: top },
-      langs: { ru: { hook: "Пришла. Села. <b>Выдохнула</b>.", sub: "Гибридный маникюр 190 zł" }, en: { hook: "WALK IN. SIT DOWN. <b>BREATHE</b>.", sub: "Hybrid manicure 190 zł" } } }
+      langs: { ua: { hook: "Прийшла. Сіла. <b>Видихнула</b>.", sub: "Гібридний манікюр 190 zł" }, pl: { hook: "Weszłaś. Usiadłaś. <b>Odetchnęłaś</b>.", sub: "Hybryda 190 zł" }, ru: { hook: "Пришла. Села. <b>Выдохнула</b>.", sub: "Гибридный маникюр 190 zł" }, en: { hook: "WALK IN. SIT DOWN. <b>BREATHE</b>.", sub: "Hybrid manicure 190 zł" } } }
   - { id: V10, type: video, angle: studio, concept: brand, hook: pov, source: DdljeKAtree, clip: sources/instagram/raw/DdljeKAtree/DdljeKAtree_01.mp4,
       cuts: "6:14", mute: true, overlay_from: 0.5, vars: { place: bottom },
-      langs: { pl: { hook: "Kawa, muzyka, <b>swoi</b> ludzie", sub: "SVORA NAILS · Wola" }, ru: { hook: "Кофе, музыка, <b>свои</b> люди", sub: "SVORA NAILS · Воля" }, en: { hook: "COFFEE, MUSIC, <b>YOUR</b> PEOPLE", sub: "SVORA NAILS · Wola" } } }
+      langs: { ua: { hook: "Кава, музика, <b>свої</b> люди", sub: "SVORA NAILS · Воля" }, pl: { hook: "Kawa, muzyka, <b>swoi</b> ludzie", sub: "SVORA NAILS · Wola" }, ru: { hook: "Кофе, музыка, <b>свои</b> люди", sub: "SVORA NAILS · Воля" }, en: { hook: "COFFEE, MUSIC, <b>YOUR</b> PEOPLE", sub: "SVORA NAILS · Wola" } } }
   - { id: V10b, type: video, angle: studio, concept: brows, hook: team, source: Ddvm5oBNL8_, clip: sources/instagram/raw/Ddvm5oBNL8_/Ddvm5oBNL8__01.mp4,
       cuts: "4:14", mute: true, overlay_from: 0.5, vars: { place: bottom },
-      langs: { pl: { hook: "@o02", sub: "Brwi od 70 zł", cta: "@c04" }, ru: { hook: "@o03", sub: "30 минут и готово" }, en: { hook: "@o02", sub: "Brows from 70 zł", cta: "@c04" } } }
+      langs: { ua: { hook: "@o03", sub: "30 хвилин і готово" }, pl: { hook: "@o02", sub: "Brwi od 70 zł", cta: "@c04" }, ru: { hook: "@o03", sub: "30 минут и готово" }, en: { hook: "@o02", sub: "Brows from 70 zł", cta: "@c04" } } }
 
   # ── video: new cut masters ──────────────────────────────────────────────────────────────────
   - { id: V12, type: video, angle: pick, concept: mix, hook: social, source: DbMR6_ttcnF, clip: creatives/_work/base/pick-base.mp4,
@@ -64,17 +56,17 @@ jobs:
       image: sources/instagram/raw/DY99E3XjWQK/DY99E3XjWQK_02.jpg, vars: { image2: sources/instagram/raw/DOgrePvjE9h/DOgrePvjE9h_01.jpg, image3: sources/instagram/raw/DU50JBSDNLk/DU50JBSDNLk_01.jpg, hook_size: 96 },
       langs: { ua: { hook: "Яка <b>твоя</b>: 1, 2 чи 3?", meta: "Extra Long & Crazy 380 zł" }, pl: { hook: "Która <b>twoja</b>: 1, 2 czy 3?", meta: "Extra Long & Crazy 380 zł" }, ru: { hook: "Какая <b>твоя</b>: 1, 2 или 3?", meta: "Extra Long & Crazy 380 zł" }, en: { hook: "WHICH IS <b>YOU</b>: 1, 2, 3?", meta: "Extra Long & Crazy 380 zł" } } }
   - { id: S3, type: static, template: static-pick, formats: [4x5, 9x16], angle: pick, concept: classic, hook: social, source: DV5ZDohDBx0,
-      image: sources/instagram/raw/DV5ZDohDBx0/DV5ZDohDBx0_01.jpg, vars: { image2: sources/instagram/raw/DPZE72BjF50/DPZE72BjF50_01.jpg, image3: sources/instagram/raw/C4dzm1rLo84/C4dzm1rLo84_01.jpg, hook_size: 96 },
+      image: sources/instagram/raw/DV5ZDohDBx0/DV5ZDohDBx0_01.jpg, vars: { image2: sources/instagram/raw/DPZE72BjF50/DPZE72BjF50_01.jpg, image3: sources/instagram/raw/C4dzm1rLo84/C4dzm1rLo84_01.jpg, hook_size: 96 }, vars_4x5: { hook_size: 84 },
       langs: { ua: { hook: "Nude, френч чи <b>glazed</b>?", meta: "Гібридний манікюр 190 zł" }, pl: { hook: "Nude, french czy <b>glazed</b>?", meta: "Hybryda 190 zł" }, ru: { hook: "Nude, френч или <b>glazed</b>?", meta: "Гибридный маникюр 190 zł" }, en: { hook: "NUDE, FRENCH OR <b>GLAZED</b>?", meta: "Hybrid manicure 190 zł" } } }
   - { id: S4, type: static, template: static-hero, formats: [4x5, 9x16], angle: hero, concept: art, hook: art-closeup, source: Ddv-7k6DQJg,
       image: sources/instagram/raw/Ddv-7k6DQJg/Ddv-7k6DQJg_01.jpg, vars: { place: top, tone: dark },
-      langs: { pl: { hook: "@o08", sub: "Cat-eye · chrome · ręcznie", meta: "Hybryda 190 zł + art" }, ru: { hook: "@o08", sub: "Cat-eye · хром · текстуры", meta: "Гибрид 190 zł + арт" }, en: { hook: "@o06", sub: "Cat-eye · chrome · by hand", meta: "Hybrid 190 zł + art" } } }
+      langs: { ua: { hook: "@o07", sub: "Cat-eye · хром · текстури", meta: "гібрид 190 zł + арт" }, pl: { hook: "@o08", sub: "Cat-eye · chrome · ręcznie", meta: "Hybryda 190 zł + art" }, ru: { hook: "@o08", sub: "Cat-eye · хром · текстуры", meta: "Гибрид 190 zł + арт" }, en: { hook: "@o06", sub: "Cat-eye · chrome · by hand", meta: "Hybrid 190 zł + art" } } }
   - { id: S5, type: static, template: static-hero, formats: [9x16], angle: hero, concept: crazy, hook: reveal, source: DY99E3XjWQK,
       image: sources/instagram/raw/DY99E3XjWQK/DY99E3XjWQK_02.jpg, vars: { place: bottom },
-      langs: { pl: { hook: "@o08", sub: "Cat Claws od 420 zł" }, ru: { hook: "@o05", sub: "Cat Claws от 420 zł" }, en: { hook: "@o08", sub: "Cat Claws from 420 zł" } } }
-  - { id: S6, type: static, template: static-blur-pad, formats: [4x5, 9x16], angle: hero, concept: classic, hook: reveal, source: DOofqjpDaTt,
-      image: sources/instagram/raw/DOofqjpDaTt/DOofqjpDaTt_02.jpg, vars: { place: bottom },
-      langs: { ua: { hook: "@o04", sub: "Гібридний манікюр 190 zł" }, ru: { hook: "@o04", sub: "Гибридный маникюр 190 zł" }, en: { hook: "@o05", sub: "Hybrid manicure 190 zł" } } }
+      langs: { ua: { hook: "@o05", sub: "Cat Claws від 420 zł" }, pl: { hook: "@o08", sub: "Cat Claws od 420 zł" }, ru: { hook: "@o05", sub: "Cat Claws от 420 zł" }, en: { hook: "@o08", sub: "Cat Claws from 420 zł" } } }
+  - { id: S6b, type: static, template: static-hero, formats: [4x5, 9x16], angle: hero, concept: classic, hook: found, source: C4dzm1rLo84,
+      image: sources/instagram/raw/C4dzm1rLo84/C4dzm1rLo84_01.jpg, vars: { place: top, tone: light },
+      langs: { ua: { hook: "@o04", sub: "Гібридний манікюр 190 zł" }, pl: { hook: "@o01", sub: "Hybryda 190 zł" }, ru: { hook: "@o04", sub: "Гибридный маникюр 190 zł" }, en: { hook: "@o01", sub: "Hybrid manicure 190 zł" } } }
   - { id: S7, type: static, template: static-hero, formats: [4x5, 9x16], angle: price, concept: classic, hook: price, source: DV5ZDohDBx0,
       image: sources/instagram/raw/DV5ZDohDBx0/DV5ZDohDBx0_01.jpg, vars: { place: top, tone: light },
       langs: { ua: { hook: "@o01", sub: "Рівно. Чисто. Природно.", meta: "Воля · Jana Kazimierza 25B" }, ru: { hook: "@o01", sub: "Ровно. Чисто. Естественно.", meta: "Воля · Jana Kazimierza 25B" }, en: { hook: "@o02", sub: "Neat. Clean. Natural.", meta: "Wola · Jana Kazimierza 25B" }, pl: { hook: "@o02", sub: "Równo. Czysto. Naturalnie.", meta: "Wola · Jana Kazimierza 25B" } } }
@@ -85,14 +77,14 @@ jobs:
         ru: { kicker: "Прайс · Воля", hook: "Гибридный маникюр <b>190 zł</b>", lines: '<div class="row"><span>Гибридный маникюр</span><b>190 zł</b></div><div class="row"><span>CLEAN маникюр</span><b>120 zł</b></div><div class="row"><span>Extra Long &amp; Crazy Shape</span><b>380 zł</b></div>', meta: "Jana Kazimierza 25B · ежедневно 9–21" },
         en: { kicker: "Prices · Wola", hook: "Hybrid manicure <b>190 zł</b>", lines: '<div class="row"><span>Hybrid manicure</span><b>190 zł</b></div><div class="row"><span>CLEAN manicure</span><b>120 zł</b></div><div class="row"><span>Extra Long &amp; Crazy Shape</span><b>380 zł</b></div>', meta: "Jana Kazimierza 25B · daily 9–21" } } }
   - { id: S9, type: static, template: static-card, formats: [4x5, 9x16], angle: review, concept: brand, hook: social, source: DZqf93TDGOU,
-      image: sources/instagram/raw/DZqf93TDGOU/DZqf93TDGOU_01.jpg, vars: { place: bottom, bg: black, hook_size: 96 },
+      image: sources/instagram/raw/DZqf93TDGOU/DZqf93TDGOU_01.jpg, vars: { place: under, bg: black, hook_size: 96 },
       langs: {
         ua: { kicker: "Fresha", hook: "<b>5.0</b> · 117 відгуків", lines: "Нігті, педикюр, брови · Воля<br>Запис онлайн <b>за хвилину</b>" },
         pl: { kicker: "Fresha", hook: "<b>5.0</b> · 117 opinii", lines: "Paznokcie, pedicure, brwi · Wola<br>Rezerwacja online <b>w minutę</b>" },
         ru: { kicker: "Fresha", hook: "<b>5.0</b> · 117 отзывов", lines: "Ногти, педикюр, брови · Воля<br>Запись онлайн <b>за минуту</b>" },
         en: { kicker: "Fresha", hook: "<b>5.0</b> · 117 reviews", lines: "Nails, pedicure, brows · Wola<br>Book online <b>in a minute</b>" } } }
   - { id: S10, type: static, template: static-card, formats: [4x5, 9x16], angle: location, concept: brand, hook: found, source: DdljeKAtree,
-      image: creatives/_work/base/studio-frame.jpg, vars: { place: bottom, bg: black, hook_size: 96 },
+      image: creatives/_work/base/studio-frame.jpg, vars: { place: under, bg: black, hook_size: 96 },
       langs: {
         ua: { kicker: "Де ми", hook: "Воля · Jana Kazimierza <b>25B</b>", lines: "Щодня <b>9:00–21:00</b><br>Запис онлайн у Fresha<br>Говоримо UA · RU · PL · EN", meta: "" },
         pl: { kicker: "Gdzie jesteśmy", hook: "Wola · Jana Kazimierza <b>25B</b>", lines: "Codziennie <b>9:00–21:00</b><br>Rezerwacja online na Fresha<br>Mówimy PL · UA · RU · EN", meta: "" },
@@ -105,8 +97,8 @@ jobs:
         ru: { kicker: "SVORA NAILS · Воля", hook: "Ногти сделала. <b>Настроение</b> тоже.", meta: "" },
         en: { kicker: "SVORA NAILS · Wola", hook: "NAILS DONE. <b>MOOD</b> DONE.", meta: "" } } }
   - { id: S12, type: static, template: static-card, formats: [4x5, 9x16], angle: founder, concept: brand, hook: price, source: DdJn2Wrsad-,
-      image: creatives/_work/base/founder-frame.jpg, vars: { place: bottom, bg: black, hook_size: 92, tile_pos: "center 32%", tile_h: "15%" },
+      image: creatives/_work/base/founder-frame.jpg, vars: { place: under, bg: black, hook_size: 88, tile_pos: "center 30%" }, vars_4x5: { tile_h: "42%" }, vars_9x16: { tile_h: "26%", lines: "" },
       langs: { ua: { kicker: "Маріана, засновниця SVORA", hook: "«Не дешевий салон. <b>І не планували</b>»", lines: "Ви виходите, дивитесь на руки —<br>і розумієте, за що заплатили." }, ru: { kicker: "Мариана, основательница SVORA", hook: "«Не дешёвый салон. <b>И не планировали</b>»", lines: "Вы выходите, смотрите на руки —<br>и понимаете, за что заплатили." } } }
   - { id: S13, type: static, template: static-hero, formats: [4x5, 9x16], angle: seasonal, concept: classic, hook: reveal, source: DPZE72BjF50,
-      image: sources/instagram/raw/DPZE72BjF50/DPZE72BjF50_01.jpg, vars: { place: top },
+      image: sources/instagram/raw/DPZE72BjF50/DPZE72BjF50_01.jpg, vars: { place: bottom },
       langs: { ua: { hook: "Осінь — <b>бордо</b>", sub: "Гібридний манікюр 190 zł" }, pl: { hook: "Jesień w <b>bordo</b>", sub: "Hybryda 190 zł" }, ru: { hook: "Осень — <b>бордо</b>", sub: "Гибридный маникюр 190 zł" }, en: { hook: "AUTUMN IN <b>BURGUNDY</b>", sub: "Hybrid manicure 190 zł" } } }

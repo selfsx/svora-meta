@@ -86,3 +86,19 @@
 - Portfolio now 160 (1 approved smoke, 159 drafts) by angle: hero 42 · pick 28 · price 21 · seasonal 12 · studio 12 ·
   meme 9 · founder 8 · process 8 · review 8 · location 8 · before-after 4. Next: operator review → apply → wave C.
 - Shell gotcha: zsh does not word-split `$var` in ffmpeg arg lists — use `${=var}` or build arrays.
+
+## 2026-10-09 — first operator review (29 masters marked) → wave C
+
+- Verdicts (`scratch/review-2026-10-09.json`, applied): 34 approved · 117 rejected. Approved masters: pick trios (mixed,
+  crazy), menu price cards, meme text cards, the amber cat-eye hero static (pl), the EN meme video ("may be too weak
+  for a nail creative" — keep, low priority). Rejected, by cause: every video and the hero/price/seasonal statics —
+  "text overlays hands too much" / "overlay hides almost everything"; proof, location, founder cards — "messed up
+  markup" (group climbed into the photo tile); classic pick trio 4:5 — layout collision (9:16 was fine); blur-pad of
+  the landscape photo — "small original image"; founder re-cuts — "contains embedded overlays".
+- Design change: `_type.css` now has two containers — `.group` (hook + optional sub, at `place`) and `.ctagroup` (CTA +
+  meta, alone at the bottom of the safe zone); hook 92/78 px, CTA 48/42. Cards get `place=under` (anchored below the
+  tile). `wave.mjs` supports `vars_4x5` / `vars_9x16` per-format overrides.
+- Retired: V7/V8 founder re-cuts (owner must record clean footage — backlog), S6 landscape blur-pad (→ S6b hero on
+  C4dzm1rLo84). Rejected files were deleted from disk and manifests (the verdict file is the record); approved ones kept.
+- Wave C = re-run of waves A+B with the new layout; ua/pl versions of the b01/b02 masters are now produced in b03 so
+  every master has all its languages in one place.

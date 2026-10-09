@@ -12,6 +12,8 @@ Edited in place. Move an item to the journal when it is done.
 - [ ] Instagram session for the full archive: `node scripts/ig-login.mjs` (operator types the password).
 - [ ] Confirm or drop the "-20% first visit" offer (`settings/brand.yaml → offers`).
 - [ ] Target cost per confirmed booking (owner's number).
+- [ ] **Founder talking head, recorded clean** (no Instagram captions/stickers baked in, phone, 30–60 s per topic: "too expensive",
+      "what to expect", "why Wola") — the existing reels were rejected for their baked captions (review 2026-10-09).
 - [ ] Footage for the non-close-up angles (`03-creative-portfolio-plan.md` → Diversity first): a "before" photo
       or mid-process still (before-after), 60 s of phone video at the entrance / street / chair (location, studio),
       2–3 real reviews with permission to quote (review), written OK from tagged clients to reuse their posts (ugc).
