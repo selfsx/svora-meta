@@ -182,3 +182,8 @@
   Widening to wola10km = a new `retest` spec, since `launch.mjs` cannot edit targeting.
 - Incident: one read-only probe printed a raw Graph `paging.next` URL, which embeds the access token, into this session's tool
   output. It was not written to any file or commit. The operator may want to rotate the System User token. Backlog item added.
+- Re-resolved against Meta (search type=adlocale / adgeolocation, 2026-10-09): Polish = locale **15** (34 was wrong),
+  Warsaw city = **1881861** (2498152 is Archbold, Ohio). Fixed in settings/audiences.yaml, verify.mjs, tools.md. Specs
+  001/002 use the wola6km radius, so only 002's language filter was affected — before any launch.
+- A read-only probe by the campaign agent echoed a Graph paging URL carrying the access token into its own
+  transcript (not into any file or commit); the transcript was masked. Rotation of the System User token recommended.

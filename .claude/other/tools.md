@@ -53,7 +53,7 @@ has a `@fileoverview` stating what it reads and whether it writes. `node --test 
 - Insights: `level=campaign|adset|ad`, `action_attribution_windows=['7d_click']`, `filtering` on
   `effective_status`. `purchase` and `initiate_checkout` action types are the pixel standard events.
 - Targeting search: `/search?type=adlocale|adgeolocation|adinterest` — `verify.mjs` re-checks the
-  keys in `settings/audiences.yaml` (uk_UA 52, ru_RU 17, pl_PL 34, en_GB 24, en_US 6).
+  keys in `settings/audiences.yaml` (uk_UA 52, ru_RU 17, pl_PL 15, en_GB 24, en_US 6; Warsaw city 1881861 — both re-resolved against Meta on 2026-10-09).
 - Errors: quote `message`, `error_user_title`, `error_user_msg` verbatim — they are specific.
 
 ## OpenRouter notes (Oct 2026)

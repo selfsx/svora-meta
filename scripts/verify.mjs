@@ -50,7 +50,7 @@ if (wanted && !pixels.rows.some((p) => p.id === wanted)) problem(`pixel ${wanted
 
 // 5. targeting keys the settings assume
 const a = audiences();
-const localeChecks = [['Ukrainian', 52], ['Russian', 17], ['Polish', 34], ['English (UK)', 24], ['English (US)', 6]];
+const localeChecks = [['Ukrainian', 52], ['Russian', 17], ['Polish', 15], ['English (UK)', 24], ['English (US)', 6]];
 out.locales = [];
 for (const [name, expect] of localeChecks) {
   const r = await graphGet('search', {type: 'adlocale', q: name.split(' ')[0], limit: 10});
