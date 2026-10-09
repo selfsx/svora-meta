@@ -41,7 +41,7 @@ if (!o.size && !o.aspect) { o.aspect = '9:16'; o.resolution = o.resolution || '7
 mkdirSync(path.dirname(out), {recursive: true});
 console.error(`→ ${model} · ${o.duration}s · ${o.size || `${o.aspect} ${o.resolution}`} · audio ${o.audio} · first ${o.firstFrame || '-'}`);
 const t0 = Date.now();
-const {buffer, cost, jobId, raw} = await generateVideo(o);
+const {buffer, cost, jobId, raw, audioDropped} = await generateVideo(o);
 writeFileSync(out, buffer);
-writeSidecar(out, {step: 'animate', model, prompt, first_frame: o.firstFrame || null, last_frame: o.lastFrame || null, refs, duration: o.duration, size: o.size || null, aspect: o.aspect || null, resolution: o.resolution || null, generate_audio: o.audio, seed: o.seed ?? null, job_id: jobId, cost_usd: cost, generation_id: raw.generation_id || null});
-console.log(`${out} · $${cost.toFixed(3)} · ${((Date.now() - t0) / 1000).toFixed(0)}s · job ${jobId}`);
+writeSidecar(out, {step: 'animate', model, prompt, first_frame: o.firstFrame || null, last_frame: o.lastFrame || null, refs, duration: o.duration, size: o.size || null, aspect: o.aspect || null, resolution: o.resolution || null, generate_audio: o.audio && !audioDropped, audio_dropped: !!audioDropped, seed: o.seed ?? null, job_id: jobId, cost_usd: cost, generation_id: raw.generation_id || null});
+console.log(`${out} · $${cost.toFixed(3)} · ${((Date.now() - t0) / 1000).toFixed(0)}s · job ${jobId}${audioDropped ? ' · audio dropped (copyright filter)' : ''}`);

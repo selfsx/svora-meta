@@ -6,74 +6,74 @@ Generated 2026-10-09 from `index.json`. 280 posts. `guess` = keyword guess from 
 
 | code | date | kind | slides | likes | lang | guess | tags | caption |
 |---|---|---|---|---|---|---|---|---|
-| [DePt769tvAp](https://www.instagram.com/p/DePt769tvAp/) | 2026-10-09 | video | 1 | 13 | pl | crazy art classic |  | Odważne formy, metaliczne detale i trochę szaleństwa. Bo paznokcie to też część Twojego st |
+| [DePt769tvAp](https://www.instagram.com/p/DePt769tvAp/) | 2026-10-09 | video | 1 | 13 | pl | crazy art classic | crazy A reel, long stiletto metallic | Odważne formy, metaliczne detale i trochę szaleństwa. Bo paznokcie to też część Twojego st |
 | [DePnTdhkWwJ](https://www.instagram.com/p/DePnTdhkWwJ/) | 2026-10-08 | carousel | 11 | 68891 | en |  |  | hamilton so sick |
-| [DePdkY_NehM](https://www.instagram.com/p/DePdkY_NehM/) | 2026-10-08 | video | 1 | 630 | ru |  |  | Я ехал в Париж прежде всего на кладбище и первое было Пьер Лашез , где лежит например Джим |
-| [DePNA5Ckamu](https://www.instagram.com/p/DePNA5Ckamu/) | 2026-10-08 | video | 1 | 533594 | en |  |  | 🚨 Someone get this guy a charger. @harrystyles tells @thomyorke his laptop's been dead fo |
+| [DePdkY_NehM](https://www.instagram.com/p/DePdkY_NehM/) | 2026-10-08 | video | 1 | 630 | ru |  | other C foreign/tagged | Я ехал в Париж прежде всего на кладбище и первое было Пьер Лашез , где лежит например Джим |
+| [DePNA5Ckamu](https://www.instagram.com/p/DePNA5Ckamu/) | 2026-10-08 | video | 1 | 533594 | en |  | other C foreign (Harry Styles) | 🚨 Someone get this guy a charger. @harrystyles tells @thomyorke his laptop's been dead fo |
 | [DeO9v2eRp7g](https://www.instagram.com/p/DeO9v2eRp7g/) | 2026-10-08 | photo | 1 | 582343 | en |  |  | May 24, 2023. The look when someone comes into my trailer (for just “one question”) when I |
-| [DeMsg7ltUG8](https://www.instagram.com/p/DeMsg7ltUG8/) | 2026-10-07 | video | 1 | 45 | ua | brows |  | Головне під час корекції брів — симетрія і свіжі плітки. @svora.nails #brwiwarszawa #męska |
-| [DeL1x-wjX8B](https://www.instagram.com/p/DeL1x-wjX8B/) | 2026-10-07 | carousel | 2 | 21 | en | art brand |  | @svora.nails Metamorfoza ✨ Przed — stylizacja wykonana w innym salonie.. . . #manicurewars |
-| [Dd4O5V-DQDj](https://www.instagram.com/p/Dd4O5V-DQDj/) | 2026-09-29 | carousel | 6 | 23 | en |  |  | 1st November, colour—08:00 @adoreprofessional @adoreprofessional_pl #manicurewarszawa #man |
-| [Dd1A-ZUtgKS](https://www.instagram.com/p/Dd1A-ZUtgKS/) | 2026-09-28 | photo | 1 | 15 | ua | brows |  | Чоловічі брови теж потребують корекції. Але такої, після якої вони не виглядають «зроблени |
-| [DdyeABwNHpO](https://www.instagram.com/p/DdyeABwNHpO/) | 2026-09-27 | video | 1 | 68 | ua | classic brows |  | Ми вас всіх бачимо раптом що…. @svora.nails . . . #manicurewarszawa #nailswarsaw #warszawa |
-| [DdyLakXNMLn](https://www.instagram.com/p/DdyLakXNMLn/) | 2026-09-27 | video | 1 | 45 | en | classic |  | @svora.nails . . #manicurewarszawa #paznokciewarszawa #hybrydawarszawa #warszawapaznokcie  |
-| [Ddv-7k6DQJg](https://www.instagram.com/p/Ddv-7k6DQJg/) | 2026-09-26 | carousel | 4 | 1447 | en | classic |  | 1st November / colours : 02:00, 05:00, 07:00, 08:00, 10:00 @adoreprofessional @adoreprofes |
-| [Ddvm5oBNL8_](https://www.instagram.com/p/Ddvm5oBNL8_/) | 2026-09-26 | video | 1 | 1071 | pl | brows |  | Warszawa @svora.nails . . #brwiwarszawa #nailswarsaw #warszawa #svoranails #paznokcieprzed |
-| [DduBU3HjabQ](https://www.instagram.com/p/DduBU3HjabQ/) | 2026-09-25 | carousel | 2 | 24 | en |  |  | “NOVEMBER” - 08:00 / @adoreprofessional / @svora.nails . . #warszawa #paznokciewarszawa #n |
-| [DdnxYOft2B2](https://www.instagram.com/p/DdnxYOft2B2/) | 2026-09-23 | video | 1 | 221 | en | brows |  | @svora.nails / @svora.nails.warszawa #manicurewarszawa #paznokciewarszawa #nailswarsaw #br |
-| [DdmSmmSNy4f](https://www.instagram.com/p/DdmSmmSNy4f/) | 2026-09-22 | video | 1 | 51 | en | classic brows |  | @svora.nails @svora.nails.warszawa . . #manicurehybrydowywarszawa #svoranails #warszawapaz |
-| [DdljeKAtree](https://www.instagram.com/p/DdljeKAtree/) | 2026-09-22 | video | 1 | 33 | en |  |  | @svora.nails |
-| [DdZ2z2JNkdD](https://www.instagram.com/p/DdZ2z2JNkdD/) | 2026-09-20 | video | 1 | 47 | en |  |  | @svora.nails / @svora.nails.warszawa |
-| [DdZFuQHN8zN](https://www.instagram.com/p/DdZFuQHN8zN/) | 2026-09-17 | video | 1 | 77 | - |  |  |  |
-| [DdTkPEttQzs](https://www.instagram.com/p/DdTkPEttQzs/) | 2026-09-15 | video | 1 | 34 | pl | classic |  | @adoreprofessional JESIENNA KOLEKCJA LAKIERÓW HYBRYDOWYCH „NOVEMBER” KOLOR: 02:00 |
-| [DdTS80TNXVX](https://www.instagram.com/p/DdTS80TNXVX/) | 2026-09-15 | video | 1 | 17 | en |  |  | @svora.nails @svora.nails.warszawa |
-| [DdOXslttg4v](https://www.instagram.com/p/DdOXslttg4v/) | 2026-09-13 | video | 1 | 144 | - |  |  |  |
-| [DdLlqDpjXGT](https://www.instagram.com/p/DdLlqDpjXGT/) | 2026-09-12 | carousel | 2 | 28 | - |  |  | 🍂🥮🧣 |
-| [DdJn2Wrsad-](https://www.instagram.com/p/DdJn2Wrsad-/) | 2026-09-11 | video | 1 | 73 | ua |  |  | Любимо і дуже цінуємо всіх, хто стільки років разом з нами, підтримує та взаємно цінує нас |
-| [DdIBC5Us-Vm](https://www.instagram.com/p/DdIBC5Us-Vm/) | 2026-09-11 | video | 1 | 38 | en |  |  | @svora.nails @svora.nails.warszawa |
-| [DdHFo27tcOm](https://www.instagram.com/p/DdHFo27tcOm/) | 2026-09-10 | video | 1 | 102 | pl |  |  | Historie, o których nie mówi się głośno #manicurewarszawa #nailswarsaw #artystycznepaznokc |
-| [DdGhFN6gfeu](https://www.instagram.com/p/DdGhFN6gfeu/) | 2026-09-10 | video | 1 | 19 | en |  |  | The campaigns driving your biggest revenue gains might be flying under your radar. Attribu |
-| [Dc8zFUstre_](https://www.instagram.com/p/Dc8zFUstre_/) | 2026-09-06 | video | 1 | 36 | - |  |  |  |
-| [Dc89JOitnjb](https://www.instagram.com/p/Dc89JOitnjb/) | 2026-09-06 | video | 1 | 9 | en | brows |  | Regulacja + koloryzacja brwi w @svora.nails @svora.nails.warszawa |
-| [DctanROtjsk](https://www.instagram.com/p/DctanROtjsk/) | 2026-08-31 | video | 1 | 50 | en | brows |  | #warszawa #paznokciewarszawa #svoranails #brwiwarszawa |
-| [DcWswNdDS7c](https://www.instagram.com/p/DcWswNdDS7c/) | 2026-08-22 | carousel | 3 | 48 | pl | classic |  | @adoreprofessional DUAL FOMS #manicurehybrydowy #manicurewarszawa #warszawapaznokcie #prze |
-| [DcTIH-QNseO](https://www.instagram.com/p/DcTIH-QNseO/) | 2026-08-21 | video | 1 | 115 | ua |  |  | @svora.nails не занурюючись вглиб всього, що ставалось за цей рік, я просто кажу всім дяку |
-| [DcJbHE_NGua](https://www.instagram.com/p/DcJbHE_NGua/) | 2026-08-17 | video | 1 | 20 | en | classic |  | Kocie oko od marki @adoreprofessional #manicurehybrydowywarszawa #svoranails #nailswarsaw  |
-| [DcGVdjbDS6Q](https://www.instagram.com/p/DcGVdjbDS6Q/) | 2026-08-16 | carousel | 5 | 75 | pl |  |  | #catclaw #svoranails #warszawapaznokcie #manicurewarszawa #przedłużeniepaznokci |
-| [DcDxYbJNNVP](https://www.instagram.com/p/DcDxYbJNNVP/) | 2026-08-15 | video | 1 | 15 | en | brows |  | #svoranails #regulacjabrwiwarszawa #koloryzacjabrwi #brwiwarszawawola #warszawa |
+| [DeMsg7ltUG8](https://www.instagram.com/p/DeMsg7ltUG8/) | 2026-10-07 | video | 1 | 45 | ua | brows | brows B brow symmetry talk | Головне під час корекції брів — симетрія і свіжі плітки. @svora.nails #brwiwarszawa #męska |
+| [DeL1x-wjX8B](https://www.instagram.com/p/DeL1x-wjX8B/) | 2026-10-07 | carousel | 2 | 21 | en | art brand | classic B red tips nude | @svora.nails Metamorfoza ✨ Przed — stylizacja wykonana w innym salonie.. . . #manicurewars |
+| [Dd4O5V-DQDj](https://www.instagram.com/p/Dd4O5V-DQDj/) | 2026-09-29 | carousel | 6 | 23 | en |  | art B dark blue glitter | 1st November, colour—08:00 @adoreprofessional @adoreprofessional_pl #manicurewarszawa #man |
+| [Dd1A-ZUtgKS](https://www.instagram.com/p/Dd1A-ZUtgKS/) | 2026-09-28 | photo | 1 | 15 | ua | brows | brows B before/after | Чоловічі брови теж потребують корекції. Але такої, після якої вони не виглядають «зроблени |
+| [DdyeABwNHpO](https://www.instagram.com/p/DdyeABwNHpO/) | 2026-09-27 | video | 1 | 68 | ua | classic brows | art A dark art on hand, reel | Ми вас всіх бачимо раптом що…. @svora.nails . . . #manicurewarszawa #nailswarsaw #warszawa |
+| [DdyLakXNMLn](https://www.instagram.com/p/DdyLakXNMLn/) | 2026-09-27 | video | 1 | 45 | en | classic | team B red hoodie intro | @svora.nails . . #manicurewarszawa #paznokciewarszawa #hybrydawarszawa #warszawapaznokcie  |
+| [Ddv-7k6DQJg](https://www.instagram.com/p/Ddv-7k6DQJg/) | 2026-09-26 | carousel | 4 | 1447 | en | classic | art A dark chrome close-up, top post 1447 | 1st November / colours : 02:00, 05:00, 07:00, 08:00, 10:00 @adoreprofessional @adoreprofes |
+| [Ddvm5oBNL8_](https://www.instagram.com/p/Ddvm5oBNL8_/) | 2026-09-26 | video | 1 | 1071 | pl | brows | brand A studio interior reel 1071 | Warszawa @svora.nails . . #brwiwarszawa #nailswarsaw #warszawa #svoranails #paznokcieprzed |
+| [DduBU3HjabQ](https://www.instagram.com/p/DduBU3HjabQ/) | 2026-09-25 | carousel | 2 | 24 | en |  | crazy A blue cat-eye long | “NOVEMBER” - 08:00 / @adoreprofessional / @svora.nails . . #warszawa #paznokciewarszawa #n |
+| [DdnxYOft2B2](https://www.instagram.com/p/DdnxYOft2B2/) | 2026-09-23 | video | 1 | 221 | en | brows | brand B two on bench reel 221 | @svora.nails / @svora.nails.warszawa #manicurewarszawa #paznokciewarszawa #nailswarsaw #br |
+| [DdmSmmSNy4f](https://www.instagram.com/p/DdmSmmSNy4f/) | 2026-09-22 | video | 1 | 51 | en | classic brows | brand A "tired of making content, just book" EN hook | @svora.nails @svora.nails.warszawa . . #manicurehybrydowywarszawa #svoranails #warszawapaz |
+| [DdljeKAtree](https://www.instagram.com/p/DdljeKAtree/) | 2026-09-22 | video | 1 | 33 | en |  | brand B sign reel | @svora.nails |
+| [DdZ2z2JNkdD](https://www.instagram.com/p/DdZ2z2JNkdD/) | 2026-09-20 | video | 1 | 47 | en |  | team B dance red | @svora.nails / @svora.nails.warszawa |
+| [DdZFuQHN8zN](https://www.instagram.com/p/DdZFuQHN8zN/) | 2026-09-17 | video | 1 | 77 | - |  | team B talking head |  |
+| [DdTkPEttQzs](https://www.instagram.com/p/DdTkPEttQzs/) | 2026-09-15 | video | 1 | 34 | pl | classic | classic A burgundy cat-eye short, reel | @adoreprofessional JESIENNA KOLEKCJA LAKIERÓW HYBRYDOWYCH „NOVEMBER” KOLOR: 02:00 |
+| [DdTS80TNXVX](https://www.instagram.com/p/DdTS80TNXVX/) | 2026-09-15 | video | 1 | 17 | en |  | brows B before/after | @svora.nails @svora.nails.warszawa |
+| [DdOXslttg4v](https://www.instagram.com/p/DdOXslttg4v/) | 2026-09-13 | video | 1 | 144 | - |  | team B mic talk 144 |  |
+| [DdLlqDpjXGT](https://www.instagram.com/p/DdLlqDpjXGT/) | 2026-09-12 | carousel | 2 | 28 | - |  | classic B dark short | 🍂🥮🧣 |
+| [DdJn2Wrsad-](https://www.instagram.com/p/DdJn2Wrsad-/) | 2026-09-11 | video | 1 | 73 | ua |  | brand B "страшно дорого" price objection hook | Любимо і дуже цінуємо всіх, хто стільки років разом з нами, підтримує та взаємно цінує нас |
+| [DdIBC5Us-Vm](https://www.instagram.com/p/DdIBC5Us-Vm/) | 2026-09-11 | video | 1 | 38 | en |  | brand C map | @svora.nails @svora.nails.warszawa |
+| [DdHFo27tcOm](https://www.instagram.com/p/DdHFo27tcOm/) | 2026-09-10 | video | 1 | 102 | pl |  | pedi B pedicure chair reel 102 | Historie, o których nie mówi się głośno #manicurewarszawa #nailswarsaw #artystycznepaznokc |
+| [DdGhFN6gfeu](https://www.instagram.com/p/DdGhFN6gfeu/) | 2026-09-10 | video | 1 | 19 | en |  | other C meme | The campaigns driving your biggest revenue gains might be flying under your radar. Attribu |
+| [Dc8zFUstre_](https://www.instagram.com/p/Dc8zFUstre_/) | 2026-09-06 | video | 1 | 36 | - |  | team B doorway talk |  |
+| [Dc89JOitnjb](https://www.instagram.com/p/Dc89JOitnjb/) | 2026-09-06 | video | 1 | 9 | en | brows | brows C  | Regulacja + koloryzacja brwi w @svora.nails @svora.nails.warszawa |
+| [DctanROtjsk](https://www.instagram.com/p/DctanROtjsk/) | 2026-08-31 | video | 1 | 50 | en | brows | brand B phone hook reel | #warszawa #paznokciewarszawa #svoranails #brwiwarszawa |
+| [DcWswNdDS7c](https://www.instagram.com/p/DcWswNdDS7c/) | 2026-08-22 | carousel | 3 | 48 | pl | classic | crazy A green long dark | @adoreprofessional DUAL FOMS #manicurehybrydowy #manicurewarszawa #warszawapaznokcie #prze |
+| [DcTIH-QNseO](https://www.instagram.com/p/DcTIH-QNseO/) | 2026-08-21 | video | 1 | 115 | ua |  | team B talk 115 | @svora.nails не занурюючись вглиб всього, що ставалось за цей рік, я просто кажу всім дяку |
+| [DcJbHE_NGua](https://www.instagram.com/p/DcJbHE_NGua/) | 2026-08-17 | video | 1 | 20 | en | classic | art B pastel | Kocie oko od marki @adoreprofessional #manicurehybrydowywarszawa #svoranails #nailswarsaw  |
+| [DcGVdjbDS6Q](https://www.instagram.com/p/DcGVdjbDS6Q/) | 2026-08-16 | carousel | 5 | 75 | pl |  | crazy A long nails sunset 75 | #catclaw #svoranails #warszawapaznokcie #manicurewarszawa #przedłużeniepaznokci |
+| [DcDxYbJNNVP](https://www.instagram.com/p/DcDxYbJNNVP/) | 2026-08-15 | video | 1 | 15 | en | brows | brows B artist at work | #svoranails #regulacjabrwiwarszawa #koloryzacjabrwi #brwiwarszawawola #warszawa |
 | [DcCNvK4NMIi](https://www.instagram.com/p/DcCNvK4NMIi/) | 2026-08-14 | video | 1 | 18 | en |  |  | @svora.nails #manicurewarszawa #nailswarsaw #paznokciewarszawa #warszawa #artystycznepazno |
-| [Db9BUUqDdmm](https://www.instagram.com/p/Db9BUUqDdmm/) | 2026-08-12 | carousel | 6 | 44 | en |  |  | #manicure #manicurewarszawa #svoranails #artystycznepaznokcie |
-| [Db7zwNwtvFt](https://www.instagram.com/p/Db7zwNwtvFt/) | 2026-08-12 | video | 1 | 34 | ua | classic brows |  | Brwi, które nie wyglądają na pomalowane 👽 Dla tych, którzy lubią maksymalnie naturalny ef |
-| [Db3MmMNjcdV](https://www.instagram.com/p/Db3MmMNjcdV/) | 2026-08-10 | carousel | 2 | 35 | en |  |  | #manicurewarszawa #manicurewarsaw #nailswarszawa #paznokciewarszawa |
-| [Dbz8G7cNsAj](https://www.instagram.com/p/Dbz8G7cNsAj/) | 2026-08-09 | video | 1 | 10 | pl | classic pedi brows brand |  | Do końca SIERPNIA umów się na manicure lub pedicure hybrydowy + dowolną usługę BRWI i odbi |
-| [DbZGCo5jWRM](https://www.instagram.com/p/DbZGCo5jWRM/) | 2026-07-29 | carousel | 4 | 57 | en |  |  | DUAL FORMS 🍋@adoreprofessional / @adoreprofessional_pl #manicurewarszawa #warsawnails #ca |
-| [DbXux4zt8yH](https://www.instagram.com/p/DbXux4zt8yH/) | 2026-07-29 | video | 1 | 19 | pl |  |  | Poznajcie partnerów @svora.nails.warszawa 👽 Dziś – makijaż i stylizacja włosów w wykonani |
-| [DbWQ0BajTks](https://www.instagram.com/p/DbWQ0BajTks/) | 2026-07-28 | carousel | 5 | 58 | en |  |  | #manicurewarszawa #nailswarszawa #stylistkapaznokciwarszawa |
-| [DbT_EsKDTDo](https://www.instagram.com/p/DbT_EsKDTDo/) | 2026-07-27 | carousel | 6 | 81 | en | crazy |  | DUAL FORMS @adoreprofessional @adoreprofessional_pl #manicure #catclaws #warszawapaznokcie |
-| [DbMR6_ttcnF](https://www.instagram.com/p/DbMR6_ttcnF/) | 2026-07-24 | video | 1 | 11 | en |  |  | #manicurewarszawa #nailswarsaw #paznokciewarszawa #artystycznepaznokcie #warszawa |
-| [DbMNns_jSR2](https://www.instagram.com/p/DbMNns_jSR2/) | 2026-07-24 | carousel | 2 | 22 | en | classic |  | #manicure #warszawapaznokcie #manicurehybrydowywarszawa #nailswarsaw |
-| [DbEPjubDQrM](https://www.instagram.com/p/DbEPjubDQrM/) | 2026-07-21 | carousel | 3 | 30 | en | classic |  | #svoranails #manicurehybrydowywarszawa #warsawmanicure |
-| [DbCHLNjDIBC](https://www.instagram.com/p/DbCHLNjDIBC/) | 2026-07-20 | carousel | 6 | 33 | pl | classic |  | @svora.nails / @svora.nails.warszawa #manicure #svoranails #manicuremęski #paznokciehybryd |
-| [Da6SdhnDSoC](https://www.instagram.com/p/Da6SdhnDSoC/) | 2026-07-17 | carousel | 4 | 19 | pl |  |  | Freestyle🍜🈳 męski manicure #manicure #warszawanails #manicurewarszawa #nailswarsaw #męsk |
-| [DaxwkGBtqcU](https://www.instagram.com/p/DaxwkGBtqcU/) | 2026-07-14 | video | 1 | 37 | pl | classic brand |  | - 20% na pierwszą wizytę w @svora.nails Jana Kazimierza 25B, lokal U3 #manicurewarszawa #n |
-| [DalrPnINQ1V](https://www.instagram.com/p/DalrPnINQ1V/) | 2026-07-09 | video | 1 | 117 | pl | classic |  | z tą puszką w ogóle nie ma żadnego problemu. #manicurewarszawa #nailswarsaw #warszawa #svo |
-| [Dad8bUAjd50](https://www.instagram.com/p/Dad8bUAjd50/) | 2026-07-06 | carousel | 4 | 44 | en |  |  | AURA BASE 06 GEL POLISH Nr417 @adoreprofessional @adoreprofessional_pl #warszawa #manicure |
-| [DadcXj8tUO_](https://www.instagram.com/p/DadcXj8tUO_/) | 2026-07-06 | video | 1 | 53 | en | classic |  | #manicurewarszawa #artystycznepaznokcie #nailswarsaw #warszawa #hybrydawarszawa |
-| [DaVecldstHR](https://www.instagram.com/p/DaVecldstHR/) | 2026-07-03 | video | 1 | 110 | ua | classic pedi brows brand |  | TYLKO W SIERPNIU ! 👽 PREZENTY🎁 Umów manicure(pedicure) hybrydowy + dowolną usługę brwi i |
+| [Db9BUUqDdmm](https://www.instagram.com/p/Db9BUUqDdmm/) | 2026-08-12 | carousel | 6 | 44 | en |  | art A ANTI BASIC NAILS pearls | #manicure #manicurewarszawa #svoranails #artystycznepaznokcie |
+| [Db7zwNwtvFt](https://www.instagram.com/p/Db7zwNwtvFt/) | 2026-08-12 | video | 1 | 34 | ua | classic brows | brows B before/after | Brwi, które nie wyglądają na pomalowane 👽 Dla tych, którzy lubią maksymalnie naturalny ef |
+| [Db3MmMNjcdV](https://www.instagram.com/p/Db3MmMNjcdV/) | 2026-08-10 | carousel | 2 | 35 | en |  | art B short dots | #manicurewarszawa #manicurewarsaw #nailswarszawa #paznokciewarszawa |
+| [Dbz8G7cNsAj](https://www.instagram.com/p/Dbz8G7cNsAj/) | 2026-08-09 | video | 1 | 10 | pl | classic pedi brows brand | brows C  | Do końca SIERPNIA umów się na manicure lub pedicure hybrydowy + dowolną usługę BRWI i odbi |
+| [DbZGCo5jWRM](https://www.instagram.com/p/DbZGCo5jWRM/) | 2026-07-29 | carousel | 4 | 57 | en |  | crazy A extreme long yellow | DUAL FORMS 🍋@adoreprofessional / @adoreprofessional_pl #manicurewarszawa #warsawnails #ca |
+| [DbXux4zt8yH](https://www.instagram.com/p/DbXux4zt8yH/) | 2026-07-29 | video | 1 | 19 | pl |  | brand C phone photo | Poznajcie partnerów @svora.nails.warszawa 👽 Dziś – makijaż i stylizacja włosów w wykonani |
+| [DbWQ0BajTks](https://www.instagram.com/p/DbWQ0BajTks/) | 2026-07-28 | carousel | 5 | 58 | en |  | crazy A yellow long outdoors 58 | #manicurewarszawa #nailswarszawa #stylistkapaznokciwarszawa |
+| [DbT_EsKDTDo](https://www.instagram.com/p/DbT_EsKDTDo/) | 2026-07-27 | carousel | 6 | 81 | en | crazy | crazy A silver 3D sculpted 81 | DUAL FORMS @adoreprofessional @adoreprofessional_pl #manicure #catclaws #warszawapaznokcie |
+| [DbMR6_ttcnF](https://www.instagram.com/p/DbMR6_ttcnF/) | 2026-07-24 | video | 1 | 11 | en |  | classic A chrome glazed nude | #manicurewarszawa #nailswarsaw #paznokciewarszawa #artystycznepaznokcie #warszawa |
+| [DbMNns_jSR2](https://www.instagram.com/p/DbMNns_jSR2/) | 2026-07-24 | carousel | 2 | 22 | en | classic | art A blue aura | #manicure #warszawapaznokcie #manicurehybrydowywarszawa #nailswarsaw |
+| [DbEPjubDQrM](https://www.instagram.com/p/DbEPjubDQrM/) | 2026-07-21 | carousel | 3 | 30 | en | classic | art B green jelly | #svoranails #manicurehybrydowywarszawa #warsawmanicure |
+| [DbCHLNjDIBC](https://www.instagram.com/p/DbCHLNjDIBC/) | 2026-07-20 | carousel | 6 | 33 | pl | classic | brand B COOL GUYS GET THEIR NAILS DONE | @svora.nails / @svora.nails.warszawa #manicure #svoranails #manicuremęski #paznokciehybryd |
+| [Da6SdhnDSoC](https://www.instagram.com/p/Da6SdhnDSoC/) | 2026-07-17 | carousel | 4 | 19 | pl |  | art B red short art | Freestyle🍜🈳 męski manicure #manicure #warszawanails #manicurewarszawa #nailswarsaw #męsk |
+| [DaxwkGBtqcU](https://www.instagram.com/p/DaxwkGBtqcU/) | 2026-07-14 | video | 1 | 37 | pl | classic brand | brand B -20% first visit (Mariana) | - 20% na pierwszą wizytę w @svora.nails Jana Kazimierza 25B, lokal U3 #manicurewarszawa #n |
+| [DalrPnINQ1V](https://www.instagram.com/p/DalrPnINQ1V/) | 2026-07-09 | video | 1 | 117 | pl | classic | crazy B jersey 117 | z tą puszką w ogóle nie ma żadnego problemu. #manicurewarszawa #nailswarsaw #warszawa #svo |
+| [Dad8bUAjd50](https://www.instagram.com/p/Dad8bUAjd50/) | 2026-07-06 | carousel | 4 | 44 | en |  | crazy A pink bag long nails | AURA BASE 06 GEL POLISH Nr417 @adoreprofessional @adoreprofessional_pl #warszawa #manicure |
+| [DadcXj8tUO_](https://www.instagram.com/p/DadcXj8tUO_/) | 2026-07-06 | video | 1 | 53 | en | classic | crazy B pink bag shoes reel | #manicurewarszawa #artystycznepaznokcie #nailswarsaw #warszawa #hybrydawarszawa |
+| [DaVecldstHR](https://www.instagram.com/p/DaVecldstHR/) | 2026-07-03 | video | 1 | 110 | ua | classic pedi brows brand | brand B offer -50zł manicure+brows | TYLKO W SIERPNIU ! 👽 PREZENTY🎁 Umów manicure(pedicure) hybrydowy + dowolną usługę brwi i |
 | [DaTNKFFDQNs](https://www.instagram.com/p/DaTNKFFDQNs/) | 2026-07-02 | carousel | 3 | 28 | en | classic |  | #manicurehybrydowy #warszawa #warsawnails #paznokciewarszawa |
-| [DaOVsEBjWkV](https://www.instagram.com/p/DaOVsEBjWkV/) | 2026-06-30 | carousel | 4 | 30 | en |  |  | #manicurewarszawa #nailsnailsnails |
-| [DaNMp7_DXhH](https://www.instagram.com/p/DaNMp7_DXhH/) | 2026-06-30 | carousel | 3 | 40 | pl |  |  | @adoreprofessional #manicurewarszawa #przedłużaniepaznokci #warszawapaznokcie #nailswarsaw |
+| [DaOVsEBjWkV](https://www.instagram.com/p/DaOVsEBjWkV/) | 2026-06-30 | carousel | 4 | 30 | en |  | classic A pink almond nude | #manicurewarszawa #nailsnailsnails |
+| [DaNMp7_DXhH](https://www.instagram.com/p/DaNMp7_DXhH/) | 2026-06-30 | carousel | 3 | 40 | pl |  | crazy A 3D butterflies rainbow | @adoreprofessional #manicurewarszawa #przedłużaniepaznokci #warszawapaznokcie #nailswarsaw |
 | [DaNJKwxtEj4](https://www.instagram.com/p/DaNJKwxtEj4/) | 2026-06-30 | video | 1 | 69 | en | classic |  | #manicurewarszawa #nailswarsaw #artystycznepaznokcie #warszawa #hybrydawarszawa |
-| [DaBSFKLDS4P](https://www.instagram.com/p/DaBSFKLDS4P/) | 2026-06-25 | carousel | 2 | 28 | pl | crazy classic |  | #manicure #crazynails #warszawapaznokcieżelowe #manicurehybrydowy |
+| [DaBSFKLDS4P](https://www.instagram.com/p/DaBSFKLDS4P/) | 2026-06-25 | carousel | 2 | 28 | pl | crazy classic | crazy A 3D charms mix | #manicure #crazynails #warszawapaznokcieżelowe #manicurehybrydowy |
 | [DaAtOI_ty7N](https://www.instagram.com/p/DaAtOI_ty7N/) | 2026-06-25 | video | 1 | 53 | pl | classic |  | Inspiracje można znaleźć wszędzie 👽🚽 @adoreprofessional METALLIC POWDER #warszawapaznokc |
-| [DZ8FEHhNIKl](https://www.instagram.com/p/DZ8FEHhNIKl/) | 2026-06-23 | video | 1 | 71 | en | crazy |  | #manicurewarszawa #artystycznepaznokcie #nailswarsaw #catclaws @adoreprofessional |
+| [DZ8FEHhNIKl](https://www.instagram.com/p/DZ8FEHhNIKl/) | 2026-06-23 | video | 1 | 71 | en | crazy | crazy A cat claws black 71 | #manicurewarszawa #artystycznepaznokcie #nailswarsaw #catclaws @adoreprofessional |
 | [DZtGWjljIDr](https://www.instagram.com/p/DZtGWjljIDr/) | 2026-06-17 | carousel | 2 | 26 | en | crazy |  | Aqua manicure🪼🫧🌊 MATERIALS: * 3D effects: Funky Gum, Clear Builder Gel, 3D Jello * Wate |
-| [DZqf93TDGOU](https://www.instagram.com/p/DZqf93TDGOU/) | 2026-06-16 | carousel | 4 | 77 | en | crazy |  | Gel tips STILETTO + DUAL nail forms @adoreprofessional #manicurewarszawa #nails #manicurew |
+| [DZqf93TDGOU](https://www.instagram.com/p/DZqf93TDGOU/) | 2026-06-16 | carousel | 4 | 77 | en | crazy | art A red cat-eye drip 77 | Gel tips STILETTO + DUAL nail forms @adoreprofessional #manicurewarszawa #nails #manicurew |
 | [DZdjzpbN8tI](https://www.instagram.com/p/DZdjzpbN8tI/) | 2026-06-11 | video | 1 | 19 | en |  |  | #artystycznepaznokcie #manicurewarszawa #warszawa #paznokciewarszawa #nailswarsaw |
 | [DZa5AFxNl1Q](https://www.instagram.com/p/DZa5AFxNl1Q/) | 2026-06-10 | video | 1 | 18 | en | classic |  | #warszawa #nailswarsaw #manicurehybrydowywarszawa #svoranails #manicure |
-| [DZYHQWjjWOf](https://www.instagram.com/p/DZYHQWjjWOf/) | 2026-06-09 | carousel | 3 | 32 | en |  |  | #manicurewarszawa #warsawnails #nailspaznokcie #warsaw @adoreprofessional |
+| [DZYHQWjjWOf](https://www.instagram.com/p/DZYHQWjjWOf/) | 2026-06-09 | carousel | 3 | 32 | en |  | crazy A silver 3D chrome | #manicurewarszawa #warsawnails #nailspaznokcie #warsaw @adoreprofessional |
 | [DZVo1X6DaIH](https://www.instagram.com/p/DZVo1X6DaIH/) | 2026-06-08 | carousel | 2 | 57 | en |  |  | #svoranails #manicurewarszawa #warszawapaznokcie |
-| [DZTCpxHDUJE](https://www.instagram.com/p/DZTCpxHDUJE/) | 2026-06-07 | carousel | 2 | 28 | pl | classic |  | #manicurehybrydowy #paznokciewarszawa #przedłużeniepaznokci |
+| [DZTCpxHDUJE](https://www.instagram.com/p/DZTCpxHDUJE/) | 2026-06-07 | carousel | 2 | 28 | pl | classic | crazy A pink ombre extra long | #manicurehybrydowy #paznokciewarszawa #przedłużeniepaznokci |
 | [DZKRjmJNiHR](https://www.instagram.com/p/DZKRjmJNiHR/) | 2026-06-04 | video | 1 | 25 | pl | art classic |  | Nowe French Bazy w naszej kolekcji naturalnych kolorów od marki @adoreprofessional @adorep |
 | [DZFkWqtjfEG](https://www.instagram.com/p/DZFkWqtjfEG/) | 2026-06-02 | carousel | 2 | 30 | en | classic |  | #manicurehybrydowywarszawa #paznokciewarszawa #manicurewarsaw |
 | [DZFZg0zjZRH](https://www.instagram.com/p/DZFZg0zjZRH/) | 2026-06-02 | carousel | 2 | 77 | en |  |  | #manicurewarszawa #paznokciewarszawa #nailswarsaw |

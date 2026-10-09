@@ -87,7 +87,13 @@ export async function generateVideo(o) {
 
   const sub = await fetch(`${API}/videos`, {method: 'POST', headers: headers(), body: JSON.stringify(body)});
   const job = await sub.json();
-  if (!sub.ok || job.error) throw new Error(`openrouter videos submit: ${JSON.stringify(job.error || job)}`);
+  if (!sub.ok || job.error) {
+    const msg = JSON.stringify(job.error || job);
+    if (/InputTextSensitiveContentDetected/.test(msg)) {
+      throw new Error(`openrouter videos submit: the provider rejected the PROMPT as sensitive — reword it (words like "nude", "spread", body parts trip the filter): ${msg}`);
+    }
+    throw new Error(`openrouter videos submit: ${msg}`);
+  }
   const jobId = job.id;
   const pollUrl = job.polling_url || `${API}/videos/${jobId}`;
   let status = job.status;
@@ -95,7 +101,15 @@ export async function generateVideo(o) {
   const started = Date.now();
   while (status !== 'completed') {
     if (status === 'failed' || status === 'cancelled' || status === 'expired') {
-      throw new Error(`openrouter video job ${jobId} ${status}: ${JSON.stringify(last.error || last)}`);
+      const msg = JSON.stringify(last.error || last);
+      // Seedance's generated soundtrack sometimes trips a copyright filter; the video itself is fine.
+      // Retry once silently (failed jobs are not charged). Callers see `audioDropped` in the result.
+      if (o.audio !== false && !o._retriedAudio && /audio.*copyright/i.test(msg)) {
+        if (o.onStatus) o.onStatus(`${jobId} failed on generated audio — retrying without audio`);
+        const r = await generateVideo({...o, audio: false, _retriedAudio: true});
+        return {...r, audioDropped: true};
+      }
+      throw new Error(`openrouter video job ${jobId} ${status}: ${msg}`);
     }
     if (Date.now() - started > 30 * 60_000) throw new Error(`openrouter video job ${jobId} timed out after 30 min`);
     await new Promise((r) => setTimeout(r, 15_000));

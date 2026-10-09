@@ -1,0 +1,275 @@
+{
+  "batch": "2026-10-b01-wave1",
+  "created": "2026-10-09T09:44:21.849Z",
+  "creatives": [
+    {
+      "name": "crazy_reveal_DbT_EsKDTDo_vd_n001_v1_9x16_ua",
+      "file": "crazy_reveal_DbT_EsKDTDo_vd_n001_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "crazy",
+      "hook": "reveal",
+      "hook_text": "Це взагалі нігті?",
+      "source": "DbT_EsKDTDo",
+      "v": 1,
+      "status": "draft",
+      "copy": {
+        "headline": "h01",
+        "primary": "p01",
+        "description": "d01"
+      },
+      "pipeline": [
+        {
+          "step": "image",
+          "model": "google/gemini-3.1-flash-image",
+          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
+          "refs": [
+            "sources/instagram/raw/DbT_EsKDTDo/DbT_EsKDTDo_01.jpg"
+          ],
+          "aspect": "9:16",
+          "resolution": "1K",
+          "cost_usd": 0.0677955,
+          "media_type": "image/png",
+          "created": "2026-10-09T09:21:48.938Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Slow cinematic push-in on the hands. The fingers slowly flex and turn so the studio light glides along the long transparent sculpted nails and catches the silver details. The nail design stays exactly as in the image. Black fabric background, shallow depth of field, soft reflections. No text, no extra hands, no new objects.",
+          "first_frame": "creatives/_work/w1/DbT_EsKDTDo-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": false,
+          "seed": null,
+          "job_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
+          "created": "2026-10-09T09:39:35.684Z"
+        },
+        {
+          "step": "finish",
+          "input": "creatives/_work/w1/DbT_EsKDTDo-clip.mp4",
+          "overlay": "creatives/_work/w1/ov-crazy-glass.png",
+          "overlay_from": 0.6,
+          "trim": null,
+          "music": null,
+          "mute": false,
+          "loop_to": null,
+          "format": "9x16",
+          "size": "720x1280",
+          "created": "2026-10-09T09:40:26.536Z"
+        }
+      ],
+      "cost_usd": 1.9218273,
+      "created": "2026-10-09T09:44:21.903Z",
+      "notes": ""
+    },
+    {
+      "name": "art_art-closeup_Ddv-7k6DQJg_vd_n002_v1_9x16_ua",
+      "file": "art_art-closeup_Ddv-7k6DQJg_vd_n002_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "Арт, який помічають",
+      "source": "Ddv-7k6DQJg",
+      "v": 1,
+      "status": "draft",
+      "copy": {
+        "headline": "h08",
+        "primary": "p01",
+        "description": "d01"
+      },
+      "pipeline": [
+        {
+          "step": "image",
+          "model": "google/gemini-3.1-flash-image",
+          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
+          "refs": [
+            "sources/instagram/raw/Ddv-7k6DQJg/Ddv-7k6DQJg_01.jpg"
+          ],
+          "aspect": "9:16",
+          "resolution": "1K",
+          "cost_usd": 0.0677955,
+          "media_type": "image/png",
+          "created": "2026-10-09T09:21:51.485Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Slow orbiting camera move around the two hands. The fingers slowly tilt so the magnetic cat-eye shimmer shifts and sparkles across each nail; the dark glossy surface below shows soft reflections. The nail colours and design stay exactly as in the image. No text, no extra hands, no new objects.",
+          "first_frame": "creatives/_work/w1/Ddv-7k6DQJg-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": true,
+          "seed": null,
+          "job_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
+          "created": "2026-10-09T09:27:53.541Z"
+        },
+        {
+          "step": "finish",
+          "input": "creatives/_work/w1/Ddv-7k6DQJg-clip.mp4",
+          "overlay": "creatives/_work/w1/ov-art-cateye.png",
+          "overlay_from": 0.6,
+          "trim": null,
+          "music": null,
+          "mute": false,
+          "loop_to": null,
+          "format": "9x16",
+          "size": "720x1280",
+          "created": "2026-10-09T09:40:28.109Z"
+        }
+      ],
+      "cost_usd": 1.9218273,
+      "created": "2026-10-09T09:44:21.952Z",
+      "notes": ""
+    },
+    {
+      "name": "crazy_social_DZTCpxHDUJE_vd_n003_v1_9x16_ua",
+      "file": "crazy_social_DZTCpxHDUJE_vd_n003_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "crazy",
+      "hook": "social",
+      "hook_text": "Мене зупиняють на вулиці",
+      "source": "DZTCpxHDUJE",
+      "v": 1,
+      "status": "draft",
+      "copy": {
+        "headline": "h04",
+        "primary": "p02",
+        "description": "d01"
+      },
+      "pipeline": [
+        {
+          "step": "image",
+          "model": "google/gemini-3.1-flash-image",
+          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
+          "refs": [
+            "sources/instagram/raw/DZTCpxHDUJE/DZTCpxHDUJE_01.jpg"
+          ],
+          "aspect": "9:16",
+          "resolution": "1K",
+          "cost_usd": 0.0679155,
+          "media_type": "image/png",
+          "created": "2026-10-09T09:21:47.386Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Slow tilt down then push in along the extra-long pink ombré stiletto nails. The hand gently rotates to reveal the white French edges and the decorated accent nails. Soft studio light, shallow depth of field. The nail design stays exactly as in the image. No text, no extra fingers, no new objects.",
+          "first_frame": "creatives/_work/w1/DZTCpxHDUJE-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": true,
+          "seed": null,
+          "job_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
+          "created": "2026-10-09T09:26:52.334Z"
+        },
+        {
+          "step": "finish",
+          "input": "creatives/_work/w1/DZTCpxHDUJE-clip.mp4",
+          "overlay": "creatives/_work/w1/ov-crazy-pink.png",
+          "overlay_from": 0.6,
+          "trim": null,
+          "music": null,
+          "mute": false,
+          "loop_to": null,
+          "format": "9x16",
+          "size": "720x1280",
+          "created": "2026-10-09T09:40:29.640Z"
+        }
+      ],
+      "cost_usd": 1.9219473,
+      "created": "2026-10-09T09:44:22.003Z",
+      "notes": ""
+    },
+    {
+      "name": "classic_found_DbMR6_ttcnF_vd_n004_v1_9x16_ua",
+      "file": "classic_found_DbMR6_ttcnF_vd_n004_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "classic",
+      "hook": "found",
+      "hook_text": "Нарешті свій салон у Варшаві",
+      "source": "DbMR6_ttcnF",
+      "v": 1,
+      "status": "draft",
+      "copy": {
+        "headline": "h01",
+        "primary": "p01",
+        "description": "d01"
+      },
+      "pipeline": [
+        {
+          "step": "image",
+          "model": "google/gemini-3.1-flash-image",
+          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hand and every nail exactly as in the reference — same shape, length, colour and finish, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
+          "refs": [
+            "sources/instagram/raw/DbMR6_ttcnF/DbMR6_ttcnF_01.jpg"
+          ],
+          "aspect": "9:16",
+          "resolution": "1K",
+          "cost_usd": 0.0679695,
+          "media_type": "image/png",
+          "created": "2026-10-09T09:40:16.353Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Slow, calm push-in on the hand. The fingers tilt gently so a soft daylight highlight slides across the glossy chrome natural-tone nails. The nail colour, shape and length stay exactly as in the image. Premium, minimal, shallow depth of field. No text, no extra hands, no new objects.",
+          "first_frame": "creatives/_work/w1/DbMR6_ttcnF-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": false,
+          "seed": null,
+          "job_id": "gen-vid-1791538873-7e1IRECBQFDNinP0eeoG",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791538873-7e1IRECBQFDNinP0eeoG",
+          "created": "2026-10-09T09:43:56.846Z"
+        },
+        {
+          "step": "finish",
+          "input": "creatives/_work/w1/DbMR6_ttcnF-clip.mp4",
+          "overlay": "creatives/_work/w1/ov-classic-chrome.png",
+          "overlay_from": 0.6,
+          "trim": null,
+          "music": null,
+          "mute": false,
+          "loop_to": null,
+          "format": "9x16",
+          "size": "720x1280",
+          "created": "2026-10-09T09:43:58.830Z"
+        }
+      ],
+      "cost_usd": 1.9220013,
+      "created": "2026-10-09T09:44:22.055Z",
+      "notes": ""
+    }
+  ],
+  "updated": "2026-10-09T09:44:22.055Z"
+}

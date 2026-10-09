@@ -106,22 +106,37 @@ async function posts() {
   if (argv.includes('--pending')) codes = Object.values(index.posts).filter((p) => !p.fetched).map((p) => p.code);
   codes = codes.slice(0, max);
   if (!codes.length) { console.log('nothing to fetch (pass shortcodes or --pending after `profile`)'); return; }
-  const page = await ctx.newPage();
+  const visit = argv.includes('--visit');
+  const cdn = codes.filter((c) => !visit && index.posts[c] && index.posts[c].media_urls && index.posts[c].media_urls.length);
+  const pages = codes.filter((c) => !cdn.includes(c));
+  const total = codes.length;
   let n = 0;
-  for (const code of codes) {
+  const record = (code, info, err) => {
     n++;
-    try {
-      const known = index.posts[code];
-      const info = known && known.media_urls && known.media_urls.length && !argv.includes('--visit') ? await fetchFromUrls(known) : await fetchPost(page, code);
+    if (err) {
+      index.posts[code] = {...(index.posts[code] || {}), code, fetched: false, error: err.message};
+      console.log(`[${n}/${total}] ${code} FAILED: ${err.message}`);
+    } else {
       index.posts[code] = {...(index.posts[code] || {}), ...info, fetched: true, fetched_at: new Date().toISOString()};
-      saveIndex();
-      console.log(`[${n}/${codes.length}] ${code} ${info.is_video ? 'video' : 'photo'} ×${info.media.length} · ${info.taken_at ? new Date(info.taken_at * 1000).toISOString().slice(0, 10) : '?'} · ${(info.caption || '').slice(0, 60).replace(/\n/g, ' ')}`);
-    } catch (e) {
-      index.posts[code] = {...(index.posts[code] || {}), code, fetched: false, error: e.message};
-      saveIndex();
-      console.log(`[${n}/${codes.length}] ${code} FAILED: ${e.message}`);
+      console.log(`[${n}/${total}] ${code} ${info.is_video ? 'video' : 'photo'} ×${info.media.length} · ${info.taken_at ? new Date(info.taken_at * 1000).toISOString().slice(0, 10) : '?'} · ${(info.caption || '').slice(0, 60).replace(/\n/g, ' ')}`);
     }
-    await sleep((index.posts[code] && index.posts[code].via === 'cdn' ? delay / 4 : delay) + Math.random() * 1000);
+    saveIndex();
+  };
+  // CDN downloads: no page visit, so a small worker pool is still a polite client.
+  const concurrency = Number(flag('--concurrency', 6));
+  let next = 0;
+  await Promise.all(Array.from({length: Math.min(concurrency, cdn.length)}, async () => {
+    while (next < cdn.length) {
+      const code = cdn[next++];
+      try { record(code, await fetchFromUrls(index.posts[code])); } catch (e) { record(code, null, e); }
+      await sleep(200 + Math.random() * 400);
+    }
+  }));
+  if (!pages.length) return;
+  const page = await ctx.newPage();
+  for (const code of pages) {
+    try { record(code, await fetchPost(page, code)); } catch (e) { record(code, null, e); }
+    await sleep(delay + Math.random() * 2000);
   }
 }
 

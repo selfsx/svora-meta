@@ -61,3 +61,14 @@ Reels from Instagram (already video): skip 1–2; `video-finish.mjs --in <code>_
 Per launch wave: 2–3 concepts × 2–3 hooks × the languages of the ad sets you will launch, 6–8 ads per ad
 set. A first wave for `uaru` + `pl` prospecting needs ~12–16 approved creatives, not 300. Build the few
 hundred over weeks, promoting hooks that win (`/report`).
+
+## Provider filters seen in practice (2026-10-09)
+
+- Seedance's generated soundtrack can fail with "output audio may be related to copyright". `gen-video.mjs`
+  now retries once without audio automatically (sidecar `audio_dropped: true`); add music in `video-finish.mjs` if needed.
+- The prompt text is screened: **"nude"** is rejected (`InputTextSensitiveContentDetected`). Say "natural-tone",
+  "milky", "pale pink". Avoid body-part verbs ("spread"); describe camera and light.
+- A photo framed on the lap/crotch area was refused twice as "sensitive video" — switch source, don't retry.
+- Failed jobs were not charged. Budget ≈ $1.85 per 8 s 720p clip + $0.07 per Nano Banana extension.
+- Instagram originals are UltraHDR JPEGs: ImageMagick fails on them (`UnableToTransformGainMap`); make previews
+  with `ffmpeg -i x.jpg -vf scale=360:-1 out.jpg`. Playwright and the APIs read them fine.
