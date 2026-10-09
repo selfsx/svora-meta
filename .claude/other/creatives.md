@@ -65,6 +65,12 @@ language × format, renders, finishes (cuts, captions + translation, end cards),
 `overlay-hook-cta` (video), `static-hero`, `static-blur-pad`, `static-pick` (three tiles), `static-card` (text-led:
 menu, location, proof, meme; `bg=cream|black`, `kicker`, `lines` HTML).
 
+**Where text goes on a frame** is measured, not guessed: `scripts/free-zone.mjs <clip|photo> [--cuts]` samples frames
+across the clip, scores every horizontal band by edge energy plus skin coverage (hands are never "empty"), keeps the
+maximum over time and returns the emptiest band for a block of the CTA's height, with the Reels UI zones penalised.
+`wave.mjs` feeds that band to the overlay as `cta_top`; when no band scores under 60 (hands fill the frame) the body
+stays clean and the CTA appears only on the 1.5 s outro card. Every intro-style video gets that outro (hook + CTA).
+
 Every variant is cheap after step 3: one clip × 4 languages × 2 hooks = 8 creatives for one video job.
 
 ## Manifest schema — `creatives/<batch>/manifest.json`

@@ -58,106 +58,6 @@
       }
     },
     {
-      "name": "classic_process_C3Sy533oeEN_vd_n010_v1_9x16_pl",
-      "file": "classic_process_C3Sy533oeEN_vd_n010_v1_9x16_pl.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "classic",
-      "hook": "process",
-      "hook_text": "Proces, który widać",
-      "angle": "process",
-      "source": "C3Sy533oeEN",
-      "v": 1,
-      "look": {
-        "place": "bottom",
-        "tone": "light",
-        "avoid": "hands, hair, torso, face area",
-        "baked_text": false,
-        "risks": "exposed midriff and crop top showing skin may be flagged by Meta for body-focused content; consider cropping tighter or adding overlay to minimize skin exposure"
-      },
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/C3Sy533oeEN/C3Sy533oeEN_01.mp4",
-          "overlay": "creatives/_work/re/ov-proc2-pl.png",
-          "overlay_from": 0.5,
-          "trim": null,
-          "cuts": [
-            [
-              3,
-              16
-            ]
-          ],
-          "subs": null,
-          "music": null,
-          "music_gain": null,
-          "mute": true,
-          "loop_to": null,
-          "pad": null,
-          "loudnorm": true,
-          "format": "9x16",
-          "size": "720x1280",
-          "created": "2026-10-09T12:00:32.693Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T12:01:52.881Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_process_C3Sy533oeEN_vd_n011_v1_9x16_ua",
-      "file": "classic_process_C3Sy533oeEN_vd_n011_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "classic",
-      "hook": "process",
-      "hook_text": "Процес, який видно",
-      "angle": "process",
-      "source": "C3Sy533oeEN",
-      "v": 1,
-      "look": {
-        "place": "bottom",
-        "tone": "light",
-        "avoid": "hands, hair, torso, face area",
-        "baked_text": false,
-        "risks": "exposed midriff and crop top showing skin may be flagged by Meta for body-focused content; consider cropping tighter or adding overlay to minimize skin exposure"
-      },
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/C3Sy533oeEN/C3Sy533oeEN_01.mp4",
-          "overlay": "creatives/_work/re/ov-proc2-ua.png",
-          "overlay_from": 0.5,
-          "trim": null,
-          "cuts": [
-            [
-              3,
-              16
-            ]
-          ],
-          "subs": null,
-          "music": null,
-          "music_gain": null,
-          "mute": true,
-          "loop_to": null,
-          "pad": null,
-          "loudnorm": true,
-          "format": "9x16",
-          "size": "720x1280",
-          "created": "2026-10-09T12:00:35.163Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T12:01:52.918Z",
-      "notes": ""
-    },
-    {
       "name": "mix_social_DV5ZDohDBx0_st_n012_v1_4x5_ua",
       "file": "mix_social_DV5ZDohDBx0_st_n012_v1_4x5_ua.png",
       "type": "st",
@@ -258,5 +158,5 @@
       }
     }
   ],
-  "updated": "2026-10-09T13:38:52.361Z"
+  "updated": "2026-10-09T15:11:56.456Z"
 }

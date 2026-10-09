@@ -15,7 +15,9 @@
 .group.under  { top: calc({{logo_top}} + {{tile_h}} + 44px); }
 .group.top.with-logo { right: 300px; }
 
-.ctagroup { position: absolute; left: 56px; right: 56px; bottom: {{group_bottom}}; display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+.ctagroup { position: absolute; left: 56px; right: 56px; top: {{cta_top}}; bottom: {{cta_bottom}}; display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+.group.center, .ctagroup.center { align-items: center; text-align: center; }
+.logo.center { left: 50%; right: auto; transform: translateX(-50%); }
 
 .hook-wrap { display: block; max-width: 100%; }
 .hook {

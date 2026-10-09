@@ -111,3 +111,13 @@
   hero/price/seasonal statics = `static-card` photo cards (tile 54% at 4:5, 44% at 9:16, text under) — the construction
   the operator approved for the pick trios. `wave.mjs` gained `intro:`; sub → kicker mapping for cards.
 - 120 drafts dropped and remade (wave D). Approved set (35) untouched.
+
+## 2026-10-09 — third operator pass → wave E (measured placement)
+
+- Verdicts round 2 (`scratch/review-2026-10-09-b.json`): 52 approved (photo-card statics: art, crazy, nude, price,
+  seasonal; proof; founder quote), 66 rejected (all videos — "CTA right on the hands, empty space unused"; classic pick
+  trio "broken in both"; location card). Operator: the start card is OK "but must be polished"; placement looked random.
+- Fix: `scripts/free-zone.mjs` measures the emptiest band (edges + skin, max over sampled frames after cuts, UI
+  penalties) and the runner puts the CTA there; busy frames get no body CTA — the new 1.5 s outro card (hook + CTA)
+  carries it. Intro/outro cards centred with a centred logo. `static-pick` rebuilt as a flow stack (hook → tiles →
+  CTA, no overlap). Location card: bigger tile, one line of hours/languages. V9 (approved with a CTA note) remade.

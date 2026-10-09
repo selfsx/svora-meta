@@ -57,7 +57,7 @@ const vars = {
   fg_w: v916 ? '92%' : '70%', fg_top: v916 ? '15%' : '56px', fg_shift: '-50%, 0',  // top of the safe zone; copy goes under/over per `place`
   photo_pos: 'center',
   // static-pick: the three-tile row (between the hook group and the CTA group)
-  pick_top: v916 ? '38%' : '33%', pick_h: v916 ? '16%' : '40%',
+  pick_h: v916 ? '24%' : '40%', align: '', logo_pos: '', cta_top: 'auto',
   // static-card: text-led cards. bg=cream (default) or black; the group sits `bottom` under an optional photo tile
   bg: 'cream', tile_h: v916 ? '21%' : '30%', line_size: v916 ? 44 : 38,
   tile_pos: 'center',
@@ -65,6 +65,7 @@ const vars = {
 };
 for (const k of ['image2', 'image3']) if (vars[k] && !vars[k].startsWith('file:')) vars[k] = pathToFileURL(path.resolve(vars[k])).href;
 if (vars.price && !vars.meta) vars.meta = vars.price;  // older callers passed --var price=
+vars.cta_bottom = vars.cta_top && vars.cta_top !== 'auto' ? 'auto' : vars.group_bottom;  // an analysed cta_top (free-zone.mjs) wins over the safe-zone bottom
 vars.badge_display = vars.badge ? 'inline-block' : 'none';
 vars.sub_display = vars.sub ? 'inline-block' : 'none';
 vars.hook_display = vars.hook ? 'block' : 'none';

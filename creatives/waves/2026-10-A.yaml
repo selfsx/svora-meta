@@ -42,7 +42,7 @@ jobs:
       overlay_from: 0.3, intro: { seconds: 1.2, vars: { bg: black, place: middle, hook_size: 120 } }, vars: { place: top, tone: light },
       langs: { ua: { hook: "@o09", sub: "@o05" }, pl: { hook: "@o09", sub: "@o06" }, ru: { hook: "Какой выбираешь: <b>1, 2 или 3</b>?", sub: "@o05" }, en: { hook: "WHICH ONE: <b>1, 2 OR 3</b>?", sub: "@o06" } } }
   - { id: V13, type: video, angle: price, concept: crazy, hook: price, source: DZTCpxHDUJE, clip: creatives/_work/base/price-base.mp4,
-      overlay_from: 0.3, intro: { seconds: 1.2, vars: { bg: cream, place: middle, hook_size: 120 } }, vars: { place: top, tone: light }, endcard: { template: static-hero, image: creatives/_work/w1/DZTCpxHDUJE-still.png, seconds: 1.5, vars: { place: bottom } },
+      overlay_from: 0.3, intro: { seconds: 1.2, vars: { bg: cream, place: middle, hook_size: 120 } }, vars: { place: top, tone: light },
       langs: { ua: { hook: "@o02", sub: "Форма з нуля · 3 год" }, pl: { hook: "@o01", sub: "Forma od zera · 3 h" }, ru: { hook: "@o02", sub: "Форма с нуля · 3 ч" }, en: { hook: "@o01", sub: "Built from scratch · 3 h" } } }
   - { id: V14, type: video, angle: before-after, concept: classic, hook: before-after, source: C3Sy533oeEN, clip: sources/instagram/raw/C3Sy533oeEN/C3Sy533oeEN_01.mp4,
       cuts: "3:9,0:3", mute: true, overlay_from: 0.3, intro: { seconds: 1.2, vars: { bg: black, place: middle, hook_size: 120 } }, vars: { place: bottom },
@@ -84,12 +84,12 @@ jobs:
         ru: { kicker: "Fresha", hook: "<b>5.0</b> · 117 отзывов", lines: "Ногти, педикюр, брови · Воля<br>Запись онлайн <b>за минуту</b>" },
         en: { kicker: "Fresha", hook: "<b>5.0</b> · 117 reviews", lines: "Nails, pedicure, brows · Wola<br>Book online <b>in a minute</b>" } } }
   - { id: S10, type: static, template: static-card, formats: [4x5, 9x16], angle: location, concept: brand, hook: found, source: DdljeKAtree,
-      image: creatives/_work/base/studio-frame.jpg, vars: { place: under, bg: black, hook_size: 96 },
+      image: creatives/_work/base/studio-frame.jpg, vars: { place: under, bg: black, hook_size: 84, tile_pos: "center 40%" }, vars_4x5: { tile_h: "50%" }, vars_9x16: { tile_h: "40%" },
       langs: {
-        ua: { kicker: "Де ми", hook: "Воля · Jana Kazimierza <b>25B</b>", lines: "Щодня <b>9:00–21:00</b><br>Запис онлайн у Fresha<br>Говоримо UA · RU · PL · EN", meta: "" },
-        pl: { kicker: "Gdzie jesteśmy", hook: "Wola · Jana Kazimierza <b>25B</b>", lines: "Codziennie <b>9:00–21:00</b><br>Rezerwacja online na Fresha<br>Mówimy PL · UA · RU · EN", meta: "" },
-        ru: { kicker: "Где мы", hook: "Воля · Jana Kazimierza <b>25B</b>", lines: "Ежедневно <b>9:00–21:00</b><br>Запись онлайн в Fresha<br>Говорим RU · UA · PL · EN", meta: "" },
-        en: { kicker: "Where we are", hook: "Wola · Jana Kazimierza <b>25B</b>", lines: "Daily <b>9:00–21:00</b><br>Book online on Fresha<br>We speak EN · PL · UA · RU", meta: "" } } }
+        ua: { kicker: "Де ми", hook: "Воля · Jana Kazimierza <b>25B</b>", lines: "Щодня <b>9:00–21:00</b> · UA · RU · PL · EN", meta: "" },
+        pl: { kicker: "Gdzie jesteśmy", hook: "Wola · Jana Kazimierza <b>25B</b>", lines: "Codziennie <b>9:00–21:00</b> · PL · UA · RU · EN", meta: "" },
+        ru: { kicker: "Где мы", hook: "Воля · Jana Kazimierza <b>25B</b>", lines: "Ежедневно <b>9:00–21:00</b> · RU · UA · PL · EN", meta: "" },
+        en: { kicker: "Where we are", hook: "Wola · Jana Kazimierza <b>25B</b>", lines: "Daily <b>9:00–21:00</b> · EN · PL · UA · RU", meta: "" } } }
   - { id: S11, type: static, template: static-card, formats: [4x5, 9x16], angle: meme, concept: brand, hook: social, source: gen, vars: { place: middle, bg: cream, hook_size: 120 },
       langs: {
         ua: { kicker: "SVORA NAILS · Воля", hook: "Нігті зробила. <b>Настрій</b> теж.", meta: "" },
