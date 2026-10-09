@@ -105,7 +105,7 @@ jobs:
         ru: { kicker: "SVORA NAILS · Воля", hook: "Ногти сделала. <b>Настроение</b> тоже.", meta: "" },
         en: { kicker: "SVORA NAILS · Wola", hook: "NAILS DONE. <b>MOOD</b> DONE.", meta: "" } } }
   - { id: S12, type: static, template: static-card, formats: [4x5, 9x16], angle: founder, concept: brand, hook: price, source: DdJn2Wrsad-,
-      image: creatives/_work/base/founder-frame.jpg, vars: { place: bottom, bg: black, hook_size: 92 },
+      image: creatives/_work/base/founder-frame.jpg, vars: { place: bottom, bg: black, hook_size: 92, tile_pos: "center 32%", tile_h: "15%" },
       langs: { ua: { kicker: "Маріана, засновниця SVORA", hook: "«Не дешевий салон. <b>І не планували</b>»", lines: "Ви виходите, дивитесь на руки —<br>і розумієте, за що заплатили." }, ru: { kicker: "Мариана, основательница SVORA", hook: "«Не дешёвый салон. <b>И не планировали</b>»", lines: "Вы выходите, смотрите на руки —<br>и понимаете, за что заплатили." } } }
   - { id: S13, type: static, template: static-hero, formats: [4x5, 9x16], angle: seasonal, concept: classic, hook: reveal, source: DPZE72BjF50,
       image: sources/instagram/raw/DPZE72BjF50/DPZE72BjF50_01.jpg, vars: { place: top },

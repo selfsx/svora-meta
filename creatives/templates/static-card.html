@@ -8,7 +8,7 @@
      Optional photo tile (image) at the top. Vars: bg=cream|black (default cream), kicker, hook, lines, cta, meta. */
   html, body { margin: 0; width: {{w}}px; height: {{h}}px; overflow: hidden; }
   .stage { position: relative; width: {{w}}px; height: {{h}}px; background: {{card_bg}}; color: {{card_fg}}; }
-  .tile { position: absolute; left: 56px; right: 56px; top: {{logo_top}}; height: {{tile_h}}; border-radius: 22px; background: url('{{image}}') center / cover no-repeat; display: {{tile_display}}; box-shadow: 0 14px 30px rgba(0,0,0,.25); }
+  .tile { position: absolute; left: 56px; right: 56px; top: {{logo_top}}; height: {{tile_h}}; border-radius: 22px; background: url('{{image}}') {{tile_pos}} / cover no-repeat; display: {{tile_display}}; box-shadow: 0 14px 30px rgba(0,0,0,.25); }
   .logo { left: 56px; right: auto; }
   .group { right: 56px; }
   .kicker { font-size: {{sub_size}}px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: {{color_orange}}; display: {{kicker_display}}; }

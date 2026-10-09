@@ -58,6 +58,7 @@ const vars = {
   pick_top: v916 ? '38%' : '30%', pick_h: v916 ? '16%' : '46%',
   // static-card: text-led cards. bg=cream (default) or black; the group sits `bottom` under an optional photo tile
   bg: 'cream', tile_h: v916 ? '21%' : '30%', line_size: v916 ? 44 : 38,
+  tile_pos: 'center',
   ...o.vars,
 };
 for (const k of ['image2', 'image3']) if (vars[k] && !vars[k].startsWith('file:')) vars[k] = pathToFileURL(path.resolve(vars[k])).href;

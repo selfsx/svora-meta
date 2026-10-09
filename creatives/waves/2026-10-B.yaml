@@ -1,0 +1,13 @@
+# Wave B of the first 100: the two paid Seedance masters (2 candidates each were generated into creatives/_work/wb/;
+# the winners below were chosen on frame strips — alternates DPZE-b / DASm-b stay there for the operator).
+batch: 2026-10-b03-wavea
+defaults:
+  cta:  { ua: "Записатись онлайн", pl: "Zarezerwuj online", ru: "Записаться онлайн", en: "Book online" }
+  meta: { ua: "svora.place · Воля", pl: "svora.place · Wola", ru: "svora.place · Воля", en: "svora.place · Wola, Warsaw" }
+jobs:
+  - { id: V15, type: video, angle: seasonal, concept: classic, hook: reveal, source: DPZE72BjF50, clip: creatives/_work/wb/DPZE-a.mp4,
+      pipeline: [creatives/_work/wb/DPZE72BjF50-still.png.json, creatives/_work/wb/DPZE-a.mp4.json], overlay_from: 0.3, vars: { place: top, tone: dark },
+      langs: { ua: { hook: "Осінь — <b>бордо</b>", sub: "Гібридний манікюр 190 zł" }, pl: { hook: "Jesień w <b>bordo</b>", sub: "Hybryda 190 zł" }, ru: { hook: "Осень — <b>бордо</b>", sub: "Гибридный маникюр 190 zł" }, en: { hook: "AUTUMN IN <b>BURGUNDY</b>", sub: "Hybrid manicure 190 zł" } } }
+  - { id: V16, type: video, angle: hero, concept: art, hook: art-closeup, source: DASm4oUIwxA, clip: creatives/_work/wb/DASm-a.mp4,
+      pipeline: [creatives/_work/wb/DASm4oUIwxA-still.png.json, creatives/_work/wb/DASm-a.mp4.json], overlay_from: 0.3, vars: { place: top, tone: dark },
+      langs: { ua: { hook: "@o07", sub: "Хром, мармур, золото" }, pl: { hook: "@o08", sub: "Chrome, marmur, złoto" }, ru: { hook: "@o07", sub: "Хром, мрамор, золото" }, en: { hook: "@o06", sub: "Chrome, marble, gold" } } }

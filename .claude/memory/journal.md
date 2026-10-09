@@ -69,3 +69,20 @@
   owner inputs that block specific masters). Built: `scripts/review.mjs` (local review page with 👍/👎/notes + export,
   `apply` writes verdicts to manifests), `/review` command.
 - Next: wave A (free) as soon as the operator confirms the plan or marks the current 26 drafts.
+
+## 2026-10-09 — operator approved the first-100 plan ($50 cap) → waves A + B produced
+
+- Wave A (`creatives/waves/2026-10-A.yaml`, batch `2026-10-b03-wavea`): 127 files, $0 generation — V1–V10 localised
+  (ru/en/pl), V12 pick video, V13 price video with end card, V14 process→result, S1–S13 statics (pick trios, hero covers,
+  blur-pad, price, menu/location/proof/meme text cards, founder quote, autumn cover) in ua/pl/ru/en × 4:5/9:16.
+- Wave B (`2026-10-B.yaml`): V15 burgundy autumn hand + V16 chrome-marble macro — 2 Seedance candidates each ($7.4 +
+  $0.14 stills); winners DPZE-a (push-in, light sweep) and DASm-a (macro glide); alternates kept in `creatives/_work/wb/`
+  and recorded under `alternates` in the manifest. OpenRouter total for the project ≈ $23 of the $50 cap.
+- QA fixes before handing over: classic pick trio had a drinks-table slide (DQkTCNuDfmz_02) → C4dzm1rLo84_01; founder
+  quote card rebuilt as a photo-tile text card; V16 text moved to the top (macro = nails everywhere); pick-video badges
+  rebuilt without logo/CTA (empty CTA pill bug fixed: `cta_display`); shared-cost accounting so localised twins count $0.
+- Tooling: `scripts/wave.mjs` (job file → render/finish/register, `--only/--redo/--langs/--dry`), `scripts/copy-sync.mjs`,
+  `static-card` template (`bg`, `kicker`, `lines`, `tile_pos`, `tile_h`), `creatives.mjs add --job/--cost-shared`.
+- Portfolio now 160 (1 approved smoke, 159 drafts) by angle: hero 42 · pick 28 · price 21 · seasonal 12 · studio 12 ·
+  meme 9 · founder 8 · process 8 · review 8 · location 8 · before-after 4. Next: operator review → apply → wave C.
+- Shell gotcha: zsh does not word-split `$var` in ffmpeg arg lists — use `${=var}` or build arrays.

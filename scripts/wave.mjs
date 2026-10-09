@@ -137,7 +137,9 @@ function register(job, lang, format, text, out, jobKey, v) {
   if (job.look && existsSync(job.look)) a.push('--look', job.look);
   if (existsSync(`${out}.json`)) a.push('--pipeline', `${out}.json`);
   for (const p of job.pipeline || []) if (existsSync(p)) a.push('--pipeline', p);
-  if (job.pipeline && job.pipeline.length) a.push('--cost-shared');  // the generation was paid once, by the first creative of that source
+  // a paid generation is counted once: by the first creative made from it (in this run or an earlier batch)
+  if (job.pipeline && job.pipeline.length && (job.cost_counted || allCreatives().some((c) => c.source === job.source && c.cost_usd > 0))) a.push('--cost-shared');
+  job.cost_counted = true;
   run('node', a);
 }
 
