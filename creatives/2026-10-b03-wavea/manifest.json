@@ -936,7 +936,7 @@
       "source": "gen",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -960,11 +960,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T13:02:42.209Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": ""
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "brand_social_gen_st_n108_v1_4x5_pl",
@@ -1024,7 +1020,7 @@
       "source": "gen",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -1048,11 +1044,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T13:02:43.143Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": ""
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "brand_social_gen_st_n110_v1_4x5_ru",
@@ -1949,7 +1941,7 @@
       "source": "C4dzm1rLo84",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -1976,11 +1968,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T13:57:17.658Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": ""
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "classic_found_C4dzm1rLo84_st_n101_v1_4x5_ru",
@@ -2605,7 +2593,7 @@
       "source": "DZqf93TDGOU",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -2630,11 +2618,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T13:57:25.284Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": ""
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "brand_social_DZqf93TDGOU_st_n115_v1_4x5_pl",
@@ -2695,7 +2679,7 @@
       "source": "DZqf93TDGOU",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -2720,11 +2704,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T13:57:26.352Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": ""
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "brand_social_DZqf93TDGOU_st_n117_v1_4x5_ru",
@@ -2967,7 +2947,7 @@
       "source": "DdJn2Wrsad-",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -2994,11 +2974,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T13:57:33.749Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": ""
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "brand_price_DdJn2Wrsad-_st_n131_v1_4x5_ru",
@@ -3155,7 +3131,7 @@
       "source": "DPZE72BjF50",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -3182,11 +3158,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T13:57:35.890Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": ""
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "classic_reveal_DPZE72BjF50_st_n135_v1_4x5_pl",
@@ -3249,7 +3221,7 @@
       "source": "DPZE72BjF50",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -3276,11 +3248,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T13:57:37.003Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": ""
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "classic_reveal_DPZE72BjF50_st_n137_v1_4x5_ru",
@@ -3828,7 +3796,7 @@
       "source": "DbT_EsKDTDo",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -3870,11 +3838,7 @@
       "cost_usd": 1.8540318,
       "created": "2026-10-09T15:46:59.176Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "crazy_reveal_DbT_EsKDTDo_vd_n086_v1_9x16_pl",
@@ -4141,7 +4105,7 @@
       "source": "Ddv-7k6DQJg",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -4184,11 +4148,7 @@
       "cost_shared": true,
       "created": "2026-10-09T15:47:27.932Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "art_art-closeup_Ddv-7k6DQJg_vd_n091_v1_9x16_ru",
@@ -4581,7 +4541,7 @@
       "source": "DZKRjmJNiHR",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -4605,11 +4565,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T15:48:10.087Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "classic_process_DZKRjmJNiHR_vd_n098_v1_9x16_pl",
@@ -4625,7 +4581,7 @@
       "source": "DZKRjmJNiHR",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -4649,11 +4605,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T15:48:15.971Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "classic_process_DZKRjmJNiHR_vd_n099_v1_9x16_ru",
@@ -4933,7 +4885,7 @@
       "source": "DdnxYOft2B2",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -4957,11 +4909,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T15:49:01.254Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "brand_pov_DdnxYOft2B2_vd_n106_v1_9x16_pl",
@@ -4977,7 +4925,7 @@
       "source": "DdnxYOft2B2",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -5001,11 +4949,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T15:49:08.586Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "brand_pov_DdnxYOft2B2_vd_n107_v1_9x16_ru",
@@ -5109,7 +5053,7 @@
       "source": "DbMR6_ttcnF",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -5133,11 +5077,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T15:49:28.853Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "mix_social_DbMR6_ttcnF_vd_n110_v1_9x16_pl",
@@ -5153,7 +5093,7 @@
       "source": "DbMR6_ttcnF",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -5177,11 +5117,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T15:49:34.445Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "mix_social_DbMR6_ttcnF_vd_n111_v1_9x16_ru",
@@ -6075,7 +6011,7 @@
       "source": "DZTCpxHDUJE",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -6099,11 +6035,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T15:52:00.304Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": "approved in round 3; audio re-laid (price base now keeps the clip audio)"
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "crazy_price_DZTCpxHDUJE_vd_n126_v1_9x16_pl",
@@ -6119,7 +6051,7 @@
       "source": "DZTCpxHDUJE",
       "v": 1,
       "look": null,
-      "status": "approved",
+      "status": "retired",
       "copy": null,
       "pipeline": [
         {
@@ -6143,11 +6075,7 @@
       "cost_usd": 0,
       "created": "2026-10-09T15:52:05.515Z",
       "notes": "",
-      "review": {
-        "date": "2026-10-09",
-        "ok": true,
-        "note": "approved in round 3; audio re-laid (price base now keeps the clip audio)"
-      }
+      "review": "[object Object] · superseded by v2 (SVME20 offer), 2026-10-09"
     },
     {
       "name": "crazy_price_DZTCpxHDUJE_vd_n127_v1_9x16_ru",
@@ -6251,7 +6179,7 @@
       "source": "legacy-img4864",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -6274,7 +6202,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:52:41.956Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "crazy_reveal_legacy-img4864_vd_n158_v1_9x16_pl",
@@ -6290,7 +6223,7 @@
       "source": "legacy-img4864",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -6313,7 +6246,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:52:49.396Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "crazy_reveal_legacy-img4864_vd_n159_v1_9x16_ru",
@@ -6407,7 +6345,7 @@
       "source": "legacy-img4883",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -6430,7 +6368,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:53:11.433Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "art_art-closeup_legacy-img4883_vd_n162_v1_9x16_pl",
@@ -6446,7 +6389,7 @@
       "source": "legacy-img4883",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -6469,7 +6412,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:53:18.546Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "art_art-closeup_legacy-img4883_vd_n163_v1_9x16_ru",
@@ -6563,7 +6511,7 @@
       "source": "legacy-img5027",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -6584,7 +6532,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:53:41.232Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "mix_social_legacy-img5028_vd_n166_v1_9x16_pl",
@@ -6600,7 +6553,7 @@
       "source": "legacy-img5028",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -6621,7 +6574,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:53:49.764Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "mix_social_legacy-img5029_vd_n167_v1_9x16_ru",
@@ -6762,7 +6720,7 @@
       "source": "legacy-img4831",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -6793,7 +6751,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:54:08.344Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "art_art-closeup_legacy-img4831_st_n171_v1_4x5_pl",
@@ -6856,7 +6819,7 @@
       "source": "legacy-img4831",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -6887,7 +6850,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:54:09.442Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "art_art-closeup_legacy-img4831_st_n173_v1_4x5_ru",
@@ -7138,7 +7106,7 @@
       "source": "legacy-img4835",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -7169,7 +7137,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:54:12.782Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "crazy_reveal_legacy-img4835_st_n179_v1_4x5_pl",
@@ -7232,7 +7205,7 @@
       "source": "legacy-img4835",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -7263,7 +7236,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:54:13.884Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "crazy_reveal_legacy-img4835_st_n181_v1_4x5_ru",
@@ -7467,7 +7445,7 @@
       "source": "legacy-img4881",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -7499,7 +7477,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:54:16.893Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "brand_found_legacy-img4881_st_n186_v1_9x16_pl",
@@ -7515,7 +7498,7 @@
       "source": "legacy-img4881",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -7547,7 +7530,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:54:17.667Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "brand_found_legacy-img4881_st_n187_v1_9x16_ru",
@@ -7659,7 +7647,7 @@
       "source": "DbT_EsKDTDo",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -7701,7 +7689,12 @@
       "cost_usd": 0,
       "cost_shared": true,
       "created": "2026-10-09T18:54:24.626Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "art_art-closeup_Ddv-7k6DQJg_vd_n090_v2_9x16_pl",
@@ -7717,7 +7710,7 @@
       "source": "Ddv-7k6DQJg",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -7759,7 +7752,12 @@
       "cost_usd": 0,
       "cost_shared": true,
       "created": "2026-10-09T18:54:30.527Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "classic_process_DZKRjmJNiHR_vd_n097_v2_9x16_ua",
@@ -7775,7 +7773,7 @@
       "source": "DZKRjmJNiHR",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -7798,7 +7796,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:54:36.389Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "classic_process_DZKRjmJNiHR_vd_n098_v2_9x16_pl",
@@ -7814,7 +7817,7 @@
       "source": "DZKRjmJNiHR",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -7837,7 +7840,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:54:42.189Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "brand_pov_DdnxYOft2B2_vd_n105_v2_9x16_ua",
@@ -7853,7 +7861,7 @@
       "source": "DdnxYOft2B2",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -7876,7 +7884,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:54:49.518Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "brand_pov_DdnxYOft2B2_vd_n106_v2_9x16_pl",
@@ -7892,7 +7905,7 @@
       "source": "DdnxYOft2B2",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -7915,7 +7928,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:54:56.779Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "mix_social_DbMR6_ttcnF_vd_n109_v2_9x16_ua",
@@ -7931,7 +7949,7 @@
       "source": "DbMR6_ttcnF",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -7954,7 +7972,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:55:02.280Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "mix_social_DbMR6_ttcnF_vd_n110_v2_9x16_pl",
@@ -7970,7 +7993,7 @@
       "source": "DbMR6_ttcnF",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -7993,7 +8016,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:55:07.697Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "crazy_price_DZTCpxHDUJE_vd_n125_v2_9x16_ua",
@@ -8009,7 +8037,7 @@
       "source": "DZTCpxHDUJE",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -8032,7 +8060,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:55:12.886Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "crazy_price_DZTCpxHDUJE_vd_n126_v2_9x16_pl",
@@ -8048,7 +8081,7 @@
       "source": "DZTCpxHDUJE",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -8071,7 +8104,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:55:18.003Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "classic_before-after_C3Sy533oeEN_vd_n117_v2_9x16_ua",
@@ -8087,7 +8125,7 @@
       "source": "C3Sy533oeEN",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "rejected",
       "copy": null,
       "pipeline": [
         {
@@ -8110,7 +8148,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:55:23.615Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": false,
+        "note": ""
+      }
     },
     {
       "name": "classic_before-after_C3Sy533oeEN_vd_n118_v2_9x16_pl",
@@ -8126,7 +8169,7 @@
       "source": "C3Sy533oeEN",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "rejected",
       "copy": null,
       "pipeline": [
         {
@@ -8149,7 +8192,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:55:29.171Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": false,
+        "note": ""
+      }
     },
     {
       "name": "classic_found_C4dzm1rLo84_st_n099_v2_4x5_pl",
@@ -8212,7 +8260,7 @@
       "source": "C4dzm1rLo84",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -8243,7 +8291,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:55:30.273Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "brand_social_DZqf93TDGOU_st_n113_v2_4x5_ua",
@@ -8302,7 +8355,7 @@
       "source": "DZqf93TDGOU",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -8329,7 +8382,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:55:31.408Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "brand_social_DZqf93TDGOU_st_n115_v2_4x5_pl",
@@ -8388,7 +8446,7 @@
       "source": "DZqf93TDGOU",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -8415,7 +8473,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:55:32.489Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "brand_social_gen_st_n106_v2_4x5_ua",
@@ -8475,7 +8538,7 @@
       "source": "gen",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -8503,7 +8566,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:55:33.505Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "brand_social_gen_st_n108_v2_4x5_pl",
@@ -8563,7 +8631,7 @@
       "source": "gen",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -8591,7 +8659,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:55:34.467Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "brand_price_DdJn2Wrsad-_st_n129_v2_4x5_ua",
@@ -8652,7 +8725,7 @@
       "source": "DdJn2Wrsad-",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -8681,7 +8754,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:55:35.584Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "classic_reveal_DPZE72BjF50_st_n133_v2_4x5_ua",
@@ -8744,7 +8822,7 @@
       "source": "DPZE72BjF50",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -8775,7 +8853,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:55:36.737Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "classic_reveal_DPZE72BjF50_st_n135_v2_4x5_pl",
@@ -8838,7 +8921,7 @@
       "source": "DPZE72BjF50",
       "v": 2,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -8869,8 +8952,13 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T18:55:37.822Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     }
   ],
-  "updated": "2026-10-09T18:55:37.822Z"
+  "updated": "2026-10-09T19:11:20.174Z"
 }

@@ -13,11 +13,16 @@ adsets:
   - audience: broad
     daily_pln: 75
     creatives:
-      # 10 ads = 9 distinct angles + a second hero in a different visual world (nude static vs dark art video), 6 video + 4 static, 9:16. Picked 2026-10-09.
+      # 15 ads, operator verdict 2026-10-09 (scratch/review-2026-10-09-d.json): 9 of the first 10 (before-after rejected) + 6 from the owner's own footage (wave C). 8 video + 7 static, 9:16, SVME20 offer on every one.
       - "art_art-closeup_Ddv-7k6DQJg_vd_n090_v2_9x16_pl"
       - "mix_social_DbMR6_ttcnF_vd_n110_v2_9x16_pl"
       - "classic_process_DZKRjmJNiHR_vd_n098_v2_9x16_pl"
-      - "classic_before-after_C3Sy533oeEN_vd_n118_v2_9x16_pl"
+      - "crazy_reveal_legacy-img4864_vd_n158_v1_9x16_pl"
+      - "art_art-closeup_legacy-img4883_vd_n162_v1_9x16_pl"
+      - "mix_social_legacy-img5028_vd_n166_v1_9x16_pl"
+      - "art_art-closeup_legacy-img4831_st_n172_v1_9x16_pl"
+      - "crazy_reveal_legacy-img4835_st_n180_v1_9x16_pl"
+      - "brand_found_legacy-img4881_st_n186_v1_9x16_pl"
       - "crazy_price_DZTCpxHDUJE_vd_n126_v2_9x16_pl"
       - "brand_pov_DdnxYOft2B2_vd_n106_v2_9x16_pl"
       - "brand_social_DZqf93TDGOU_st_n116_v2_9x16_pl"

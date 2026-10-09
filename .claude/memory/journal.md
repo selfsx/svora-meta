@@ -205,3 +205,8 @@
   System User token (edges empty) — the ads would run without the @svora.nails identity. Operator "added system user to
   instagram accounts"; what is still missing is the IG account → ad account connection (and page link), or the token
   lacks `instagram_basic`. Launch today depends on it.
+- Verdict round 4 (`scratch/review-2026-10-09-d.json`, 32 ads): 30 approved, 2 rejected (the before-after re-cut, ua and
+  pl — dropped from both specs). 18 superseded v1 files retired. Specs 001/002 now carry 15 ads each (9 + 6 owner-footage),
+  ad set type cr15; both resolve with `launch.mjs spec`. Instagram: @svora.nails (17841402079737028) is in the Business
+  with the System User assigned (screenshot), but the token still cannot read it (no instagram_basic; ad-account
+  connection unverified) — the build will tell: creative creation carries instagram_user_id.
