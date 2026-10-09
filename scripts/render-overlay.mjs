@@ -86,13 +86,17 @@ vars.meta_display = vars.meta ? 'inline-block' : 'none';
 // Sizes follow the template's own scale: cards (static-card) key off the hook (tag ≥ 1.3× hook), the CTA stack
 // (video body, static-pick) off the CTA pill (tag ≈ 1.5× pill height). `promo_display` shows the card's promo row at all.
 const num = (x, d) => (Number.isFinite(Number(x)) && Number(x) > 0 ? Number(x) : d);
-vars.tag_size ??= Math.round(num(vars.hook_size, 84) * 1.4);
+vars.tag_size ??= Math.round(num(vars.hook_size, 84) * 1.15);  // sticker diameter = 2.5× this → ≈ 2.9× the hook size
 vars.chip_size ??= Math.round(num(vars.hook_size, 84) * 0.56);
 vars.price_size ??= Math.round(num(vars.hook_size, 84) * 0.95);
-vars.tag_cta_size ??= Math.round(num(vars.cta_size, 48) * 2.0);  // 2.5× overflowed the 968 px band next to a Cyrillic CTA (operator: "negative right margin")
+vars.tag_cta_size ??= Math.round(num(vars.cta_size, 48) * 1.55); // sticker ≈ 1.9× the CTA pill height; the row stays inside the 968 px band
 vars.chip_cta_size ??= Math.round(num(vars.cta_size, 48) * 0.72);
 if (o.template === 'static-pick' && o.vars.offer_pct && !o.vars.pick_h) vars.pick_h = v916 ? '19%' : '29%';  // room for the tag row under the tiles
 vars.tag_display = vars.offer_pct ? 'inline-flex' : 'none';
+vars.offer_label ??= '';
+vars.offer_stack ??= '';  // 'stack' → the offer row becomes a column (narrow free corner)
+vars.tag_label_display = vars.offer_label ? 'inline-block' : 'none';
+vars.tag_class = Math.min(num(vars.tag_size, 84), num(vars.tag_cta_size, 74)) < 70 ? 'small' : '';  // tiny stickers drop the label band
 vars.chip_display = vars.offer_code ? 'inline-flex' : 'none';
 vars.price_display = vars.price_new ? 'flex' : 'none';
 vars.promo_display = vars.offer_pct || vars.offer_code || vars.price_new ? 'flex' : 'none';

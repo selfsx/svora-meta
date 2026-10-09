@@ -191,3 +191,17 @@
   in CTA" (tag 2.5× + chip + Cyrillic CTA overflowed the 968 px band). Fixed in `_type.css` (plain ticket, offer row
   capped at 100% with wrap) and `render-overlay.mjs` (body tag 2.0× the CTA); the 20 regenerated as v2 again.
 - Operator: both campaigns launch **today (2026-10-09)**, same day; spec dates set; schedule spec notes the shift.
+
+## 2026-10-09 (evening) — sticker redesign, the owner's footage, launch day
+
+- Operator: the rotated ticket "-20%" was "very poor in design" → a round sale sticker (orange, -8°, Antonio rate,
+  small label band "знижка/rabat/скидка/off", `offer_label`), the chip and price pair unchanged; `offer_stack: stack`
+  for a narrow corner; static-hero got the offer row. The 20 regenerated as v2 a third time.
+- Owner delivered 5 iPhone reels (1440×2560, own sound) + 2 photos + 1 finished story → `sources/legacy/owner-2026-10-09/`,
+  wave `creatives/waves/2026-10-C.yaml` (V17 face-hidden white stilettos, V18 pierced nude almonds, V19/V19b the colours
+  montage with the owner's baked UA/PL caption, V20 the clean cut for RU/EN, S14/S15 photo cards, S16 the story with the
+  offer in its dark corner). $0 generation. The reels' sound may be Instagram library music — a licensing check before launch.
+- Account: `verify.mjs` says launchable, but the ad account, page and business expose **no Instagram account** to the
+  System User token (edges empty) — the ads would run without the @svora.nails identity. Operator "added system user to
+  instagram accounts"; what is still missing is the IG account → ad account connection (and page link), or the token
+  lacks `instagram_basic`. Launch today depends on it.

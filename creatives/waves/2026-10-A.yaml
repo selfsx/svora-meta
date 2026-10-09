@@ -7,6 +7,7 @@ defaults:
   # the confirmed Meta offer (settings/brand.yaml → offers.meta-20, code SVME20), structured: the sale tag (offer_pct), the coupon chip
   # (offer_code: label words + the code last), and a price pair derived from "<service> <list price> zł" (scripts/wave.mjs header).
   offer_pct:  { ua: "-20%", pl: "-20%", ru: "-20%", en: "-20%" }
+  offer_label: { ua: "знижка", pl: "rabat", ru: "скидка", en: "off" }   # the sticker's label band
   offer_code: { ua: "КОД SVME20", pl: "KOD SVME20", ru: "КОД SVME20", en: "CODE SVME20" }
 
 jobs:

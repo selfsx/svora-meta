@@ -13,6 +13,8 @@
   .scrim.top    { background: linear-gradient(180deg, rgba(26,26,26,.55) 0%, rgba(26,26,26,0) 45%); }
   .scrim.middle { background: radial-gradient(ellipse at 50% 50%, rgba(26,26,26,.35) 0%, rgba(26,26,26,0) 65%); }
   .scrim.bottom { background: linear-gradient(0deg, rgba(26,26,26,.6) 0%, rgba(26,26,26,0) 45%); }
+  .stage .tag { font-size: {{tag_cta_size}}px; }
+  .stage .chip { font-size: {{chip_cta_size}}px; }
 </style>
 </head>
 <body>
@@ -26,8 +28,14 @@
     <div class="sub" style="display:{{sub_display}}">{{sub}}</div>
   </div>
   <div class="ctagroup {{align}}">
-    <div class="cta" style="display:{{cta_display}}">{{cta}}</div>
-    <div class="meta" style="display:{{meta_display}}">{{meta}}</div>
+    <div class="offerrow {{offer_stack}}">
+      <div class="tag {{tag_class}}"><span class="n">{{offer_pct}}</span><span class="l">{{offer_label}}</span></div>
+      <div class="offercol">
+        <div class="chip"><span class="lbl">{{chip_label}}</span><b>{{chip_code}}</b></div>
+        <div class="cta" style="display:{{cta_display}}">{{cta}}</div>
+        <div class="meta" style="display:{{meta_display}}">{{meta}}</div>
+      </div>
+    </div>
   </div>
 </div>
 </body>

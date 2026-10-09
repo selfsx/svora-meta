@@ -36,6 +36,8 @@ overlays:
   o09: "Która <b>twoja</b>: 1, 2 czy 3?"
   o10: "CRAZY SHAPE 380 → <b>304 ZŁ</b>"
   o11: "CRAZY <b>SHAPE</b>"
+  o12: "TWARZ SCHOWAŁA. <b>PAZNOKCI NIE</b>"
+  o13: "DŁUGIE. OSTRE. <b>TWOJE</b>"
 ctas:
   c01: "Zarezerwuj online"
   c02: "Chcę takie"

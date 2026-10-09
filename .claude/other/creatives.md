@@ -74,8 +74,10 @@ stays clean and the CTA appears only on the outro card. Every intro-style video 
 **The offer slot** (since 2026-10-09, `settings/brand.yaml → offers.meta-20`, code SVME20) is structured, never a plain
 text line (the operator rejected "-20% з кодом SVME20" as a small caption: "not catchy, barely seen"). A wave file's
 `defaults.offer_pct` ("-20%") and `defaults.offer_code` ("КОД SVME20" / "KOD …" / "CODE …", the last word is the code)
-render as retail cues from `creatives/templates/_type.css`: the **sale tag** `.tag` (orange, black Antonio digits,
-rotated -6°, eyelet and stitched edge; ≥ 1.3× the hook on cards, ≈ 1.5× the CTA pill in a CTA stack), the **coupon chip**
+render as retail cues from `creatives/templates/_type.css`: the **sale sticker** `.tag` (a round orange sticker, -8°,
+the rate in Antonio, a small black label band `offer_label` — "знижка / rabat / скидка / off" — hidden when the sticker
+is small; diameter ≈ 2.9× the hook on cards, ≈ 1.9× the CTA pill in a CTA stack — the earlier rotated ticket with an
+eyelet was rejected as "strange dot", "very poor in design"), the **coupon chip**
 `.chip` (dashed 3 px border, uppercase, letter-spaced, "type this") and the **price pair** `.pricepair` (old price
 struck through at 60 %, new price big in orange, never an arrow). `render-overlay.mjs` vars: `offer_pct`, `offer_code`,
 `price_old`, `price_new` (+ `tag_size`, `chip_size`, `price_size`); each element hides when its var is empty. `wave.mjs`
@@ -83,7 +85,8 @@ derives the pair from a sub/kicker ending "190 zł" (label + 190 → 152 zł, wi
 `prices_with_code`, never computed in copy); price jobs set `price_old`/`price_new` explicitly (V13, S7). Where it
 lands: video **outro card** (2 s: service label, price pair, tag, chip, CTA); video **body**: tag + chip stacked beside
 the CTA pill, only inside the measured free band (a busy frame stays clean, the outro carries the offer);
-**static-card**: tag + price pair + chip under the hook (menu card S8: struck old → new rows); **static-pick**: tag +
+**static-hero** (a finished photo/story): the offer row with the CTA, `offer_stack: stack` turns it into a narrow column
+for a free corner (S16); **static-card**: tag + price pair + chip under the hook (menu card S8: struck old → new rows); **static-pick**: tag +
 chip with the CTA. A job/lang opts out with `vars.offer: off` or `offer_pct: ""`. Ratings copy always carries the stars:
 "★★★★★ 5.0 · 117 відгуків" (orange glyphs in overlays, ⭐⭐⭐⭐⭐ in Meta text; a run of stars counts as one emoji in
 copy-lint). Fresha cannot prefill a code from a link, so the code has to be legible on the creative and repeated in the

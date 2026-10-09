@@ -42,18 +42,23 @@
 .badge { position: absolute; left: 56px; top: {{logo_top}}; display: {{badge_display}}; background: {{color_orange}}; color: {{color_black}}; font-weight: 800; font-size: 36px; padding: 10px 24px; border-radius: 999px; text-transform: uppercase; }
 
 /* ── Promo elements (render-overlay.mjs sets the vars; each element hides itself when its var is empty) ──
-   .tag       sale tag: the discount rate, orange, -5°, plain ticket (no eyelet). Antonio is Latin display (digits/%).
+   .tag       sale sticker: round, orange, -8°, the rate in Antonio + a small label band (offer_label).
    .chip      coupon chip: "type this" — dashed 3px border, uppercase, letter-spaced; label words + the code.
    .pricepair old price struck through (muted, 60 %) then the new price big in orange. Never an arrow.
    .offerrow  tag + a column (chip over CTA) for the video body and the pick card: same visual weight as the CTA.
    .promo     the card version: tag + a column (price pair over chip). */
 .tag {
+  /* a round sale sticker: diameter 2.5× the number size, the number centred, a small black label band near the bottom
+     ("знижка / rabat / скидка / off"); the band hides when the sticker is small (.tag.small). Rotated -8° like a stuck-on sticker.
+     (v1 rotated ticket with an eyelet was rejected: "strange dot", "very poor in design" — operator 2026-10-09) */
   display: {{tag_display}}; position: relative; flex: 0 0 auto; align-items: center; justify-content: center;
-  font-family: 'Antonio', 'Roboto Condensed', sans-serif; font-weight: 700; font-size: {{tag_size}}px; line-height: 1; letter-spacing: .01em;
-  background: {{color_orange}}; color: {{color_black}}; padding: .16em .3em; border-radius: .16em;
-  transform: rotate(-5deg); box-shadow: 0 10px 26px rgba(0,0,0,.38);
+  font-size: {{tag_size}}px; width: 2.5em; height: 2.5em; border-radius: 50%;
+  background: {{color_orange}}; color: {{color_black}}; transform: rotate(-8deg); box-shadow: 0 .12em .3em rgba(0,0,0,.42);
 }
-/* (the punched eyelet + stitched outline were read as "a strange dot" — operator 2026-10-09; the tag is a plain ticket now) */
+.tag .n { font-family: 'Antonio', 'Roboto Condensed', sans-serif; font-weight: 700; font-size: 1em; line-height: 1; letter-spacing: -.02em; margin-top: -.16em; }
+.tag .l { position: absolute; bottom: .24em; left: 50%; transform: translateX(-50%); background: {{color_black}}; color: {{color_peach}}; font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 800; font-size: .21em; letter-spacing: .18em; text-transform: uppercase; padding: .35em .9em; border-radius: 999px; white-space: nowrap; display: {{tag_label_display}}; }
+.tag.small .l { display: none; } .tag.small .n { margin-top: 0; }
 .chip {
   display: {{chip_display}}; flex: 0 0 auto; align-items: baseline; gap: .55em; width: fit-content;
   font-family: 'Roboto Condensed', sans-serif; font-size: {{chip_size}}px; font-weight: 800; line-height: 1; text-transform: uppercase; letter-spacing: .14em; white-space: nowrap;
@@ -66,6 +71,7 @@
 .pricepair b { color: {{color_orange}}; font-weight: 800; }
 .offerrow { display: flex; align-items: center; gap: 28px; width: 100%; max-width: 100%; flex-wrap: wrap; }  /* never wider than the safe band: the CTA drops under the tag before it can run off the edge */
 .offercol { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; min-width: 0; }
+.offerrow.stack { flex-direction: column; align-items: flex-start; gap: 18px; }  /* offer_stack=stack: sticker above chip above CTA — for a narrow free corner */
 .ctagroup.center .offerrow { justify-content: center; }
 .promo { display: {{promo_display}}; flex-wrap: wrap; align-items: center; gap: 40px; padding: 6px 0 6px 6px; }
 .promo .pcol { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }

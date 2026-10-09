@@ -1,0 +1,43 @@
+# Wave C: the owner's own ready footage (sources/legacy/owner-2026-10-09/, delivered 2026-10-09 evening) — iPhone 1440×2560
+# reels with their own sound, two phone photos, one finished 9:16 story. Same batch as the first 100 so the review page
+# shows them next to the 20 picked for 001/002. Sources are `legacy-<stem>` (naming law §3). Nothing is generated: $0.
+batch: 2026-10-b03-wavea
+defaults:
+  cta:  { ua: "Записатись онлайн", pl: "Zarezerwuj online", ru: "Записаться онлайн", en: "Book online" }
+  meta: { ua: "svora.place · Воля", pl: "svora.place · Wola", ru: "svora.place · Воля", en: "svora.place · Wola, Warsaw" }
+  offer_pct:  { ua: "-20%", pl: "-20%", ru: "-20%", en: "-20%" }
+  offer_label: { ua: "знижка", pl: "rabat", ru: "скидка", en: "off" }
+  offer_code: { ua: "КОД SVME20", pl: "KOD SVME20", ru: "КОД SVME20", en: "CODE SVME20" }
+
+jobs:
+  # ── reels with no baked text: hook card + clean body + outro ───────────────────────────────────────────
+  - { id: V17, type: video, angle: hero, concept: crazy, hook: reveal, source: legacy-img4864, clip: sources/legacy/owner-2026-10-09/IMG_4864.MP4,
+      overlay_from: 0.3, intro: { seconds: 1.2, vars: { bg: black, place: middle, hook_size: 112 } }, vars: { place: top, tone: dark },
+      langs: { ua: { hook: "Сховала обличчя. <b>Нігті — ні</b>", sub: "Extra Long & Crazy 380 zł" }, pl: { hook: "TWARZ SCHOWAŁA. <b>PAZNOKCI NIE</b>", sub: "Extra Long & Crazy 380 zł" }, ru: { hook: "Лицо спрятала. <b>Ногти — нет</b>", sub: "Extra Long & Crazy 380 zł" }, en: { hook: "HID THE FACE. <b>NOT THE NAILS</b>", sub: "Extra Long & Crazy 380 zł" } } }
+  - { id: V18, type: video, angle: hero, concept: art, hook: art-closeup, source: legacy-img4883, clip: sources/legacy/owner-2026-10-09/IMG_4883.MP4,
+      overlay_from: 0.3, intro: { seconds: 1.2, vars: { bg: cream, place: middle, hook_size: 112 } }, vars: { place: top, tone: light },
+      langs: { ua: { hook: "Пірсинг на нігтях. <b>Так, можна</b>", sub: "Нарощування 300 zł" }, pl: { hook: "PIERCING NA PAZNOKCIACH. <b>DA SIĘ</b>", sub: "Przedłużanie 300 zł" }, ru: { hook: "Пирсинг на ногтях. <b>Да, можно</b>", sub: "Наращивание 300 zł" }, en: { hook: "NAIL PIERCING. <b>YES, REALLY</b>", sub: "Extensions 300 zł" } } }
+
+  # ── the colours montage: the owner's baked caption in UA (5027) and PL (5028); the clean cut (5029) gets our hook card for RU/EN ──
+  - { id: V19, type: video, angle: hero, concept: mix, hook: social, source: legacy-img5027, clip: sources/legacy/owner-2026-10-09/IMG_5027.MP4,
+      overlay_from: 0.3, body_clean: true, endcard: { template: static-card, seconds: 2, vars: { align: center, logo_pos: center, place: middle, hook_size: 96, bg: black } }, vars: { place: top, tone: dark },
+      langs: { ua: { hook: "Стільки кольорів — <b>а ти без покриття</b>?", sub: "Гібридний манікюр 190 zł" } } }
+  - { id: V19b, type: video, angle: hero, concept: mix, hook: social, source: legacy-img5028, clip: sources/legacy/owner-2026-10-09/IMG_5028.MP4,
+      overlay_from: 0.3, body_clean: true, endcard: { template: static-card, seconds: 2, vars: { align: center, logo_pos: center, place: middle, hook_size: 96, bg: black } }, vars: { place: top, tone: dark },
+      langs: { pl: { hook: "TYLE KOLORÓW — <b>A TY BEZ HYBRYDY</b>?", sub: "Hybryda 190 zł" } } }
+  - { id: V20, type: video, angle: hero, concept: mix, hook: social, source: legacy-img5029, clip: sources/legacy/owner-2026-10-09/IMG_5029.MP4,
+      overlay_from: 0.3, intro: { seconds: 1.2, vars: { bg: black, place: middle, hook_size: 104 } }, vars: { place: top, tone: dark },
+      langs: { ru: { hook: "Столько цветов — <b>а ты без покрытия</b>?", sub: "Гибридный маникюр 190 zł" }, en: { hook: "SO MANY COLOURS — <b>BARE NAILS</b>?", sub: "Hybrid manicure 190 zł" } } }
+
+  # ── photos → photo cards ─────────────────────────────────────────────────────────────────────────────
+  - { id: S14, type: static, template: static-card, formats: [4x5, 9x16], angle: hero, concept: art, hook: art-closeup, source: legacy-img4831,
+      image: sources/legacy/owner-2026-10-09/IMG_4831.jpg, vars: { place: under, bg: black, hook_size: 84, tile_pos: "center 40%" }, vars_4x5: { tile_h: "44%" }, vars_9x16: { tile_h: "36%" },
+      langs: { ua: { hook: "Nude з <b>характером</b>", sub: "Нарощування 300 zł" }, pl: { hook: "NUDE Z <b>CHARAKTEREM</b>", sub: "Przedłużanie 300 zł" }, ru: { hook: "Nude с <b>характером</b>", sub: "Наращивание 300 zł" }, en: { hook: "NUDE WITH <b>ATTITUDE</b>", sub: "Extensions 300 zł" } } }
+  - { id: S15, type: static, template: static-card, formats: [4x5, 9x16], angle: hero, concept: crazy, hook: reveal, source: legacy-img4835,
+      image: sources/legacy/owner-2026-10-09/IMG_4835.jpg, vars: { place: under, bg: cream, hook_size: 84, tile_pos: "center" }, vars_4x5: { tile_h: "44%" }, vars_9x16: { tile_h: "36%" },
+      langs: { ua: { hook: "Довгі. Гострі. <b>Твої</b>", sub: "Extra Long & Crazy 380 zł" }, pl: { hook: "DŁUGIE. OSTRE. <b>TWOJE</b>", sub: "Extra Long & Crazy 380 zł" }, ru: { hook: "Длинные. Острые. <b>Твои</b>", sub: "Extra Long & Crazy 380 zł" }, en: { hook: "LONG. SHARP. <b>YOURS</b>", sub: "Extra Long & Crazy 380 zł" } } }
+
+  # ── the finished story (baked "WARSZAWA · Jana Kazimierza 25B/U3 · SVORA" — language-neutral): CTA + offer only ──
+  - { id: S16, type: static, template: static-hero, formats: [9x16], angle: location, concept: brand, hook: found, source: legacy-img4881,
+      image: sources/legacy/owner-2026-10-09/IMG_4881.PNG, vars: { place: bottom, tone: dark, logo: none, photo_pos: "center", offer_stack: stack, cta_top: "72%", cta_size: 36, chip_cta_size: 26, tag_cta_size: 56 },  # the only free area is the dark bottom-left corner: a narrow column there
+      langs: { ua: { hook: "", sub: "", meta: "" }, pl: { hook: "", sub: "", meta: "" }, ru: { hook: "", sub: "", meta: "" }, en: { hook: "", sub: "", meta: "" } } }

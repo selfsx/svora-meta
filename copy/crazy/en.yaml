@@ -36,6 +36,8 @@ overlays:
   o09: "WHICH IS <b>YOU</b>: 1, 2, 3?"
   o10: "CRAZY SHAPE 380 → <b>304 ZŁ</b>"
   o11: "CRAZY <b>SHAPE</b>"
+  o12: "HID THE FACE. <b>NOT THE NAILS</b>"
+  o13: "LONG. SHARP. <b>YOURS</b>"
 ctas:
   c01: "Book online"
   c02: "I want these"

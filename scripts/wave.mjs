@@ -17,7 +17,9 @@
  *                                  the with-code value read from brand.yaml offers.meta-20.prices_with_code (never computed here).
  *   Where it lands: video outro card (service label + price pair, tag, chip, CTA) · video body (tag + chip beside the CTA, only
  *   inside the measured free band — a busy frame keeps the body clean) · static-card (tag + price pair + chip under the hook)
- *   · static-pick (tag + chip with the CTA). A job/lang switches it off with vars.offer: off, or offer_pct: "".
+ *   · static-pick (tag + chip with the CTA) · static-hero (offer row with the CTA; offer_stack: stack = narrow column).
+ *   A job/lang switches it off with vars.offer: off, or offer_pct: "". body_clean: true keeps the body overlay to CTA + offer
+ *   when the clip carries its own baked hook (the owner's reels, wave C) and there is no intro card.
  *   jobs:
  *     - id: V1   type: video   angle: hero   concept: crazy   hook: reveal   source: DbT_EsKDTDo
  *       clip: creatives/_work/w1/DbT_EsKDTDo-clip.mp4   [cuts: "0:13.5,40.5:50.3"] [mute: true] [overlay_from: 0.3]
@@ -131,7 +133,7 @@ function buildStatic(job, lang, format, text, jobKey) {
 function buildVideo(job, lang, text, jobKey) {
   const ov = path.join(work, `${jobKey}-ov.png`);
   // intro: the hook lives on a 1-second card up front; the body overlay carries only the CTA (+meta) so the product stays clean
-  const bodyText = job.intro ? {...text, hook: '', sub: '', meta: text.offer_pct ? '' : text.meta} : text;  // with the offer beside the CTA the url line goes (the outro has it)
+  const bodyText = job.intro || job.body_clean ? {...text, hook: '', sub: '', meta: text.offer_pct ? '' : text.meta} : text;  // body_clean: the clip carries its own baked hook (owner's reel)  // with the offer beside the CTA the url line goes (the outro has it)
   // where is the frame empty for the whole clip? (edges + skin, after cuts) → the CTA block goes there
   const fz = JSON.parse(run('node', ['scripts/free-zone.mjs', job.clip, '--block', text.offer_pct ? '0.105' : '0.10', ...(job.cuts ? ['--cuts', String(job.cuts)] : [])]));
   const freeBand = fz.score < (job.free_max ?? 60);  // above this the whole frame is busy (hands everywhere): keep the body clean

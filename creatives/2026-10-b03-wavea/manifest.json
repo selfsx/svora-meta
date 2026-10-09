@@ -6238,6 +6238,1414 @@
       }
     },
     {
+      "name": "crazy_reveal_legacy-img4864_vd_n157_v1_9x16_ua",
+      "file": "crazy_reveal_legacy-img4864_vd_n157_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "crazy",
+      "hook": "reveal",
+      "hook_text": "Сховала обличчя. Нігті — ні",
+      "angle": "hero",
+      "job": "V17-ua-9x16",
+      "source": "legacy-img4864",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/legacy/owner-2026-10-09/IMG_4864.MP4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-C/V17-ua-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 83.42,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 2
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T18:52:41.919Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:52:41.956Z",
+      "notes": ""
+    },
+    {
+      "name": "crazy_reveal_legacy-img4864_vd_n158_v1_9x16_pl",
+      "file": "crazy_reveal_legacy-img4864_vd_n158_v1_9x16_pl.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "crazy",
+      "hook": "reveal",
+      "hook_text": "TWARZ SCHOWAŁA. PAZNOKCI NIE",
+      "angle": "hero",
+      "job": "V17-pl-9x16",
+      "source": "legacy-img4864",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/legacy/owner-2026-10-09/IMG_4864.MP4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-C/V17-pl-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 83.42,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 2
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T18:52:49.359Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:52:49.396Z",
+      "notes": ""
+    },
+    {
+      "name": "crazy_reveal_legacy-img4864_vd_n159_v1_9x16_ru",
+      "file": "crazy_reveal_legacy-img4864_vd_n159_v1_9x16_ru.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ru",
+      "concept": "crazy",
+      "hook": "reveal",
+      "hook_text": "Лицо спрятала. Ногти — нет",
+      "angle": "hero",
+      "job": "V17-ru-9x16",
+      "source": "legacy-img4864",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/legacy/owner-2026-10-09/IMG_4864.MP4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-C/V17-ru-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 83.42,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 2
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T18:52:56.809Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:52:56.845Z",
+      "notes": ""
+    },
+    {
+      "name": "crazy_reveal_legacy-img4864_vd_n160_v1_9x16_en",
+      "file": "crazy_reveal_legacy-img4864_vd_n160_v1_9x16_en.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "en",
+      "concept": "crazy",
+      "hook": "reveal",
+      "hook_text": "HID THE FACE. NOT THE NAILS",
+      "angle": "hero",
+      "job": "V17-en-9x16",
+      "source": "legacy-img4864",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/legacy/owner-2026-10-09/IMG_4864.MP4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-C/V17-en-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 83.42,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 2
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T18:53:04.190Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:53:04.227Z",
+      "notes": ""
+    },
+    {
+      "name": "art_art-closeup_legacy-img4883_vd_n161_v1_9x16_ua",
+      "file": "art_art-closeup_legacy-img4883_vd_n161_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "Пірсинг на нігтях. Так, можна",
+      "angle": "hero",
+      "job": "V18-ua-9x16",
+      "source": "legacy-img4883",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/legacy/owner-2026-10-09/IMG_4883.MP4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-C/V18-ua-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 62.43,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 2
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T18:53:11.394Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:53:11.433Z",
+      "notes": ""
+    },
+    {
+      "name": "art_art-closeup_legacy-img4883_vd_n162_v1_9x16_pl",
+      "file": "art_art-closeup_legacy-img4883_vd_n162_v1_9x16_pl.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "PIERCING NA PAZNOKCIACH. DA SIĘ",
+      "angle": "hero",
+      "job": "V18-pl-9x16",
+      "source": "legacy-img4883",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/legacy/owner-2026-10-09/IMG_4883.MP4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-C/V18-pl-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 62.43,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 2
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T18:53:18.508Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:53:18.546Z",
+      "notes": ""
+    },
+    {
+      "name": "art_art-closeup_legacy-img4883_vd_n163_v1_9x16_ru",
+      "file": "art_art-closeup_legacy-img4883_vd_n163_v1_9x16_ru.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ru",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "Пирсинг на ногтях. Да, можно",
+      "angle": "hero",
+      "job": "V18-ru-9x16",
+      "source": "legacy-img4883",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/legacy/owner-2026-10-09/IMG_4883.MP4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-C/V18-ru-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 62.43,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 2
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T18:53:25.684Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:53:25.720Z",
+      "notes": ""
+    },
+    {
+      "name": "art_art-closeup_legacy-img4883_vd_n164_v1_9x16_en",
+      "file": "art_art-closeup_legacy-img4883_vd_n164_v1_9x16_en.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "en",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "NAIL PIERCING. YES, REALLY",
+      "angle": "hero",
+      "job": "V18-en-9x16",
+      "source": "legacy-img4883",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/legacy/owner-2026-10-09/IMG_4883.MP4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-C/V18-en-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 62.43,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 2
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T18:53:32.766Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:53:32.803Z",
+      "notes": ""
+    },
+    {
+      "name": "mix_social_legacy-img5027_vd_n165_v1_9x16_ua",
+      "file": "mix_social_legacy-img5027_vd_n165_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "mix",
+      "hook": "social",
+      "hook_text": "Стільки кольорів — а ти без покриття?",
+      "angle": "hero",
+      "job": "V19-ua-9x16",
+      "source": "legacy-img5027",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/legacy/owner-2026-10-09/IMG_5027.MP4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-C/V19-ua-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 117.34,
+          "intro": null,
+          "outro": {
+            "seconds": 2
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T18:53:41.196Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:53:41.232Z",
+      "notes": ""
+    },
+    {
+      "name": "mix_social_legacy-img5028_vd_n166_v1_9x16_pl",
+      "file": "mix_social_legacy-img5028_vd_n166_v1_9x16_pl.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "mix",
+      "hook": "social",
+      "hook_text": "TYLE KOLORÓW — A TY BEZ HYBRYDY?",
+      "angle": "hero",
+      "job": "V19b-pl-9x16",
+      "source": "legacy-img5028",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/legacy/owner-2026-10-09/IMG_5028.MP4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-C/V19b-pl-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 117.36,
+          "intro": null,
+          "outro": {
+            "seconds": 2
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T18:53:49.727Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:53:49.764Z",
+      "notes": ""
+    },
+    {
+      "name": "mix_social_legacy-img5029_vd_n167_v1_9x16_ru",
+      "file": "mix_social_legacy-img5029_vd_n167_v1_9x16_ru.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ru",
+      "concept": "mix",
+      "hook": "social",
+      "hook_text": "Столько цветов — а ты без покрытия?",
+      "angle": "hero",
+      "job": "V20-ru-9x16",
+      "source": "legacy-img5029",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/legacy/owner-2026-10-09/IMG_5029.MP4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-C/V20-ru-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 117.34,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 2
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T18:53:58.449Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:53:58.486Z",
+      "notes": ""
+    },
+    {
+      "name": "mix_social_legacy-img5029_vd_n168_v1_9x16_en",
+      "file": "mix_social_legacy-img5029_vd_n168_v1_9x16_en.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "en",
+      "concept": "mix",
+      "hook": "social",
+      "hook_text": "SO MANY COLOURS — BARE NAILS?",
+      "angle": "hero",
+      "job": "V20-en-9x16",
+      "source": "legacy-img5029",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/legacy/owner-2026-10-09/IMG_5029.MP4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-C/V20-en-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 117.34,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 2
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T18:54:07.184Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:07.222Z",
+      "notes": ""
+    },
+    {
+      "name": "art_art-closeup_legacy-img4831_st_n169_v1_4x5_ua",
+      "file": "art_art-closeup_legacy-img4831_st_n169_v1_4x5_ua.png",
+      "type": "st",
+      "format": "4x5",
+      "lang": "ua",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "Nude з характером",
+      "angle": "hero",
+      "job": "S14-ua-4x5",
+      "source": "legacy-img4831",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "4x5",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4831.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "ua",
+            "place": "under",
+            "bg": "black",
+            "hook_size": "84",
+            "tile_pos": "center 40%",
+            "tile_h": "44%",
+            "cta": "Записатись онлайн",
+            "meta": "svora.place · Воля",
+            "offer_pct": "-20%",
+            "offer_label": "знижка",
+            "offer_code": "КОД SVME20",
+            "hook": "Nude з <b>характером</b>",
+            "sub": "",
+            "kicker": "Нарощування",
+            "price_old": "300 zł",
+            "price_new": "240 zł"
+          },
+          "created": "2026-10-09T18:54:07.734Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:07.776Z",
+      "notes": ""
+    },
+    {
+      "name": "art_art-closeup_legacy-img4831_st_n170_v1_9x16_ua",
+      "file": "art_art-closeup_legacy-img4831_st_n170_v1_9x16_ua.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "Nude з характером",
+      "angle": "hero",
+      "job": "S14-ua-9x16",
+      "source": "legacy-img4831",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "9x16",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4831.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "ua",
+            "place": "under",
+            "bg": "black",
+            "hook_size": "84",
+            "tile_pos": "center 40%",
+            "tile_h": "36%",
+            "cta": "Записатись онлайн",
+            "meta": "svora.place · Воля",
+            "offer_pct": "-20%",
+            "offer_label": "знижка",
+            "offer_code": "КОД SVME20",
+            "hook": "Nude з <b>характером</b>",
+            "sub": "",
+            "kicker": "Нарощування",
+            "price_old": "300 zł",
+            "price_new": "240 zł"
+          },
+          "created": "2026-10-09T18:54:08.301Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:08.344Z",
+      "notes": ""
+    },
+    {
+      "name": "art_art-closeup_legacy-img4831_st_n171_v1_4x5_pl",
+      "file": "art_art-closeup_legacy-img4831_st_n171_v1_4x5_pl.png",
+      "type": "st",
+      "format": "4x5",
+      "lang": "pl",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "NUDE Z CHARAKTEREM",
+      "angle": "hero",
+      "job": "S14-pl-4x5",
+      "source": "legacy-img4831",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "4x5",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4831.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "pl",
+            "place": "under",
+            "bg": "black",
+            "hook_size": "84",
+            "tile_pos": "center 40%",
+            "tile_h": "44%",
+            "cta": "Zarezerwuj online",
+            "meta": "svora.place · Wola",
+            "offer_pct": "-20%",
+            "offer_label": "rabat",
+            "offer_code": "KOD SVME20",
+            "hook": "NUDE Z <b>CHARAKTEREM</b>",
+            "sub": "",
+            "kicker": "Przedłużanie",
+            "price_old": "300 zł",
+            "price_new": "240 zł"
+          },
+          "created": "2026-10-09T18:54:08.840Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:08.881Z",
+      "notes": ""
+    },
+    {
+      "name": "art_art-closeup_legacy-img4831_st_n172_v1_9x16_pl",
+      "file": "art_art-closeup_legacy-img4831_st_n172_v1_9x16_pl.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "NUDE Z CHARAKTEREM",
+      "angle": "hero",
+      "job": "S14-pl-9x16",
+      "source": "legacy-img4831",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "9x16",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4831.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "pl",
+            "place": "under",
+            "bg": "black",
+            "hook_size": "84",
+            "tile_pos": "center 40%",
+            "tile_h": "36%",
+            "cta": "Zarezerwuj online",
+            "meta": "svora.place · Wola",
+            "offer_pct": "-20%",
+            "offer_label": "rabat",
+            "offer_code": "KOD SVME20",
+            "hook": "NUDE Z <b>CHARAKTEREM</b>",
+            "sub": "",
+            "kicker": "Przedłużanie",
+            "price_old": "300 zł",
+            "price_new": "240 zł"
+          },
+          "created": "2026-10-09T18:54:09.401Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:09.442Z",
+      "notes": ""
+    },
+    {
+      "name": "art_art-closeup_legacy-img4831_st_n173_v1_4x5_ru",
+      "file": "art_art-closeup_legacy-img4831_st_n173_v1_4x5_ru.png",
+      "type": "st",
+      "format": "4x5",
+      "lang": "ru",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "Nude с характером",
+      "angle": "hero",
+      "job": "S14-ru-4x5",
+      "source": "legacy-img4831",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "4x5",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4831.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "ru",
+            "place": "under",
+            "bg": "black",
+            "hook_size": "84",
+            "tile_pos": "center 40%",
+            "tile_h": "44%",
+            "cta": "Записаться онлайн",
+            "meta": "svora.place · Воля",
+            "offer_pct": "-20%",
+            "offer_label": "скидка",
+            "offer_code": "КОД SVME20",
+            "hook": "Nude с <b>характером</b>",
+            "sub": "",
+            "kicker": "Наращивание",
+            "price_old": "300 zł",
+            "price_new": "240 zł"
+          },
+          "created": "2026-10-09T18:54:09.950Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:09.992Z",
+      "notes": ""
+    },
+    {
+      "name": "art_art-closeup_legacy-img4831_st_n174_v1_9x16_ru",
+      "file": "art_art-closeup_legacy-img4831_st_n174_v1_9x16_ru.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "ru",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "Nude с характером",
+      "angle": "hero",
+      "job": "S14-ru-9x16",
+      "source": "legacy-img4831",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "9x16",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4831.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "ru",
+            "place": "under",
+            "bg": "black",
+            "hook_size": "84",
+            "tile_pos": "center 40%",
+            "tile_h": "36%",
+            "cta": "Записаться онлайн",
+            "meta": "svora.place · Воля",
+            "offer_pct": "-20%",
+            "offer_label": "скидка",
+            "offer_code": "КОД SVME20",
+            "hook": "Nude с <b>характером</b>",
+            "sub": "",
+            "kicker": "Наращивание",
+            "price_old": "300 zł",
+            "price_new": "240 zł"
+          },
+          "created": "2026-10-09T18:54:10.509Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:10.551Z",
+      "notes": ""
+    },
+    {
+      "name": "art_art-closeup_legacy-img4831_st_n175_v1_4x5_en",
+      "file": "art_art-closeup_legacy-img4831_st_n175_v1_4x5_en.png",
+      "type": "st",
+      "format": "4x5",
+      "lang": "en",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "NUDE WITH ATTITUDE",
+      "angle": "hero",
+      "job": "S14-en-4x5",
+      "source": "legacy-img4831",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "4x5",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4831.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "en",
+            "place": "under",
+            "bg": "black",
+            "hook_size": "84",
+            "tile_pos": "center 40%",
+            "tile_h": "44%",
+            "cta": "Book online",
+            "meta": "svora.place · Wola, Warsaw",
+            "offer_pct": "-20%",
+            "offer_label": "off",
+            "offer_code": "CODE SVME20",
+            "hook": "NUDE WITH <b>ATTITUDE</b>",
+            "sub": "",
+            "kicker": "Extensions",
+            "price_old": "300 zł",
+            "price_new": "240 zł"
+          },
+          "created": "2026-10-09T18:54:11.053Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:11.096Z",
+      "notes": ""
+    },
+    {
+      "name": "art_art-closeup_legacy-img4831_st_n176_v1_9x16_en",
+      "file": "art_art-closeup_legacy-img4831_st_n176_v1_9x16_en.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "en",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "NUDE WITH ATTITUDE",
+      "angle": "hero",
+      "job": "S14-en-9x16",
+      "source": "legacy-img4831",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "9x16",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4831.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "en",
+            "place": "under",
+            "bg": "black",
+            "hook_size": "84",
+            "tile_pos": "center 40%",
+            "tile_h": "36%",
+            "cta": "Book online",
+            "meta": "svora.place · Wola, Warsaw",
+            "offer_pct": "-20%",
+            "offer_label": "off",
+            "offer_code": "CODE SVME20",
+            "hook": "NUDE WITH <b>ATTITUDE</b>",
+            "sub": "",
+            "kicker": "Extensions",
+            "price_old": "300 zł",
+            "price_new": "240 zł"
+          },
+          "created": "2026-10-09T18:54:11.617Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:11.658Z",
+      "notes": ""
+    },
+    {
+      "name": "crazy_reveal_legacy-img4835_st_n177_v1_4x5_ua",
+      "file": "crazy_reveal_legacy-img4835_st_n177_v1_4x5_ua.png",
+      "type": "st",
+      "format": "4x5",
+      "lang": "ua",
+      "concept": "crazy",
+      "hook": "reveal",
+      "hook_text": "Довгі. Гострі. Твої",
+      "angle": "hero",
+      "job": "S15-ua-4x5",
+      "source": "legacy-img4835",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "4x5",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4835.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "ua",
+            "place": "under",
+            "bg": "cream",
+            "hook_size": "84",
+            "tile_pos": "center",
+            "tile_h": "44%",
+            "cta": "Записатись онлайн",
+            "meta": "svora.place · Воля",
+            "offer_pct": "-20%",
+            "offer_label": "знижка",
+            "offer_code": "КОД SVME20",
+            "hook": "Довгі. Гострі. <b>Твої</b>",
+            "sub": "",
+            "kicker": "Extra Long & Crazy",
+            "price_old": "380 zł",
+            "price_new": "304 zł"
+          },
+          "created": "2026-10-09T18:54:12.171Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:12.215Z",
+      "notes": ""
+    },
+    {
+      "name": "crazy_reveal_legacy-img4835_st_n178_v1_9x16_ua",
+      "file": "crazy_reveal_legacy-img4835_st_n178_v1_9x16_ua.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "crazy",
+      "hook": "reveal",
+      "hook_text": "Довгі. Гострі. Твої",
+      "angle": "hero",
+      "job": "S15-ua-9x16",
+      "source": "legacy-img4835",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "9x16",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4835.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "ua",
+            "place": "under",
+            "bg": "cream",
+            "hook_size": "84",
+            "tile_pos": "center",
+            "tile_h": "36%",
+            "cta": "Записатись онлайн",
+            "meta": "svora.place · Воля",
+            "offer_pct": "-20%",
+            "offer_label": "знижка",
+            "offer_code": "КОД SVME20",
+            "hook": "Довгі. Гострі. <b>Твої</b>",
+            "sub": "",
+            "kicker": "Extra Long & Crazy",
+            "price_old": "380 zł",
+            "price_new": "304 zł"
+          },
+          "created": "2026-10-09T18:54:12.742Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:12.782Z",
+      "notes": ""
+    },
+    {
+      "name": "crazy_reveal_legacy-img4835_st_n179_v1_4x5_pl",
+      "file": "crazy_reveal_legacy-img4835_st_n179_v1_4x5_pl.png",
+      "type": "st",
+      "format": "4x5",
+      "lang": "pl",
+      "concept": "crazy",
+      "hook": "reveal",
+      "hook_text": "DŁUGIE. OSTRE. TWOJE",
+      "angle": "hero",
+      "job": "S15-pl-4x5",
+      "source": "legacy-img4835",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "4x5",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4835.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "pl",
+            "place": "under",
+            "bg": "cream",
+            "hook_size": "84",
+            "tile_pos": "center",
+            "tile_h": "44%",
+            "cta": "Zarezerwuj online",
+            "meta": "svora.place · Wola",
+            "offer_pct": "-20%",
+            "offer_label": "rabat",
+            "offer_code": "KOD SVME20",
+            "hook": "DŁUGIE. OSTRE. <b>TWOJE</b>",
+            "sub": "",
+            "kicker": "Extra Long & Crazy",
+            "price_old": "380 zł",
+            "price_new": "304 zł"
+          },
+          "created": "2026-10-09T18:54:13.283Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:13.324Z",
+      "notes": ""
+    },
+    {
+      "name": "crazy_reveal_legacy-img4835_st_n180_v1_9x16_pl",
+      "file": "crazy_reveal_legacy-img4835_st_n180_v1_9x16_pl.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "crazy",
+      "hook": "reveal",
+      "hook_text": "DŁUGIE. OSTRE. TWOJE",
+      "angle": "hero",
+      "job": "S15-pl-9x16",
+      "source": "legacy-img4835",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "9x16",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4835.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "pl",
+            "place": "under",
+            "bg": "cream",
+            "hook_size": "84",
+            "tile_pos": "center",
+            "tile_h": "36%",
+            "cta": "Zarezerwuj online",
+            "meta": "svora.place · Wola",
+            "offer_pct": "-20%",
+            "offer_label": "rabat",
+            "offer_code": "KOD SVME20",
+            "hook": "DŁUGIE. OSTRE. <b>TWOJE</b>",
+            "sub": "",
+            "kicker": "Extra Long & Crazy",
+            "price_old": "380 zł",
+            "price_new": "304 zł"
+          },
+          "created": "2026-10-09T18:54:13.843Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:13.884Z",
+      "notes": ""
+    },
+    {
+      "name": "crazy_reveal_legacy-img4835_st_n181_v1_4x5_ru",
+      "file": "crazy_reveal_legacy-img4835_st_n181_v1_4x5_ru.png",
+      "type": "st",
+      "format": "4x5",
+      "lang": "ru",
+      "concept": "crazy",
+      "hook": "reveal",
+      "hook_text": "Длинные. Острые. Твои",
+      "angle": "hero",
+      "job": "S15-ru-4x5",
+      "source": "legacy-img4835",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "4x5",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4835.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "ru",
+            "place": "under",
+            "bg": "cream",
+            "hook_size": "84",
+            "tile_pos": "center",
+            "tile_h": "44%",
+            "cta": "Записаться онлайн",
+            "meta": "svora.place · Воля",
+            "offer_pct": "-20%",
+            "offer_label": "скидка",
+            "offer_code": "КОД SVME20",
+            "hook": "Длинные. Острые. <b>Твои</b>",
+            "sub": "",
+            "kicker": "Extra Long & Crazy",
+            "price_old": "380 zł",
+            "price_new": "304 zł"
+          },
+          "created": "2026-10-09T18:54:14.393Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:14.435Z",
+      "notes": ""
+    },
+    {
+      "name": "crazy_reveal_legacy-img4835_st_n182_v1_9x16_ru",
+      "file": "crazy_reveal_legacy-img4835_st_n182_v1_9x16_ru.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "ru",
+      "concept": "crazy",
+      "hook": "reveal",
+      "hook_text": "Длинные. Острые. Твои",
+      "angle": "hero",
+      "job": "S15-ru-9x16",
+      "source": "legacy-img4835",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "9x16",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4835.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "ru",
+            "place": "under",
+            "bg": "cream",
+            "hook_size": "84",
+            "tile_pos": "center",
+            "tile_h": "36%",
+            "cta": "Записаться онлайн",
+            "meta": "svora.place · Воля",
+            "offer_pct": "-20%",
+            "offer_label": "скидка",
+            "offer_code": "КОД SVME20",
+            "hook": "Длинные. Острые. <b>Твои</b>",
+            "sub": "",
+            "kicker": "Extra Long & Crazy",
+            "price_old": "380 zł",
+            "price_new": "304 zł"
+          },
+          "created": "2026-10-09T18:54:14.960Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:15.002Z",
+      "notes": ""
+    },
+    {
+      "name": "crazy_reveal_legacy-img4835_st_n183_v1_4x5_en",
+      "file": "crazy_reveal_legacy-img4835_st_n183_v1_4x5_en.png",
+      "type": "st",
+      "format": "4x5",
+      "lang": "en",
+      "concept": "crazy",
+      "hook": "reveal",
+      "hook_text": "LONG. SHARP. YOURS",
+      "angle": "hero",
+      "job": "S15-en-4x5",
+      "source": "legacy-img4835",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "4x5",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4835.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "en",
+            "place": "under",
+            "bg": "cream",
+            "hook_size": "84",
+            "tile_pos": "center",
+            "tile_h": "44%",
+            "cta": "Book online",
+            "meta": "svora.place · Wola, Warsaw",
+            "offer_pct": "-20%",
+            "offer_label": "off",
+            "offer_code": "CODE SVME20",
+            "hook": "LONG. SHARP. <b>YOURS</b>",
+            "sub": "",
+            "kicker": "Extra Long & Crazy",
+            "price_old": "380 zł",
+            "price_new": "304 zł"
+          },
+          "created": "2026-10-09T18:54:15.510Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:15.551Z",
+      "notes": ""
+    },
+    {
+      "name": "crazy_reveal_legacy-img4835_st_n184_v1_9x16_en",
+      "file": "crazy_reveal_legacy-img4835_st_n184_v1_9x16_en.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "en",
+      "concept": "crazy",
+      "hook": "reveal",
+      "hook_text": "LONG. SHARP. YOURS",
+      "angle": "hero",
+      "job": "S15-en-9x16",
+      "source": "legacy-img4835",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-card",
+          "format": "9x16",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4835.jpg",
+          "transparent": false,
+          "vars": {
+            "lang": "en",
+            "place": "under",
+            "bg": "cream",
+            "hook_size": "84",
+            "tile_pos": "center",
+            "tile_h": "36%",
+            "cta": "Book online",
+            "meta": "svora.place · Wola, Warsaw",
+            "offer_pct": "-20%",
+            "offer_label": "off",
+            "offer_code": "CODE SVME20",
+            "hook": "LONG. SHARP. <b>YOURS</b>",
+            "sub": "",
+            "kicker": "Extra Long & Crazy",
+            "price_old": "380 zł",
+            "price_new": "304 zł"
+          },
+          "created": "2026-10-09T18:54:16.072Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:16.115Z",
+      "notes": ""
+    },
+    {
+      "name": "brand_found_legacy-img4881_st_n185_v1_9x16_ua",
+      "file": "brand_found_legacy-img4881_st_n185_v1_9x16_ua.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "brand",
+      "hook": "found",
+      "hook_text": "",
+      "angle": "location",
+      "job": "S16-ua-9x16",
+      "source": "legacy-img4881",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-hero",
+          "format": "9x16",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4881.PNG",
+          "transparent": false,
+          "vars": {
+            "lang": "ua",
+            "place": "bottom",
+            "tone": "dark",
+            "logo": "none",
+            "photo_pos": "center",
+            "offer_stack": "stack",
+            "cta_top": "72%",
+            "cta_size": "36",
+            "chip_cta_size": "26",
+            "tag_cta_size": "56",
+            "cta": "Записатись онлайн",
+            "meta": "",
+            "offer_pct": "-20%",
+            "offer_label": "знижка",
+            "offer_code": "КОД SVME20",
+            "hook": "",
+            "sub": ""
+          },
+          "created": "2026-10-09T18:54:16.851Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:16.893Z",
+      "notes": ""
+    },
+    {
+      "name": "brand_found_legacy-img4881_st_n186_v1_9x16_pl",
+      "file": "brand_found_legacy-img4881_st_n186_v1_9x16_pl.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "brand",
+      "hook": "found",
+      "hook_text": "",
+      "angle": "location",
+      "job": "S16-pl-9x16",
+      "source": "legacy-img4881",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-hero",
+          "format": "9x16",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4881.PNG",
+          "transparent": false,
+          "vars": {
+            "lang": "pl",
+            "place": "bottom",
+            "tone": "dark",
+            "logo": "none",
+            "photo_pos": "center",
+            "offer_stack": "stack",
+            "cta_top": "72%",
+            "cta_size": "36",
+            "chip_cta_size": "26",
+            "tag_cta_size": "56",
+            "cta": "Zarezerwuj online",
+            "meta": "",
+            "offer_pct": "-20%",
+            "offer_label": "rabat",
+            "offer_code": "KOD SVME20",
+            "hook": "",
+            "sub": ""
+          },
+          "created": "2026-10-09T18:54:17.626Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:17.667Z",
+      "notes": ""
+    },
+    {
+      "name": "brand_found_legacy-img4881_st_n187_v1_9x16_ru",
+      "file": "brand_found_legacy-img4881_st_n187_v1_9x16_ru.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "ru",
+      "concept": "brand",
+      "hook": "found",
+      "hook_text": "",
+      "angle": "location",
+      "job": "S16-ru-9x16",
+      "source": "legacy-img4881",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-hero",
+          "format": "9x16",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4881.PNG",
+          "transparent": false,
+          "vars": {
+            "lang": "ru",
+            "place": "bottom",
+            "tone": "dark",
+            "logo": "none",
+            "photo_pos": "center",
+            "offer_stack": "stack",
+            "cta_top": "72%",
+            "cta_size": "36",
+            "chip_cta_size": "26",
+            "tag_cta_size": "56",
+            "cta": "Записаться онлайн",
+            "meta": "",
+            "offer_pct": "-20%",
+            "offer_label": "скидка",
+            "offer_code": "КОД SVME20",
+            "hook": "",
+            "sub": ""
+          },
+          "created": "2026-10-09T18:54:18.382Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:18.425Z",
+      "notes": ""
+    },
+    {
+      "name": "brand_found_legacy-img4881_st_n188_v1_9x16_en",
+      "file": "brand_found_legacy-img4881_st_n188_v1_9x16_en.png",
+      "type": "st",
+      "format": "9x16",
+      "lang": "en",
+      "concept": "brand",
+      "hook": "found",
+      "hook_text": "",
+      "angle": "location",
+      "job": "S16-en-9x16",
+      "source": "legacy-img4881",
+      "v": 1,
+      "look": null,
+      "status": "draft",
+      "copy": null,
+      "pipeline": [
+        {
+          "template": "static-hero",
+          "format": "9x16",
+          "image": "sources/legacy/owner-2026-10-09/IMG_4881.PNG",
+          "transparent": false,
+          "vars": {
+            "lang": "en",
+            "place": "bottom",
+            "tone": "dark",
+            "logo": "none",
+            "photo_pos": "center",
+            "offer_stack": "stack",
+            "cta_top": "72%",
+            "cta_size": "36",
+            "chip_cta_size": "26",
+            "tag_cta_size": "56",
+            "cta": "Book online",
+            "meta": "",
+            "offer_pct": "-20%",
+            "offer_label": "off",
+            "offer_code": "CODE SVME20",
+            "hook": "",
+            "sub": ""
+          },
+          "created": "2026-10-09T18:54:19.147Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T18:54:19.188Z",
+      "notes": ""
+    },
+    {
       "name": "crazy_reveal_DbT_EsKDTDo_vd_n085_v2_9x16_ua",
       "file": "crazy_reveal_DbT_EsKDTDo_vd_n085_v2_9x16_ua.mp4",
       "type": "vd",
@@ -6269,7 +7677,7 @@
           },
           "music": null,
           "audio": "none",
-          "created": "2026-10-09T18:29:34.521Z"
+          "created": "2026-10-09T18:54:24.587Z"
         },
         {
           "step": "animate",
@@ -6292,7 +7700,7 @@
       ],
       "cost_usd": 0,
       "cost_shared": true,
-      "created": "2026-10-09T18:29:34.559Z",
+      "created": "2026-10-09T18:54:24.626Z",
       "notes": ""
     },
     {
@@ -6327,7 +7735,7 @@
           },
           "music": null,
           "audio": "clip stretched over the cards, faded",
-          "created": "2026-10-09T18:29:40.517Z"
+          "created": "2026-10-09T18:54:30.489Z"
         },
         {
           "step": "animate",
@@ -6350,7 +7758,7 @@
       ],
       "cost_usd": 0,
       "cost_shared": true,
-      "created": "2026-10-09T18:29:40.557Z",
+      "created": "2026-10-09T18:54:30.527Z",
       "notes": ""
     },
     {
@@ -6385,11 +7793,11 @@
           },
           "music": null,
           "audio": "none",
-          "created": "2026-10-09T18:29:46.442Z"
+          "created": "2026-10-09T18:54:36.352Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:29:46.480Z",
+      "created": "2026-10-09T18:54:36.389Z",
       "notes": ""
     },
     {
@@ -6424,11 +7832,11 @@
           },
           "music": null,
           "audio": "none",
-          "created": "2026-10-09T18:29:52.310Z"
+          "created": "2026-10-09T18:54:42.151Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:29:52.349Z",
+      "created": "2026-10-09T18:54:42.189Z",
       "notes": ""
     },
     {
@@ -6463,11 +7871,11 @@
           },
           "music": null,
           "audio": "none",
-          "created": "2026-10-09T18:29:59.700Z"
+          "created": "2026-10-09T18:54:49.481Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:29:59.738Z",
+      "created": "2026-10-09T18:54:49.518Z",
       "notes": ""
     },
     {
@@ -6502,11 +7910,11 @@
           },
           "music": null,
           "audio": "none",
-          "created": "2026-10-09T18:30:07.020Z"
+          "created": "2026-10-09T18:54:56.741Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:07.057Z",
+      "created": "2026-10-09T18:54:56.779Z",
       "notes": ""
     },
     {
@@ -6541,11 +7949,11 @@
           },
           "music": null,
           "audio": "none",
-          "created": "2026-10-09T18:30:12.554Z"
+          "created": "2026-10-09T18:55:02.242Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:12.591Z",
+      "created": "2026-10-09T18:55:02.280Z",
       "notes": ""
     },
     {
@@ -6580,11 +7988,11 @@
           },
           "music": null,
           "audio": "none",
-          "created": "2026-10-09T18:30:18.020Z"
+          "created": "2026-10-09T18:55:07.661Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:18.058Z",
+      "created": "2026-10-09T18:55:07.697Z",
       "notes": ""
     },
     {
@@ -6619,11 +8027,11 @@
           },
           "music": null,
           "audio": "clip stretched over the cards, faded",
-          "created": "2026-10-09T18:30:23.175Z"
+          "created": "2026-10-09T18:55:12.845Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:23.212Z",
+      "created": "2026-10-09T18:55:12.886Z",
       "notes": ""
     },
     {
@@ -6658,11 +8066,11 @@
           },
           "music": null,
           "audio": "clip stretched over the cards, faded",
-          "created": "2026-10-09T18:30:28.294Z"
+          "created": "2026-10-09T18:55:17.966Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:28.331Z",
+      "created": "2026-10-09T18:55:18.003Z",
       "notes": ""
     },
     {
@@ -6697,11 +8105,11 @@
           },
           "music": null,
           "audio": "none",
-          "created": "2026-10-09T18:30:33.929Z"
+          "created": "2026-10-09T18:55:23.577Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:33.966Z",
+      "created": "2026-10-09T18:55:23.615Z",
       "notes": ""
     },
     {
@@ -6736,11 +8144,11 @@
           },
           "music": null,
           "audio": "none",
-          "created": "2026-10-09T18:30:39.500Z"
+          "created": "2026-10-09T18:55:29.134Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:39.538Z",
+      "created": "2026-10-09T18:55:29.171Z",
       "notes": ""
     },
     {
@@ -6775,6 +8183,7 @@
             "cta": "Zarezerwuj online",
             "meta": "svora.place · Wola",
             "offer_pct": "-20%",
+            "offer_label": "rabat",
             "offer_code": "KOD SVME20",
             "hook": "<b>NUDE</b> KTÓRY WYGLĄDA JAK TWÓJ",
             "sub": "",
@@ -6782,11 +8191,11 @@
             "price_old": "190 zł",
             "price_new": "152 zł"
           },
-          "created": "2026-10-09T18:30:40.076Z"
+          "created": "2026-10-09T18:55:29.703Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:40.120Z",
+      "created": "2026-10-09T18:55:29.744Z",
       "notes": ""
     },
     {
@@ -6821,6 +8230,7 @@
             "cta": "Zarezerwuj online",
             "meta": "svora.place · Wola",
             "offer_pct": "-20%",
+            "offer_label": "rabat",
             "offer_code": "KOD SVME20",
             "hook": "<b>NUDE</b> KTÓRY WYGLĄDA JAK TWÓJ",
             "sub": "",
@@ -6828,11 +8238,11 @@
             "price_old": "190 zł",
             "price_new": "152 zł"
           },
-          "created": "2026-10-09T18:30:40.608Z"
+          "created": "2026-10-09T18:55:30.230Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:40.651Z",
+      "created": "2026-10-09T18:55:30.273Z",
       "notes": ""
     },
     {
@@ -6865,16 +8275,17 @@
             "cta": "Записатись онлайн",
             "meta": "svora.place · Воля",
             "offer_pct": "-20%",
+            "offer_label": "знижка",
             "offer_code": "КОД SVME20",
             "kicker": "Fresha",
             "hook": "★★★★★ <b>5.0</b> · 117 відгуків",
             "lines": "Нігті, педикюр, брови · Воля<br>Запис онлайн <b>за хвилину</b>"
           },
-          "created": "2026-10-09T18:30:41.206Z"
+          "created": "2026-10-09T18:55:30.824Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:41.249Z",
+      "created": "2026-10-09T18:55:30.864Z",
       "notes": ""
     },
     {
@@ -6907,16 +8318,17 @@
             "cta": "Записатись онлайн",
             "meta": "svora.place · Воля",
             "offer_pct": "-20%",
+            "offer_label": "знижка",
             "offer_code": "КОД SVME20",
             "kicker": "Fresha",
             "hook": "★★★★★ <b>5.0</b> · 117 відгуків",
             "lines": "Нігті, педикюр, брови · Воля<br>Запис онлайн <b>за хвилину</b>"
           },
-          "created": "2026-10-09T18:30:41.758Z"
+          "created": "2026-10-09T18:55:31.367Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:41.799Z",
+      "created": "2026-10-09T18:55:31.408Z",
       "notes": ""
     },
     {
@@ -6949,16 +8361,17 @@
             "cta": "Zarezerwuj online",
             "meta": "svora.place · Wola",
             "offer_pct": "-20%",
+            "offer_label": "rabat",
             "offer_code": "KOD SVME20",
             "kicker": "Fresha",
             "hook": "★★★★★ <b>5.0</b> · 117 opinii",
             "lines": "Paznokcie, pedicure, brwi · Wola<br>Rezerwacja online <b>w minutę</b>"
           },
-          "created": "2026-10-09T18:30:42.293Z"
+          "created": "2026-10-09T18:55:31.903Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:42.335Z",
+      "created": "2026-10-09T18:55:31.944Z",
       "notes": ""
     },
     {
@@ -6991,16 +8404,17 @@
             "cta": "Zarezerwuj online",
             "meta": "svora.place · Wola",
             "offer_pct": "-20%",
+            "offer_label": "rabat",
             "offer_code": "KOD SVME20",
             "kicker": "Fresha",
             "hook": "★★★★★ <b>5.0</b> · 117 opinii",
             "lines": "Paznokcie, pedicure, brwi · Wola<br>Rezerwacja online <b>w minutę</b>"
           },
-          "created": "2026-10-09T18:30:42.833Z"
+          "created": "2026-10-09T18:55:32.448Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:42.876Z",
+      "created": "2026-10-09T18:55:32.489Z",
       "notes": ""
     },
     {
@@ -7035,15 +8449,16 @@
             "cta": "Записатись онлайн",
             "meta": "",
             "offer_pct": "-20%",
+            "offer_label": "знижка",
             "offer_code": "КОД SVME20",
             "kicker": "SVORA NAILS · Воля",
             "hook": "Нігті зробила. <b>Настрій</b> теж."
           },
-          "created": "2026-10-09T18:30:43.363Z"
+          "created": "2026-10-09T18:55:32.975Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:43.403Z",
+      "created": "2026-10-09T18:55:33.018Z",
       "notes": ""
     },
     {
@@ -7078,15 +8493,16 @@
             "cta": "Записатись онлайн",
             "meta": "",
             "offer_pct": "-20%",
+            "offer_label": "знижка",
             "offer_code": "КОД SVME20",
             "kicker": "SVORA NAILS · Воля",
             "hook": "Нігті зробила. <b>Настрій</b> теж."
           },
-          "created": "2026-10-09T18:30:43.840Z"
+          "created": "2026-10-09T18:55:33.462Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:43.881Z",
+      "created": "2026-10-09T18:55:33.505Z",
       "notes": ""
     },
     {
@@ -7121,15 +8537,16 @@
             "cta": "Zarezerwuj online",
             "meta": "",
             "offer_pct": "-20%",
+            "offer_label": "rabat",
             "offer_code": "KOD SVME20",
             "kicker": "SVORA NAILS · Wola",
             "hook": "Paznokcie zrobione. <b>Humor</b> też."
           },
-          "created": "2026-10-09T18:30:44.315Z"
+          "created": "2026-10-09T18:55:33.940Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:44.356Z",
+      "created": "2026-10-09T18:55:33.981Z",
       "notes": ""
     },
     {
@@ -7164,15 +8581,16 @@
             "cta": "Zarezerwuj online",
             "meta": "",
             "offer_pct": "-20%",
+            "offer_label": "rabat",
             "offer_code": "KOD SVME20",
             "kicker": "SVORA NAILS · Wola",
             "hook": "Paznokcie zrobione. <b>Humor</b> też."
           },
-          "created": "2026-10-09T18:30:44.789Z"
+          "created": "2026-10-09T18:55:34.422Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:44.831Z",
+      "created": "2026-10-09T18:55:34.467Z",
       "notes": ""
     },
     {
@@ -7207,16 +8625,17 @@
             "cta": "Записатись онлайн",
             "meta": "svora.place · Воля",
             "offer_pct": "-20%",
+            "offer_label": "знижка",
             "offer_code": "КОД SVME20",
             "kicker": "Маріана, засновниця SVORA",
             "hook": "«Не дешевий салон. <b>І не планували</b>»",
             "lines": "Ви виходите, дивитесь на руки —<br>і розумієте, за що заплатили."
           },
-          "created": "2026-10-09T18:30:45.367Z"
+          "created": "2026-10-09T18:55:34.997Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:45.409Z",
+      "created": "2026-10-09T18:55:35.041Z",
       "notes": ""
     },
     {
@@ -7252,15 +8671,16 @@
             "cta": "Записатись онлайн",
             "meta": "svora.place · Воля",
             "offer_pct": "-20%",
+            "offer_label": "знижка",
             "offer_code": "КОД SVME20",
             "kicker": "Маріана, засновниця SVORA",
             "hook": "«Не дешевий салон. <b>І не планували</b>»"
           },
-          "created": "2026-10-09T18:30:45.902Z"
+          "created": "2026-10-09T18:55:35.539Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:45.944Z",
+      "created": "2026-10-09T18:55:35.584Z",
       "notes": ""
     },
     {
@@ -7295,6 +8715,7 @@
             "cta": "Записатись онлайн",
             "meta": "svora.place · Воля",
             "offer_pct": "-20%",
+            "offer_label": "знижка",
             "offer_code": "КОД SVME20",
             "hook": "Осінь — <b>бордо</b>",
             "sub": "",
@@ -7302,11 +8723,11 @@
             "price_old": "190 zł",
             "price_new": "152 zł"
           },
-          "created": "2026-10-09T18:30:46.503Z"
+          "created": "2026-10-09T18:55:36.143Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:46.544Z",
+      "created": "2026-10-09T18:55:36.186Z",
       "notes": ""
     },
     {
@@ -7341,6 +8762,7 @@
             "cta": "Записатись онлайн",
             "meta": "svora.place · Воля",
             "offer_pct": "-20%",
+            "offer_label": "знижка",
             "offer_code": "КОД SVME20",
             "hook": "Осінь — <b>бордо</b>",
             "sub": "",
@@ -7348,11 +8770,11 @@
             "price_old": "190 zł",
             "price_new": "152 zł"
           },
-          "created": "2026-10-09T18:30:47.062Z"
+          "created": "2026-10-09T18:55:36.695Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:47.104Z",
+      "created": "2026-10-09T18:55:36.737Z",
       "notes": ""
     },
     {
@@ -7387,6 +8809,7 @@
             "cta": "Zarezerwuj online",
             "meta": "svora.place · Wola",
             "offer_pct": "-20%",
+            "offer_label": "rabat",
             "offer_code": "KOD SVME20",
             "hook": "Jesień w <b>bordo</b>",
             "sub": "",
@@ -7394,11 +8817,11 @@
             "price_old": "190 zł",
             "price_new": "152 zł"
           },
-          "created": "2026-10-09T18:30:47.600Z"
+          "created": "2026-10-09T18:55:37.231Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:47.642Z",
+      "created": "2026-10-09T18:55:37.272Z",
       "notes": ""
     },
     {
@@ -7433,6 +8856,7 @@
             "cta": "Zarezerwuj online",
             "meta": "svora.place · Wola",
             "offer_pct": "-20%",
+            "offer_label": "rabat",
             "offer_code": "KOD SVME20",
             "hook": "Jesień w <b>bordo</b>",
             "sub": "",
@@ -7440,13 +8864,13 @@
             "price_old": "190 zł",
             "price_new": "152 zł"
           },
-          "created": "2026-10-09T18:30:48.155Z"
+          "created": "2026-10-09T18:55:37.779Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T18:30:48.199Z",
+      "created": "2026-10-09T18:55:37.822Z",
       "notes": ""
     }
   ],
-  "updated": "2026-10-09T18:30:48.199Z"
+  "updated": "2026-10-09T18:55:37.822Z"
 }
