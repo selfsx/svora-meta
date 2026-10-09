@@ -233,3 +233,7 @@
 - Operator: "if everything is ok after these comments then we're good to start these two" → GO #2 for both.
   **ACTIVATED 2026-10-09 evening:** 001 (120254683053800007, 150 PLN/day) and 002 (120254683096960007, 100 PLN/day).
   First checks: CTR < 0.5 % kill rule Sun 10-12; 7-day read Thu 10-16; first /report Mon 10-19.
+- svora-landing: SVME20 strip (`PromoBanner.astro`, shows on `utm_source=meta` or the stored session attribution,
+  copy-code button, per-session dismiss) committed 23fc63d, pushed to origin/develop → DigitalOcean deployed within
+  ~2 min; live check 2026-10-09 22:25: visible with the parameter on /, /ua/, /en/, hidden without, persists on the
+  next page in the session, Fresha links carry `utm_source=meta`.
