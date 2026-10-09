@@ -22,7 +22,7 @@ Edited in place. Move an item to the journal when it is done.
 ## Agent work, in order
 
 - [ ] `/ingest` (12 posts now; full archive after login) → `sources/instagram/selected/` by concept.
-- [ ] `/creatives` wave 1 by angle: process / founder / studio / pick cuts from the archive reels (free, no generation), then the remaining hero clips within the $25 cap (`03-creative-portfolio-plan.md`).
+- [ ] `/creatives` first 100 per `05-first-100.md`: wave A (free localisation + new statics + cut videos) → review → wave B (Seedance) → review → wave C.
 - [ ] creative-director review → `approved`.
 - [ ] `/launch campaigns/specs/001-prospect-uaru.yaml`, then 002.
 - [ ] Week 2: `/creatives` DM-CTA variants → `/launch 004`.

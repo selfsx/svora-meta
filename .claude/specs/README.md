@@ -12,3 +12,4 @@ lives in `04-backlog.md` and is the only file here that is edited rather than ap
 | `02-month-1-test-plan.md` | the first campaigns: structure, events, budgets, decision rules |
 | `03-creative-portfolio-plan.md` | how the few-hundred-creative portfolio is produced, in what order, at what cost |
 | `04-backlog.md` | open items, owner-side actions, questions |
+- `05-first-100.md` — the first 100 diverse, localised creatives: master list, quality bar, review loop, waves (2026-10-09)
