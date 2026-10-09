@@ -27,7 +27,7 @@ if (cmd === 'build') {
   const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (ch) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[ch]));
   const cards = rows.map((c) => {
     const url = pathToFileURL(c.path).href;
-    const media = c.type === 'vd' ? `<video src="${url}" controls muted loop playsinline preload="metadata"></video>` : `<img src="${url}" loading="lazy">`;
+    const media = c.type === 'vd' ? `<video src="${url}#t=1.5" controls muted loop playsinline preload="metadata"></video>` : `<img src="${url}" loading="lazy">`;
     return `<div class="card" data-name="${esc(c.name)}">
   ${media}
   <div class="meta"><b>${esc(c.name)}</b><br>${esc(c.batch)} · ${esc(c.angle || '-')} · ${esc(c.concept)} / ${esc(c.hook)} · ${esc(c.format)} · ${esc(c.lang)}<br><i>${esc(c.hook_text || '')}</i></div>

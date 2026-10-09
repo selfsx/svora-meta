@@ -89,6 +89,7 @@ Every variant is cheap after step 3: one clip × 4 languages × 2 hooks = 8 crea
 ```
 
 `status`: `draft` → `approved` | `rejected` → `live` (set by hand after activation) → `retired`.
+`review`: `{date, ok, note}` written by `scripts/review.mjs apply` from the operator's verdict JSON (the page: `review.mjs build`).
 `copy` is a suggestion for the launch spec, not binding. `cost_usd` is the sum of the pipeline steps.
 
 ## Batches

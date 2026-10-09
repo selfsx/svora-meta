@@ -29,6 +29,7 @@ when a decision depends on it). The plans are in `.claude/specs/`.
 | `/ingest` | pull @svora.nails posts into `sources/instagram/` |
 | `/copy <concept> --langs …` | add copy variants (copywriter agent) |
 | `/creatives <concept> …` | produce + review a creative batch (creative-producer → creative-director) |
+| `/review build\|apply` | the operator's review page and verdict import (`.claude/specs/05-first-100.md`) |
 | `/launch <spec>` | spec → GO → build PAUSED → verify → second GO → activate (campaign-manager) |
 | `/report` | the Monday review with decision rules (analyst) |
 | `/research <topic>` | a sourced document under `research/` (researcher) |

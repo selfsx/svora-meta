@@ -60,3 +60,12 @@
   Spend the cap on a Seedance before/after or on nothing until the owner's footage arrives.
 - Open: the founder's captions drift ≈ 1 s vs speech on DdJn2Wrsad- (Gemini timestamps); acceptable for review, fix by
   nudging segment times if the operator wants it tighter. No music beds yet (`brand/music/`).
+
+## 2026-10-09 — plan for the first 100 + review loop
+
+- Operator: pick static = great concept; videos "still not very great but we're moving"; wants ≈ 100 diverse, fully
+  localised creatives (50/50 video/static), campaigns 1-1-5 (later 1-1-10), a generate → review → regenerate loop.
+- Written: `.claude/specs/05-first-100.md` (28 masters × languages, video quality bar, waves A/B/C, $50 cap assumption,
+  owner inputs that block specific masters). Built: `scripts/review.mjs` (local review page with 👍/👎/notes + export,
+  `apply` writes verdicts to manifests), `/review` command.
+- Next: wave A (free) as soon as the operator confirms the plan or marks the current 26 drafts.
