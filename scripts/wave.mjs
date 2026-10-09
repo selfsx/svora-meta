@@ -123,50 +123,65 @@ function buildVideo(job, lang, text, jobKey) {
     args.push('--subs', ass);
   }
   let out = path.join(work, `${jobKey}.mp4`);
-  if (job.intro) {
-    const body = path.join(work, `${jobKey}-body.mp4`);
-    run('node', [...args, '--out', body]);
-    const card = path.join(work, `${jobKey}-intro.png`);
-    const cardJob = {...job, template: job.intro.template || 'static-card', image: job.intro.image || null, vars: {align: 'center', logo_pos: 'center', place: 'middle', hook_size: 120, ...(job.intro.vars || {}), cta: ''}};
-    run('node', renderArgs(cardJob, lang, '9x16', {kicker: text.sub || '', hook: text.hook, cta: '', meta: ''}, card, false));
-    const sec = job.intro.seconds || 1.2;
-    const withIntro = path.join(work, `${jobKey}-intro.mp4`);
-    const a = ['-y', '-v', 'error', '-loop', '1', '-t', String(sec), '-i', card, '-i', body];
-    const hasA = spawnSync('ffprobe', ['-v', 'error', '-select_streams', 'a:0', '-show_entries', 'stream=codec_name', '-of', 'csv=p=0', body], {encoding: 'utf8'}).stdout.trim().length > 0;
-    const fc = hasA
-      ? `[0:v]scale=720:1280,fps=30,format=yuv420p,setsar=1[c];anullsrc=r=48000:cl=stereo,atrim=0:${sec}[sa];[c][sa][1:v][1:a]concat=n=2:v=1:a=1[v][a]`
-      : `[0:v]scale=720:1280,fps=30,format=yuv420p,setsar=1[c];[c][1:v]concat=n=2:v=1:a=0[v]`;
-    a.push('-filter_complex', fc, '-map', '[v]');
-    if (hasA) a.push('-map', '[a]', '-c:a', 'aac', '-b:a', '128k'); else a.push('-an');
-    a.push('-c:v', 'libx264', '-preset', 'slow', '-crf', '19', '-movflags', '+faststart', withIntro);
-    run('ffmpeg', a);
-    args.length = 0; args.push('__done__', withIntro);
-  }
   if (job.intro && job.outro !== false && !job.endcard) {
     job.endcard = {template: 'static-card', seconds: job.outro?.seconds || 1.5, vars: {align: 'center', logo_pos: 'center', place: 'middle', hook_size: 96, bg: job.intro.vars?.bg || 'black', ...(job.outro?.vars || {})}};
   }
+  if (!job.intro && !job.endcard) { run('node', [...args, '--out', out]); return out; }
+
+  // 1. the body: cuts, captions, overlay — its own audio untouched (we mix at the end)
+  const body = path.join(work, `${jobKey}-body.mp4`);
+  run('node', [...args, '--no-loudnorm', '--out', body]);
+  const bodyDur = Number(spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', body], {encoding: 'utf8'}).stdout) || 8;
+  const bodyHasAudio = spawnSync('ffprobe', ['-v', 'error', '-select_streams', 'a:0', '-show_entries', 'stream=codec_name', '-of', 'csv=p=0', body], {encoding: 'utf8'}).stdout.trim().length > 0;
+  // 2. the cards
+  const parts = [];  // [{file, seconds, isCard}]
+  if (job.intro) {
+    const card = path.join(work, `${jobKey}-intro.png`);
+    const cardJob = {...job, template: job.intro.template || 'static-card', image: job.intro.image || null, vars: {align: 'center', logo_pos: 'center', place: 'middle', hook_size: 120, ...(job.intro.vars || {}), cta: ''}};
+    run('node', renderArgs(cardJob, lang, '9x16', {kicker: text.sub || '', hook: text.hook, cta: '', meta: ''}, card, false));
+    parts.push({file: card, seconds: job.intro.seconds || 1.2, isCard: true});
+  }
+  parts.push({file: body, seconds: bodyDur, isCard: false});
   if (job.endcard) {
-    // finish the clip, render the card for this language, append it as a 1.5 s tail
-    const body = args[0] === '__done__' ? args[1] : path.join(work, `${jobKey}-body.mp4`);
-    if (args[0] !== '__done__') run('node', [...args, '--out', body]);
     const card = path.join(work, `${jobKey}-card.png`);
     run('node', renderArgs({...job, template: job.endcard.template, image: job.endcard.image || null, vars: {...(job.vars || {}), ...(job.endcard.vars || {})}}, lang, '9x16', job.endcard.template === 'static-card' ? {kicker: text.sub || '', hook: text.hook, cta: text.cta, meta: text.meta || ''} : text, card, false));
-    const sec = job.endcard.seconds || 1.5;
-    const hasA2 = spawnSync('ffprobe', ['-v', 'error', '-select_streams', 'a:0', '-show_entries', 'stream=codec_name', '-of', 'csv=p=0', body], {encoding: 'utf8'}).stdout.trim().length > 0;
-    const fc2 = hasA2
-      ? `[1:v]scale=720:1280,fps=30,format=yuv420p,setsar=1[c];anullsrc=r=48000:cl=stereo,atrim=0:${sec}[sa];[0:v][0:a][c][sa]concat=n=2:v=1:a=1[v][a]`
-      : `[1:v]scale=720:1280,fps=30,format=yuv420p,setsar=1[c];[0:v][c]concat=n=2:v=1:a=0[v]`;
-    const ea = ['-y', '-v', 'error', '-i', body, '-loop', '1', '-t', String(sec), '-i', card, '-filter_complex', fc2, '-map', '[v]'];
-    if (hasA2) ea.push('-map', '[a]', '-c:a', 'aac', '-b:a', '128k'); else ea.push('-an');
-    ea.push('-c:v', 'libx264', '-preset', 'slow', '-crf', '19', '-movflags', '+faststart', out);
-    run('ffmpeg', ea);
-    writeFileSync(`${out}.json`, JSON.stringify({step: 'finish', input: job.clip, overlay: ov, cuts: job.cuts || null, cta_top_pct: freeBand ? fz.top_pct : null, free_zone_score: fz.score, intro: job.intro ? {seconds: job.intro.seconds || 1.2} : null, endcard: {template: job.endcard.template, seconds: sec}, created: new Date().toISOString()}, null, 2));
-  } else if (args[0] === '__done__') {
-    out = args[1];
-    writeFileSync(`${out}.json`, JSON.stringify({step: 'finish', input: job.clip, overlay: ov, cuts: job.cuts || null, cta_top_pct: freeBand ? fz.top_pct : null, free_zone_score: fz.score, intro: {template: job.intro.template || 'static-card', seconds: job.intro.seconds || 1.2}, created: new Date().toISOString()}, null, 2));
-  } else {
-    run('node', [...args, '--out', out]);
+    parts.push({file: card, seconds: job.endcard.seconds || 1.5, isCard: true});
   }
+  // 3. video assembly (cards → 720×1280 stills), then ONE audio pass over the whole piece:
+  //    music bed (when brand/music has one) under everything, clip audio ducked beneath it; without a bed the clip's
+  //    own audio starts under the intro card and fades out across the outro, so the cards are never dead silent.
+  const total = parts.reduce((t, p) => t + p.seconds, 0);
+  const introSec = job.intro ? (job.intro.seconds || 1.2) : 0;
+  const inputs = [], vf = [];
+  parts.forEach((p, i) => { if (p.isCard) inputs.push('-loop', '1', '-t', String(p.seconds), '-i', p.file); else inputs.push('-i', p.file); vf.push(p.isCard ? `[${i}:v]scale=720:1280,fps=30,format=yuv420p,setsar=1[v${i}]` : `[${i}:v]fps=30,format=yuv420p,setsar=1[v${i}]`); });
+  const bodyIdx = parts.findIndex((p) => !p.isCard);
+  const music = job.music && existsSync(job.music) ? job.music : null;
+  const musicIdx = music ? parts.length : -1;
+  if (music) inputs.push('-stream_loop', '-1', '-i', music);
+  const fc = [...vf, `${parts.map((_, i) => `[v${i}]`).join('')}concat=n=${parts.length}:v=1:a=0[v]`];
+  const fadeOut = Math.min(1.5, total / 4);
+  let aout = null;
+  if (music && bodyHasAudio) {
+    fc.push(`[${musicIdx}:a]atrim=0:${total},asetpts=PTS-STARTPTS,volume=${job.music_gain ?? 0.8},afade=t=in:d=0.3,afade=t=out:st=${total - fadeOut}:d=${fadeOut}[bed]`);
+    fc.push(`[${bodyIdx}:a]adelay=${Math.round(introSec * 1000)}|${Math.round(introSec * 1000)},apad=whole_dur=${total},volume=0.35[clip]`);
+    fc.push(`[bed][clip]amix=inputs=2:duration=first:dropout_transition=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]`);
+    aout = '[a]';
+  } else if (music) {
+    fc.push(`[${musicIdx}:a]atrim=0:${total},asetpts=PTS-STARTPTS,volume=${job.music_gain ?? 0.8},afade=t=in:d=0.3,afade=t=out:st=${total - fadeOut}:d=${fadeOut},loudnorm=I=-14:TP=-1.5:LRA=11[a]`);
+    aout = '[a]';
+  } else if (bodyHasAudio) {
+    // start the clip's sound with the intro card (ambient sound, not lip-synced), pad under the outro, fade both ends
+    // the clip's sound is shorter than intro+body+outro: stretch it to the whole piece (atempo keeps the pitch; ≥ 0.5×)
+    const tempo = Math.max(0.5, bodyDur / total);
+    fc.push(`[${bodyIdx}:a]atempo=${tempo.toFixed(4)},apad=whole_dur=${total},atrim=0:${total},afade=t=in:d=0.3,afade=t=out:st=${total - fadeOut}:d=${fadeOut},loudnorm=I=-14:TP=-1.5:LRA=11[a]`);
+    aout = '[a]';
+  }
+  const fa = ['-y', '-v', 'error', ...inputs, '-filter_complex', fc.join(';'), '-map', '[v]'];
+  if (aout) fa.push('-map', aout, '-c:a', 'aac', '-b:a', '128k', '-ar', '48000'); else fa.push('-an');
+  fa.push('-t', String(total), '-c:v', 'libx264', '-preset', 'slow', '-crf', '19', '-movflags', '+faststart', out);
+  run('ffmpeg', fa);
+  writeFileSync(`${out}.json`, JSON.stringify({step: 'finish', input: job.clip, overlay: ov, cuts: job.cuts || null, cta_top_pct: freeBand ? fz.top_pct : null, free_zone_score: fz.score,
+    intro: job.intro ? {seconds: introSec} : null, outro: job.endcard ? {seconds: job.endcard.seconds || 1.5} : null, music: music, audio: aout ? (music ? 'bed' + (bodyHasAudio ? '+clip' : '') : 'clip stretched over the cards, faded') : 'none', created: new Date().toISOString()}, null, 2));
   return out;
 }
 

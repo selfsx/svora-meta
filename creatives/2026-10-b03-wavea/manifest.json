@@ -3471,1846 +3471,6 @@
       }
     },
     {
-      "name": "crazy_reveal_DbT_EsKDTDo_vd_n081_v1_9x16_ua",
-      "file": "crazy_reveal_DbT_EsKDTDo_vd_n081_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "crazy",
-      "hook": "reveal",
-      "hook_text": "Це взагалі нігті?",
-      "angle": "hero",
-      "job": "V1-ua-9x16",
-      "source": "DbT_EsKDTDo",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/DbT_EsKDTDo-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V1-ua-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:15:01.847Z",
-          "free_zone_score": 20.51,
-          "cta_top_pct": 88.1
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow cinematic push-in on the hands. The fingers slowly flex and turn so the studio light glides along the long transparent sculpted nails and catches the silver details. The nail design stays exactly as in the image. Black fabric background, shallow depth of field, soft reflections. No text, no extra hands, no new objects.",
-          "first_frame": "creatives/_work/w1/DbT_EsKDTDo-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": false,
-          "seed": null,
-          "job_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
-          "created": "2026-10-09T09:39:35.684Z"
-        }
-      ],
-      "cost_usd": 1.8540318,
-      "created": "2026-10-09T15:15:01.885Z",
-      "notes": ""
-    },
-    {
-      "name": "crazy_reveal_DbT_EsKDTDo_vd_n082_v1_9x16_pl",
-      "file": "crazy_reveal_DbT_EsKDTDo_vd_n082_v1_9x16_pl.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "crazy",
-      "hook": "reveal",
-      "hook_text": "TEGO NIE DA SIĘ PRZEOCZYĆ",
-      "angle": "hero",
-      "job": "V1-pl-9x16",
-      "source": "DbT_EsKDTDo",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/DbT_EsKDTDo-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V1-pl-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:15:08.233Z",
-          "free_zone_score": 20.51,
-          "cta_top_pct": 88.1
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow cinematic push-in on the hands. The fingers slowly flex and turn so the studio light glides along the long transparent sculpted nails and catches the silver details. The nail design stays exactly as in the image. Black fabric background, shallow depth of field, soft reflections. No text, no extra hands, no new objects.",
-          "first_frame": "creatives/_work/w1/DbT_EsKDTDo-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": false,
-          "seed": null,
-          "job_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
-          "created": "2026-10-09T09:39:35.684Z"
-        }
-      ],
-      "cost_usd": 0,
-      "cost_shared": true,
-      "created": "2026-10-09T15:15:08.270Z",
-      "notes": ""
-    },
-    {
-      "name": "crazy_reveal_DbT_EsKDTDo_vd_n083_v1_9x16_ru",
-      "file": "crazy_reveal_DbT_EsKDTDo_vd_n083_v1_9x16_ru.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ru",
-      "concept": "crazy",
-      "hook": "reveal",
-      "hook_text": "Это вообще ногти?",
-      "angle": "hero",
-      "job": "V1-ru-9x16",
-      "source": "DbT_EsKDTDo",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/DbT_EsKDTDo-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V1-ru-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:15:14.587Z",
-          "free_zone_score": 20.51,
-          "cta_top_pct": 88.1
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow cinematic push-in on the hands. The fingers slowly flex and turn so the studio light glides along the long transparent sculpted nails and catches the silver details. The nail design stays exactly as in the image. Black fabric background, shallow depth of field, soft reflections. No text, no extra hands, no new objects.",
-          "first_frame": "creatives/_work/w1/DbT_EsKDTDo-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": false,
-          "seed": null,
-          "job_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
-          "created": "2026-10-09T09:39:35.684Z"
-        }
-      ],
-      "cost_usd": 0,
-      "cost_shared": true,
-      "created": "2026-10-09T15:15:14.629Z",
-      "notes": ""
-    },
-    {
-      "name": "crazy_reveal_DbT_EsKDTDo_vd_n084_v1_9x16_en",
-      "file": "crazy_reveal_DbT_EsKDTDo_vd_n084_v1_9x16_en.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "en",
-      "concept": "crazy",
-      "hook": "reveal",
-      "hook_text": "IMPOSSIBLE NOT TO NOTICE",
-      "angle": "hero",
-      "job": "V1-en-9x16",
-      "source": "DbT_EsKDTDo",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/DbT_EsKDTDo-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V1-en-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:15:21.100Z",
-          "free_zone_score": 20.51,
-          "cta_top_pct": 88.1
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow cinematic push-in on the hands. The fingers slowly flex and turn so the studio light glides along the long transparent sculpted nails and catches the silver details. The nail design stays exactly as in the image. Black fabric background, shallow depth of field, soft reflections. No text, no extra hands, no new objects.",
-          "first_frame": "creatives/_work/w1/DbT_EsKDTDo-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": false,
-          "seed": null,
-          "job_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
-          "created": "2026-10-09T09:39:35.684Z"
-        }
-      ],
-      "cost_usd": 0,
-      "cost_shared": true,
-      "created": "2026-10-09T15:15:21.138Z",
-      "notes": ""
-    },
-    {
-      "name": "art_art-closeup_Ddv-7k6DQJg_vd_n085_v1_9x16_ua",
-      "file": "art_art-closeup_Ddv-7k6DQJg_vd_n085_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "art",
-      "hook": "art-closeup",
-      "hook_text": "Один ніготь. Ближче.",
-      "angle": "hero",
-      "job": "V2-ua-9x16",
-      "source": "Ddv-7k6DQJg",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/Ddv-7k6DQJg-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V2-ua-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:15:28.108Z",
-          "free_zone_score": 46.28,
-          "cta_top_pct": 85.6
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow orbiting camera move around the two hands. The fingers slowly tilt so the magnetic cat-eye shimmer shifts and sparkles across each nail; the dark glossy surface below shows soft reflections. The nail colours and design stay exactly as in the image. No text, no extra hands, no new objects.",
-          "first_frame": "creatives/_work/w1/Ddv-7k6DQJg-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": true,
-          "seed": null,
-          "job_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
-          "created": "2026-10-09T09:27:53.541Z"
-        }
-      ],
-      "cost_usd": 1.8540318,
-      "created": "2026-10-09T15:15:28.146Z",
-      "notes": ""
-    },
-    {
-      "name": "art_art-closeup_Ddv-7k6DQJg_vd_n086_v1_9x16_pl",
-      "file": "art_art-closeup_Ddv-7k6DQJg_vd_n086_v1_9x16_pl.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "art",
-      "hook": "art-closeup",
-      "hook_text": "ZBLIŻ SIĘ. SERIO.",
-      "angle": "hero",
-      "job": "V2-pl-9x16",
-      "source": "Ddv-7k6DQJg",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/Ddv-7k6DQJg-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V2-pl-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:15:35.129Z",
-          "free_zone_score": 46.28,
-          "cta_top_pct": 85.6
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow orbiting camera move around the two hands. The fingers slowly tilt so the magnetic cat-eye shimmer shifts and sparkles across each nail; the dark glossy surface below shows soft reflections. The nail colours and design stay exactly as in the image. No text, no extra hands, no new objects.",
-          "first_frame": "creatives/_work/w1/Ddv-7k6DQJg-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": true,
-          "seed": null,
-          "job_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
-          "created": "2026-10-09T09:27:53.541Z"
-        }
-      ],
-      "cost_usd": 0,
-      "cost_shared": true,
-      "created": "2026-10-09T15:15:35.165Z",
-      "notes": ""
-    },
-    {
-      "name": "art_art-closeup_Ddv-7k6DQJg_vd_n087_v1_9x16_ru",
-      "file": "art_art-closeup_Ddv-7k6DQJg_vd_n087_v1_9x16_ru.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ru",
-      "concept": "art",
-      "hook": "art-closeup",
-      "hook_text": "Один ноготь. Ближе.",
-      "angle": "hero",
-      "job": "V2-ru-9x16",
-      "source": "Ddv-7k6DQJg",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/Ddv-7k6DQJg-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V2-ru-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:15:42.135Z",
-          "free_zone_score": 46.28,
-          "cta_top_pct": 85.6
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow orbiting camera move around the two hands. The fingers slowly tilt so the magnetic cat-eye shimmer shifts and sparkles across each nail; the dark glossy surface below shows soft reflections. The nail colours and design stay exactly as in the image. No text, no extra hands, no new objects.",
-          "first_frame": "creatives/_work/w1/Ddv-7k6DQJg-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": true,
-          "seed": null,
-          "job_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
-          "created": "2026-10-09T09:27:53.541Z"
-        }
-      ],
-      "cost_usd": 0,
-      "cost_shared": true,
-      "created": "2026-10-09T15:15:42.170Z",
-      "notes": ""
-    },
-    {
-      "name": "art_art-closeup_Ddv-7k6DQJg_vd_n088_v1_9x16_en",
-      "file": "art_art-closeup_Ddv-7k6DQJg_vd_n088_v1_9x16_en.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "en",
-      "concept": "art",
-      "hook": "art-closeup",
-      "hook_text": "ZOOM IN. SERIOUSLY.",
-      "angle": "hero",
-      "job": "V2-en-9x16",
-      "source": "Ddv-7k6DQJg",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/Ddv-7k6DQJg-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V2-en-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:15:49.197Z",
-          "free_zone_score": 46.28,
-          "cta_top_pct": 85.6
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow orbiting camera move around the two hands. The fingers slowly tilt so the magnetic cat-eye shimmer shifts and sparkles across each nail; the dark glossy surface below shows soft reflections. The nail colours and design stay exactly as in the image. No text, no extra hands, no new objects.",
-          "first_frame": "creatives/_work/w1/Ddv-7k6DQJg-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": true,
-          "seed": null,
-          "job_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
-          "created": "2026-10-09T09:27:53.541Z"
-        }
-      ],
-      "cost_usd": 0,
-      "cost_shared": true,
-      "created": "2026-10-09T15:15:49.233Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_found_DbMR6_ttcnF_vd_n089_v1_9x16_ua",
-      "file": "classic_found_DbMR6_ttcnF_vd_n089_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "classic",
-      "hook": "found",
-      "hook_text": "Нарешті свій салон у Варшаві",
-      "angle": "hero",
-      "job": "V3-ua-9x16",
-      "source": "DbMR6_ttcnF",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/DbMR6_ttcnF-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V3-ua-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:15:55.760Z",
-          "free_zone_score": 137.24,
-          "cta_top_pct": null
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow, calm push-in on the hand. The fingers tilt gently so a soft daylight highlight slides across the glossy chrome natural-tone nails. The nail colour, shape and length stay exactly as in the image. Premium, minimal, shallow depth of field. No text, no extra hands, no new objects.",
-          "first_frame": "creatives/_work/w1/DbMR6_ttcnF-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": false,
-          "seed": null,
-          "job_id": "gen-vid-1791538873-7e1IRECBQFDNinP0eeoG",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791538873-7e1IRECBQFDNinP0eeoG",
-          "created": "2026-10-09T09:43:56.846Z"
-        }
-      ],
-      "cost_usd": 1.8540318,
-      "created": "2026-10-09T15:15:55.797Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_found_DbMR6_ttcnF_vd_n090_v1_9x16_pl",
-      "file": "classic_found_DbMR6_ttcnF_vd_n090_v1_9x16_pl.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "classic",
-      "hook": "found",
-      "hook_text": "RÓWNO. CZYSTO. NATURALNIE.",
-      "angle": "hero",
-      "job": "V3-pl-9x16",
-      "source": "DbMR6_ttcnF",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/DbMR6_ttcnF-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V3-pl-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:16:02.283Z",
-          "free_zone_score": 137.24,
-          "cta_top_pct": null
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow, calm push-in on the hand. The fingers tilt gently so a soft daylight highlight slides across the glossy chrome natural-tone nails. The nail colour, shape and length stay exactly as in the image. Premium, minimal, shallow depth of field. No text, no extra hands, no new objects.",
-          "first_frame": "creatives/_work/w1/DbMR6_ttcnF-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": false,
-          "seed": null,
-          "job_id": "gen-vid-1791538873-7e1IRECBQFDNinP0eeoG",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791538873-7e1IRECBQFDNinP0eeoG",
-          "created": "2026-10-09T09:43:56.846Z"
-        }
-      ],
-      "cost_usd": 0,
-      "cost_shared": true,
-      "created": "2026-10-09T15:16:02.320Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_found_DbMR6_ttcnF_vd_n091_v1_9x16_ru",
-      "file": "classic_found_DbMR6_ttcnF_vd_n091_v1_9x16_ru.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ru",
-      "concept": "classic",
-      "hook": "found",
-      "hook_text": "Наконец свой салон в Варшаве",
-      "angle": "hero",
-      "job": "V3-ru-9x16",
-      "source": "DbMR6_ttcnF",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/DbMR6_ttcnF-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V3-ru-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:16:08.836Z",
-          "free_zone_score": 137.24,
-          "cta_top_pct": null
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow, calm push-in on the hand. The fingers tilt gently so a soft daylight highlight slides across the glossy chrome natural-tone nails. The nail colour, shape and length stay exactly as in the image. Premium, minimal, shallow depth of field. No text, no extra hands, no new objects.",
-          "first_frame": "creatives/_work/w1/DbMR6_ttcnF-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": false,
-          "seed": null,
-          "job_id": "gen-vid-1791538873-7e1IRECBQFDNinP0eeoG",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791538873-7e1IRECBQFDNinP0eeoG",
-          "created": "2026-10-09T09:43:56.846Z"
-        }
-      ],
-      "cost_usd": 0,
-      "cost_shared": true,
-      "created": "2026-10-09T15:16:08.872Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_found_DbMR6_ttcnF_vd_n092_v1_9x16_en",
-      "file": "classic_found_DbMR6_ttcnF_vd_n092_v1_9x16_en.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "en",
-      "concept": "classic",
-      "hook": "found",
-      "hook_text": "NEAT. CLEAN. NATURAL.",
-      "angle": "hero",
-      "job": "V3-en-9x16",
-      "source": "DbMR6_ttcnF",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/DbMR6_ttcnF-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V3-en-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:16:15.337Z",
-          "free_zone_score": 137.24,
-          "cta_top_pct": null
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow, calm push-in on the hand. The fingers tilt gently so a soft daylight highlight slides across the glossy chrome natural-tone nails. The nail colour, shape and length stay exactly as in the image. Premium, minimal, shallow depth of field. No text, no extra hands, no new objects.",
-          "first_frame": "creatives/_work/w1/DbMR6_ttcnF-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": false,
-          "seed": null,
-          "job_id": "gen-vid-1791538873-7e1IRECBQFDNinP0eeoG",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791538873-7e1IRECBQFDNinP0eeoG",
-          "created": "2026-10-09T09:43:56.846Z"
-        }
-      ],
-      "cost_usd": 0,
-      "cost_shared": true,
-      "created": "2026-10-09T15:16:15.376Z",
-      "notes": ""
-    },
-    {
-      "name": "crazy_social_DZTCpxHDUJE_vd_n093_v1_9x16_ua",
-      "file": "crazy_social_DZTCpxHDUJE_vd_n093_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "crazy",
-      "hook": "social",
-      "hook_text": "Мене зупиняють на вулиці",
-      "angle": "hero",
-      "job": "V4-ua-9x16",
-      "source": "DZTCpxHDUJE",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/DZTCpxHDUJE-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V4-ua-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:16:22.279Z",
-          "free_zone_score": 16.77,
-          "cta_top_pct": 88.1
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow tilt down then push in along the extra-long pink ombré stiletto nails. The hand gently rotates to reveal the white French edges and the decorated accent nails. Soft studio light, shallow depth of field. The nail design stays exactly as in the image. No text, no extra fingers, no new objects.",
-          "first_frame": "creatives/_work/w1/DZTCpxHDUJE-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": true,
-          "seed": null,
-          "job_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
-          "created": "2026-10-09T09:26:52.334Z"
-        }
-      ],
-      "cost_usd": 1.8540318,
-      "created": "2026-10-09T15:16:22.319Z",
-      "notes": ""
-    },
-    {
-      "name": "crazy_social_DZTCpxHDUJE_vd_n094_v1_9x16_pl",
-      "file": "crazy_social_DZTCpxHDUJE_vd_n094_v1_9x16_pl.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "crazy",
-      "hook": "social",
-      "hook_text": "EXTRA DŁUGIE. RZEŹBIONE",
-      "angle": "hero",
-      "job": "V4-pl-9x16",
-      "source": "DZTCpxHDUJE",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/DZTCpxHDUJE-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V4-pl-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:16:29.229Z",
-          "free_zone_score": 16.77,
-          "cta_top_pct": 88.1
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow tilt down then push in along the extra-long pink ombré stiletto nails. The hand gently rotates to reveal the white French edges and the decorated accent nails. Soft studio light, shallow depth of field. The nail design stays exactly as in the image. No text, no extra fingers, no new objects.",
-          "first_frame": "creatives/_work/w1/DZTCpxHDUJE-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": true,
-          "seed": null,
-          "job_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
-          "created": "2026-10-09T09:26:52.334Z"
-        }
-      ],
-      "cost_usd": 0,
-      "cost_shared": true,
-      "created": "2026-10-09T15:16:29.268Z",
-      "notes": ""
-    },
-    {
-      "name": "crazy_social_DZTCpxHDUJE_vd_n095_v1_9x16_ru",
-      "file": "crazy_social_DZTCpxHDUJE_vd_n095_v1_9x16_ru.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ru",
-      "concept": "crazy",
-      "hook": "social",
-      "hook_text": "Меня останавливают на улице",
-      "angle": "hero",
-      "job": "V4-ru-9x16",
-      "source": "DZTCpxHDUJE",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/DZTCpxHDUJE-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V4-ru-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:16:36.087Z",
-          "free_zone_score": 16.77,
-          "cta_top_pct": 88.1
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow tilt down then push in along the extra-long pink ombré stiletto nails. The hand gently rotates to reveal the white French edges and the decorated accent nails. Soft studio light, shallow depth of field. The nail design stays exactly as in the image. No text, no extra fingers, no new objects.",
-          "first_frame": "creatives/_work/w1/DZTCpxHDUJE-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": true,
-          "seed": null,
-          "job_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
-          "created": "2026-10-09T09:26:52.334Z"
-        }
-      ],
-      "cost_usd": 0,
-      "cost_shared": true,
-      "created": "2026-10-09T15:16:36.124Z",
-      "notes": ""
-    },
-    {
-      "name": "crazy_social_DZTCpxHDUJE_vd_n096_v1_9x16_en",
-      "file": "crazy_social_DZTCpxHDUJE_vd_n096_v1_9x16_en.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "en",
-      "concept": "crazy",
-      "hook": "social",
-      "hook_text": "EXTRA LONG. SCULPTED",
-      "angle": "hero",
-      "job": "V4-en-9x16",
-      "source": "DZTCpxHDUJE",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/w1/DZTCpxHDUJE-clip.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V4-en-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:16:42.992Z",
-          "free_zone_score": 16.77,
-          "cta_top_pct": 88.1
-        },
-        {
-          "step": "animate",
-          "model": "bytedance/seedance-2.5",
-          "prompt": "Slow tilt down then push in along the extra-long pink ombré stiletto nails. The hand gently rotates to reveal the white French edges and the decorated accent nails. Soft studio light, shallow depth of field. The nail design stays exactly as in the image. No text, no extra fingers, no new objects.",
-          "first_frame": "creatives/_work/w1/DZTCpxHDUJE-still.png",
-          "last_frame": null,
-          "refs": [],
-          "duration": 8,
-          "size": "720x1280",
-          "aspect": null,
-          "resolution": null,
-          "generate_audio": true,
-          "seed": null,
-          "job_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
-          "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
-          "created": "2026-10-09T09:26:52.334Z"
-        }
-      ],
-      "cost_usd": 0,
-      "cost_shared": true,
-      "created": "2026-10-09T15:16:43.029Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_process_DZKRjmJNiHR_vd_n097_v1_9x16_ua",
-      "file": "classic_process_DZKRjmJNiHR_vd_n097_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "classic",
-      "hook": "process",
-      "hook_text": "Кожен ніготь — вручну",
-      "angle": "process",
-      "job": "V5-ua-9x16",
-      "source": "DZKRjmJNiHR",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DZKRjmJNiHR/DZKRjmJNiHR_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V5-ua-9x16-ov.png",
-          "cuts": "0:11",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:16:50.154Z",
-          "free_zone_score": 42.27,
-          "cta_top_pct": 71.9
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:16:50.191Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_process_DZKRjmJNiHR_vd_n098_v1_9x16_pl",
-      "file": "classic_process_DZKRjmJNiHR_vd_n098_v1_9x16_pl.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "classic",
-      "hook": "process",
-      "hook_text": "Każdy paznokieć ręcznie",
-      "angle": "process",
-      "job": "V5-pl-9x16",
-      "source": "DZKRjmJNiHR",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DZKRjmJNiHR/DZKRjmJNiHR_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V5-pl-9x16-ov.png",
-          "cuts": "0:11",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:16:57.273Z",
-          "free_zone_score": 42.27,
-          "cta_top_pct": 71.9
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:16:57.310Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_process_DZKRjmJNiHR_vd_n099_v1_9x16_ru",
-      "file": "classic_process_DZKRjmJNiHR_vd_n099_v1_9x16_ru.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ru",
-      "concept": "classic",
-      "hook": "process",
-      "hook_text": "Каждый ноготь — вручную",
-      "angle": "process",
-      "job": "V5-ru-9x16",
-      "source": "DZKRjmJNiHR",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DZKRjmJNiHR/DZKRjmJNiHR_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V5-ru-9x16-ov.png",
-          "cuts": "0:11",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:17:04.413Z",
-          "free_zone_score": 42.27,
-          "cta_top_pct": 71.9
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:17:04.449Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_process_DZKRjmJNiHR_vd_n100_v1_9x16_en",
-      "file": "classic_process_DZKRjmJNiHR_vd_n100_v1_9x16_en.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "en",
-      "concept": "classic",
-      "hook": "process",
-      "hook_text": "EVERY NAIL BY HAND",
-      "angle": "process",
-      "job": "V5-en-9x16",
-      "source": "DZKRjmJNiHR",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DZKRjmJNiHR/DZKRjmJNiHR_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V5-en-9x16-ov.png",
-          "cuts": "0:11",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:17:11.617Z",
-          "free_zone_score": 42.27,
-          "cta_top_pct": 71.9
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:17:11.654Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_process_C3Sy533oeEN_vd_n101_v1_9x16_ua",
-      "file": "classic_process_C3Sy533oeEN_vd_n101_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "classic",
-      "hook": "process",
-      "hook_text": "Процес, який видно",
-      "angle": "process",
-      "job": "V6-ua-9x16",
-      "source": "C3Sy533oeEN",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/C3Sy533oeEN/C3Sy533oeEN_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V6-ua-9x16-ov.png",
-          "cuts": "3:16",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:17:19.835Z",
-          "free_zone_score": 120.74,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:17:19.871Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_process_C3Sy533oeEN_vd_n102_v1_9x16_pl",
-      "file": "classic_process_C3Sy533oeEN_vd_n102_v1_9x16_pl.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "classic",
-      "hook": "process",
-      "hook_text": "Proces, który widać",
-      "angle": "process",
-      "job": "V6-pl-9x16",
-      "source": "C3Sy533oeEN",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/C3Sy533oeEN/C3Sy533oeEN_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V6-pl-9x16-ov.png",
-          "cuts": "3:16",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:17:28.076Z",
-          "free_zone_score": 120.74,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:17:28.113Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_process_C3Sy533oeEN_vd_n103_v1_9x16_ru",
-      "file": "classic_process_C3Sy533oeEN_vd_n103_v1_9x16_ru.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ru",
-      "concept": "classic",
-      "hook": "process",
-      "hook_text": "Процесс, который видно",
-      "angle": "process",
-      "job": "V6-ru-9x16",
-      "source": "C3Sy533oeEN",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/C3Sy533oeEN/C3Sy533oeEN_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V6-ru-9x16-ov.png",
-          "cuts": "3:16",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:17:36.407Z",
-          "free_zone_score": 120.74,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:17:36.446Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_process_C3Sy533oeEN_vd_n104_v1_9x16_en",
-      "file": "classic_process_C3Sy533oeEN_vd_n104_v1_9x16_en.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "en",
-      "concept": "classic",
-      "hook": "process",
-      "hook_text": "THE PROCESS SHOWS",
-      "angle": "process",
-      "job": "V6-en-9x16",
-      "source": "C3Sy533oeEN",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/C3Sy533oeEN/C3Sy533oeEN_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V6-en-9x16-ov.png",
-          "cuts": "3:16",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:17:44.653Z",
-          "free_zone_score": 120.74,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:17:44.688Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_pov_DdnxYOft2B2_vd_n105_v1_9x16_ua",
-      "file": "brand_pov_DdnxYOft2B2_vd_n105_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "brand",
-      "hook": "pov",
-      "hook_text": "Прийшла. Сіла. Видихнула.",
-      "angle": "studio",
-      "job": "V9-ua-9x16",
-      "source": "DdnxYOft2B2",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DdnxYOft2B2/DdnxYOft2B2_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V9-ua-9x16-ov.png",
-          "cuts": "24:40",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:17:53.991Z",
-          "free_zone_score": 95.33,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:17:54.028Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_pov_DdnxYOft2B2_vd_n106_v1_9x16_pl",
-      "file": "brand_pov_DdnxYOft2B2_vd_n106_v1_9x16_pl.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "brand",
-      "hook": "pov",
-      "hook_text": "Weszłaś. Usiadłaś. Odetchnęłaś.",
-      "angle": "studio",
-      "job": "V9-pl-9x16",
-      "source": "DdnxYOft2B2",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DdnxYOft2B2/DdnxYOft2B2_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V9-pl-9x16-ov.png",
-          "cuts": "24:40",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:18:03.362Z",
-          "free_zone_score": 95.33,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:18:03.398Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_pov_DdnxYOft2B2_vd_n107_v1_9x16_ru",
-      "file": "brand_pov_DdnxYOft2B2_vd_n107_v1_9x16_ru.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ru",
-      "concept": "brand",
-      "hook": "pov",
-      "hook_text": "Пришла. Села. Выдохнула.",
-      "angle": "studio",
-      "job": "V9-ru-9x16",
-      "source": "DdnxYOft2B2",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DdnxYOft2B2/DdnxYOft2B2_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V9-ru-9x16-ov.png",
-          "cuts": "24:40",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:18:12.743Z",
-          "free_zone_score": 95.33,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:18:12.780Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_pov_DdnxYOft2B2_vd_n108_v1_9x16_en",
-      "file": "brand_pov_DdnxYOft2B2_vd_n108_v1_9x16_en.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "en",
-      "concept": "brand",
-      "hook": "pov",
-      "hook_text": "WALK IN. SIT DOWN. BREATHE.",
-      "angle": "studio",
-      "job": "V9-en-9x16",
-      "source": "DdnxYOft2B2",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DdnxYOft2B2/DdnxYOft2B2_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V9-en-9x16-ov.png",
-          "cuts": "24:40",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:18:22.023Z",
-          "free_zone_score": 95.33,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:18:22.059Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_pov_DdljeKAtree_vd_n109_v1_9x16_ua",
-      "file": "brand_pov_DdljeKAtree_vd_n109_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "brand",
-      "hook": "pov",
-      "hook_text": "Кава, музика, свої люди",
-      "angle": "studio",
-      "job": "V10-ua-9x16",
-      "source": "DdljeKAtree",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DdljeKAtree/DdljeKAtree_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V10-ua-9x16-ov.png",
-          "cuts": "6:14",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:18:28.293Z",
-          "free_zone_score": 27.49,
-          "cta_top_pct": 18.1
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:18:28.330Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_pov_DdljeKAtree_vd_n110_v1_9x16_pl",
-      "file": "brand_pov_DdljeKAtree_vd_n110_v1_9x16_pl.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "brand",
-      "hook": "pov",
-      "hook_text": "Kawa, muzyka, swoi ludzie",
-      "angle": "studio",
-      "job": "V10-pl-9x16",
-      "source": "DdljeKAtree",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DdljeKAtree/DdljeKAtree_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V10-pl-9x16-ov.png",
-          "cuts": "6:14",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:18:34.639Z",
-          "free_zone_score": 27.49,
-          "cta_top_pct": 18.1
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:18:34.676Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_pov_DdljeKAtree_vd_n111_v1_9x16_ru",
-      "file": "brand_pov_DdljeKAtree_vd_n111_v1_9x16_ru.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ru",
-      "concept": "brand",
-      "hook": "pov",
-      "hook_text": "Кофе, музыка, свои люди",
-      "angle": "studio",
-      "job": "V10-ru-9x16",
-      "source": "DdljeKAtree",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DdljeKAtree/DdljeKAtree_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V10-ru-9x16-ov.png",
-          "cuts": "6:14",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:18:41.040Z",
-          "free_zone_score": 27.49,
-          "cta_top_pct": 18.1
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:18:41.077Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_pov_DdljeKAtree_vd_n112_v1_9x16_en",
-      "file": "brand_pov_DdljeKAtree_vd_n112_v1_9x16_en.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "en",
-      "concept": "brand",
-      "hook": "pov",
-      "hook_text": "COFFEE, MUSIC, YOUR PEOPLE",
-      "angle": "studio",
-      "job": "V10-en-9x16",
-      "source": "DdljeKAtree",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/DdljeKAtree/DdljeKAtree_01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V10-en-9x16-ov.png",
-          "cuts": "6:14",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:18:47.428Z",
-          "free_zone_score": 27.49,
-          "cta_top_pct": 18.1
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:18:47.464Z",
-      "notes": ""
-    },
-    {
-      "name": "brows_team_Ddvm5oBNL8__vd_n113_v1_9x16_ua",
-      "file": "brows_team_Ddvm5oBNL8__vd_n113_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "brows",
-      "hook": "team",
-      "hook_text": "Ламінування брів 70 zł",
-      "angle": "studio",
-      "job": "V10b-ua-9x16",
-      "source": "Ddvm5oBNL8_",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/Ddvm5oBNL8_/Ddvm5oBNL8__01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V10b-ua-9x16-ov.png",
-          "cuts": "4:14",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:18:54.192Z",
-          "free_zone_score": 128.44,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:18:54.229Z",
-      "notes": ""
-    },
-    {
-      "name": "brows_team_Ddvm5oBNL8__vd_n114_v1_9x16_pl",
-      "file": "brows_team_Ddvm5oBNL8__vd_n114_v1_9x16_pl.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "brows",
-      "hook": "team",
-      "hook_text": "LAMINACJA 30 MINUT",
-      "angle": "studio",
-      "job": "V10b-pl-9x16",
-      "source": "Ddvm5oBNL8_",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/Ddvm5oBNL8_/Ddvm5oBNL8__01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V10b-pl-9x16-ov.png",
-          "cuts": "4:14",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:19:00.939Z",
-          "free_zone_score": 128.44,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:19:00.975Z",
-      "notes": ""
-    },
-    {
-      "name": "brows_team_Ddvm5oBNL8__vd_n115_v1_9x16_ru",
-      "file": "brows_team_Ddvm5oBNL8__vd_n115_v1_9x16_ru.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ru",
-      "concept": "brows",
-      "hook": "team",
-      "hook_text": "Ламинирование бровей 70 zł",
-      "angle": "studio",
-      "job": "V10b-ru-9x16",
-      "source": "Ddvm5oBNL8_",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/Ddvm5oBNL8_/Ddvm5oBNL8__01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V10b-ru-9x16-ov.png",
-          "cuts": "4:14",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:19:07.637Z",
-          "free_zone_score": 128.44,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:19:07.674Z",
-      "notes": ""
-    },
-    {
-      "name": "brows_team_Ddvm5oBNL8__vd_n116_v1_9x16_en",
-      "file": "brows_team_Ddvm5oBNL8__vd_n116_v1_9x16_en.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "en",
-      "concept": "brows",
-      "hook": "team",
-      "hook_text": "LAMINATION IN 30 MINUTES",
-      "angle": "studio",
-      "job": "V10b-en-9x16",
-      "source": "Ddvm5oBNL8_",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "sources/instagram/raw/Ddvm5oBNL8_/Ddvm5oBNL8__01.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V10b-en-9x16-ov.png",
-          "cuts": "4:14",
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:19:14.325Z",
-          "free_zone_score": 128.44,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:19:14.361Z",
-      "notes": ""
-    },
-    {
-      "name": "mix_social_DbMR6_ttcnF_vd_n117_v1_9x16_ua",
-      "file": "mix_social_DbMR6_ttcnF_vd_n117_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "mix",
-      "hook": "social",
-      "hook_text": "Яку обереш: 1, 2 чи 3?",
-      "angle": "pick",
-      "job": "V12-ua-9x16",
-      "source": "DbMR6_ttcnF",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/base/pick-base.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V12-ua-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:19:20.932Z",
-          "free_zone_score": 145.8,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:19:20.970Z",
-      "notes": ""
-    },
-    {
-      "name": "mix_social_DbMR6_ttcnF_vd_n118_v1_9x16_pl",
-      "file": "mix_social_DbMR6_ttcnF_vd_n118_v1_9x16_pl.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "mix",
-      "hook": "social",
-      "hook_text": "Którą wybierasz: 1, 2 czy 3?",
-      "angle": "pick",
-      "job": "V12-pl-9x16",
-      "source": "DbMR6_ttcnF",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/base/pick-base.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V12-pl-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:19:27.533Z",
-          "free_zone_score": 145.8,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:19:27.570Z",
-      "notes": ""
-    },
-    {
-      "name": "mix_social_DbMR6_ttcnF_vd_n119_v1_9x16_ru",
-      "file": "mix_social_DbMR6_ttcnF_vd_n119_v1_9x16_ru.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ru",
-      "concept": "mix",
-      "hook": "social",
-      "hook_text": "Какой выбираешь: 1, 2 или 3?",
-      "angle": "pick",
-      "job": "V12-ru-9x16",
-      "source": "DbMR6_ttcnF",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/base/pick-base.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V12-ru-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:19:34.169Z",
-          "free_zone_score": 145.8,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:19:34.206Z",
-      "notes": ""
-    },
-    {
-      "name": "mix_social_DbMR6_ttcnF_vd_n120_v1_9x16_en",
-      "file": "mix_social_DbMR6_ttcnF_vd_n120_v1_9x16_en.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "en",
-      "concept": "mix",
-      "hook": "social",
-      "hook_text": "WHICH ONE: 1, 2 OR 3?",
-      "angle": "pick",
-      "job": "V12-en-9x16",
-      "source": "DbMR6_ttcnF",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/base/pick-base.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V12-en-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:19:40.801Z",
-          "free_zone_score": 145.8,
-          "cta_top_pct": null
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:19:40.838Z",
-      "notes": ""
-    },
-    {
-      "name": "crazy_price_DZTCpxHDUJE_vd_n121_v1_9x16_ua",
-      "file": "crazy_price_DZTCpxHDUJE_vd_n121_v1_9x16_ua.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "crazy",
-      "hook": "price",
-      "hook_text": "Extra Long & Crazy 380 zł",
-      "angle": "price",
-      "job": "V13-ua-9x16",
-      "source": "DZTCpxHDUJE",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/base/price-base.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V13-ua-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:19:46.703Z",
-          "free_zone_score": 18,
-          "cta_top_pct": 88.1
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:19:46.740Z",
-      "notes": ""
-    },
-    {
-      "name": "crazy_price_DZTCpxHDUJE_vd_n122_v1_9x16_pl",
-      "file": "crazy_price_DZTCpxHDUJE_vd_n122_v1_9x16_pl.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "crazy",
-      "hook": "price",
-      "hook_text": "CRAZY SHAPE 380 ZŁ",
-      "angle": "price",
-      "job": "V13-pl-9x16",
-      "source": "DZTCpxHDUJE",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/base/price-base.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V13-pl-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:19:52.635Z",
-          "free_zone_score": 18,
-          "cta_top_pct": 88.1
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:19:52.672Z",
-      "notes": ""
-    },
-    {
-      "name": "crazy_price_DZTCpxHDUJE_vd_n123_v1_9x16_ru",
-      "file": "crazy_price_DZTCpxHDUJE_vd_n123_v1_9x16_ru.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "ru",
-      "concept": "crazy",
-      "hook": "price",
-      "hook_text": "Extra Long & Crazy 380 zł",
-      "angle": "price",
-      "job": "V13-ru-9x16",
-      "source": "DZTCpxHDUJE",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/base/price-base.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V13-ru-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:19:58.595Z",
-          "free_zone_score": 18,
-          "cta_top_pct": 88.1
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:19:58.632Z",
-      "notes": ""
-    },
-    {
-      "name": "crazy_price_DZTCpxHDUJE_vd_n124_v1_9x16_en",
-      "file": "crazy_price_DZTCpxHDUJE_vd_n124_v1_9x16_en.mp4",
-      "type": "vd",
-      "format": "9x16",
-      "lang": "en",
-      "concept": "crazy",
-      "hook": "price",
-      "hook_text": "CRAZY SHAPE 380 ZŁ",
-      "angle": "price",
-      "job": "V13-en-9x16",
-      "source": "DZTCpxHDUJE",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "step": "finish",
-          "input": "creatives/_work/base/price-base.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V13-en-9x16-ov.png",
-          "cuts": null,
-          "endcard": {
-            "template": "static-card",
-            "seconds": 1.5
-          },
-          "created": "2026-10-09T15:20:04.577Z",
-          "free_zone_score": 18,
-          "cta_top_pct": 88.1
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:20:04.613Z",
-      "notes": ""
-    },
-    {
       "name": "classic_social_DV5ZDohDBx0_st_n125_v1_4x5_ua",
       "file": "classic_social_DV5ZDohDBx0_st_n125_v1_4x5_ua.png",
       "type": "st",
@@ -5324,7 +3484,7 @@
       "source": "DV5ZDohDBx0",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -5346,7 +3506,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T15:20:05.153Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "classic_social_DV5ZDohDBx0_st_n126_v1_9x16_ua",
@@ -5362,7 +3527,7 @@
       "source": "DV5ZDohDBx0",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -5384,7 +3549,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T15:20:05.668Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "classic_social_DV5ZDohDBx0_st_n127_v1_4x5_pl",
@@ -5400,7 +3570,7 @@
       "source": "DV5ZDohDBx0",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -5422,7 +3592,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T15:20:06.201Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "classic_social_DV5ZDohDBx0_st_n128_v1_9x16_pl",
@@ -5438,7 +3613,7 @@
       "source": "DV5ZDohDBx0",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -5460,7 +3635,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T15:20:06.697Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "classic_social_DV5ZDohDBx0_st_n129_v1_4x5_ru",
@@ -5476,7 +3656,7 @@
       "source": "DV5ZDohDBx0",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -5498,7 +3678,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T15:20:07.225Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "classic_social_DV5ZDohDBx0_st_n130_v1_9x16_ru",
@@ -5514,7 +3699,7 @@
       "source": "DV5ZDohDBx0",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -5536,7 +3721,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T15:20:07.728Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "classic_social_DV5ZDohDBx0_st_n131_v1_4x5_en",
@@ -5552,7 +3742,7 @@
       "source": "DV5ZDohDBx0",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -5574,7 +3764,12 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T15:20:08.258Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
       "name": "classic_social_DV5ZDohDBx0_st_n132_v1_9x16_en",
@@ -5590,7 +3785,7 @@
       "source": "DV5ZDohDBx0",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -5612,618 +3807,267 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T15:20:08.758Z",
-      "notes": ""
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": ""
+      }
     },
     {
-      "name": "brand_found_DdljeKAtree_st_n133_v1_4x5_ua",
-      "file": "brand_found_DdljeKAtree_st_n133_v1_4x5_ua.png",
-      "type": "st",
-      "format": "4x5",
-      "lang": "ua",
-      "concept": "brand",
-      "hook": "found",
-      "hook_text": "Воля · Jana Kazimierza 25B",
-      "angle": "location",
-      "job": "S10-ua-4x5",
-      "source": "DdljeKAtree",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "template": "static-card",
-          "format": "4x5",
-          "image": "creatives/_work/base/studio-frame.jpg",
-          "transparent": false,
-          "vars": {
-            "lang": "ua",
-            "place": "under",
-            "bg": "black",
-            "hook_size": "84",
-            "tile_pos": "center 40%",
-            "tile_h": "50%",
-            "cta": "Записатись онлайн",
-            "meta": "",
-            "kicker": "Де ми",
-            "hook": "Воля · Jana Kazimierza <b>25B</b>",
-            "lines": "Щодня <b>9:00–21:00</b> · UA · RU · PL · EN"
-          },
-          "created": "2026-10-09T15:20:09.298Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:20:09.341Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_found_DdljeKAtree_st_n134_v1_9x16_ua",
-      "file": "brand_found_DdljeKAtree_st_n134_v1_9x16_ua.png",
-      "type": "st",
-      "format": "9x16",
-      "lang": "ua",
-      "concept": "brand",
-      "hook": "found",
-      "hook_text": "Воля · Jana Kazimierza 25B",
-      "angle": "location",
-      "job": "S10-ua-9x16",
-      "source": "DdljeKAtree",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "template": "static-card",
-          "format": "9x16",
-          "image": "creatives/_work/base/studio-frame.jpg",
-          "transparent": false,
-          "vars": {
-            "lang": "ua",
-            "place": "under",
-            "bg": "black",
-            "hook_size": "84",
-            "tile_pos": "center 40%",
-            "tile_h": "40%",
-            "cta": "Записатись онлайн",
-            "meta": "",
-            "kicker": "Де ми",
-            "hook": "Воля · Jana Kazimierza <b>25B</b>",
-            "lines": "Щодня <b>9:00–21:00</b> · UA · RU · PL · EN"
-          },
-          "created": "2026-10-09T15:20:09.867Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:20:09.909Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_found_DdljeKAtree_st_n135_v1_4x5_pl",
-      "file": "brand_found_DdljeKAtree_st_n135_v1_4x5_pl.png",
-      "type": "st",
-      "format": "4x5",
-      "lang": "pl",
-      "concept": "brand",
-      "hook": "found",
-      "hook_text": "Wola · Jana Kazimierza 25B",
-      "angle": "location",
-      "job": "S10-pl-4x5",
-      "source": "DdljeKAtree",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "template": "static-card",
-          "format": "4x5",
-          "image": "creatives/_work/base/studio-frame.jpg",
-          "transparent": false,
-          "vars": {
-            "lang": "pl",
-            "place": "under",
-            "bg": "black",
-            "hook_size": "84",
-            "tile_pos": "center 40%",
-            "tile_h": "50%",
-            "cta": "Zarezerwuj online",
-            "meta": "",
-            "kicker": "Gdzie jesteśmy",
-            "hook": "Wola · Jana Kazimierza <b>25B</b>",
-            "lines": "Codziennie <b>9:00–21:00</b> · PL · UA · RU · EN"
-          },
-          "created": "2026-10-09T15:20:10.419Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:20:10.461Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_found_DdljeKAtree_st_n136_v1_9x16_pl",
-      "file": "brand_found_DdljeKAtree_st_n136_v1_9x16_pl.png",
-      "type": "st",
-      "format": "9x16",
-      "lang": "pl",
-      "concept": "brand",
-      "hook": "found",
-      "hook_text": "Wola · Jana Kazimierza 25B",
-      "angle": "location",
-      "job": "S10-pl-9x16",
-      "source": "DdljeKAtree",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "template": "static-card",
-          "format": "9x16",
-          "image": "creatives/_work/base/studio-frame.jpg",
-          "transparent": false,
-          "vars": {
-            "lang": "pl",
-            "place": "under",
-            "bg": "black",
-            "hook_size": "84",
-            "tile_pos": "center 40%",
-            "tile_h": "40%",
-            "cta": "Zarezerwuj online",
-            "meta": "",
-            "kicker": "Gdzie jesteśmy",
-            "hook": "Wola · Jana Kazimierza <b>25B</b>",
-            "lines": "Codziennie <b>9:00–21:00</b> · PL · UA · RU · EN"
-          },
-          "created": "2026-10-09T15:20:10.994Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:20:11.036Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_found_DdljeKAtree_st_n137_v1_4x5_ru",
-      "file": "brand_found_DdljeKAtree_st_n137_v1_4x5_ru.png",
-      "type": "st",
-      "format": "4x5",
-      "lang": "ru",
-      "concept": "brand",
-      "hook": "found",
-      "hook_text": "Воля · Jana Kazimierza 25B",
-      "angle": "location",
-      "job": "S10-ru-4x5",
-      "source": "DdljeKAtree",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "template": "static-card",
-          "format": "4x5",
-          "image": "creatives/_work/base/studio-frame.jpg",
-          "transparent": false,
-          "vars": {
-            "lang": "ru",
-            "place": "under",
-            "bg": "black",
-            "hook_size": "84",
-            "tile_pos": "center 40%",
-            "tile_h": "50%",
-            "cta": "Записаться онлайн",
-            "meta": "",
-            "kicker": "Где мы",
-            "hook": "Воля · Jana Kazimierza <b>25B</b>",
-            "lines": "Ежедневно <b>9:00–21:00</b> · RU · UA · PL · EN"
-          },
-          "created": "2026-10-09T15:20:11.548Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:20:11.590Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_found_DdljeKAtree_st_n138_v1_9x16_ru",
-      "file": "brand_found_DdljeKAtree_st_n138_v1_9x16_ru.png",
-      "type": "st",
-      "format": "9x16",
-      "lang": "ru",
-      "concept": "brand",
-      "hook": "found",
-      "hook_text": "Воля · Jana Kazimierza 25B",
-      "angle": "location",
-      "job": "S10-ru-9x16",
-      "source": "DdljeKAtree",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "template": "static-card",
-          "format": "9x16",
-          "image": "creatives/_work/base/studio-frame.jpg",
-          "transparent": false,
-          "vars": {
-            "lang": "ru",
-            "place": "under",
-            "bg": "black",
-            "hook_size": "84",
-            "tile_pos": "center 40%",
-            "tile_h": "40%",
-            "cta": "Записаться онлайн",
-            "meta": "",
-            "kicker": "Где мы",
-            "hook": "Воля · Jana Kazimierza <b>25B</b>",
-            "lines": "Ежедневно <b>9:00–21:00</b> · RU · UA · PL · EN"
-          },
-          "created": "2026-10-09T15:20:12.115Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:20:12.156Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_found_DdljeKAtree_st_n139_v1_4x5_en",
-      "file": "brand_found_DdljeKAtree_st_n139_v1_4x5_en.png",
-      "type": "st",
-      "format": "4x5",
-      "lang": "en",
-      "concept": "brand",
-      "hook": "found",
-      "hook_text": "Wola · Jana Kazimierza 25B",
-      "angle": "location",
-      "job": "S10-en-4x5",
-      "source": "DdljeKAtree",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "template": "static-card",
-          "format": "4x5",
-          "image": "creatives/_work/base/studio-frame.jpg",
-          "transparent": false,
-          "vars": {
-            "lang": "en",
-            "place": "under",
-            "bg": "black",
-            "hook_size": "84",
-            "tile_pos": "center 40%",
-            "tile_h": "50%",
-            "cta": "Book online",
-            "meta": "",
-            "kicker": "Where we are",
-            "hook": "Wola · Jana Kazimierza <b>25B</b>",
-            "lines": "Daily <b>9:00–21:00</b> · EN · PL · UA · RU"
-          },
-          "created": "2026-10-09T15:20:12.671Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:20:12.712Z",
-      "notes": ""
-    },
-    {
-      "name": "brand_found_DdljeKAtree_st_n140_v1_9x16_en",
-      "file": "brand_found_DdljeKAtree_st_n140_v1_9x16_en.png",
-      "type": "st",
-      "format": "9x16",
-      "lang": "en",
-      "concept": "brand",
-      "hook": "found",
-      "hook_text": "Wola · Jana Kazimierza 25B",
-      "angle": "location",
-      "job": "S10-en-9x16",
-      "source": "DdljeKAtree",
-      "v": 1,
-      "look": null,
-      "status": "draft",
-      "copy": null,
-      "pipeline": [
-        {
-          "template": "static-card",
-          "format": "9x16",
-          "image": "creatives/_work/base/studio-frame.jpg",
-          "transparent": false,
-          "vars": {
-            "lang": "en",
-            "place": "under",
-            "bg": "black",
-            "hook_size": "84",
-            "tile_pos": "center 40%",
-            "tile_h": "40%",
-            "cta": "Book online",
-            "meta": "",
-            "kicker": "Where we are",
-            "hook": "Wola · Jana Kazimierza <b>25B</b>",
-            "lines": "Daily <b>9:00–21:00</b> · EN · PL · UA · RU"
-          },
-          "created": "2026-10-09T15:20:13.249Z"
-        }
-      ],
-      "cost_usd": 0,
-      "created": "2026-10-09T15:20:13.290Z",
-      "notes": ""
-    },
-    {
-      "name": "classic_reveal_DPZE72BjF50_vd_n141_v1_9x16_ua",
-      "file": "classic_reveal_DPZE72BjF50_vd_n141_v1_9x16_ua.mp4",
+      "name": "crazy_reveal_DbT_EsKDTDo_vd_n085_v1_9x16_ua",
+      "file": "crazy_reveal_DbT_EsKDTDo_vd_n085_v1_9x16_ua.mp4",
       "type": "vd",
       "format": "9x16",
       "lang": "ua",
-      "concept": "classic",
+      "concept": "crazy",
       "hook": "reveal",
-      "hook_text": "Осінь — бордо",
-      "angle": "seasonal",
-      "job": "V15-ua-9x16",
-      "source": "DPZE72BjF50",
+      "hook_text": "Це взагалі нігті?",
+      "angle": "hero",
+      "job": "V1-ua-9x16",
+      "source": "DbT_EsKDTDo",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
           "step": "finish",
-          "input": "creatives/_work/wb/DPZE-a.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V15-ua-9x16-ov.png",
+          "input": "creatives/_work/w1/DbT_EsKDTDo-clip.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V1-ua-9x16-ov.png",
           "cuts": null,
-          "endcard": {
-            "template": "static-card",
+          "cta_top_pct": 88.1,
+          "free_zone_score": 20.51,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
             "seconds": 1.5
           },
-          "created": "2026-10-09T15:20:20.264Z",
-          "free_zone_score": 62.13,
-          "cta_top_pct": null
-        },
-        {
-          "step": "image",
-          "model": "google/gemini-3.1-flash-image",
-          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
-          "refs": [
-            "sources/instagram/raw/DPZE72BjF50/DPZE72BjF50_01.jpg"
-          ],
-          "aspect": "9:16",
-          "resolution": "1K",
-          "cost_usd": 0.0677955,
-          "media_type": "image/png",
-          "created": "2026-10-09T13:01:40.181Z"
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:46:59.139Z"
         },
         {
           "step": "animate",
           "model": "bytedance/seedance-2.5",
-          "prompt": "Slow cinematic push-in toward the hand. The fingers spread slightly and turn so the warm orange evening light from the window streams across the glossy burgundy almond nails; the daisy ring catches a glint. The nail design stays exactly as in the image. Shallow depth of field, moody light, no text, no extra hands.",
-          "first_frame": "creatives/_work/wb/DPZE72BjF50-still.png",
+          "prompt": "Slow cinematic push-in on the hands. The fingers slowly flex and turn so the studio light glides along the long transparent sculpted nails and catches the silver details. The nail design stays exactly as in the image. Black fabric background, shallow depth of field, soft reflections. No text, no extra hands, no new objects.",
+          "first_frame": "creatives/_work/w1/DbT_EsKDTDo-still.png",
           "last_frame": null,
           "refs": [],
           "duration": 8,
           "size": "720x1280",
           "aspect": null,
           "resolution": null,
-          "generate_audio": true,
-          "audio_dropped": false,
+          "generate_audio": false,
           "seed": null,
-          "job_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
+          "job_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
           "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
-          "created": "2026-10-09T13:05:31.481Z"
+          "generation_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
+          "created": "2026-10-09T09:39:35.684Z"
         }
       ],
-      "cost_usd": 1.9218273,
-      "created": "2026-10-09T15:20:20.303Z",
-      "notes": ""
+      "cost_usd": 1.8540318,
+      "created": "2026-10-09T15:46:59.176Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
     },
     {
-      "name": "classic_reveal_DPZE72BjF50_vd_n142_v1_9x16_pl",
-      "file": "classic_reveal_DPZE72BjF50_vd_n142_v1_9x16_pl.mp4",
+      "name": "crazy_reveal_DbT_EsKDTDo_vd_n086_v1_9x16_pl",
+      "file": "crazy_reveal_DbT_EsKDTDo_vd_n086_v1_9x16_pl.mp4",
       "type": "vd",
       "format": "9x16",
       "lang": "pl",
-      "concept": "classic",
+      "concept": "crazy",
       "hook": "reveal",
-      "hook_text": "Jesień w bordo",
-      "angle": "seasonal",
-      "job": "V15-pl-9x16",
-      "source": "DPZE72BjF50",
+      "hook_text": "TEGO NIE DA SIĘ PRZEOCZYĆ",
+      "angle": "hero",
+      "job": "V1-pl-9x16",
+      "source": "DbT_EsKDTDo",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
           "step": "finish",
-          "input": "creatives/_work/wb/DPZE-a.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V15-pl-9x16-ov.png",
+          "input": "creatives/_work/w1/DbT_EsKDTDo-clip.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V1-pl-9x16-ov.png",
           "cuts": null,
-          "endcard": {
-            "template": "static-card",
+          "cta_top_pct": 88.1,
+          "free_zone_score": 20.51,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
             "seconds": 1.5
           },
-          "created": "2026-10-09T15:20:27.152Z",
-          "free_zone_score": 62.13,
-          "cta_top_pct": null
-        },
-        {
-          "step": "image",
-          "model": "google/gemini-3.1-flash-image",
-          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
-          "refs": [
-            "sources/instagram/raw/DPZE72BjF50/DPZE72BjF50_01.jpg"
-          ],
-          "aspect": "9:16",
-          "resolution": "1K",
-          "cost_usd": 0.0677955,
-          "media_type": "image/png",
-          "created": "2026-10-09T13:01:40.181Z"
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:47:04.739Z"
         },
         {
           "step": "animate",
           "model": "bytedance/seedance-2.5",
-          "prompt": "Slow cinematic push-in toward the hand. The fingers spread slightly and turn so the warm orange evening light from the window streams across the glossy burgundy almond nails; the daisy ring catches a glint. The nail design stays exactly as in the image. Shallow depth of field, moody light, no text, no extra hands.",
-          "first_frame": "creatives/_work/wb/DPZE72BjF50-still.png",
+          "prompt": "Slow cinematic push-in on the hands. The fingers slowly flex and turn so the studio light glides along the long transparent sculpted nails and catches the silver details. The nail design stays exactly as in the image. Black fabric background, shallow depth of field, soft reflections. No text, no extra hands, no new objects.",
+          "first_frame": "creatives/_work/w1/DbT_EsKDTDo-still.png",
           "last_frame": null,
           "refs": [],
           "duration": 8,
           "size": "720x1280",
           "aspect": null,
           "resolution": null,
-          "generate_audio": true,
-          "audio_dropped": false,
+          "generate_audio": false,
           "seed": null,
-          "job_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
+          "job_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
           "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
-          "created": "2026-10-09T13:05:31.481Z"
+          "generation_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
+          "created": "2026-10-09T09:39:35.684Z"
         }
       ],
       "cost_usd": 0,
       "cost_shared": true,
-      "created": "2026-10-09T15:20:27.191Z",
-      "notes": ""
+      "created": "2026-10-09T15:47:04.774Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
     },
     {
-      "name": "classic_reveal_DPZE72BjF50_vd_n143_v1_9x16_ru",
-      "file": "classic_reveal_DPZE72BjF50_vd_n143_v1_9x16_ru.mp4",
+      "name": "crazy_reveal_DbT_EsKDTDo_vd_n087_v1_9x16_ru",
+      "file": "crazy_reveal_DbT_EsKDTDo_vd_n087_v1_9x16_ru.mp4",
       "type": "vd",
       "format": "9x16",
       "lang": "ru",
-      "concept": "classic",
+      "concept": "crazy",
       "hook": "reveal",
-      "hook_text": "Осень — бордо",
-      "angle": "seasonal",
-      "job": "V15-ru-9x16",
-      "source": "DPZE72BjF50",
+      "hook_text": "Это вообще ногти?",
+      "angle": "hero",
+      "job": "V1-ru-9x16",
+      "source": "DbT_EsKDTDo",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
           "step": "finish",
-          "input": "creatives/_work/wb/DPZE-a.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V15-ru-9x16-ov.png",
+          "input": "creatives/_work/w1/DbT_EsKDTDo-clip.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V1-ru-9x16-ov.png",
           "cuts": null,
-          "endcard": {
-            "template": "static-card",
+          "cta_top_pct": 88.1,
+          "free_zone_score": 20.51,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
             "seconds": 1.5
           },
-          "created": "2026-10-09T15:20:34.046Z",
-          "free_zone_score": 62.13,
-          "cta_top_pct": null
-        },
-        {
-          "step": "image",
-          "model": "google/gemini-3.1-flash-image",
-          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
-          "refs": [
-            "sources/instagram/raw/DPZE72BjF50/DPZE72BjF50_01.jpg"
-          ],
-          "aspect": "9:16",
-          "resolution": "1K",
-          "cost_usd": 0.0677955,
-          "media_type": "image/png",
-          "created": "2026-10-09T13:01:40.181Z"
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:47:10.392Z"
         },
         {
           "step": "animate",
           "model": "bytedance/seedance-2.5",
-          "prompt": "Slow cinematic push-in toward the hand. The fingers spread slightly and turn so the warm orange evening light from the window streams across the glossy burgundy almond nails; the daisy ring catches a glint. The nail design stays exactly as in the image. Shallow depth of field, moody light, no text, no extra hands.",
-          "first_frame": "creatives/_work/wb/DPZE72BjF50-still.png",
+          "prompt": "Slow cinematic push-in on the hands. The fingers slowly flex and turn so the studio light glides along the long transparent sculpted nails and catches the silver details. The nail design stays exactly as in the image. Black fabric background, shallow depth of field, soft reflections. No text, no extra hands, no new objects.",
+          "first_frame": "creatives/_work/w1/DbT_EsKDTDo-still.png",
           "last_frame": null,
           "refs": [],
           "duration": 8,
           "size": "720x1280",
           "aspect": null,
           "resolution": null,
-          "generate_audio": true,
-          "audio_dropped": false,
+          "generate_audio": false,
           "seed": null,
-          "job_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
+          "job_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
           "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
-          "created": "2026-10-09T13:05:31.481Z"
+          "generation_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
+          "created": "2026-10-09T09:39:35.684Z"
         }
       ],
       "cost_usd": 0,
       "cost_shared": true,
-      "created": "2026-10-09T15:20:34.081Z",
-      "notes": ""
+      "created": "2026-10-09T15:47:10.431Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
     },
     {
-      "name": "classic_reveal_DPZE72BjF50_vd_n144_v1_9x16_en",
-      "file": "classic_reveal_DPZE72BjF50_vd_n144_v1_9x16_en.mp4",
+      "name": "crazy_reveal_DbT_EsKDTDo_vd_n088_v1_9x16_en",
+      "file": "crazy_reveal_DbT_EsKDTDo_vd_n088_v1_9x16_en.mp4",
       "type": "vd",
       "format": "9x16",
       "lang": "en",
-      "concept": "classic",
+      "concept": "crazy",
       "hook": "reveal",
-      "hook_text": "AUTUMN IN BURGUNDY",
-      "angle": "seasonal",
-      "job": "V15-en-9x16",
-      "source": "DPZE72BjF50",
+      "hook_text": "IMPOSSIBLE NOT TO NOTICE",
+      "angle": "hero",
+      "job": "V1-en-9x16",
+      "source": "DbT_EsKDTDo",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
           "step": "finish",
-          "input": "creatives/_work/wb/DPZE-a.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V15-en-9x16-ov.png",
+          "input": "creatives/_work/w1/DbT_EsKDTDo-clip.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V1-en-9x16-ov.png",
           "cuts": null,
-          "endcard": {
-            "template": "static-card",
+          "cta_top_pct": 88.1,
+          "free_zone_score": 20.51,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
             "seconds": 1.5
           },
-          "created": "2026-10-09T15:20:40.905Z",
-          "free_zone_score": 62.13,
-          "cta_top_pct": null
-        },
-        {
-          "step": "image",
-          "model": "google/gemini-3.1-flash-image",
-          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
-          "refs": [
-            "sources/instagram/raw/DPZE72BjF50/DPZE72BjF50_01.jpg"
-          ],
-          "aspect": "9:16",
-          "resolution": "1K",
-          "cost_usd": 0.0677955,
-          "media_type": "image/png",
-          "created": "2026-10-09T13:01:40.181Z"
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:47:15.911Z"
         },
         {
           "step": "animate",
           "model": "bytedance/seedance-2.5",
-          "prompt": "Slow cinematic push-in toward the hand. The fingers spread slightly and turn so the warm orange evening light from the window streams across the glossy burgundy almond nails; the daisy ring catches a glint. The nail design stays exactly as in the image. Shallow depth of field, moody light, no text, no extra hands.",
-          "first_frame": "creatives/_work/wb/DPZE72BjF50-still.png",
+          "prompt": "Slow cinematic push-in on the hands. The fingers slowly flex and turn so the studio light glides along the long transparent sculpted nails and catches the silver details. The nail design stays exactly as in the image. Black fabric background, shallow depth of field, soft reflections. No text, no extra hands, no new objects.",
+          "first_frame": "creatives/_work/w1/DbT_EsKDTDo-still.png",
           "last_frame": null,
           "refs": [],
           "duration": 8,
           "size": "720x1280",
           "aspect": null,
           "resolution": null,
-          "generate_audio": true,
-          "audio_dropped": false,
+          "generate_audio": false,
           "seed": null,
-          "job_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
+          "job_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
           "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
-          "created": "2026-10-09T13:05:31.481Z"
+          "generation_id": "gen-vid-1791538517-owdx82tYxH7s9qqcWa1g",
+          "created": "2026-10-09T09:39:35.684Z"
         }
       ],
       "cost_usd": 0,
       "cost_shared": true,
-      "created": "2026-10-09T15:20:40.941Z",
-      "notes": ""
+      "created": "2026-10-09T15:47:15.946Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
     },
     {
-      "name": "art_art-closeup_DASm4oUIwxA_vd_n145_v1_9x16_ua",
-      "file": "art_art-closeup_DASm4oUIwxA_vd_n145_v1_9x16_ua.mp4",
+      "name": "art_art-closeup_Ddv-7k6DQJg_vd_n089_v1_9x16_ua",
+      "file": "art_art-closeup_Ddv-7k6DQJg_vd_n089_v1_9x16_ua.mp4",
       "type": "vd",
       "format": "9x16",
       "lang": "ua",
@@ -6231,44 +4075,35 @@
       "hook": "art-closeup",
       "hook_text": "Один ніготь. Ближче.",
       "angle": "hero",
-      "job": "V16-ua-9x16",
-      "source": "DASm4oUIwxA",
+      "job": "V2-ua-9x16",
+      "source": "Ddv-7k6DQJg",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
           "step": "finish",
-          "input": "creatives/_work/wb/DASm-a.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V16-ua-9x16-ov.png",
+          "input": "creatives/_work/w1/Ddv-7k6DQJg-clip.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V2-ua-9x16-ov.png",
           "cuts": null,
-          "endcard": {
-            "template": "static-card",
+          "cta_top_pct": 85.6,
+          "free_zone_score": 46.28,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
             "seconds": 1.5
           },
-          "created": "2026-10-09T15:20:47.644Z",
-          "free_zone_score": 114.38,
-          "cta_top_pct": null
-        },
-        {
-          "step": "image",
-          "model": "google/gemini-3.1-flash-image",
-          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
-          "refs": [
-            "sources/instagram/raw/DASm4oUIwxA/DASm4oUIwxA_01.jpg"
-          ],
-          "aspect": "9:16",
-          "resolution": "1K",
-          "cost_usd": 0.0677955,
-          "media_type": "image/png",
-          "created": "2026-10-09T13:01:41.204Z"
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:47:21.884Z"
         },
         {
           "step": "animate",
           "model": "bytedance/seedance-2.5",
-          "prompt": "Extreme macro. The camera glides slowly across the nails from left to right while specular highlights slide over the glassy chrome and gold marble textures; the fingers barely move. The nail design stays exactly as in the image. No text, no new elements.",
-          "first_frame": "creatives/_work/wb/DASm4oUIwxA-still.png",
+          "prompt": "Slow orbiting camera move around the two hands. The fingers slowly tilt so the magnetic cat-eye shimmer shifts and sparkles across each nail; the dark glossy surface below shows soft reflections. The nail colours and design stay exactly as in the image. No text, no extra hands, no new objects.",
+          "first_frame": "creatives/_work/w1/Ddv-7k6DQJg-still.png",
           "last_frame": null,
           "refs": [],
           "duration": 8,
@@ -6276,21 +4111,25 @@
           "aspect": null,
           "resolution": null,
           "generate_audio": true,
-          "audio_dropped": false,
           "seed": null,
-          "job_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
+          "job_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
           "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
-          "created": "2026-10-09T13:04:30.889Z"
+          "generation_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
+          "created": "2026-10-09T09:27:53.541Z"
         }
       ],
-      "cost_usd": 1.9218273,
-      "created": "2026-10-09T15:20:47.683Z",
-      "notes": ""
+      "cost_usd": 1.8540318,
+      "created": "2026-10-09T15:47:21.921Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
     },
     {
-      "name": "art_art-closeup_DASm4oUIwxA_vd_n146_v1_9x16_pl",
-      "file": "art_art-closeup_DASm4oUIwxA_vd_n146_v1_9x16_pl.mp4",
+      "name": "art_art-closeup_Ddv-7k6DQJg_vd_n090_v1_9x16_pl",
+      "file": "art_art-closeup_Ddv-7k6DQJg_vd_n090_v1_9x16_pl.mp4",
       "type": "vd",
       "format": "9x16",
       "lang": "pl",
@@ -6298,44 +4137,35 @@
       "hook": "art-closeup",
       "hook_text": "ZBLIŻ SIĘ. SERIO.",
       "angle": "hero",
-      "job": "V16-pl-9x16",
-      "source": "DASm4oUIwxA",
+      "job": "V2-pl-9x16",
+      "source": "Ddv-7k6DQJg",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
           "step": "finish",
-          "input": "creatives/_work/wb/DASm-a.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V16-pl-9x16-ov.png",
+          "input": "creatives/_work/w1/Ddv-7k6DQJg-clip.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V2-pl-9x16-ov.png",
           "cuts": null,
-          "endcard": {
-            "template": "static-card",
+          "cta_top_pct": 85.6,
+          "free_zone_score": 46.28,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
             "seconds": 1.5
           },
-          "created": "2026-10-09T15:20:54.358Z",
-          "free_zone_score": 114.38,
-          "cta_top_pct": null
-        },
-        {
-          "step": "image",
-          "model": "google/gemini-3.1-flash-image",
-          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
-          "refs": [
-            "sources/instagram/raw/DASm4oUIwxA/DASm4oUIwxA_01.jpg"
-          ],
-          "aspect": "9:16",
-          "resolution": "1K",
-          "cost_usd": 0.0677955,
-          "media_type": "image/png",
-          "created": "2026-10-09T13:01:41.204Z"
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:47:27.896Z"
         },
         {
           "step": "animate",
           "model": "bytedance/seedance-2.5",
-          "prompt": "Extreme macro. The camera glides slowly across the nails from left to right while specular highlights slide over the glassy chrome and gold marble textures; the fingers barely move. The nail design stays exactly as in the image. No text, no new elements.",
-          "first_frame": "creatives/_work/wb/DASm4oUIwxA-still.png",
+          "prompt": "Slow orbiting camera move around the two hands. The fingers slowly tilt so the magnetic cat-eye shimmer shifts and sparkles across each nail; the dark glossy surface below shows soft reflections. The nail colours and design stay exactly as in the image. No text, no extra hands, no new objects.",
+          "first_frame": "creatives/_work/w1/Ddv-7k6DQJg-still.png",
           "last_frame": null,
           "refs": [],
           "duration": 8,
@@ -6343,22 +4173,26 @@
           "aspect": null,
           "resolution": null,
           "generate_audio": true,
-          "audio_dropped": false,
           "seed": null,
-          "job_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
+          "job_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
           "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
-          "created": "2026-10-09T13:04:30.889Z"
+          "generation_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
+          "created": "2026-10-09T09:27:53.541Z"
         }
       ],
       "cost_usd": 0,
       "cost_shared": true,
-      "created": "2026-10-09T15:20:54.394Z",
-      "notes": ""
+      "created": "2026-10-09T15:47:27.932Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
     },
     {
-      "name": "art_art-closeup_DASm4oUIwxA_vd_n147_v1_9x16_ru",
-      "file": "art_art-closeup_DASm4oUIwxA_vd_n147_v1_9x16_ru.mp4",
+      "name": "art_art-closeup_Ddv-7k6DQJg_vd_n091_v1_9x16_ru",
+      "file": "art_art-closeup_Ddv-7k6DQJg_vd_n091_v1_9x16_ru.mp4",
       "type": "vd",
       "format": "9x16",
       "lang": "ru",
@@ -6366,44 +4200,35 @@
       "hook": "art-closeup",
       "hook_text": "Один ноготь. Ближе.",
       "angle": "hero",
-      "job": "V16-ru-9x16",
-      "source": "DASm4oUIwxA",
+      "job": "V2-ru-9x16",
+      "source": "Ddv-7k6DQJg",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
           "step": "finish",
-          "input": "creatives/_work/wb/DASm-a.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V16-ru-9x16-ov.png",
+          "input": "creatives/_work/w1/Ddv-7k6DQJg-clip.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V2-ru-9x16-ov.png",
           "cuts": null,
-          "endcard": {
-            "template": "static-card",
+          "cta_top_pct": 85.6,
+          "free_zone_score": 46.28,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
             "seconds": 1.5
           },
-          "created": "2026-10-09T15:21:01.069Z",
-          "free_zone_score": 114.38,
-          "cta_top_pct": null
-        },
-        {
-          "step": "image",
-          "model": "google/gemini-3.1-flash-image",
-          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
-          "refs": [
-            "sources/instagram/raw/DASm4oUIwxA/DASm4oUIwxA_01.jpg"
-          ],
-          "aspect": "9:16",
-          "resolution": "1K",
-          "cost_usd": 0.0677955,
-          "media_type": "image/png",
-          "created": "2026-10-09T13:01:41.204Z"
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:47:33.944Z"
         },
         {
           "step": "animate",
           "model": "bytedance/seedance-2.5",
-          "prompt": "Extreme macro. The camera glides slowly across the nails from left to right while specular highlights slide over the glassy chrome and gold marble textures; the fingers barely move. The nail design stays exactly as in the image. No text, no new elements.",
-          "first_frame": "creatives/_work/wb/DASm4oUIwxA-still.png",
+          "prompt": "Slow orbiting camera move around the two hands. The fingers slowly tilt so the magnetic cat-eye shimmer shifts and sparkles across each nail; the dark glossy surface below shows soft reflections. The nail colours and design stay exactly as in the image. No text, no extra hands, no new objects.",
+          "first_frame": "creatives/_work/w1/Ddv-7k6DQJg-still.png",
           "last_frame": null,
           "refs": [],
           "duration": 8,
@@ -6411,22 +4236,26 @@
           "aspect": null,
           "resolution": null,
           "generate_audio": true,
-          "audio_dropped": false,
           "seed": null,
-          "job_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
+          "job_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
           "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
-          "created": "2026-10-09T13:04:30.889Z"
+          "generation_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
+          "created": "2026-10-09T09:27:53.541Z"
         }
       ],
       "cost_usd": 0,
       "cost_shared": true,
-      "created": "2026-10-09T15:21:01.105Z",
-      "notes": ""
+      "created": "2026-10-09T15:47:33.982Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
     },
     {
-      "name": "art_art-closeup_DASm4oUIwxA_vd_n148_v1_9x16_en",
-      "file": "art_art-closeup_DASm4oUIwxA_vd_n148_v1_9x16_en.mp4",
+      "name": "art_art-closeup_Ddv-7k6DQJg_vd_n092_v1_9x16_en",
+      "file": "art_art-closeup_Ddv-7k6DQJg_vd_n092_v1_9x16_en.mp4",
       "type": "vd",
       "format": "9x16",
       "lang": "en",
@@ -6434,44 +4263,35 @@
       "hook": "art-closeup",
       "hook_text": "ZOOM IN. SERIOUSLY.",
       "angle": "hero",
-      "job": "V16-en-9x16",
-      "source": "DASm4oUIwxA",
+      "job": "V2-en-9x16",
+      "source": "Ddv-7k6DQJg",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
           "step": "finish",
-          "input": "creatives/_work/wb/DASm-a.mp4",
-          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V16-en-9x16-ov.png",
+          "input": "creatives/_work/w1/Ddv-7k6DQJg-clip.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V2-en-9x16-ov.png",
           "cuts": null,
-          "endcard": {
-            "template": "static-card",
+          "cta_top_pct": 85.6,
+          "free_zone_score": 46.28,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
             "seconds": 1.5
           },
-          "created": "2026-10-09T15:21:07.793Z",
-          "free_zone_score": 114.38,
-          "cta_top_pct": null
-        },
-        {
-          "step": "image",
-          "model": "google/gemini-3.1-flash-image",
-          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
-          "refs": [
-            "sources/instagram/raw/DASm4oUIwxA/DASm4oUIwxA_01.jpg"
-          ],
-          "aspect": "9:16",
-          "resolution": "1K",
-          "cost_usd": 0.0677955,
-          "media_type": "image/png",
-          "created": "2026-10-09T13:01:41.204Z"
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:47:39.930Z"
         },
         {
           "step": "animate",
           "model": "bytedance/seedance-2.5",
-          "prompt": "Extreme macro. The camera glides slowly across the nails from left to right while specular highlights slide over the glassy chrome and gold marble textures; the fingers barely move. The nail design stays exactly as in the image. No text, no new elements.",
-          "first_frame": "creatives/_work/wb/DASm4oUIwxA-still.png",
+          "prompt": "Slow orbiting camera move around the two hands. The fingers slowly tilt so the magnetic cat-eye shimmer shifts and sparkles across each nail; the dark glossy surface below shows soft reflections. The nail colours and design stay exactly as in the image. No text, no extra hands, no new objects.",
+          "first_frame": "creatives/_work/w1/Ddv-7k6DQJg-still.png",
           "last_frame": null,
           "refs": [],
           "duration": 8,
@@ -6479,22 +4299,981 @@
           "aspect": null,
           "resolution": null,
           "generate_audio": true,
-          "audio_dropped": false,
           "seed": null,
-          "job_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
+          "job_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
           "cost_usd": 1.8540318,
-          "generation_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
-          "created": "2026-10-09T13:04:30.889Z"
+          "generation_id": "gen-vid-1791537738-zkJYoTC0AnrDWVnxOhNw",
+          "created": "2026-10-09T09:27:53.541Z"
         }
       ],
       "cost_usd": 0,
       "cost_shared": true,
-      "created": "2026-10-09T15:21:07.829Z",
-      "notes": ""
+      "created": "2026-10-09T15:47:39.967Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
     },
     {
-      "name": "classic_before-after_C3Sy533oeEN_vd_n145_v1_9x16_ua",
-      "file": "classic_before-after_C3Sy533oeEN_vd_n145_v1_9x16_ua.mp4",
+      "name": "crazy_social_DZTCpxHDUJE_vd_n093_v1_9x16_ua",
+      "file": "crazy_social_DZTCpxHDUJE_vd_n093_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "crazy",
+      "hook": "social",
+      "hook_text": "Мене зупиняють на вулиці",
+      "angle": "hero",
+      "job": "V4-ua-9x16",
+      "source": "DZTCpxHDUJE",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/w1/DZTCpxHDUJE-clip.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V4-ua-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": 88.1,
+          "free_zone_score": 16.77,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:47:45.864Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Slow tilt down then push in along the extra-long pink ombré stiletto nails. The hand gently rotates to reveal the white French edges and the decorated accent nails. Soft studio light, shallow depth of field. The nail design stays exactly as in the image. No text, no extra fingers, no new objects.",
+          "first_frame": "creatives/_work/w1/DZTCpxHDUJE-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": true,
+          "seed": null,
+          "job_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
+          "created": "2026-10-09T09:26:52.334Z"
+        }
+      ],
+      "cost_usd": 1.8540318,
+      "created": "2026-10-09T15:47:45.902Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "crazy_social_DZTCpxHDUJE_vd_n094_v1_9x16_pl",
+      "file": "crazy_social_DZTCpxHDUJE_vd_n094_v1_9x16_pl.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "crazy",
+      "hook": "social",
+      "hook_text": "EXTRA DŁUGIE. RZEŹBIONE",
+      "angle": "hero",
+      "job": "V4-pl-9x16",
+      "source": "DZTCpxHDUJE",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/w1/DZTCpxHDUJE-clip.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V4-pl-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": 88.1,
+          "free_zone_score": 16.77,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:47:51.960Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Slow tilt down then push in along the extra-long pink ombré stiletto nails. The hand gently rotates to reveal the white French edges and the decorated accent nails. Soft studio light, shallow depth of field. The nail design stays exactly as in the image. No text, no extra fingers, no new objects.",
+          "first_frame": "creatives/_work/w1/DZTCpxHDUJE-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": true,
+          "seed": null,
+          "job_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
+          "created": "2026-10-09T09:26:52.334Z"
+        }
+      ],
+      "cost_usd": 0,
+      "cost_shared": true,
+      "created": "2026-10-09T15:47:51.998Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "crazy_social_DZTCpxHDUJE_vd_n095_v1_9x16_ru",
+      "file": "crazy_social_DZTCpxHDUJE_vd_n095_v1_9x16_ru.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ru",
+      "concept": "crazy",
+      "hook": "social",
+      "hook_text": "Меня останавливают на улице",
+      "angle": "hero",
+      "job": "V4-ru-9x16",
+      "source": "DZTCpxHDUJE",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/w1/DZTCpxHDUJE-clip.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V4-ru-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": 88.1,
+          "free_zone_score": 16.77,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:47:58.198Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Slow tilt down then push in along the extra-long pink ombré stiletto nails. The hand gently rotates to reveal the white French edges and the decorated accent nails. Soft studio light, shallow depth of field. The nail design stays exactly as in the image. No text, no extra fingers, no new objects.",
+          "first_frame": "creatives/_work/w1/DZTCpxHDUJE-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": true,
+          "seed": null,
+          "job_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
+          "created": "2026-10-09T09:26:52.334Z"
+        }
+      ],
+      "cost_usd": 0,
+      "cost_shared": true,
+      "created": "2026-10-09T15:47:58.236Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "crazy_social_DZTCpxHDUJE_vd_n096_v1_9x16_en",
+      "file": "crazy_social_DZTCpxHDUJE_vd_n096_v1_9x16_en.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "en",
+      "concept": "crazy",
+      "hook": "social",
+      "hook_text": "EXTRA LONG. SCULPTED",
+      "angle": "hero",
+      "job": "V4-en-9x16",
+      "source": "DZTCpxHDUJE",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/w1/DZTCpxHDUJE-clip.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V4-en-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": 88.1,
+          "free_zone_score": 16.77,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:48:04.196Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Slow tilt down then push in along the extra-long pink ombré stiletto nails. The hand gently rotates to reveal the white French edges and the decorated accent nails. Soft studio light, shallow depth of field. The nail design stays exactly as in the image. No text, no extra fingers, no new objects.",
+          "first_frame": "creatives/_work/w1/DZTCpxHDUJE-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": true,
+          "seed": null,
+          "job_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791537738-uLxPTEBpb1G1PSaygwvv",
+          "created": "2026-10-09T09:26:52.334Z"
+        }
+      ],
+      "cost_usd": 0,
+      "cost_shared": true,
+      "created": "2026-10-09T15:48:04.234Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "classic_process_DZKRjmJNiHR_vd_n097_v1_9x16_ua",
+      "file": "classic_process_DZKRjmJNiHR_vd_n097_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "classic",
+      "hook": "process",
+      "hook_text": "Кожен ніготь — вручну",
+      "angle": "process",
+      "job": "V5-ua-9x16",
+      "source": "DZKRjmJNiHR",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/instagram/raw/DZKRjmJNiHR/DZKRjmJNiHR_01.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V5-ua-9x16-ov.png",
+          "cuts": "0:11",
+          "cta_top_pct": 71.9,
+          "free_zone_score": 42.27,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:48:10.050Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:48:10.087Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "classic_process_DZKRjmJNiHR_vd_n098_v1_9x16_pl",
+      "file": "classic_process_DZKRjmJNiHR_vd_n098_v1_9x16_pl.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "classic",
+      "hook": "process",
+      "hook_text": "Każdy paznokieć ręcznie",
+      "angle": "process",
+      "job": "V5-pl-9x16",
+      "source": "DZKRjmJNiHR",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/instagram/raw/DZKRjmJNiHR/DZKRjmJNiHR_01.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V5-pl-9x16-ov.png",
+          "cuts": "0:11",
+          "cta_top_pct": 71.9,
+          "free_zone_score": 42.27,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:48:15.934Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:48:15.971Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "classic_process_DZKRjmJNiHR_vd_n099_v1_9x16_ru",
+      "file": "classic_process_DZKRjmJNiHR_vd_n099_v1_9x16_ru.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ru",
+      "concept": "classic",
+      "hook": "process",
+      "hook_text": "Каждый ноготь — вручную",
+      "angle": "process",
+      "job": "V5-ru-9x16",
+      "source": "DZKRjmJNiHR",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/instagram/raw/DZKRjmJNiHR/DZKRjmJNiHR_01.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V5-ru-9x16-ov.png",
+          "cuts": "0:11",
+          "cta_top_pct": 71.9,
+          "free_zone_score": 42.27,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:48:21.777Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:48:21.815Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "classic_process_DZKRjmJNiHR_vd_n100_v1_9x16_en",
+      "file": "classic_process_DZKRjmJNiHR_vd_n100_v1_9x16_en.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "en",
+      "concept": "classic",
+      "hook": "process",
+      "hook_text": "EVERY NAIL BY HAND",
+      "angle": "process",
+      "job": "V5-en-9x16",
+      "source": "DZKRjmJNiHR",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/instagram/raw/DZKRjmJNiHR/DZKRjmJNiHR_01.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V5-en-9x16-ov.png",
+          "cuts": "0:11",
+          "cta_top_pct": 71.9,
+          "free_zone_score": 42.27,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:48:27.642Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:48:27.680Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "classic_process_C3Sy533oeEN_vd_n101_v1_9x16_ua",
+      "file": "classic_process_C3Sy533oeEN_vd_n101_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "classic",
+      "hook": "process",
+      "hook_text": "Процес, який видно",
+      "angle": "process",
+      "job": "V6-ua-9x16",
+      "source": "C3Sy533oeEN",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/instagram/raw/C3Sy533oeEN/C3Sy533oeEN_01.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V6-ua-9x16-ov.png",
+          "cuts": "3:16",
+          "cta_top_pct": null,
+          "free_zone_score": 120.74,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:48:34.268Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:48:34.310Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "classic_process_C3Sy533oeEN_vd_n102_v1_9x16_pl",
+      "file": "classic_process_C3Sy533oeEN_vd_n102_v1_9x16_pl.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "classic",
+      "hook": "process",
+      "hook_text": "Proces, który widać",
+      "angle": "process",
+      "job": "V6-pl-9x16",
+      "source": "C3Sy533oeEN",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/instagram/raw/C3Sy533oeEN/C3Sy533oeEN_01.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V6-pl-9x16-ov.png",
+          "cuts": "3:16",
+          "cta_top_pct": null,
+          "free_zone_score": 120.74,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:48:40.825Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:48:40.860Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "classic_process_C3Sy533oeEN_vd_n103_v1_9x16_ru",
+      "file": "classic_process_C3Sy533oeEN_vd_n103_v1_9x16_ru.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ru",
+      "concept": "classic",
+      "hook": "process",
+      "hook_text": "Процесс, который видно",
+      "angle": "process",
+      "job": "V6-ru-9x16",
+      "source": "C3Sy533oeEN",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/instagram/raw/C3Sy533oeEN/C3Sy533oeEN_01.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V6-ru-9x16-ov.png",
+          "cuts": "3:16",
+          "cta_top_pct": null,
+          "free_zone_score": 120.74,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:48:47.350Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:48:47.387Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "classic_process_C3Sy533oeEN_vd_n104_v1_9x16_en",
+      "file": "classic_process_C3Sy533oeEN_vd_n104_v1_9x16_en.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "en",
+      "concept": "classic",
+      "hook": "process",
+      "hook_text": "THE PROCESS SHOWS",
+      "angle": "process",
+      "job": "V6-en-9x16",
+      "source": "C3Sy533oeEN",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/instagram/raw/C3Sy533oeEN/C3Sy533oeEN_01.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V6-en-9x16-ov.png",
+          "cuts": "3:16",
+          "cta_top_pct": null,
+          "free_zone_score": 120.74,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:48:53.945Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:48:53.982Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "brand_pov_DdnxYOft2B2_vd_n105_v1_9x16_ua",
+      "file": "brand_pov_DdnxYOft2B2_vd_n105_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "brand",
+      "hook": "pov",
+      "hook_text": "Прийшла. Сіла. Видихнула.",
+      "angle": "studio",
+      "job": "V9-ua-9x16",
+      "source": "DdnxYOft2B2",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/instagram/raw/DdnxYOft2B2/DdnxYOft2B2_01.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V9-ua-9x16-ov.png",
+          "cuts": "24:40",
+          "cta_top_pct": null,
+          "free_zone_score": 95.33,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:49:01.217Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:49:01.254Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "brand_pov_DdnxYOft2B2_vd_n106_v1_9x16_pl",
+      "file": "brand_pov_DdnxYOft2B2_vd_n106_v1_9x16_pl.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "brand",
+      "hook": "pov",
+      "hook_text": "Weszłaś. Usiadłaś. Odetchnęłaś.",
+      "angle": "studio",
+      "job": "V9-pl-9x16",
+      "source": "DdnxYOft2B2",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/instagram/raw/DdnxYOft2B2/DdnxYOft2B2_01.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V9-pl-9x16-ov.png",
+          "cuts": "24:40",
+          "cta_top_pct": null,
+          "free_zone_score": 95.33,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:49:08.549Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:49:08.586Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "brand_pov_DdnxYOft2B2_vd_n107_v1_9x16_ru",
+      "file": "brand_pov_DdnxYOft2B2_vd_n107_v1_9x16_ru.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ru",
+      "concept": "brand",
+      "hook": "pov",
+      "hook_text": "Пришла. Села. Выдохнула.",
+      "angle": "studio",
+      "job": "V9-ru-9x16",
+      "source": "DdnxYOft2B2",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/instagram/raw/DdnxYOft2B2/DdnxYOft2B2_01.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V9-ru-9x16-ov.png",
+          "cuts": "24:40",
+          "cta_top_pct": null,
+          "free_zone_score": 95.33,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:49:15.894Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:49:15.931Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "brand_pov_DdnxYOft2B2_vd_n108_v1_9x16_en",
+      "file": "brand_pov_DdnxYOft2B2_vd_n108_v1_9x16_en.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "en",
+      "concept": "brand",
+      "hook": "pov",
+      "hook_text": "WALK IN. SIT DOWN. BREATHE.",
+      "angle": "studio",
+      "job": "V9-en-9x16",
+      "source": "DdnxYOft2B2",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "sources/instagram/raw/DdnxYOft2B2/DdnxYOft2B2_01.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V9-en-9x16-ov.png",
+          "cuts": "24:40",
+          "cta_top_pct": null,
+          "free_zone_score": 95.33,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:49:23.291Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:49:23.330Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "mix_social_DbMR6_ttcnF_vd_n109_v1_9x16_ua",
+      "file": "mix_social_DbMR6_ttcnF_vd_n109_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "mix",
+      "hook": "social",
+      "hook_text": "Яку обереш: 1, 2 чи 3?",
+      "angle": "pick",
+      "job": "V12-ua-9x16",
+      "source": "DbMR6_ttcnF",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/base/pick-base.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V12-ua-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 145.8,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:49:28.812Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:49:28.853Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "mix_social_DbMR6_ttcnF_vd_n110_v1_9x16_pl",
+      "file": "mix_social_DbMR6_ttcnF_vd_n110_v1_9x16_pl.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "mix",
+      "hook": "social",
+      "hook_text": "Którą wybierasz: 1, 2 czy 3?",
+      "angle": "pick",
+      "job": "V12-pl-9x16",
+      "source": "DbMR6_ttcnF",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/base/pick-base.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V12-pl-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 145.8,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:49:34.407Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:49:34.445Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "mix_social_DbMR6_ttcnF_vd_n111_v1_9x16_ru",
+      "file": "mix_social_DbMR6_ttcnF_vd_n111_v1_9x16_ru.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ru",
+      "concept": "mix",
+      "hook": "social",
+      "hook_text": "Какой выбираешь: 1, 2 или 3?",
+      "angle": "pick",
+      "job": "V12-ru-9x16",
+      "source": "DbMR6_ttcnF",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/base/pick-base.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V12-ru-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 145.8,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:49:39.922Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:49:39.959Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "mix_social_DbMR6_ttcnF_vd_n112_v1_9x16_en",
+      "file": "mix_social_DbMR6_ttcnF_vd_n112_v1_9x16_en.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "en",
+      "concept": "mix",
+      "hook": "social",
+      "hook_text": "WHICH ONE: 1, 2 OR 3?",
+      "angle": "pick",
+      "job": "V12-en-9x16",
+      "source": "DbMR6_ttcnF",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/base/pick-base.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V12-en-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 145.8,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:49:45.378Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:49:45.415Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "classic_before-after_C3Sy533oeEN_vd_n117_v1_9x16_ua",
+      "file": "classic_before-after_C3Sy533oeEN_vd_n117_v1_9x16_ua.mp4",
       "type": "vd",
       "format": "9x16",
       "lang": "ua",
@@ -6506,7 +5285,7 @@
       "source": "C3Sy533oeEN",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -6519,20 +5298,26 @@
           "intro": {
             "seconds": 1.2
           },
-          "endcard": {
-            "template": "static-card",
+          "outro": {
             "seconds": 1.5
           },
-          "created": "2026-10-09T15:23:05.989Z"
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:50:11.105Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T15:23:06.026Z",
-      "notes": ""
+      "created": "2026-10-09T15:50:11.142Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
     },
     {
-      "name": "classic_before-after_C3Sy533oeEN_vd_n146_v1_9x16_pl",
-      "file": "classic_before-after_C3Sy533oeEN_vd_n146_v1_9x16_pl.mp4",
+      "name": "classic_before-after_C3Sy533oeEN_vd_n118_v1_9x16_pl",
+      "file": "classic_before-after_C3Sy533oeEN_vd_n118_v1_9x16_pl.mp4",
       "type": "vd",
       "format": "9x16",
       "lang": "pl",
@@ -6544,7 +5329,7 @@
       "source": "C3Sy533oeEN",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -6557,20 +5342,26 @@
           "intro": {
             "seconds": 1.2
           },
-          "endcard": {
-            "template": "static-card",
+          "outro": {
             "seconds": 1.5
           },
-          "created": "2026-10-09T15:23:12.825Z"
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:50:16.836Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T15:23:12.861Z",
-      "notes": ""
+      "created": "2026-10-09T15:50:16.876Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
     },
     {
-      "name": "classic_before-after_C3Sy533oeEN_vd_n147_v1_9x16_ru",
-      "file": "classic_before-after_C3Sy533oeEN_vd_n147_v1_9x16_ru.mp4",
+      "name": "classic_before-after_C3Sy533oeEN_vd_n119_v1_9x16_ru",
+      "file": "classic_before-after_C3Sy533oeEN_vd_n119_v1_9x16_ru.mp4",
       "type": "vd",
       "format": "9x16",
       "lang": "ru",
@@ -6582,7 +5373,7 @@
       "source": "C3Sy533oeEN",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -6595,20 +5386,26 @@
           "intro": {
             "seconds": 1.2
           },
-          "endcard": {
-            "template": "static-card",
+          "outro": {
             "seconds": 1.5
           },
-          "created": "2026-10-09T15:23:19.678Z"
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:50:22.833Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T15:23:19.715Z",
-      "notes": ""
+      "created": "2026-10-09T15:50:22.871Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
     },
     {
-      "name": "classic_before-after_C3Sy533oeEN_vd_n148_v1_9x16_en",
-      "file": "classic_before-after_C3Sy533oeEN_vd_n148_v1_9x16_en.mp4",
+      "name": "classic_before-after_C3Sy533oeEN_vd_n120_v1_9x16_en",
+      "file": "classic_before-after_C3Sy533oeEN_vd_n120_v1_9x16_en.mp4",
       "type": "vd",
       "format": "9x16",
       "lang": "en",
@@ -6620,7 +5417,7 @@
       "source": "C3Sy533oeEN",
       "v": 1,
       "look": null,
-      "status": "draft",
+      "status": "approved",
       "copy": null,
       "pipeline": [
         {
@@ -6633,17 +5430,813 @@
           "intro": {
             "seconds": 1.2
           },
-          "endcard": {
-            "template": "static-card",
+          "outro": {
             "seconds": 1.5
           },
-          "created": "2026-10-09T15:23:26.519Z"
+          "music": null,
+          "audio": "none",
+          "created": "2026-10-09T15:50:28.688Z"
         }
       ],
       "cost_usd": 0,
-      "created": "2026-10-09T15:23:26.556Z",
-      "notes": ""
+      "created": "2026-10-09T15:50:28.728Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "classic_reveal_DPZE72BjF50_vd_n121_v1_9x16_ua",
+      "file": "classic_reveal_DPZE72BjF50_vd_n121_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "classic",
+      "hook": "reveal",
+      "hook_text": "Осінь — бордо",
+      "angle": "seasonal",
+      "job": "V15-ua-9x16",
+      "source": "DPZE72BjF50",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/wb/DPZE-a.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V15-ua-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 62.13,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:50:34.913Z"
+        },
+        {
+          "step": "image",
+          "model": "google/gemini-3.1-flash-image",
+          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
+          "refs": [
+            "sources/instagram/raw/DPZE72BjF50/DPZE72BjF50_01.jpg"
+          ],
+          "aspect": "9:16",
+          "resolution": "1K",
+          "cost_usd": 0.0677955,
+          "media_type": "image/png",
+          "created": "2026-10-09T13:01:40.181Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Slow cinematic push-in toward the hand. The fingers spread slightly and turn so the warm orange evening light from the window streams across the glossy burgundy almond nails; the daisy ring catches a glint. The nail design stays exactly as in the image. Shallow depth of field, moody light, no text, no extra hands.",
+          "first_frame": "creatives/_work/wb/DPZE72BjF50-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": true,
+          "audio_dropped": false,
+          "seed": null,
+          "job_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
+          "created": "2026-10-09T13:05:31.481Z"
+        }
+      ],
+      "cost_usd": 1.9218273,
+      "created": "2026-10-09T15:50:34.954Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "classic_reveal_DPZE72BjF50_vd_n122_v1_9x16_pl",
+      "file": "classic_reveal_DPZE72BjF50_vd_n122_v1_9x16_pl.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "classic",
+      "hook": "reveal",
+      "hook_text": "Jesień w bordo",
+      "angle": "seasonal",
+      "job": "V15-pl-9x16",
+      "source": "DPZE72BjF50",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/wb/DPZE-a.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V15-pl-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 62.13,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:50:41.129Z"
+        },
+        {
+          "step": "image",
+          "model": "google/gemini-3.1-flash-image",
+          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
+          "refs": [
+            "sources/instagram/raw/DPZE72BjF50/DPZE72BjF50_01.jpg"
+          ],
+          "aspect": "9:16",
+          "resolution": "1K",
+          "cost_usd": 0.0677955,
+          "media_type": "image/png",
+          "created": "2026-10-09T13:01:40.181Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Slow cinematic push-in toward the hand. The fingers spread slightly and turn so the warm orange evening light from the window streams across the glossy burgundy almond nails; the daisy ring catches a glint. The nail design stays exactly as in the image. Shallow depth of field, moody light, no text, no extra hands.",
+          "first_frame": "creatives/_work/wb/DPZE72BjF50-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": true,
+          "audio_dropped": false,
+          "seed": null,
+          "job_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
+          "created": "2026-10-09T13:05:31.481Z"
+        }
+      ],
+      "cost_usd": 0,
+      "cost_shared": true,
+      "created": "2026-10-09T15:50:41.168Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "classic_reveal_DPZE72BjF50_vd_n123_v1_9x16_ru",
+      "file": "classic_reveal_DPZE72BjF50_vd_n123_v1_9x16_ru.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ru",
+      "concept": "classic",
+      "hook": "reveal",
+      "hook_text": "Осень — бордо",
+      "angle": "seasonal",
+      "job": "V15-ru-9x16",
+      "source": "DPZE72BjF50",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/wb/DPZE-a.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V15-ru-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 62.13,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:50:47.298Z"
+        },
+        {
+          "step": "image",
+          "model": "google/gemini-3.1-flash-image",
+          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
+          "refs": [
+            "sources/instagram/raw/DPZE72BjF50/DPZE72BjF50_01.jpg"
+          ],
+          "aspect": "9:16",
+          "resolution": "1K",
+          "cost_usd": 0.0677955,
+          "media_type": "image/png",
+          "created": "2026-10-09T13:01:40.181Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Slow cinematic push-in toward the hand. The fingers spread slightly and turn so the warm orange evening light from the window streams across the glossy burgundy almond nails; the daisy ring catches a glint. The nail design stays exactly as in the image. Shallow depth of field, moody light, no text, no extra hands.",
+          "first_frame": "creatives/_work/wb/DPZE72BjF50-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": true,
+          "audio_dropped": false,
+          "seed": null,
+          "job_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
+          "created": "2026-10-09T13:05:31.481Z"
+        }
+      ],
+      "cost_usd": 0,
+      "cost_shared": true,
+      "created": "2026-10-09T15:50:47.340Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "classic_reveal_DPZE72BjF50_vd_n124_v1_9x16_en",
+      "file": "classic_reveal_DPZE72BjF50_vd_n124_v1_9x16_en.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "en",
+      "concept": "classic",
+      "hook": "reveal",
+      "hook_text": "AUTUMN IN BURGUNDY",
+      "angle": "seasonal",
+      "job": "V15-en-9x16",
+      "source": "DPZE72BjF50",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/wb/DPZE-a.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V15-en-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 62.13,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:50:53.479Z"
+        },
+        {
+          "step": "image",
+          "model": "google/gemini-3.1-flash-image",
+          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
+          "refs": [
+            "sources/instagram/raw/DPZE72BjF50/DPZE72BjF50_01.jpg"
+          ],
+          "aspect": "9:16",
+          "resolution": "1K",
+          "cost_usd": 0.0677955,
+          "media_type": "image/png",
+          "created": "2026-10-09T13:01:40.181Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Slow cinematic push-in toward the hand. The fingers spread slightly and turn so the warm orange evening light from the window streams across the glossy burgundy almond nails; the daisy ring catches a glint. The nail design stays exactly as in the image. Shallow depth of field, moody light, no text, no extra hands.",
+          "first_frame": "creatives/_work/wb/DPZE72BjF50-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": true,
+          "audio_dropped": false,
+          "seed": null,
+          "job_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791550902-Hy5MtzAKWfCDInvmEDfr",
+          "created": "2026-10-09T13:05:31.481Z"
+        }
+      ],
+      "cost_usd": 0,
+      "cost_shared": true,
+      "created": "2026-10-09T15:50:53.518Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "art_art-closeup_DASm4oUIwxA_vd_n125_v1_9x16_ua",
+      "file": "art_art-closeup_DASm4oUIwxA_vd_n125_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "Один ніготь. Ближче.",
+      "angle": "hero",
+      "job": "V16-ua-9x16",
+      "source": "DASm4oUIwxA",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/wb/DASm-a.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V16-ua-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 114.38,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:50:59.363Z"
+        },
+        {
+          "step": "image",
+          "model": "google/gemini-3.1-flash-image",
+          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
+          "refs": [
+            "sources/instagram/raw/DASm4oUIwxA/DASm4oUIwxA_01.jpg"
+          ],
+          "aspect": "9:16",
+          "resolution": "1K",
+          "cost_usd": 0.0677955,
+          "media_type": "image/png",
+          "created": "2026-10-09T13:01:41.204Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Extreme macro. The camera glides slowly across the nails from left to right while specular highlights slide over the glassy chrome and gold marble textures; the fingers barely move. The nail design stays exactly as in the image. No text, no new elements.",
+          "first_frame": "creatives/_work/wb/DASm4oUIwxA-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": true,
+          "audio_dropped": false,
+          "seed": null,
+          "job_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
+          "created": "2026-10-09T13:04:30.889Z"
+        }
+      ],
+      "cost_usd": 1.9218273,
+      "created": "2026-10-09T15:50:59.401Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "art_art-closeup_DASm4oUIwxA_vd_n126_v1_9x16_pl",
+      "file": "art_art-closeup_DASm4oUIwxA_vd_n126_v1_9x16_pl.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "ZBLIŻ SIĘ. SERIO.",
+      "angle": "hero",
+      "job": "V16-pl-9x16",
+      "source": "DASm4oUIwxA",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/wb/DASm-a.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V16-pl-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 114.38,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:51:05.313Z"
+        },
+        {
+          "step": "image",
+          "model": "google/gemini-3.1-flash-image",
+          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
+          "refs": [
+            "sources/instagram/raw/DASm4oUIwxA/DASm4oUIwxA_01.jpg"
+          ],
+          "aspect": "9:16",
+          "resolution": "1K",
+          "cost_usd": 0.0677955,
+          "media_type": "image/png",
+          "created": "2026-10-09T13:01:41.204Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Extreme macro. The camera glides slowly across the nails from left to right while specular highlights slide over the glassy chrome and gold marble textures; the fingers barely move. The nail design stays exactly as in the image. No text, no new elements.",
+          "first_frame": "creatives/_work/wb/DASm4oUIwxA-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": true,
+          "audio_dropped": false,
+          "seed": null,
+          "job_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
+          "created": "2026-10-09T13:04:30.889Z"
+        }
+      ],
+      "cost_usd": 0,
+      "cost_shared": true,
+      "created": "2026-10-09T15:51:05.350Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "art_art-closeup_DASm4oUIwxA_vd_n127_v1_9x16_ru",
+      "file": "art_art-closeup_DASm4oUIwxA_vd_n127_v1_9x16_ru.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ru",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "Один ноготь. Ближе.",
+      "angle": "hero",
+      "job": "V16-ru-9x16",
+      "source": "DASm4oUIwxA",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/wb/DASm-a.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V16-ru-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 114.38,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:51:11.170Z"
+        },
+        {
+          "step": "image",
+          "model": "google/gemini-3.1-flash-image",
+          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
+          "refs": [
+            "sources/instagram/raw/DASm4oUIwxA/DASm4oUIwxA_01.jpg"
+          ],
+          "aspect": "9:16",
+          "resolution": "1K",
+          "cost_usd": 0.0677955,
+          "media_type": "image/png",
+          "created": "2026-10-09T13:01:41.204Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Extreme macro. The camera glides slowly across the nails from left to right while specular highlights slide over the glassy chrome and gold marble textures; the fingers barely move. The nail design stays exactly as in the image. No text, no new elements.",
+          "first_frame": "creatives/_work/wb/DASm4oUIwxA-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": true,
+          "audio_dropped": false,
+          "seed": null,
+          "job_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
+          "created": "2026-10-09T13:04:30.889Z"
+        }
+      ],
+      "cost_usd": 0,
+      "cost_shared": true,
+      "created": "2026-10-09T15:51:11.207Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "art_art-closeup_DASm4oUIwxA_vd_n128_v1_9x16_en",
+      "file": "art_art-closeup_DASm4oUIwxA_vd_n128_v1_9x16_en.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "en",
+      "concept": "art",
+      "hook": "art-closeup",
+      "hook_text": "ZOOM IN. SERIOUSLY.",
+      "angle": "hero",
+      "job": "V16-en-9x16",
+      "source": "DASm4oUIwxA",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/wb/DASm-a.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-B/V16-en-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": null,
+          "free_zone_score": 114.38,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:51:17.226Z"
+        },
+        {
+          "step": "image",
+          "model": "google/gemini-3.1-flash-image",
+          "prompt": "Extend this photo to a vertical 9:16 frame. Keep the hands and every nail exactly as in the reference — same shape, length, colour and design, no additions. Continue the existing background naturally above and below (same surface, same lighting); no text, no logo, no extra objects or hands. Photorealistic, same colour grading.",
+          "refs": [
+            "sources/instagram/raw/DASm4oUIwxA/DASm4oUIwxA_01.jpg"
+          ],
+          "aspect": "9:16",
+          "resolution": "1K",
+          "cost_usd": 0.0677955,
+          "media_type": "image/png",
+          "created": "2026-10-09T13:01:41.204Z"
+        },
+        {
+          "step": "animate",
+          "model": "bytedance/seedance-2.5",
+          "prompt": "Extreme macro. The camera glides slowly across the nails from left to right while specular highlights slide over the glassy chrome and gold marble textures; the fingers barely move. The nail design stays exactly as in the image. No text, no new elements.",
+          "first_frame": "creatives/_work/wb/DASm4oUIwxA-still.png",
+          "last_frame": null,
+          "refs": [],
+          "duration": 8,
+          "size": "720x1280",
+          "aspect": null,
+          "resolution": null,
+          "generate_audio": true,
+          "audio_dropped": false,
+          "seed": null,
+          "job_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
+          "cost_usd": 1.8540318,
+          "generation_id": "gen-vid-1791550902-odJe5hHV5L7IA1YmINmd",
+          "created": "2026-10-09T13:04:30.889Z"
+        }
+      ],
+      "cost_usd": 0,
+      "cost_shared": true,
+      "created": "2026-10-09T15:51:17.262Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid across intro/outro (wave F), layout unchanged"
+      }
+    },
+    {
+      "name": "crazy_price_DZTCpxHDUJE_vd_n125_v1_9x16_ua",
+      "file": "crazy_price_DZTCpxHDUJE_vd_n125_v1_9x16_ua.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ua",
+      "concept": "crazy",
+      "hook": "price",
+      "hook_text": "Extra Long & Crazy 380 zł",
+      "angle": "price",
+      "job": "V13-ua-9x16",
+      "source": "DZTCpxHDUJE",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/base/price-base.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V13-ua-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": 88.1,
+          "free_zone_score": 18,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:52:00.267Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:52:00.304Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid (price base now keeps the clip audio)"
+      }
+    },
+    {
+      "name": "crazy_price_DZTCpxHDUJE_vd_n126_v1_9x16_pl",
+      "file": "crazy_price_DZTCpxHDUJE_vd_n126_v1_9x16_pl.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "pl",
+      "concept": "crazy",
+      "hook": "price",
+      "hook_text": "CRAZY SHAPE 380 ZŁ",
+      "angle": "price",
+      "job": "V13-pl-9x16",
+      "source": "DZTCpxHDUJE",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/base/price-base.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V13-pl-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": 88.1,
+          "free_zone_score": 18,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:52:05.477Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:52:05.515Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid (price base now keeps the clip audio)"
+      }
+    },
+    {
+      "name": "crazy_price_DZTCpxHDUJE_vd_n127_v1_9x16_ru",
+      "file": "crazy_price_DZTCpxHDUJE_vd_n127_v1_9x16_ru.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "ru",
+      "concept": "crazy",
+      "hook": "price",
+      "hook_text": "Extra Long & Crazy 380 zł",
+      "angle": "price",
+      "job": "V13-ru-9x16",
+      "source": "DZTCpxHDUJE",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/base/price-base.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V13-ru-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": 88.1,
+          "free_zone_score": 18,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:52:10.861Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:52:10.899Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid (price base now keeps the clip audio)"
+      }
+    },
+    {
+      "name": "crazy_price_DZTCpxHDUJE_vd_n128_v1_9x16_en",
+      "file": "crazy_price_DZTCpxHDUJE_vd_n128_v1_9x16_en.mp4",
+      "type": "vd",
+      "format": "9x16",
+      "lang": "en",
+      "concept": "crazy",
+      "hook": "price",
+      "hook_text": "CRAZY SHAPE 380 ZŁ",
+      "angle": "price",
+      "job": "V13-en-9x16",
+      "source": "DZTCpxHDUJE",
+      "v": 1,
+      "look": null,
+      "status": "approved",
+      "copy": null,
+      "pipeline": [
+        {
+          "step": "finish",
+          "input": "creatives/_work/base/price-base.mp4",
+          "overlay": "/home/selfsx/Develop/Self/svora-meta/creatives/_work/wave/2026-10-A/V13-en-9x16-ov.png",
+          "cuts": null,
+          "cta_top_pct": 88.1,
+          "free_zone_score": 18,
+          "intro": {
+            "seconds": 1.2
+          },
+          "outro": {
+            "seconds": 1.5
+          },
+          "music": null,
+          "audio": "clip stretched over the cards, faded",
+          "created": "2026-10-09T15:52:16.167Z"
+        }
+      ],
+      "cost_usd": 0,
+      "created": "2026-10-09T15:52:16.204Z",
+      "notes": "",
+      "review": {
+        "date": "2026-10-09",
+        "ok": true,
+        "note": "approved in round 3; audio re-laid (price base now keeps the clip audio)"
+      }
     }
   ],
-  "updated": "2026-10-09T15:23:26.556Z"
+  "updated": "2026-10-09T15:52:16.204Z"
 }

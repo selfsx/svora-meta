@@ -121,3 +121,13 @@
   penalties) and the runner puts the CTA there; busy frames get no body CTA — the new 1.5 s outro card (hook + CTA)
   carries it. Intro/outro cards centred with a centred logo. `static-pick` rebuilt as a flow stack (hook → tiles →
   CTA, no overlap). Location card: bigger tile, one line of hours/languages. V9 (approved with a CTA note) remade.
+
+## 2026-10-09 — fourth operator pass: "with proper positioning results are much better"
+
+- Verdicts round 3 (`scratch/review-2026-10-09-c.json`): 52 approved (every measured-placement video but three, the
+  classic pick trio), 20 rejected as *content*, not layout: hero chrome almond video, coffee-at-the-mirror video, brows
+  video, location card on the studio frame → retired from the wave files (V3, V10, V10b, S10). Approved total 135.
+- Remaining concern: intro/outro cards are silent while the body has sound. Fix: `wave.mjs` now assembles video
+  first and runs one audio pass over the whole piece — bed under everything when `brand/music/` has one, otherwise
+  the clip's own audio starts under the intro card and fades out across the outro (fade in 0.3 s, out ≤ 1.5 s, −14 LUFS).
+  Wave F = re-assembly of all 44 approved videos (statuses restored after the run) + the 4 re-laid drafts.
