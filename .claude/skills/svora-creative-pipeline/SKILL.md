@@ -78,6 +78,18 @@ node scripts/video-finish.mjs --in <code>_01.mp4 --cuts 0:13.5,40.5:50.3 --subs 
 - Reels with baked captions: keep ours above theirs (they sit in the bottom UI zone) or use the clip as-is (the EN meme).
 - Studio reels about other services (brows, makeup) are still SVORA footage — register them under that concept, not `brand`.
 
+## Waves (the normal way to produce from now on)
+
+```bash
+node scripts/copy-sync.mjs creatives/waves/2026-10-A.yaml   # literal lines → copy files; then node scripts/copy-lint.mjs
+node scripts/wave.mjs creatives/waves/2026-10-A.yaml --dry   # what would be made
+node scripts/wave.mjs creatives/waves/2026-10-A.yaml         # make + register (skips existing job keys)
+node scripts/wave.mjs creatives/waves/2026-10-A.yaml --redo --only V12 --langs ru   # v+1 after a rejection
+node scripts/review.mjs build                                 # the operator's page
+```
+Job shapes and the template list: `.claude/other/creatives.md` → Waves. Base videos that several jobs share (pick
+sequence, price body) live in `creatives/_work/base/` and are rebuilt by hand (see `creatives/waves/*.yaml` comments).
+
 ## Rules that save money and rejections
 
 - One generation per source; languages and hooks are overlays. 60 clips ≈ $110 at 720p; test prompts at 480p.

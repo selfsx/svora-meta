@@ -57,6 +57,14 @@ Re-cuts of the owner's own reels skip steps 2–3 entirely: `transcribe.mjs` (ti
 the chosen cut) → `video-finish.mjs --cuts a:b,c:d --subs x.ass --overlay …`. This is how the founder, studio, process and
 meme angles are made; it costs nothing but the transcript (≈ $0.005/min).
 
+**Waves.** From the first 100 on, production runs from a job file: `creatives/waves/<wave>.yaml` lists masters
+(job = angle × source × template/clip) with text per language (`"@o03"` = id in `copy/<concept>/<lang>.yaml`, or a
+literal that `scripts/copy-sync.mjs <wave>` appends to that file so lint sees it). `scripts/wave.mjs <wave>` expands
+language × format, renders, finishes (cuts, captions + translation, end cards), registers every file with a `job` tag
+(`V12-ru-9x16`) and skips what already exists; `--redo --only V12` makes a v+1 after a rejection. Templates:
+`overlay-hook-cta` (video), `static-hero`, `static-blur-pad`, `static-pick` (three tiles), `static-card` (text-led:
+menu, location, proof, meme; `bg=cream|black`, `kicker`, `lines` HTML).
+
 Every variant is cheap after step 3: one clip × 4 languages × 2 hooks = 8 creatives for one video job.
 
 ## Manifest schema — `creatives/<batch>/manifest.json`

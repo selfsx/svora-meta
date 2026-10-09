@@ -35,6 +35,9 @@ overlays:
   o08: "REZERWUJ <b>ONLINE</b> W MINUTĘ"
   o09: "Każdy paznokieć <b>ręcznie</b>"
   o10: "Proces, który <b>widać</b>"
+  o11: "Proces → <b>efekt</b>"
+  o12: "Nude, french czy <b>glazed</b>?"
+  o13: "Jesień w <b>bordo</b>"
 ctas:
   c01: "Zarezerwuj online"
   c02: "Sprawdź terminy"

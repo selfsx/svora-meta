@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{typeCss}}">
+<style>
+  /* Text-led card on a brand background (menu · location · proof · meme): kicker, hook, lines (HTML), CTA, meta.
+     Optional photo tile (image) at the top. Vars: bg=cream|black (default cream), kicker, hook, lines, cta, meta. */
+  html, body { margin: 0; width: {{w}}px; height: {{h}}px; overflow: hidden; }
+  .stage { position: relative; width: {{w}}px; height: {{h}}px; background: {{card_bg}}; color: {{card_fg}}; }
+  .tile { position: absolute; left: 56px; right: 56px; top: {{logo_top}}; height: {{tile_h}}; border-radius: 22px; background: url('{{image}}') center / cover no-repeat; display: {{tile_display}}; box-shadow: 0 14px 30px rgba(0,0,0,.25); }
+  .logo { left: 56px; right: auto; }
+  .group { right: 56px; }
+  .kicker { font-size: {{sub_size}}px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: {{color_orange}}; display: {{kicker_display}}; }
+  .stage .hook { background: transparent; padding: 0; color: {{card_fg}}; line-height: 1.08; border-radius: 0; }
+  .lines { font-size: {{line_size}}px; font-weight: 500; line-height: 1.35; color: {{card_fg}}; max-width: 100%; display: {{lines_display}}; }
+  .lines b { color: {{color_orange}}; font-weight: 800; }
+  .lines .row { display: flex; justify-content: space-between; gap: 24px; border-bottom: 2px solid {{card_rule}}; padding: 14px 0; }
+  .stage .meta { background: transparent; color: {{card_fg}}; opacity: .75; padding: 0; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <img class="logo" src="{{logosDir}}/{{card_logo}}.png" alt="">
+  <div class="tile"></div>
+  <div class="group {{place}}">
+    <div class="kicker">{{kicker}}</div>
+    <div class="hook-wrap" style="display:{{hook_display}}"><span class="hook">{{hook}}</span></div>
+    <div class="lines">{{lines}}</div>
+    <div class="cta" style="display:{{cta_display}}">{{cta}}</div>
+    <div class="meta" style="display:{{meta_display}}">{{meta}}</div>
+  </div>
+</div>
+</body>
+</html>

@@ -4,16 +4,25 @@
  * list used by video-finish --cuts, writes an .ass file in the brand style (Roboto Condensed, cream
  * on a dark box, inside the 9:16 safe zone) with timestamps remapped to the cut output.
  *
- *   node scripts/subs.mjs --transcript x.transcript.json --cuts 0:13.5,40.5:50.3 --out x.ass [--size 720x1280] [--y 0.60]
+ *   node scripts/subs.mjs --transcript x.transcript.json --cuts 0:13.5,40.5:50.3 --out x.ass [--size 720x1280] [--y 0.60] [--translate ru]
  *   then: video-finish.mjs … --subs x.ass
  * Segments are clipped to the cuts; text keeps the original language/spelling.
  */
 
 import {readFileSync, writeFileSync} from 'node:fs';
+import {chat} from './lib/openrouter.mjs';
 
 const argv = process.argv.slice(2);
 const flag = (f, d) => { const i = argv.indexOf(f); return i >= 0 && argv[i + 1] ? argv[i + 1] : d; };
 const tr = JSON.parse(readFileSync(flag('--transcript'), 'utf8'));
+if (flag('--translate')) {
+  // Translate the segments (same count, same order) — native, spoken register, no added words.
+  const L = {ua: 'Ukrainian', ru: 'Russian', pl: 'Polish', en: 'English'}[flag('--translate')] || flag('--translate');
+  const {text} = await chat([{role: 'user', content: `Translate these subtitle segments into ${L} for a nail-studio owner speaking casually to clients. Keep the SAME number of lines, same order, one translation per line, no numbering, no quotes, no extra words:\n\n${tr.segments.map((s) => s.text).join('\n')}`}], {temperature: 0.2});
+  const lines = text.trim().split('\n').map((l) => l.trim()).filter(Boolean);
+  if (lines.length !== tr.segments.length) { console.error(text); throw new Error(`translation returned ${lines.length} lines for ${tr.segments.length} segments`); }
+  tr.segments = tr.segments.map((s, i) => ({...s, text: lines[i]}));
+}
 const cuts = flag('--cuts').split(',').map((c) => c.split(':').map(Number));
 const [W, H] = flag('--size', '720x1280').split('x').map(Number);
 const yFrac = Number(flag('--y', 0.60));  // caption baseline, fraction of height (inside the safe zone: < 0.65)

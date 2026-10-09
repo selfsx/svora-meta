@@ -10,7 +10,8 @@
  *   node scripts/creatives.mjs batch <batch-name>             creates creatives/<batch>/manifest.json
  *   node scripts/creatives.mjs add <batch> --file creatives/_work/x.mp4 --concept crazy --hook reveal --angle hero \
  *        --source DaxwkGBtqcU --lang ua [--format 9x16] [--v 1] [--hook-text "…"] [--copy h01,p03,d01] [--look x.look.json]
- *        [--pipeline x.mp4.json …]   → renames/moves the file to creatives/<batch>/<name>.<ext>, status draft
+ *        [--pipeline x.mp4.json …] [--cost-shared]  → renames/moves the file to creatives/<batch>/<name>.<ext>, status draft
+ *        (--cost-shared: a language/hook twin of an already-paid generation — records the pipeline, counts $0)
  *   node scripts/creatives.mjs set <name> status=approved|rejected|live [notes=…]
  */
 
@@ -107,9 +108,9 @@ function add() {
   if (existsSync(sidecar) && !pipeline.length) pipeline.push(JSON.parse(readFileSync(sidecar, 'utf8')));
   renameSync(file, target);
   const copy = flag('--copy') ? Object.fromEntries(flag('--copy').split(',').map((id) => [id[0] === 'h' ? 'headline' : id[0] === 'p' ? 'primary' : 'description', id])) : null;
-  const entry = {name, file: `${name}.${ext}`, type, format: fields.format, lang: fields.lang, concept: fields.concept, hook: fields.hook, hook_text: flag('--hook-text', ''), angle, source: fields.source, v: fields.v,
+  const entry = {name, file: `${name}.${ext}`, type, format: fields.format, lang: fields.lang, concept: fields.concept, hook: fields.hook, hook_text: flag('--hook-text', ''), angle, job: flag('--job', null), source: fields.source, v: fields.v,
     look: look ? {place: look.place, tone: look.tone, avoid: look.avoid, baked_text: look.baked_text, risks: look.risks} : null,
-    status: 'draft', copy, pipeline, cost_usd: pipeline.reduce((s, p) => s + (Number(p.cost_usd) || 0), 0), created: new Date().toISOString(), notes: ''};
+    status: 'draft', copy, pipeline, cost_usd: argv.includes('--cost-shared') ? 0 : pipeline.reduce((s, p) => s + (Number(p.cost_usd) || 0), 0), cost_shared: argv.includes('--cost-shared') || undefined, created: new Date().toISOString(), notes: ''};
   m.creatives.push(entry);
   saveManifest(b, m);
   console.log(`${b}/${entry.file} (status draft)`);

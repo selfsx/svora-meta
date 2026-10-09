@@ -33,6 +33,7 @@ overlays:
   o06: "HYBRID <b>190 ZŁ</b>"
   o07: "<b>WOLA</b> · WARSAW"
   o08: "SHOW THE <b>SLIDE</b>. WE DO IT"
+  o09: "WHICH ONE: <b>1, 2 OR 3</b>?"
 ctas:
   c01: "Book online"
   c02: "See more"

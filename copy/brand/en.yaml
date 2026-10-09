@@ -33,6 +33,12 @@ overlays:
   o06: "<b>FIVE</b> WOMEN. ONE STUDIO"
   o07: "JANA KAZIMIERZA <b>25B</b>"
   o08: "BOOK ONLINE <b>IN A MINUTE</b>"
+  o09: "WALK IN. SIT DOWN. <b>BREATHE</b>."
+  o10: "COFFEE, MUSIC, <b>YOUR</b> PEOPLE"
+  o11: "Hybrid manicure <b>190 zł</b>"
+  o12: "<b>5.0</b> · 117 reviews"
+  o13: "Wola · Jana Kazimierza <b>25B</b>"
+  o14: "NAILS DONE. <b>MOOD</b> DONE."
 ctas:
   c01: "Book online"
   c02: "Meet the team"

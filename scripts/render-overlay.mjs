@@ -45,7 +45,7 @@ const vars = {
   fontsDir: pathToFileURL(rel('brand', 'fonts')).href,
   logosDir: pathToFileURL(rel('brand', 'logos')).href,
   image: o.image ? pathToFileURL(path.resolve(o.image)).href : '',
-  w: fmt.w, h: fmt.h, format: o.format, lang: 'pl', hook: '', sub: '', cta: '', meta: '', price: '', badge: '',
+  w: fmt.w, h: fmt.h, format: o.format, lang: 'pl', hook: '', sub: '', cta: '', meta: '', price: '', badge: '', kicker: '', lines: '',
   // Layout defaults per format (templates share creatives/templates/_type.css). 9:16 keeps everything
   // inside the Meta safe zone: logo at 15%, group `top` starts under it, group `bottom` ends above 35%.
   place: 'top', tone: 'dark',
@@ -56,6 +56,8 @@ const vars = {
   photo_pos: 'center',
   // static-pick: the three-tile row (between the hook group and the CTA group)
   pick_top: v916 ? '38%' : '30%', pick_h: v916 ? '16%' : '46%',
+  // static-card: text-led cards. bg=cream (default) or black; the group sits `bottom` under an optional photo tile
+  bg: 'cream', tile_h: v916 ? '21%' : '30%', line_size: v916 ? 44 : 38,
   ...o.vars,
 };
 for (const k of ['image2', 'image3']) if (vars[k] && !vars[k].startsWith('file:')) vars[k] = pathToFileURL(path.resolve(vars[k])).href;
@@ -63,6 +65,15 @@ if (vars.price && !vars.meta) vars.meta = vars.price;  // older callers passed -
 vars.badge_display = vars.badge ? 'inline-block' : 'none';
 vars.sub_display = vars.sub ? 'inline-block' : 'none';
 vars.hook_display = vars.hook ? 'block' : 'none';
+vars.cta_display = vars.cta ? 'inline-flex' : 'none';
+vars.logo_display = vars.logo === 'none' ? 'none' : 'block';
+vars.card_bg = vars.bg === 'black' ? b.colors.black : b.colors.cream;
+vars.card_fg = vars.bg === 'black' ? b.colors.cream : b.colors.black;
+vars.card_logo = vars.bg === 'black' ? 'light' : 'black';
+vars.card_rule = vars.bg === 'black' ? 'rgba(247,241,235,.25)' : 'rgba(26,26,26,.15)';
+vars.tile_display = vars.image ? 'block' : 'none';
+vars.kicker_display = vars.kicker ? 'block' : 'none';
+vars.lines_display = vars.lines ? 'block' : 'none';
 vars.meta_display = vars.meta ? 'inline-block' : 'none';
 mkdirSync(path.dirname(o.out), {recursive: true});
 // The shared stylesheet is itself a template: substitute, write beside the page, link it.

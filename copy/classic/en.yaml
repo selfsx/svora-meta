@@ -33,6 +33,11 @@ overlays:
   o06: "WE SPEAK <b>ENGLISH</b>"
   o07: "<b>WOLA</b> · WARSAW"
   o08: "BOOK ONLINE <b>IN A MINUTE</b>"
+  o09: "EVERY NAIL <b>BY HAND</b>"
+  o10: "THE PROCESS <b>SHOWS</b>"
+  o11: "PROCESS → <b>RESULT</b>"
+  o12: "NUDE, FRENCH OR <b>GLAZED</b>?"
+  o13: "AUTUMN IN <b>BURGUNDY</b>"
 ctas:
   c01: "Book online"
   c02: "Check slots"
