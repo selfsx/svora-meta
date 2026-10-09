@@ -65,3 +65,11 @@ Edited in place. Move an item to the journal when it is done.
   code from a link, so this is the only place between the ad and the checkout where the code can be repeated.
 - **SVME20 in Fresha**: the owner checks the promotion is valid for online bookings, all services, all clients (not
   "new clients only"), no end date before the campaigns end, and reads its redemptions weekly into `/report`.
+- **Multi-language ads (DLO) test, week 2**: the operator asked why 001/002 are split by language instead of one ad set
+  with Meta's "Languages" (translations per ad). Answer on 2026-10-09: our creatives are language-specific videos (hook
+  and outro cards), so the feature needs per-locale media via `asset_feed_spec` + `asset_customization_rules` (locales),
+  which `launch.mjs` does not build yet; and two ABO sets keep the budget split and the CPA readable per language for
+  the first test. Build it as campaign 003: one ad set, CBO, 30 ads with locale rules, run against 001+002 for 7 days.
+- **Direct-to-Fresha destination test, week 3** (playbook §6): a copy of 002 landing on the Fresha venue page (not
+  `/booking`, so InitiateCheckout still means a click on "Book", not the landing itself); expect lower CPC and a smaller
+  site retargeting pool. The site stays the default because Fresha has no UA page and no place to explain SVME20.

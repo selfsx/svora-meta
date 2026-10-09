@@ -225,3 +225,11 @@
   `frequently_in` to location_types). Instagram identity 17841402079737028 accepted on every creative.
 - Built PAUSED: 001 campaign 120254683053800007 / ad set 120254683057860007 / 15 ads; 002 campaign
   120254683096960007 / ad set 120254683097140007 / 15 ads. `launch.mjs verify` matches both specs. Nothing active.
+- Operator questions before the start: (1) why no DLO ("Languages" toggle) — answered: language-specific media needs
+  asset_customization_rules the script lacks; split ABO sets keep CPA readable per language; DLO = campaign 003 test
+  (backlog). (2) why svora.place and not the Fresha booking URL — answered: landing on /booking would fire
+  InitiateCheckout on arrival (the optimisation event would degrade to a click), Fresha has no UA page and nowhere
+  to show the code; direct-to-Fresha venue page = week-3 test (backlog).
+- Operator: "if everything is ok after these comments then we're good to start these two" → GO #2 for both.
+  **ACTIVATED 2026-10-09 evening:** 001 (120254683053800007, 150 PLN/day) and 002 (120254683096960007, 100 PLN/day).
+  First checks: CTR < 0.5 % kill rule Sun 10-12; 7-day read Thu 10-16; first /report Mon 10-19.

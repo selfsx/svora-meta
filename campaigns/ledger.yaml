@@ -60,3 +60,61 @@ entries:
   budget: "abo: broad_wola6km_pl_mix_cr15_2026-10-09 100"
   optgoal: OFFSITE_CONVERSIONS INITIATED_CHECKOUT
   destination: site
+
+- at: 2026-10-09T19:50:50.744Z
+  event: activated
+  spec: 001-prospect-uaru
+  campaign:
+    id: "120254683053800007"
+    name: 001_test_abo_ic_wola6km_uaru_mix_2026-10-09
+  adsets:
+    broad_wola6km_uaru_mix_cr15_2026-10-09:
+      id: "120254683057860007"
+      ads:
+        crazy_reveal_DbT_EsKDTDo_vd_n085_v2_9x16_ua: "120254683063890007"
+        mix_social_DbMR6_ttcnF_vd_n109_v2_9x16_ua: "120254683067110007"
+        classic_process_DZKRjmJNiHR_vd_n097_v2_9x16_ua: "120254683069440007"
+        crazy_reveal_legacy-img4864_vd_n157_v1_9x16_ua: "120254683072150007"
+        art_art-closeup_legacy-img4883_vd_n161_v1_9x16_ua: "120254683078020007"
+        mix_social_legacy-img5027_vd_n165_v1_9x16_ua: "120254683082500007"
+        art_art-closeup_legacy-img4831_st_n170_v1_9x16_ua: "120254683083380007"
+        crazy_reveal_legacy-img4835_st_n178_v1_9x16_ua: "120254683084880007"
+        brand_found_legacy-img4881_st_n185_v1_9x16_ua: "120254683086320007"
+        crazy_price_DZTCpxHDUJE_vd_n125_v2_9x16_ua: "120254683090590007"
+        brand_pov_DdnxYOft2B2_vd_n105_v2_9x16_ua: "120254683094200007"
+        brand_social_DZqf93TDGOU_st_n114_v2_9x16_ua: "120254683094520007"
+        brand_social_gen_st_n107_v2_9x16_ua: "120254683095070007"
+        brand_price_DdJn2Wrsad-_st_n130_v2_9x16_ua: "120254683095750007"
+        classic_reveal_DPZE72BjF50_st_n134_v2_9x16_ua: "120254683096590007"
+  budget: "abo: broad_wola6km_uaru_mix_cr15_2026-10-09 150"
+  optgoal: OFFSITE_CONVERSIONS INITIATED_CHECKOUT
+  destination: site-ua
+
+- at: 2026-10-09T19:51:19.025Z
+  event: activated
+  spec: 002-prospect-pl
+  campaign:
+    id: "120254683096960007"
+    name: 002_test_abo_ic_wola6km_pl_mix_2026-10-09
+  adsets:
+    broad_wola6km_pl_mix_cr15_2026-10-09:
+      id: "120254683097140007"
+      ads:
+        art_art-closeup_Ddv-7k6DQJg_vd_n090_v2_9x16_pl: "120254683099050007"
+        mix_social_DbMR6_ttcnF_vd_n110_v2_9x16_pl: "120254683102300007"
+        classic_process_DZKRjmJNiHR_vd_n098_v2_9x16_pl: "120254683105500007"
+        crazy_reveal_legacy-img4864_vd_n158_v1_9x16_pl: "120254683109730007"
+        art_art-closeup_legacy-img4883_vd_n162_v1_9x16_pl: "120254683115790007"
+        mix_social_legacy-img5028_vd_n166_v1_9x16_pl: "120254683124030007"
+        art_art-closeup_legacy-img4831_st_n172_v1_9x16_pl: "120254683126390007"
+        crazy_reveal_legacy-img4835_st_n180_v1_9x16_pl: "120254683127330007"
+        brand_found_legacy-img4881_st_n186_v1_9x16_pl: "120254683129160007"
+        crazy_price_DZTCpxHDUJE_vd_n126_v2_9x16_pl: "120254683133740007"
+        brand_pov_DdnxYOft2B2_vd_n106_v2_9x16_pl: "120254683136190007"
+        brand_social_DZqf93TDGOU_st_n116_v2_9x16_pl: "120254683137690007"
+        brand_social_gen_st_n109_v2_9x16_pl: "120254683138270007"
+        classic_reveal_DPZE72BjF50_st_n136_v2_9x16_pl: "120254683139460007"
+        classic_found_C4dzm1rLo84_st_n100_v2_9x16_pl: "120254683141060007"
+  budget: "abo: broad_wola6km_pl_mix_cr15_2026-10-09 100"
+  optgoal: OFFSITE_CONVERSIONS INITIATED_CHECKOUT
+  destination: site
