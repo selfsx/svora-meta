@@ -8,6 +8,9 @@
      Vars: hook (with <b>accent</b>), sub, cta, meta, place=top|middle|bottom (from describe-image), tone=dark|light, badge. */
   html, body { margin: 0; width: {{w}}px; height: {{h}}px; background: transparent; overflow: hidden; }
   .stage { position: relative; width: {{w}}px; height: {{h}}px; }
+  /* the offer (offer_pct → .tag, offer_code → .chip) rides with the CTA, in the same free band: tag left, chip over the pill */
+  .stage .tag { font-size: {{tag_cta_size}}px; }
+  .stage .chip { font-size: {{chip_cta_size}}px; }
 </style>
 </head>
 <body>
@@ -19,8 +22,14 @@
     <div class="sub" style="display:{{sub_display}}">{{sub}}</div>
   </div>
   <div class="ctagroup {{align}}">
-    <div class="cta" style="display:{{cta_display}}">{{cta}}</div>
-    <div class="meta" style="display:{{meta_display}}">{{meta}}</div>
+    <div class="offerrow">
+      <div class="tag">{{offer_pct}}</div>
+      <div class="offercol">
+        <div class="chip"><span class="lbl">{{chip_label}}</span><b>{{chip_code}}</b></div>
+        <div class="cta" style="display:{{cta_display}}">{{cta}}</div>
+        <div class="meta" style="display:{{meta_display}}">{{meta}}</div>
+      </div>
+    </div>
   </div>
 </div>
 </body>

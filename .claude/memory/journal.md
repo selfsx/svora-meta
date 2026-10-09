@@ -150,3 +150,12 @@
   and to the v2 creatives. `copy-lint.mjs` accepts with-code prices. A redo is now v+1 of the same n (`--n`).
 - The 20 picked ads were regenerated as v2 (28 files incl. 4:5 twins); v1 stays until the operator checks v2.
   The other 107 approved files still carry no code — redo after the operator's OK on the v2 layout.
+
+## 2026-10-09 — SVME20 offer redesign (operator rejection of the text-line presentation)
+- Operator rejected the plain "-20% з кодом SVME20" line / the "380 → 304 zł" hook: not catchy, barely visible under the CTA, an arrow
+  is not a price cut; and "5.0 · 117 відгуків" must carry star emoji.
+- Built: sale tag (-20%, orange, -6°), coupon chip (dashed, "КОД SVME20"), price pair (struck old, big orange new) in
+  `creatives/templates/_type.css`; render-overlay vars `offer_pct/offer_code/price_old/price_new`; wave defaults `offer_pct/offer_code`;
+  outro card, body CTA row (free band only), static-card, static-pick, S7/S8/V13 price angle. Ratings: new copy ids (brand h09/d05/p09,
+  classic ua/ru d05, overlay ids via copy-sync); copy-lint counts a star run as one emoji.
+- The 28 v2 drafts of 2026-10-b03-wavea were deleted and regenerated as v2 (no model calls, $0). Review pages rebuilt.

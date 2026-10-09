@@ -10,6 +10,7 @@ headlines:
   h06: "Book online in a minute"
   h07: "Your nail studio in Warsaw"
   h08: "Ukrainian-founded, Warsaw-based"
+  h09: "⭐⭐⭐⭐⭐ 5.0 on Fresha · 117 reviews"
 primaries:
   p01: "Came for a hybrid, stayed for brows, now pedicure too. Five women, one place, and they speak English. SVORA NAILS, Wola 🧡"
   p02: "Found a studio where I can explain what I want in English and actually get it. SVORA, Jana Kazimierza 25B, Warsaw"
@@ -19,11 +20,13 @@ primaries:
   p06: "Maryna does hybrids, Karina 3D forms, Veronika pedicures, Ksenia brows. Mariana runs the show. Meet them on Wola 🧡"
   p07: "Hybrid 190 zł, pedicure from 175 zł, brows from 70 zł. Wola, Jana Kazimierza 25B, daily 9:00–21:00. Book on Fresha"
   p08: "The team speaks English, Polish, Ukrainian and Russian. Book online on Fresha, no phone calls. SVORA NAILS, Wola, Warsaw 💅"
+  p09: "⭐⭐⭐⭐⭐ 5.0 on Fresha from 117 reviews. One of them is mine. Mariana and the girls, thank you. SVORA NAILS, Wola 🤍"
 descriptions:
   d01: "Jana Kazimierza 25B, Wola"
   d02: "5.0 on Fresha, 117 reviews"
   d03: "Open daily 9:00–21:00"
   d04: "Book online on Fresha"
+  d05: "⭐⭐⭐⭐⭐ 5.0 · 117 reviews"
 overlays:
   o01: "SVORA NAILS · <b>WOLA</b>"
   o02: "NUDE & <b>CRAZY</b>"
@@ -40,6 +43,8 @@ overlays:
   o13: "Wola · Jana Kazimierza <b>25B</b>"
   o14: "NAILS DONE. <b>MOOD</b> DONE."
   o15: "<b>20% off</b> everything"
+  o16: "On <b>everything</b>"
+  o17: "★★★★★ <b>5.0</b> · 117 reviews"
 ctas:
   c01: "Book online"
   c02: "Meet the team"

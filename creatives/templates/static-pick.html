@@ -15,6 +15,8 @@
   .hook-wrap { text-align: center; }
   .stage .hook { background: {{color_black}}; }
   .cta-stack { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .stage .tag { font-size: {{tag_cta_size}}px; }
+  .stage .chip { font-size: {{chip_cta_size}}px; background: transparent; color: {{color_black}}; border-color: {{color_black}}; }
   .logo { right: auto; left: 50%; transform: translateX(-50%); filter: none; }
 </style>
 </head>
@@ -29,7 +31,13 @@
       <div class="tile" style="background-image:url('{{image3}}')"><div class="n">3</div></div>
     </div>
     <div class="cta-stack">
-      <div class="cta" style="display:{{cta_display}}">{{cta}}</div>
+      <div class="offerrow">
+        <div class="tag">{{offer_pct}}</div>
+        <div class="offercol">
+          <div class="chip"><span class="lbl">{{chip_label}}</span><b>{{chip_code}}</b></div>
+          <div class="cta" style="display:{{cta_display}}">{{cta}}</div>
+        </div>
+      </div>
       <div class="meta" style="display:{{meta_display}}">{{meta}}</div>
     </div>
   </div>

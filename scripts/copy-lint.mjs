@@ -48,7 +48,7 @@ for (const f of files) {
       const plain = text.replace(/<\/?b>/g, '');
       const len = [...plain].length; // code points, as Meta counts (an emoji is one character)
       if (len > LIMITS[sec]) warn(f, `${sec}.${id}: ${len} chars > ${LIMITS[sec]}`);
-      const e = (plain.match(emoji) || []).length;
+      const e = (plain.replace(/(?:[⭐★]\uFE0F?){2,}/gu, '⭐').match(emoji) || []).length;  // a run of rating stars (⭐⭐⭐⭐⭐ / ★★★★★) is one emoji
       if (sec === 'primaries' && e > 2) warn(f, `${sec}.${id}: ${e} emoji > 2`);
       if (sec !== 'primaries' && e > 1) warn(f, `${sec}.${id}: ${e} emoji > 1`);
       const words = plain.split(/\s+/).filter((w) => /[\p{L}\p{N}]/u.test(w)).length;

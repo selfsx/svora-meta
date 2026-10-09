@@ -79,6 +79,31 @@ vars.tile_display = vars.image ? 'block' : 'none';
 vars.kicker_display = vars.kicker ? 'block' : 'none';
 vars.lines_display = vars.lines ? 'block' : 'none';
 vars.meta_display = vars.meta ? 'inline-block' : 'none';
+// Promo elements (the SVME20 offer, brand.yaml → offers.meta-20). Each shows only when its var is set:
+//   offer_pct   "-20%"          → .tag   sale tag, orange, rotated -6°, the dominant element
+//   offer_code  "КОД SVME20"    → .chip  coupon chip, dashed border: label words + the code (last word) in bold
+//   price_old / price_new       → .pricepair  "380 zł" struck through, then "304 zł" big orange — never an arrow
+// Sizes follow the template's own scale: cards (static-card) key off the hook (tag ≥ 1.3× hook), the CTA stack
+// (video body, static-pick) off the CTA pill (tag ≈ 1.5× pill height). `promo_display` shows the card's promo row at all.
+const num = (x, d) => (Number.isFinite(Number(x)) && Number(x) > 0 ? Number(x) : d);
+vars.tag_size ??= Math.round(num(vars.hook_size, 84) * 1.4);
+vars.chip_size ??= Math.round(num(vars.hook_size, 84) * 0.56);
+vars.price_size ??= Math.round(num(vars.hook_size, 84) * 0.95);
+vars.tag_cta_size ??= Math.round(num(vars.cta_size, 48) * 2.5);
+vars.chip_cta_size ??= Math.round(num(vars.cta_size, 48) * 0.72);
+if (o.template === 'static-pick' && o.vars.offer_pct && !o.vars.pick_h) vars.pick_h = v916 ? '19%' : '29%';  // room for the tag row under the tiles
+vars.tag_display = vars.offer_pct ? 'inline-flex' : 'none';
+vars.chip_display = vars.offer_code ? 'inline-flex' : 'none';
+vars.price_display = vars.price_new ? 'flex' : 'none';
+vars.promo_display = vars.offer_pct || vars.offer_code || vars.price_new ? 'flex' : 'none';
+{
+  const words = String(vars.offer_code || '').trim().split(/\s+/);
+  vars.chip_code = words.pop() || '';
+  vars.chip_label = words.join(' ');
+  vars.chip_label_display = vars.chip_label ? 'inline' : 'none';
+}
+// ★★★★★ (ratings copy) renders as brand-orange stars wherever it appears in text
+for (const k of ['hook', 'kicker', 'sub', 'lines', 'meta']) if (vars[k]) vars[k] = String(vars[k]).replace(/(★+)/g, '<span class="stars">$1</span>');
 mkdirSync(path.dirname(o.out), {recursive: true});
 // The shared stylesheet is itself a template: substitute, write beside the page, link it.
 const cssSrc = readFileSync(rel('creatives', 'templates', '_type.css'), 'utf8').replace(/\{\{(\w+)\}\}/g, (_, k) => (vars[k] ?? ''));

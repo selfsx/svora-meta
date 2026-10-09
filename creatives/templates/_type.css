@@ -40,3 +40,36 @@
 
 .logo { position: absolute; right: 56px; top: {{logo_top}}; width: 190px; filter: drop-shadow(0 2px 12px rgba(0,0,0,.55)); }
 .badge { position: absolute; left: 56px; top: {{logo_top}}; display: {{badge_display}}; background: {{color_orange}}; color: {{color_black}}; font-weight: 800; font-size: 36px; padding: 10px 24px; border-radius: 999px; text-transform: uppercase; }
+
+/* ── Promo elements (render-overlay.mjs sets the vars; each element hides itself when its var is empty) ──
+   .tag       sale tag: the discount rate, orange, -6°, punched eyelet + stitched edge. Antonio is Latin display (digits/%).
+   .chip      coupon chip: "type this" — dashed 3px border, uppercase, letter-spaced; label words + the code.
+   .pricepair old price struck through (muted, 60 %) then the new price big in orange. Never an arrow.
+   .offerrow  tag + a column (chip over CTA) for the video body and the pick card: same visual weight as the CTA.
+   .promo     the card version: tag + a column (price pair over chip). */
+.tag {
+  display: {{tag_display}}; position: relative; flex: 0 0 auto; align-items: center; justify-content: center;
+  font-family: 'Antonio', 'Roboto Condensed', sans-serif; font-weight: 700; font-size: {{tag_size}}px; line-height: 1; letter-spacing: .01em;
+  background: {{color_orange}}; color: {{color_black}}; padding: .17em .32em .17em .66em; border-radius: .2em;
+  transform: rotate(-6deg); box-shadow: 0 10px 26px rgba(0,0,0,.38); outline: 3px dashed rgba(26,26,26,.38); outline-offset: -.1em;
+}
+.tag::before { content: ''; position: absolute; left: .15em; top: 50%; width: .15em; height: .15em; margin-top: -.075em; border-radius: 50%; background: {{color_black}}; }
+.chip {
+  display: {{chip_display}}; flex: 0 0 auto; align-items: baseline; gap: .55em; width: fit-content;
+  font-family: 'Roboto Condensed', sans-serif; font-size: {{chip_size}}px; font-weight: 800; line-height: 1; text-transform: uppercase; letter-spacing: .14em; white-space: nowrap;
+  color: {{color_cream}}; background: rgba(26,26,26,.92); border: 3px dashed {{color_cream}}; border-radius: 14px; padding: .4em .7em .4em .8em;
+}
+.chip .lbl { display: {{chip_label_display}}; font-weight: 600; font-size: .8em; opacity: .85; }
+.chip b { font-weight: 900; font-size: 1.12em; }
+.pricepair { display: {{price_display}}; align-items: baseline; gap: .3em; font-size: {{price_size}}px; font-weight: 800; line-height: 1; white-space: nowrap; }
+.pricepair s { font-size: .6em; font-weight: 600; opacity: .62; text-decoration: line-through; text-decoration-thickness: .1em; }
+.pricepair b { color: {{color_orange}}; font-weight: 800; }
+.offerrow { display: flex; align-items: center; gap: 30px; }
+.offercol { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+.ctagroup.center .offerrow { justify-content: center; }
+.promo { display: {{promo_display}}; flex-wrap: wrap; align-items: center; gap: 40px; padding: 6px 0 6px 6px; }
+.promo .pcol { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+.center .promo { justify-content: center; }
+.center .promo .pcol { align-items: center; }
+.stars { color: {{color_orange}}; letter-spacing: .05em; font-weight: 400; }
+.hook .stars { display: block; font-size: .85em; letter-spacing: .1em; line-height: 1.15; }

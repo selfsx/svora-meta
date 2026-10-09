@@ -26,6 +26,9 @@ Rules (from `settings/brand.yaml` and `research/creative-playbook.md` §5):
   "best in Warsaw", no invented discounts or codes. A price in copy must equal the price list — or a `prices_with_code`
   value of a confirmed offer, written next to the list price and the code ("190 → 152 zł z kodem SVME20"). The only
   confirmed code is SVME20 (`offers.meta-20`, -20% on every service, typed at the Fresha checkout).
+- A rating is always written with its stars: "⭐⭐⭐⭐⭐ 5.0 · 117 відгуків" in Meta text (a run of stars counts as one
+  emoji), "★★★★★ <b>5.0</b> · 117 …" in overlays (rendered as orange glyphs). The star-less ids h03/h07/h08/d02/d04/o03/o12/o14/p03
+  are superseded by the `h09`/`d05`/`p09` and overlay ids added 2026-10-09; do not use them in new ads.
 - No personal-attribute phrasing ("you have ugly nails", "are you Ukrainian?") — Meta policy. Say "for Ukrainians in
   Warsaw" about the studio, never about the reader.
 - UA is the default Cyrillic language; RU copy is for a clearly separate RU ad set and stays neutral in tone.

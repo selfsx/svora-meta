@@ -71,14 +71,23 @@ maximum over time and returns the emptiest band for a block of the CTA's height,
 `wave.mjs` feeds that band to the overlay as `cta_top`; when no band scores under 60 (hands fill the frame) the body
 stays clean and the CTA appears only on the outro card. Every intro-style video gets that outro.
 
-**The offer slot** (since 2026-10-09, `settings/brand.yaml → offers.meta-20`, code SVME20): a wave file's
-`defaults.offer` is the per-language offer line ("-20% з кодом <b>SVME20</b>"). `wave.mjs` puts it where the viewer
-reads it last: on videos the outro card (2 s) closes on it — kicker = the service line, hook = the offer, CTA — and the
-body CTA's meta line carries it when the frame has a free band; on `static-card` it is the `lines` row under the hook,
-on `static-pick` the meta line. `vars.offer_slot = lines|meta|kicker|off` per job or per format overrides that
-(`off` when the hook already is the offer: the price card "190 → 152 zł", the menu card). Fresha cannot prefill a
-code from a link, so the code has to be legible on the creative and repeated in the primary text (`copy/mix/*.yaml`
-h09/h10, p09/p10, d05).
+**The offer slot** (since 2026-10-09, `settings/brand.yaml → offers.meta-20`, code SVME20) is structured, never a plain
+text line (the operator rejected "-20% з кодом SVME20" as a small caption: "not catchy, barely seen"). A wave file's
+`defaults.offer_pct` ("-20%") and `defaults.offer_code` ("КОД SVME20" / "KOD …" / "CODE …", the last word is the code)
+render as retail cues from `creatives/templates/_type.css`: the **sale tag** `.tag` (orange, black Antonio digits,
+rotated -6°, eyelet and stitched edge; ≥ 1.3× the hook on cards, ≈ 1.5× the CTA pill in a CTA stack), the **coupon chip**
+`.chip` (dashed 3 px border, uppercase, letter-spaced, "type this") and the **price pair** `.pricepair` (old price
+struck through at 60 %, new price big in orange, never an arrow). `render-overlay.mjs` vars: `offer_pct`, `offer_code`,
+`price_old`, `price_new` (+ `tag_size`, `chip_size`, `price_size`); each element hides when its var is empty. `wave.mjs`
+derives the pair from a sub/kicker ending "190 zł" (label + 190 → 152 zł, with-code value from
+`prices_with_code`, never computed in copy); price jobs set `price_old`/`price_new` explicitly (V13, S7). Where it
+lands: video **outro card** (2 s: service label, price pair, tag, chip, CTA); video **body**: tag + chip stacked beside
+the CTA pill, only inside the measured free band (a busy frame stays clean, the outro carries the offer);
+**static-card**: tag + price pair + chip under the hook (menu card S8: struck old → new rows); **static-pick**: tag +
+chip with the CTA. A job/lang opts out with `vars.offer: off` or `offer_pct: ""`. Ratings copy always carries the stars:
+"★★★★★ 5.0 · 117 відгуків" (orange glyphs in overlays, ⭐⭐⭐⭐⭐ in Meta text; a run of stars counts as one emoji in
+copy-lint). Fresha cannot prefill a code from a link, so the code has to be legible on the creative and repeated in the
+primary text (`copy/mix/*.yaml` h09/h10, p09/p10, d05).
 
 Every variant is cheap after step 3: one clip × 4 languages × 2 hooks = 8 creatives for one video job.
 

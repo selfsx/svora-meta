@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{{typeCss}}">
 <style>
   /* Text-led card on a brand background (menu · location · proof · meme): kicker, hook, lines (HTML), CTA, meta.
-     Optional photo tile (image) at the top. Vars: bg=cream|black (default cream), kicker, hook, lines, cta, meta. */
+     Optional photo tile (image) at the top. Vars: bg=cream|black (default cream), kicker, hook, lines, cta, meta, offer_pct, offer_code, price_old, price_new. */
   html, body { margin: 0; width: {{w}}px; height: {{h}}px; overflow: hidden; }
   .stage { position: relative; width: {{w}}px; height: {{h}}px; background: {{card_bg}}; color: {{card_fg}}; }
   .tile { position: absolute; left: 56px; right: 56px; top: {{logo_top}}; height: {{tile_h}}; border-radius: 22px; background: url('{{image}}') {{tile_pos}} / cover no-repeat; display: {{tile_display}}; box-shadow: 0 14px 30px rgba(0,0,0,.25); }
@@ -16,6 +16,10 @@
   .lines { font-size: {{line_size}}px; font-weight: 500; line-height: 1.35; color: {{card_fg}}; max-width: 100%; display: {{lines_display}}; }
   .lines b { color: {{color_orange}}; font-weight: 800; }
   .lines .row { display: flex; justify-content: space-between; gap: 24px; border-bottom: 2px solid {{card_rule}}; padding: 14px 0; }
+  .stage .chip { background: transparent; color: {{card_fg}}; border-color: {{card_fg}}; }
+  .stage .pricepair { color: {{card_fg}}; }
+  .lines .pp { display: flex; align-items: baseline; gap: .4em; white-space: nowrap; }
+  .lines .pp s { font-weight: 600; font-size: .78em; opacity: .6; text-decoration: line-through; text-decoration-thickness: .1em; }
   .stage .meta { background: transparent; color: {{card_fg}}; opacity: .75; padding: 0; }
 </style>
 </head>
@@ -27,6 +31,13 @@
     <div class="kicker">{{kicker}}</div>
     <div class="hook-wrap" style="display:{{hook_display}}"><span class="hook">{{hook}}</span></div>
     <div class="lines">{{lines}}</div>
+    <div class="promo">
+      <div class="tag">{{offer_pct}}</div>
+      <div class="pcol">
+        <div class="pricepair"><s>{{price_old}}</s><b>{{price_new}}</b></div>
+        <div class="chip"><span class="lbl">{{chip_label}}</span><b>{{chip_code}}</b></div>
+      </div>
+    </div>
     <div class="cta" style="display:{{cta_display}}">{{cta}}</div>
     <div class="meta" style="display:{{meta_display}}">{{meta}}</div>
   </div>

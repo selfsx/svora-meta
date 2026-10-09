@@ -35,6 +35,7 @@ overlays:
   o08: "IMPOSSIBLE <b>NOT</b> TO NOTICE"
   o09: "WHICH IS <b>YOU</b>: 1, 2, 3?"
   o10: "CRAZY SHAPE 380 → <b>304 ZŁ</b>"
+  o11: "CRAZY <b>SHAPE</b>"
 ctas:
   c01: "Book online"
   c02: "I want these"

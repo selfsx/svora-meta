@@ -10,6 +10,7 @@ headlines:
   h06: "Rezerwacja online w minutę"
   h07: "Twój salon na Woli"
   h08: "Ukraińskie studio na Woli"
+  h09: "⭐⭐⭐⭐⭐ 5.0 na Fresha · 117 opinii"
 primaries:
   p01: "Przyszłam po hybrydę, zostałam na brwi, teraz jeszcze pedicure. Pięć dziewczyn, jedno miejsce, Wola. SVORA NAILS 🧡"
   p02: "Znalazłam salon, gdzie można pogadać po polsku albo po ukraińsku i nikt nie robi z tego sprawy. SVORA, Jana Kazimierza 25B"
@@ -19,11 +20,13 @@ primaries:
   p06: "Maryna robi hybrydę, Karina formy 3D, Veronika pedicure, Ksenia brwi. Mariana pilnuje całości. Poznaj je na Woli 🧡"
   p07: "Hybryda 190 zł, pedicure od 175 zł, brwi od 70 zł. Wola, Jana Kazimierza 25B, codziennie 9:00–21:00. Rezerwuj na Fresha"
   p08: "Zespół mówi po polsku, ukraińsku, angielsku i rosyjsku. Rezerwacja online na Fresha, bez dzwonienia. SVORA NAILS, Wola 💅"
+  p09: "⭐⭐⭐⭐⭐ 5.0 na Fresha ze 117 opinii. Jedna z nich jest moja. Mariana i dziewczyny, dziękuję. SVORA NAILS, Wola 🤍"
 descriptions:
   d01: "Jana Kazimierza 25B, Wola"
   d02: "5.0 na Fresha, 117 opinii"
   d03: "Codziennie 9:00–21:00"
   d04: "Rezerwacja online na Fresha"
+  d05: "⭐⭐⭐⭐⭐ 5.0 · 117 opinii"
 overlays:
   o01: "SVORA NAILS · <b>WOLA</b>"
   o02: "NUDE & <b>CRAZY</b>"
@@ -40,6 +43,8 @@ overlays:
   o13: "Wola · Jana Kazimierza <b>25B</b>"
   o14: "Paznokcie zrobione. <b>Humor</b> też."
   o15: "<b>-20%</b> na wszystko"
+  o16: "Na <b>wszystko</b>"
+  o17: "★★★★★ <b>5.0</b> · 117 opinii"
 ctas:
   c01: "Zarezerwuj online"
   c02: "Poznaj zespół"

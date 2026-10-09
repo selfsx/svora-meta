@@ -4,14 +4,20 @@
  * way to build, localise and regenerate creatives. One job = one master; the runner expands it to
  * language × format, renders, finishes and registers every file with `creatives.mjs add --job`.
  *
- *   node scripts/wave.mjs creatives/waves/2026-10-A.yaml [--only V12,S8] [--langs ua,pl] [--redo] [--dry]
+ *   node scripts/wave.mjs creatives/waves/2026-10-A.yaml [--only V12,S8] [--langs ua,pl] [--redo] [--dry] [--no-register]
  *
  * Job file:
  *   batch: 2026-10-b03-waveA
- *   defaults: { cta: {ua: "@c01", …}, meta: {…}, offer: {…} }   # per-language fallbacks for any text var
- *   offer: the confirmed promo line (settings/brand.yaml → offers). Where it lands: video → the outro card's hook
- *   (the body CTA's meta line too, when the frame has a free band); static-card → `lines` under the hook;
- *   static-pick → the meta line. Per job/format: vars.offer_slot = lines|meta|kicker|off (off when the hook IS the offer).
+ *   defaults: { cta: {ua: "@c01", …}, meta: {…}, offer_pct: {…}, offer_code: {…} }   # per-language fallbacks for any text var
+ *   The offer (settings/brand.yaml → offers.meta-20, code SVME20) is structured, not a text line:
+ *     offer_pct  "-20%"          → the sale tag (orange, -6°, dominant)
+ *     offer_code "КОД SVME20"    → the coupon chip (dashed border; the last word is the code)
+ *     price_old / price_new      → the struck old price + big new price. Set explicitly per job/lang (price jobs: V13, S7)
+ *                                  or derived: a `sub`/`kicker` ending "190 zł" becomes the label "…" + the pair 190 → 152 zł,
+ *                                  the with-code value read from brand.yaml offers.meta-20.prices_with_code (never computed here).
+ *   Where it lands: video outro card (service label + price pair, tag, chip, CTA) · video body (tag + chip beside the CTA, only
+ *   inside the measured free band — a busy frame keeps the body clean) · static-card (tag + price pair + chip under the hook)
+ *   · static-pick (tag + chip with the CTA). A job/lang switches it off with vars.offer: off, or offer_pct: "".
  *   jobs:
  *     - id: V1   type: video   angle: hero   concept: crazy   hook: reveal   source: DbT_EsKDTDo
  *       clip: creatives/_work/w1/DbT_EsKDTDo-clip.mp4   [cuts: "0:13.5,40.5:50.3"] [mute: true] [overlay_from: 0.3]
@@ -27,21 +33,31 @@ import {spawnSync} from 'node:child_process';
 import path from 'node:path';
 import YAML from 'yaml';
 import {rel} from './lib/env.mjs';
-import {allCreatives, copyFor} from './lib/config.mjs';
+import {allCreatives, brand, copyFor} from './lib/config.mjs';
 
 const argv = process.argv.slice(2);
 const file = argv[0];
 const flag = (f, d) => { const i = argv.indexOf(f); return i >= 0 && argv[i + 1] ? argv[i + 1] : d; };
-if (!file || !existsSync(file)) { console.log('usage: wave.mjs <wave.yaml> [--only ids] [--langs l,l] [--redo] [--dry]'); process.exit(2); }
+if (!file || !existsSync(file)) { console.log('usage: wave.mjs <wave.yaml> [--only ids] [--langs l,l] [--redo] [--dry] [--no-register]'); process.exit(2); }
 const wave = YAML.parse(readFileSync(file, 'utf8'));
 const only = flag('--only') ? flag('--only').split(',') : null;
 const langFilter = flag('--langs') ? flag('--langs').split(',') : null;
-const redo = argv.includes('--redo'), dry = argv.includes('--dry');
+const redo = argv.includes('--redo'), dry = argv.includes('--dry'), noRegister = argv.includes('--no-register');  // --no-register: render only (QA), nothing is added to the manifest
 const batch = wave.batch;
 if (!existsSync(rel('creatives', batch, 'manifest.json'))) run('node', ['scripts/creatives.mjs', 'batch', batch]);
 const work = rel('creatives', '_work', 'wave', path.basename(file, '.yaml'));
 mkdirSync(work, {recursive: true});
 
+const pwc = (brand().offers.find((o) => o.id === 'meta-20') || {}).prices_with_code || {};
+/** "Hybrid manicure 190 zł" → {label: "Hybrid manicure", old: "190 zł", new: "152 zł"}; null when the text has no list price with a code price. */
+function splitPrice(t) {
+  const m = String(t || '').match(/^(.*?)[\s·—–-]*(?:(від|od|from|от)\s+)?(\d{2,3})\s*zł$/i);
+  if (!m) return null;
+  const svc = brand().services.find((x) => x.price === Number(m[3]) && pwc[x.id] !== undefined);
+  if (!svc) return null;
+  const pre = m[2] ? `${m[2]} ` : '';
+  return {label: m[1].trim(), old: `${pre}${m[3]} zł`, new: `${pre}${pwc[svc.id]} zł`};
+}
 const stripTags = (s) => String(s).replace(/<[^>]+>/g, '');
 const existing = () => allCreatives().filter((c) => c.batch === batch);
 let made = 0, skipped = 0, failed = 0;
@@ -61,7 +77,7 @@ for (const job of wave.jobs) {
       if (dry) { console.log(`${jobKey} v${v}: ${stripTags(text.hook || '')} · ${stripTags(text.cta || '')}`); continue; }
       try {
         const out = job.type === 'static' ? buildStatic(job, lang, format, text, jobKey) : buildVideo(job, lang, text, jobKey);
-        register(job, lang, format, text, out, jobKey, v, n);
+        if (!noRegister) register(job, lang, format, text, out, jobKey, v, n);
         made++;
         console.log(`✓ ${jobKey} v${v}`);
       } catch (e) {
@@ -87,6 +103,7 @@ function resolveText(job, lang) {
       out[k] = hit;
     } else out[k] = v;
   }
+  if (job.vars?.offer === 'off') { out.offer_pct = ''; out.offer_code = ''; }
   return out;
 }
 function pick(defaults, lang) { const o = {}; for (const [k, v] of Object.entries(defaults)) if (v && typeof v === 'object' && v[lang] !== undefined) o[k] = v[lang]; return o; }
@@ -102,12 +119,10 @@ function renderArgs(job, lang, format, text, outPng, transparent) {
 function buildStatic(job, lang, format, text, jobKey) {
   const out = path.join(work, `${jobKey}.png`);
   if (job.template === 'static-card' && !text.kicker && text.sub) text = {...text, kicker: text.sub, sub: ''};  // photo cards: the sub line becomes the kicker
-  // the offer line (defaults.offer) goes where the template has room: static-card → lines, static-pick → meta
-  const slot = job[`vars_${format}`]?.offer_slot ?? job.vars?.offer_slot ?? (job.template === 'static-card' ? 'lines' : job.template === 'static-pick' ? 'meta' : 'off');
-  if (text.offer && slot !== 'off') {
-    const cur = text[slot] ?? job[`vars_${format}`]?.[slot] ?? job.vars?.[slot] ?? '';
-    text = {...text, [slot]: slot === 'lines' || !cur ? text.offer : `${text.offer} · ${cur}`};
-    if (slot === 'lines' && !cur) text.line_size = format === '9x16' ? 60 : 52;  // the offer alone on the line reads as a second hook, not a footnote
+  // the offer: sale tag + coupon chip (+ price pair where the kicker is "<service> <list price> zł"); static-pick gets tag + chip only
+  if (job.template === 'static-card' && text.offer_pct && !text.price_old) {
+    const sp = splitPrice(text.kicker);
+    if (sp) text = {...text, kicker: sp.label, price_old: sp.old, price_new: sp.new};
   }
   run('node', renderArgs(job, lang, format, text, out, false));
   return out;
@@ -116,12 +131,12 @@ function buildStatic(job, lang, format, text, jobKey) {
 function buildVideo(job, lang, text, jobKey) {
   const ov = path.join(work, `${jobKey}-ov.png`);
   // intro: the hook lives on a 1-second card up front; the body overlay carries only the CTA (+meta) so the product stays clean
-  const bodyText = job.intro ? {...text, hook: '', sub: '', meta: text.offer || text.meta, ...(text.offer ? {meta_size: 36} : {})} : text;  // under the body CTA the offer beats the url line
+  const bodyText = job.intro ? {...text, hook: '', sub: '', meta: text.offer_pct ? '' : text.meta} : text;  // with the offer beside the CTA the url line goes (the outro has it)
   // where is the frame empty for the whole clip? (edges + skin, after cuts) → the CTA block goes there
-  const fz = JSON.parse(run('node', ['scripts/free-zone.mjs', job.clip, '--block', '0.10', ...(job.cuts ? ['--cuts', String(job.cuts)] : [])]));
+  const fz = JSON.parse(run('node', ['scripts/free-zone.mjs', job.clip, '--block', text.offer_pct ? '0.105' : '0.10', ...(job.cuts ? ['--cuts', String(job.cuts)] : [])]));
   const freeBand = fz.score < (job.free_max ?? 60);  // above this the whole frame is busy (hands everywhere): keep the body clean
   const vjob = {...job, vars: {...(job.vars || {}), cta_top: `${fz.top_pct}%`}};
-  run('node', renderArgs(vjob, lang, '9x16', freeBand ? bodyText : {...bodyText, cta: '', meta: ''}, ov, true));
+  run('node', renderArgs(vjob, lang, '9x16', freeBand ? bodyText : {...bodyText, cta: '', meta: '', offer_pct: '', offer_code: ''}, ov, true));
   const args = ['scripts/video-finish.mjs', '--in', job.clip, '--overlay', ov, '--overlay-from', String(job.overlay_from ?? 0.3)];
   if (job.cuts) args.push('--cuts', String(job.cuts));
   if (job.mute) args.push('--mute');
@@ -135,7 +150,7 @@ function buildVideo(job, lang, text, jobKey) {
   }
   let out = path.join(work, `${jobKey}.mp4`);
   if (job.intro && job.outro !== false && !job.endcard) {
-    job.endcard = {template: 'static-card', seconds: job.outro?.seconds || (text.offer ? 2 : 1.5), vars: {align: 'center', logo_pos: 'center', place: 'middle', hook_size: 96, bg: job.intro.vars?.bg || 'black', ...(job.outro?.vars || {})}};
+    job.endcard = {template: 'static-card', seconds: job.outro?.seconds || (text.offer_pct ? 2 : 1.5), vars: {align: 'center', logo_pos: 'center', place: 'middle', hook_size: 96, bg: job.intro.vars?.bg || 'black', ...(job.outro?.vars || {})}};
   }
   if (!job.intro && !job.endcard) { run('node', [...args, '--out', out]); return out; }
 
@@ -149,13 +164,19 @@ function buildVideo(job, lang, text, jobKey) {
   if (job.intro) {
     const card = path.join(work, `${jobKey}-intro.png`);
     const cardJob = {...job, template: job.intro.template || 'static-card', image: job.intro.image || null, vars: {align: 'center', logo_pos: 'center', place: 'middle', hook_size: 120, ...(job.intro.vars || {}), cta: ''}};
-    run('node', renderArgs(cardJob, lang, '9x16', {kicker: text.sub || '', hook: text.hook, cta: '', meta: ''}, card, false));
+    // a price job (explicit price_old/price_new) opens on the price pair with the sale tag and the code, not on a bare hook
+    const priceIntro = text.price_old ? {offer_pct: text.offer_pct, offer_code: text.offer_code, price_old: text.price_old, price_new: text.price_new} : {};
+    run('node', renderArgs(cardJob, lang, '9x16', {kicker: text.sub || '', hook: text.hook, cta: '', meta: '', ...priceIntro}, card, false));
     parts.push({file: card, seconds: job.intro.seconds || 1.2, isCard: true});
   }
   parts.push({file: body, seconds: bodyDur, isCard: false});
   if (job.endcard) {
     const card = path.join(work, `${jobKey}-card.png`);
-    run('node', renderArgs({...job, template: job.endcard.template, image: job.endcard.image || null, vars: {...(job.vars || {}), ...(job.endcard.vars || {})}}, lang, '9x16', job.endcard.template === 'static-card' ? {kicker: text.sub || '', hook: text.offer || text.hook, cta: text.cta, meta: text.meta || ''} : text, card, false));  // with an offer the outro closes on it: service line · -20% with code · CTA
+    // outro: service label (+ price pair) · sale tag · coupon chip · CTA. A price job labels it with the hook (the product), others with the sub line.
+    let o = {kicker: text.sub || '', hook: '', cta: text.cta, meta: text.meta || '', offer_pct: text.offer_pct, offer_code: text.offer_code};
+    if (text.price_old) o = {...o, kicker: stripTags(text.hook), price_old: text.price_old, price_new: text.price_new};
+    else { const sp = text.offer_pct ? splitPrice(text.sub) : null; if (sp) o = {...o, kicker: sp.label, price_old: sp.old, price_new: sp.new}; }
+    run('node', renderArgs({...job, template: job.endcard.template, image: job.endcard.image || null, vars: {...(job.vars || {}), ...(job.endcard.vars || {})}}, lang, '9x16', job.endcard.template === 'static-card' ? o : text, card, false));
     parts.push({file: card, seconds: job.endcard.seconds || 1.5, isCard: true});
   }
   // 3. video assembly (cards → 720×1280 stills), then ONE audio pass over the whole piece:
