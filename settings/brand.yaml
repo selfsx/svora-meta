@@ -61,7 +61,16 @@ logos:
 
 # Offers. Only a confirmed offer may appear in an ad; `confirmed: false` means "seen, not verified with the owner".
 offers:
-  - { id: first-visit-20, text: "-20% na pierwszą wizytę", seen: "Instagram post DaxwkGBtqcU (2026-07-14)", confirmed: false, note: "ask the owner whether it still runs and how Fresha applies it before any ad quotes it" }
+  - { id: first-visit-20, text: "-20% na pierwszą wizytę", seen: "Instagram post DaxwkGBtqcU (2026-07-14)", confirmed: false, note: "superseded in ads by meta-20; never quote this one" }
+  # meta-20: the owner created promo code SVME20 in Fresha on 2026-10-09 for Meta campaigns only: -20% on every service for
+  # anyone who books from a Meta ad. Fresha has no URL parameter that prefills a code (checked 2026-10-09: docs + booking
+  # bundle read only utm_source); the client types it in the promo-code field at the Fresha online checkout, so the code
+  # must be visible in the ad (outro card / static line / primary text) and on the landing page.
+  - { id: meta-20, code: SVME20, percent: 20, scope: all services, channel: Meta ads, confirmed: true, confirmed_by: "owner, 2026-10-09",
+      where: "typed by the client in the promo-code field at the Fresha online checkout",
+      text: { pl: "-20% z kodem SVME20", ua: "-20% з кодом SVME20", ru: "-20% по коду SVME20", en: "20% off with code SVME20" },
+      prices_with_code: { hybrid-manicure: 152, clean-manicure: 96, extra-long-crazy: 304, cat-claws: 336, extensions: 240 } }
 
 # Claims that are NOT allowed (not verified or not true): awards, "best in Warsaw", years of experience,
-# product brand names, medical claims, guarantees ("lasts 4 weeks guaranteed"), discount codes that do not exist in Fresha.
+# product brand names, medical claims, guarantees ("lasts 4 weeks guaranteed"), discount codes other than a confirmed entry in `offers`.
+# A discounted price in copy is written next to the list price and the code ("190 → 152 zł z kodem SVME20"), never alone.

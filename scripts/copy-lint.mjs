@@ -15,7 +15,9 @@ import {brand, concepts} from './lib/config.mjs';
 
 const LIMITS = {headlines: 40, primaries: 125, descriptions: 30, overlays: 40, ctas: 24};
 const REQUIRED = ['headlines', 'primaries', 'descriptions', 'overlays', 'ctas'];
-const knownPrices = new Set(brand().services.map((s) => String(s.price)));
+// list prices, plus the "with code" prices of confirmed offers (settings/brand.yaml → offers[].prices_with_code)
+const knownPrices = new Set([...brand().services.map((s) => String(s.price)),
+  ...(brand().offers || []).filter((o) => o.confirmed).flatMap((o) => Object.values(o.prices_with_code || {}).map(String))]);
 const knownConcepts = Object.keys(concepts().concepts);
 const emoji = /\p{Extended_Pictographic}/gu;
 

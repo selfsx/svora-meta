@@ -23,7 +23,9 @@ ctas:             # the orange pill under the hook, ≤ 3 words
 Rules (from `settings/brand.yaml` and `research/creative-playbook.md` §5):
 
 - Only facts in `settings/brand.yaml`: prices, hours, address, Fresha, team, languages. No awards, no guarantees, no
-  "best in Warsaw", no invented discounts or codes. A price in copy must equal the price list.
+  "best in Warsaw", no invented discounts or codes. A price in copy must equal the price list — or a `prices_with_code`
+  value of a confirmed offer, written next to the list price and the code ("190 → 152 zł z kodem SVME20"). The only
+  confirmed code is SVME20 (`offers.meta-20`, -20% on every service, typed at the Fresha checkout).
 - No personal-attribute phrasing ("you have ugly nails", "are you Ukrainian?") — Meta policy. Say "for Ukrainians in
   Warsaw" about the studio, never about the reader.
 - UA is the default Cyrillic language; RU copy is for a clearly separate RU ad set and stays neutral in tone.

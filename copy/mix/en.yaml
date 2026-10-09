@@ -10,6 +10,8 @@ headlines:
   h06: "One studio, ten styles"
   h07: "SVORA portfolio, Wola, Warsaw"
   h08: "Pick a style, we do the rest"
+  h09: "20% off everything with SVME20"
+  h10: "Hybrid 190 → 152 zł with code"
 primaries:
   p01: "Every time I come in with a different idea and every time I leave happy. Nude, French, 3D, once even claws. Wola 🧡"
   p02: "Sent a friend five photos from SVORA so she could pick one and she asked for the address instead. Jana Kazimierza 25B"
@@ -19,11 +21,14 @@ primaries:
   p06: "Save this carousel, then just show the slide you like. Nude, art, crazy. No explaining needed. SVORA NAILS, Wola"
   p07: "Hybrid 190 zł, CLEAN 120 zł, pedicure from 175 zł, Crazy Shape 380 zł, brows from 70 zł. Wola, 9–21. Book on Fresha"
   p08: "Pick a style from the slides, pick a time on Fresha. Free slots show straight away, English UI. SVORA NAILS, Wola 💅"
+  p09: "20% off everything with code SVME20 💅 Hybrid 190 → 152 zł, Crazy Shape 380 → 304 zł. SVORA NAILS, Wola. Enter it at Fresha."
+  p10: "Nude or crazy? Don't choose. Code SVME20 takes 20% off everything: hybrid 190 → 152 zł. SVORA, Wola. Enter it at Fresha 🤍"
 descriptions:
   d01: "Nude & Crazy. Wola, Warsaw"
   d02: "Hybrid 190 zł, Crazy 380 zł"
   d03: "Book online on Fresha"
   d04: "Open daily 9:00–21:00"
+  d05: "Code SVME20: 20% off"
 overlays:
   o01: "NUDE & <b>CRAZY</b>"
   o02: "<b>SWIPE</b>. DIFFERENT STYLE"

@@ -1,5 +1,5 @@
 # Prospecting, Polish UI. Same structure as 001; the hook leads with the art/crazy niche nobody in Wola
-# markets (research/competitors-warsaw.md §6) and names the service + price instead of a discount.
+# markets (research/competitors-warsaw.md §6) and, like 001, closes on the SVME20 offer (-20% on every service, Meta-only code).
 number: 2
 camptype: test
 budget: { type: abo }
@@ -14,14 +14,14 @@ adsets:
     daily_pln: 75
     creatives:
       # 10 ads = 9 distinct angles + a second hero in a different visual world (nude static vs dark art video), 6 video + 4 static, 9:16. Picked 2026-10-09.
-      - "art_art-closeup_Ddv-7k6DQJg_vd_n090_v1_9x16_pl"
-      - "mix_social_DbMR6_ttcnF_vd_n110_v1_9x16_pl"
-      - "classic_process_DZKRjmJNiHR_vd_n098_v1_9x16_pl"
-      - "classic_before-after_C3Sy533oeEN_vd_n118_v1_9x16_pl"
-      - "crazy_price_DZTCpxHDUJE_vd_n126_v1_9x16_pl"
-      - "brand_pov_DdnxYOft2B2_vd_n106_v1_9x16_pl"
-      - "brand_social_DZqf93TDGOU_st_n116_v1_9x16_pl"
-      - "brand_social_gen_st_n109_v1_9x16_pl"
-      - "classic_reveal_DPZE72BjF50_st_n136_v1_9x16_pl"
-      - "classic_found_C4dzm1rLo84_st_n100_v1_9x16_pl"
-    copy: { headline: h01, primary: p01, description: d01 }   # copy/mix/pl.yaml
+      - "art_art-closeup_Ddv-7k6DQJg_vd_n090_v2_9x16_pl"
+      - "mix_social_DbMR6_ttcnF_vd_n110_v2_9x16_pl"
+      - "classic_process_DZKRjmJNiHR_vd_n098_v2_9x16_pl"
+      - "classic_before-after_C3Sy533oeEN_vd_n118_v2_9x16_pl"
+      - "crazy_price_DZTCpxHDUJE_vd_n126_v2_9x16_pl"
+      - "brand_pov_DdnxYOft2B2_vd_n106_v2_9x16_pl"
+      - "brand_social_DZqf93TDGOU_st_n116_v2_9x16_pl"
+      - "brand_social_gen_st_n109_v2_9x16_pl"
+      - "classic_reveal_DPZE72BjF50_st_n136_v2_9x16_pl"
+      - "classic_found_C4dzm1rLo84_st_n100_v2_9x16_pl"
+    copy: { headline: h09, primary: p09, description: d05 }   # copy/mix/pl.yaml — the SVME20 offer (brand.yaml offers.meta-20)

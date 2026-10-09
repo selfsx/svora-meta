@@ -8,7 +8,10 @@
  *
  * Job file:
  *   batch: 2026-10-b03-waveA
- *   defaults: { cta: {ua: "@c01", …}, meta: {…} }          # per-language fallbacks for any text var
+ *   defaults: { cta: {ua: "@c01", …}, meta: {…}, offer: {…} }   # per-language fallbacks for any text var
+ *   offer: the confirmed promo line (settings/brand.yaml → offers). Where it lands: video → the outro card's hook
+ *   (the body CTA's meta line too, when the frame has a free band); static-card → `lines` under the hook;
+ *   static-pick → the meta line. Per job/format: vars.offer_slot = lines|meta|kicker|off (off when the hook IS the offer).
  *   jobs:
  *     - id: V1   type: video   angle: hero   concept: crazy   hook: reveal   source: DbT_EsKDTDo
  *       clip: creatives/_work/w1/DbT_EsKDTDo-clip.mp4   [cuts: "0:13.5,40.5:50.3"] [mute: true] [overlay_from: 0.3]
@@ -53,11 +56,12 @@ for (const job of wave.jobs) {
       const prior = existing().filter((c) => c.job === jobKey);
       if (prior.length && !redo) { skipped++; continue; }
       const v = prior.length ? Math.max(...prior.map((c) => c.v)) + 1 : 1;
+      const n = prior.length ? Number((prior[0].name.match(/_n(\d{3})_/) || [])[1]) || null : null;  // a redo is v+1 of the same n (naming law §3), never a new counter
       const text = resolveText(job, lang);
       if (dry) { console.log(`${jobKey} v${v}: ${stripTags(text.hook || '')} · ${stripTags(text.cta || '')}`); continue; }
       try {
         const out = job.type === 'static' ? buildStatic(job, lang, format, text, jobKey) : buildVideo(job, lang, text, jobKey);
-        register(job, lang, format, text, out, jobKey, v);
+        register(job, lang, format, text, out, jobKey, v, n);
         made++;
         console.log(`✓ ${jobKey} v${v}`);
       } catch (e) {
@@ -98,6 +102,13 @@ function renderArgs(job, lang, format, text, outPng, transparent) {
 function buildStatic(job, lang, format, text, jobKey) {
   const out = path.join(work, `${jobKey}.png`);
   if (job.template === 'static-card' && !text.kicker && text.sub) text = {...text, kicker: text.sub, sub: ''};  // photo cards: the sub line becomes the kicker
+  // the offer line (defaults.offer) goes where the template has room: static-card → lines, static-pick → meta
+  const slot = job[`vars_${format}`]?.offer_slot ?? job.vars?.offer_slot ?? (job.template === 'static-card' ? 'lines' : job.template === 'static-pick' ? 'meta' : 'off');
+  if (text.offer && slot !== 'off') {
+    const cur = text[slot] ?? job[`vars_${format}`]?.[slot] ?? job.vars?.[slot] ?? '';
+    text = {...text, [slot]: slot === 'lines' || !cur ? text.offer : `${text.offer} · ${cur}`};
+    if (slot === 'lines' && !cur) text.line_size = format === '9x16' ? 60 : 52;  // the offer alone on the line reads as a second hook, not a footnote
+  }
   run('node', renderArgs(job, lang, format, text, out, false));
   return out;
 }
@@ -105,7 +116,7 @@ function buildStatic(job, lang, format, text, jobKey) {
 function buildVideo(job, lang, text, jobKey) {
   const ov = path.join(work, `${jobKey}-ov.png`);
   // intro: the hook lives on a 1-second card up front; the body overlay carries only the CTA (+meta) so the product stays clean
-  const bodyText = job.intro ? {...text, hook: '', sub: ''} : text;
+  const bodyText = job.intro ? {...text, hook: '', sub: '', meta: text.offer || text.meta, ...(text.offer ? {meta_size: 36} : {})} : text;  // under the body CTA the offer beats the url line
   // where is the frame empty for the whole clip? (edges + skin, after cuts) → the CTA block goes there
   const fz = JSON.parse(run('node', ['scripts/free-zone.mjs', job.clip, '--block', '0.10', ...(job.cuts ? ['--cuts', String(job.cuts)] : [])]));
   const freeBand = fz.score < (job.free_max ?? 60);  // above this the whole frame is busy (hands everywhere): keep the body clean
@@ -124,7 +135,7 @@ function buildVideo(job, lang, text, jobKey) {
   }
   let out = path.join(work, `${jobKey}.mp4`);
   if (job.intro && job.outro !== false && !job.endcard) {
-    job.endcard = {template: 'static-card', seconds: job.outro?.seconds || 1.5, vars: {align: 'center', logo_pos: 'center', place: 'middle', hook_size: 96, bg: job.intro.vars?.bg || 'black', ...(job.outro?.vars || {})}};
+    job.endcard = {template: 'static-card', seconds: job.outro?.seconds || (text.offer ? 2 : 1.5), vars: {align: 'center', logo_pos: 'center', place: 'middle', hook_size: 96, bg: job.intro.vars?.bg || 'black', ...(job.outro?.vars || {})}};
   }
   if (!job.intro && !job.endcard) { run('node', [...args, '--out', out]); return out; }
 
@@ -144,7 +155,7 @@ function buildVideo(job, lang, text, jobKey) {
   parts.push({file: body, seconds: bodyDur, isCard: false});
   if (job.endcard) {
     const card = path.join(work, `${jobKey}-card.png`);
-    run('node', renderArgs({...job, template: job.endcard.template, image: job.endcard.image || null, vars: {...(job.vars || {}), ...(job.endcard.vars || {})}}, lang, '9x16', job.endcard.template === 'static-card' ? {kicker: text.sub || '', hook: text.hook, cta: text.cta, meta: text.meta || ''} : text, card, false));
+    run('node', renderArgs({...job, template: job.endcard.template, image: job.endcard.image || null, vars: {...(job.vars || {}), ...(job.endcard.vars || {})}}, lang, '9x16', job.endcard.template === 'static-card' ? {kicker: text.sub || '', hook: text.offer || text.hook, cta: text.cta, meta: text.meta || ''} : text, card, false));  // with an offer the outro closes on it: service line · -20% with code · CTA
     parts.push({file: card, seconds: job.endcard.seconds || 1.5, isCard: true});
   }
   // 3. video assembly (cards → 720×1280 stills), then ONE audio pass over the whole piece:
@@ -185,8 +196,9 @@ function buildVideo(job, lang, text, jobKey) {
   return out;
 }
 
-function register(job, lang, format, text, out, jobKey, v) {
+function register(job, lang, format, text, out, jobKey, v, n) {
   const a = ['scripts/creatives.mjs', 'add', batch, '--file', out, '--concept', job.concept, '--hook', job.hook, '--angle', job.angle, '--source', job.source, '--lang', lang, '--format', format, '--v', String(v), '--job', jobKey, '--hook-text', stripTags(text.hook || text.kicker || '')];
+  if (n) a.push('--n', String(n));
   if (job.look && existsSync(job.look)) a.push('--look', job.look);
   if (existsSync(`${out}.json`)) a.push('--pipeline', `${out}.json`);
   for (const p of job.pipeline || []) if (existsSync(p)) a.push('--pipeline', p);

@@ -10,6 +10,8 @@ headlines:
   h06: "Jeden salon, dziesięć stylów"
   h07: "Portfolio SVORA, Wola"
   h08: "Wybierz styl, resztę zrobimy"
+  h09: "-20% z kodem SVME20 na wszystko"
+  h10: "Hybryda 190 → 152 zł z kodem"
 primaries:
   p01: "Za każdym razem przychodzę z innym pomysłem i za każdym razem wychodzę zadowolona. Nude, French, 3D, raz nawet pazury. Wola 🧡"
   p02: "Wysłałam koleżance pięć zdjęć z SVORA, żeby wybrała styl, a ona zapytała o adres. Jana Kazimierza 25B, Wola"
@@ -19,11 +21,14 @@ primaries:
   p06: "Zapisz tę karuzelę, a potem po prostu pokaż slajd, który Ci się podoba. Nude, art, crazy. SVORA NAILS, Wola"
   p07: "Hybryda 190 zł, CLEAN 120 zł, pedicure od 175 zł, Crazy Shape 380 zł, brwi od 70 zł. Wola, 9–21. Rezerwuj na Fresha"
   p08: "Wybierz styl ze slajdów, wybierz godzinę na Fresha. Wolne terminy widać od razu. SVORA NAILS, Jana Kazimierza 25B 💅"
+  p09: "-20% na wszystko z kodem SVME20 💅 Hybryda 190 → 152 zł, Crazy Shape 380 → 304 zł. SVORA NAILS, Wola. Kod wpisujesz na Fresha."
+  p10: "Nude czy crazy? Nie wybieraj. Z kodem SVME20 wszystko 20% taniej: hybryda 190 → 152 zł. SVORA, Wola. Kod wpisz na Fresha 🧡"
 descriptions:
   d01: "Nude & Crazy. Wola"
   d02: "Hybryda 190 zł, Crazy 380 zł"
   d03: "Rezerwacja online na Fresha"
   d04: "Codziennie 9:00–21:00"
+  d05: "Kod SVME20: -20% na wszystko"
 overlays:
   o01: "NUDE & <b>CRAZY</b>"
   o02: "<b>PRZESUŃ</b>. INNY STYL"

@@ -26,6 +26,8 @@ incl. removal next door, Arcobaleno with 1.2k reviews), everyone runs -10% first
 Meta ad (IG Reels/Stories/Feed, FB)
   └─ link → svora.place/<lang>/ (pixel: PageView, ViewContent, BookingClick)   ← default for ads
         └─ "Book" → fresha.com/…/booking?offerItemId=s:<id>&fbclid=…&utm_…      (site appends fbclid + utm)
+              └─ promo code SVME20 (-20%, Meta-only, owner-created 2026-10-09) typed by the client at the
+              │  Fresha checkout — no URL prefill exists, so every ad shows the code and the primary text repeats it
               └─ Fresha pixel add-on (same pixel 1194380562291350, browser-only, after cookie consent):
                    InitiateCheckout → AddPaymentInfo → Reservation → Purchase (on confirmation, not payment)
   └─ or link → fresha.com booking directly (test arm; cheaper click, no site retargeting pool)

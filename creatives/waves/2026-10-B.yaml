@@ -4,6 +4,8 @@ batch: 2026-10-b03-wavea
 defaults:
   cta:  { ua: "Записатись онлайн", pl: "Zarezerwuj online", ru: "Записаться онлайн", en: "Book online" }
   meta: { ua: "svora.place · Воля", pl: "svora.place · Wola", ru: "svora.place · Воля", en: "svora.place · Wola, Warsaw" }
+  # the confirmed Meta offer (settings/brand.yaml → offers.meta-20): outro-card hook on videos, a line under the hook on cards
+  offer: { ua: "<b>-20%</b> з кодом <b>SVME20</b>", pl: "<b>-20%</b> Z KODEM <b>SVME20</b>", ru: "<b>-20%</b> по коду <b>SVME20</b>", en: "<b>20% OFF</b> WITH <b>SVME20</b>" }
 jobs:
   - { id: V15, type: video, angle: seasonal, concept: classic, hook: reveal, source: DPZE72BjF50, clip: creatives/_work/wb/DPZE-a.mp4,
       pipeline: [creatives/_work/wb/DPZE72BjF50-still.png.json, creatives/_work/wb/DPZE-a.mp4.json], overlay_from: 0.3, intro: { seconds: 1.2, vars: { bg: black, place: middle, hook_size: 120 } }, vars: { place: bottom, tone: dark },

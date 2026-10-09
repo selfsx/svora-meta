@@ -131,3 +131,22 @@
   first and runs one audio pass over the whole piece — bed under everything when `brand/music/` has one, otherwise
   the clip's own audio starts under the intro card and fades out across the outro (fade in 0.3 s, out ≤ 1.5 s, −14 LUFS).
   Wave F = re-assembly of all 44 approved videos (statuses restored after the run) + the 4 re-laid drafts.
+
+## 2026-10-09 — operator check of the first 20 → the SVME20 offer
+
+- Operator: the review page "shows 26 creatives, how come 130?" — it shows one card per *master* (26) with the
+  language/format switches inside; the file count (135) is in the page title. Nothing was missing.
+- Decision (operator): a Fresha promo code **SVME20**, -20% on every service, created for Meta campaigns only, to
+  strengthen the booking impulse of the first campaigns. Recorded as `settings/brand.yaml → offers.meta-20`
+  (confirmed: true, with-code prices 152/96/304/336/240 zł). The old unconfirmed "-20% first visit" stays unquotable.
+- Investigated prefill: Fresha's promotions docs describe the code as typed by the client "when booking online or
+  during checkout"; no URL parameter exists (the booking page bundle reads only `utm_source`; the checkout step is
+  lazy-loaded and undocumented). So the code must be legible on the creative and repeated in the primary text; the
+  landing (svora-landing) should show it when `utm_source=meta` is present (backlog).
+- Creative change: `wave.mjs` gained an `offer` text slot — outro card (now 2 s) closes on "service line · -20% з кодом
+  SVME20 · CTA"; the body CTA's meta line carries the code when a free band exists; `static-card` gets the offer as a
+  big line under the hook; price-angle hooks became the with-code price ("Crazy Shape 380 → 304 zł", "190 → 152 zł",
+  menu rows "190 → 152 zł"). New copy ids h09/h10, p09/p10, d05 in `copy/mix/*`; specs 001/002 switched to h09/p09/d05
+  and to the v2 creatives. `copy-lint.mjs` accepts with-code prices. A redo is now v+1 of the same n (`--n`).
+- The 20 picked ads were regenerated as v2 (28 files incl. 4:5 twins); v1 stays until the operator checks v2.
+  The other 107 approved files still carry no code — redo after the operator's OK on the v2 layout.

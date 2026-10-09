@@ -15,14 +15,14 @@ adsets:
     daily_pln: 100
     creatives:
       # 10 ads = 10 distinct angles (hero · pick · process · before-after · price · studio · review · meme · founder · seasonal), 6 video + 4 static, 9:16. Picked 2026-10-09.
-      - "crazy_reveal_DbT_EsKDTDo_vd_n085_v1_9x16_ua"
-      - "mix_social_DbMR6_ttcnF_vd_n109_v1_9x16_ua"
-      - "classic_process_DZKRjmJNiHR_vd_n097_v1_9x16_ua"
-      - "classic_before-after_C3Sy533oeEN_vd_n117_v1_9x16_ua"
-      - "crazy_price_DZTCpxHDUJE_vd_n125_v1_9x16_ua"
-      - "brand_pov_DdnxYOft2B2_vd_n105_v1_9x16_ua"
-      - "brand_social_DZqf93TDGOU_st_n114_v1_9x16_ua"
-      - "brand_social_gen_st_n107_v1_9x16_ua"
-      - "brand_price_DdJn2Wrsad-_st_n130_v1_9x16_ua"
-      - "classic_reveal_DPZE72BjF50_st_n134_v1_9x16_ua"
-    copy: { headline: h01, primary: p01, description: d01 }   # copy/mix/ua.yaml
+      - "crazy_reveal_DbT_EsKDTDo_vd_n085_v2_9x16_ua"
+      - "mix_social_DbMR6_ttcnF_vd_n109_v2_9x16_ua"
+      - "classic_process_DZKRjmJNiHR_vd_n097_v2_9x16_ua"
+      - "classic_before-after_C3Sy533oeEN_vd_n117_v2_9x16_ua"
+      - "crazy_price_DZTCpxHDUJE_vd_n125_v2_9x16_ua"
+      - "brand_pov_DdnxYOft2B2_vd_n105_v2_9x16_ua"
+      - "brand_social_DZqf93TDGOU_st_n114_v2_9x16_ua"
+      - "brand_social_gen_st_n107_v2_9x16_ua"
+      - "brand_price_DdJn2Wrsad-_st_n130_v2_9x16_ua"
+      - "classic_reveal_DPZE72BjF50_st_n134_v2_9x16_ua"
+    copy: { headline: h09, primary: p09, description: d05 }   # copy/mix/ua.yaml — the SVME20 offer (brand.yaml offers.meta-20)

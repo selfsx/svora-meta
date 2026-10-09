@@ -4,6 +4,8 @@ batch: 2026-10-b03-wavea
 defaults:
   cta:  { ua: "Записатись онлайн", pl: "Zarezerwuj online", ru: "Записаться онлайн", en: "Book online" }
   meta: { ua: "svora.place · Воля", pl: "svora.place · Wola", ru: "svora.place · Воля", en: "svora.place · Wola, Warsaw" }
+  # the confirmed Meta offer (settings/brand.yaml → offers.meta-20): outro-card hook on videos, a line under the hook on cards
+  offer: { ua: "<b>-20%</b> з кодом <b>SVME20</b>", pl: "<b>-20%</b> Z KODEM <b>SVME20</b>", ru: "<b>-20%</b> по коду <b>SVME20</b>", en: "<b>20% OFF</b> WITH <b>SVME20</b>" }
 
 jobs:
   # ── video: hero clips localised (ua exists in b01) ──────────────────────────────────────────
@@ -34,7 +36,7 @@ jobs:
       langs: { ua: { hook: "@o09", sub: "@o05" }, pl: { hook: "@o09", sub: "@o06" }, ru: { hook: "Какой выбираешь: <b>1, 2 или 3</b>?", sub: "@o05" }, en: { hook: "WHICH ONE: <b>1, 2 OR 3</b>?", sub: "@o06" } } }
   - { id: V13, type: video, angle: price, concept: crazy, hook: price, source: DZTCpxHDUJE, clip: creatives/_work/base/price-base.mp4,
       overlay_from: 0.3, intro: { seconds: 1.2, vars: { bg: cream, place: middle, hook_size: 120 } }, vars: { place: top, tone: light },
-      langs: { ua: { hook: "@o02", sub: "Форма з нуля · 3 год" }, pl: { hook: "@o01", sub: "Forma od zera · 3 h" }, ru: { hook: "@o02", sub: "Форма с нуля · 3 ч" }, en: { hook: "@o01", sub: "Built from scratch · 3 h" } } }
+      langs: { ua: { hook: "Crazy Shape 380 → <b>304 zł</b>", sub: "з кодом SVME20 · форма з нуля", offer: "" }, pl: { hook: "CRAZY SHAPE 380 → <b>304 ZŁ</b>", sub: "z kodem SVME20 · forma od zera", offer: "" }, ru: { hook: "Crazy Shape 380 → <b>304 zł</b>", sub: "по коду SVME20 · форма с нуля", offer: "" }, en: { hook: "CRAZY SHAPE 380 → <b>304 ZŁ</b>", sub: "with code SVME20 · built from scratch", offer: "" } } }
   - { id: V14, type: video, angle: before-after, concept: classic, hook: before-after, source: C3Sy533oeEN, clip: sources/instagram/raw/C3Sy533oeEN/C3Sy533oeEN_01.mp4,
       cuts: "3:9,0:3", mute: true, overlay_from: 0.3, intro: { seconds: 1.2, vars: { bg: black, place: middle, hook_size: 120 } }, vars: { place: bottom },
       langs: { ua: { hook: "Процес → <b>результат</b>", sub: "Гібридний манікюр 190 zł" }, pl: { hook: "Proces → <b>efekt</b>", sub: "Hybryda 190 zł" }, ru: { hook: "Процесс → <b>результат</b>", sub: "Гибридный маникюр 190 zł" }, en: { hook: "PROCESS → <b>RESULT</b>", sub: "Hybrid manicure 190 zł" } } }
@@ -59,14 +61,14 @@ jobs:
       image: sources/instagram/raw/C4dzm1rLo84/C4dzm1rLo84_01.jpg, vars: { place: under, bg: cream, hook_size: 84, tile_pos: "center 35%" }, vars_4x5: { tile_h: "54%" }, vars_9x16: { tile_h: "44%" },
       langs: { ua: { hook: "@o04", sub: "Гібридний манікюр 190 zł" }, pl: { hook: "@o01", sub: "Hybryda 190 zł" }, ru: { hook: "@o04", sub: "Гибридный маникюр 190 zł" }, en: { hook: "@o01", sub: "Hybrid manicure 190 zł" } } }
   - { id: S7, type: static, template: static-card, formats: [4x5, 9x16], angle: price, concept: classic, hook: price, source: DV5ZDohDBx0,
-      image: sources/instagram/raw/DV5ZDohDBx0/DV5ZDohDBx0_01.jpg, vars: { place: under, bg: cream, hook_size: 84, tile_pos: "center" }, vars_4x5: { tile_h: "54%" }, vars_9x16: { tile_h: "44%" },
-      langs: { ua: { hook: "@o01", sub: "Рівно. Чисто. Природно.", meta: "Воля · Jana Kazimierza 25B" }, ru: { hook: "@o01", sub: "Ровно. Чисто. Естественно.", meta: "Воля · Jana Kazimierza 25B" }, en: { hook: "@o02", sub: "Neat. Clean. Natural.", meta: "Wola · Jana Kazimierza 25B" }, pl: { hook: "@o02", sub: "Równo. Czysto. Naturalnie.", meta: "Wola · Jana Kazimierza 25B" } } }
-  - { id: S8, type: static, template: static-card, formats: [4x5, 9x16], angle: price, concept: brand, hook: price, source: gen, vars: { place: bottom, bg: cream, hook_size: 96 },
+      image: sources/instagram/raw/DV5ZDohDBx0/DV5ZDohDBx0_01.jpg, vars: { place: under, bg: cream, hook_size: 84, tile_pos: "center", offer_slot: off }, vars_4x5: { tile_h: "54%" }, vars_9x16: { tile_h: "44%" },
+      langs: { ua: { hook: "Гібридний манікюр 190 → <b>152 zł</b>", sub: "з кодом SVME20 · -20%", meta: "Воля · Jana Kazimierza 25B" }, ru: { hook: "Гибридный маникюр 190 → <b>152 zł</b>", sub: "по коду SVME20 · -20%", meta: "Воля · Jana Kazimierza 25B" }, en: { hook: "HYBRID 190 → <b>152 ZŁ</b>", sub: "with code SVME20 · 20% off", meta: "Wola · Jana Kazimierza 25B" }, pl: { hook: "HYBRYDA 190 → <b>152 ZŁ</b>", sub: "z kodem SVME20 · -20%", meta: "Wola · Jana Kazimierza 25B" } } }
+  - { id: S8, type: static, template: static-card, formats: [4x5, 9x16], angle: price, concept: brand, hook: price, source: gen, vars: { place: bottom, bg: cream, hook_size: 96, offer_slot: off },
       langs: {
-        ua: { kicker: "Прайс · Воля", hook: "Гібридний манікюр <b>190 zł</b>", lines: '<div class="row"><span>Гібридний манікюр</span><b>190 zł</b></div><div class="row"><span>CLEAN манікюр</span><b>120 zł</b></div><div class="row"><span>Extra Long &amp; Crazy Shape</span><b>380 zł</b></div>', meta: "Jana Kazimierza 25B · щодня 9–21" },
-        pl: { kicker: "Cennik · Wola", hook: "Hybryda <b>190 zł</b>", lines: '<div class="row"><span>Manicure hybrydowy</span><b>190 zł</b></div><div class="row"><span>CLEAN manicure</span><b>120 zł</b></div><div class="row"><span>Extra Long &amp; Crazy Shape</span><b>380 zł</b></div>', meta: "Jana Kazimierza 25B · codziennie 9–21" },
-        ru: { kicker: "Прайс · Воля", hook: "Гибридный маникюр <b>190 zł</b>", lines: '<div class="row"><span>Гибридный маникюр</span><b>190 zł</b></div><div class="row"><span>CLEAN маникюр</span><b>120 zł</b></div><div class="row"><span>Extra Long &amp; Crazy Shape</span><b>380 zł</b></div>', meta: "Jana Kazimierza 25B · ежедневно 9–21" },
-        en: { kicker: "Prices · Wola", hook: "Hybrid manicure <b>190 zł</b>", lines: '<div class="row"><span>Hybrid manicure</span><b>190 zł</b></div><div class="row"><span>CLEAN manicure</span><b>120 zł</b></div><div class="row"><span>Extra Long &amp; Crazy Shape</span><b>380 zł</b></div>', meta: "Jana Kazimierza 25B · daily 9–21" } } }
+        ua: { kicker: "Прайс з кодом SVME20 · Воля", hook: "<b>-20%</b> на все", lines: '<div class="row"><span>Гібридний манікюр</span><b>190 → 152 zł</b></div><div class="row"><span>CLEAN манікюр</span><b>120 → 96 zł</b></div><div class="row"><span>Extra Long &amp; Crazy Shape</span><b>380 → 304 zł</b></div>', meta: "код SVME20 при записі у Fresha · щодня 9–21" },
+        pl: { kicker: "Cennik z kodem SVME20 · Wola", hook: "<b>-20%</b> na wszystko", lines: '<div class="row"><span>Manicure hybrydowy</span><b>190 → 152 zł</b></div><div class="row"><span>CLEAN manicure</span><b>120 → 96 zł</b></div><div class="row"><span>Extra Long &amp; Crazy Shape</span><b>380 → 304 zł</b></div>', meta: "kod SVME20 przy rezerwacji na Fresha · codziennie 9–21" },
+        ru: { kicker: "Прайс по коду SVME20 · Воля", hook: "<b>-20%</b> на всё", lines: '<div class="row"><span>Гибридный маникюр</span><b>190 → 152 zł</b></div><div class="row"><span>CLEAN маникюр</span><b>120 → 96 zł</b></div><div class="row"><span>Extra Long &amp; Crazy Shape</span><b>380 → 304 zł</b></div>', meta: "код SVME20 при записи в Fresha · ежедневно 9–21" },
+        en: { kicker: "Prices with code SVME20 · Wola", hook: "<b>20% off</b> everything", lines: '<div class="row"><span>Hybrid manicure</span><b>190 → 152 zł</b></div><div class="row"><span>CLEAN manicure</span><b>120 → 96 zł</b></div><div class="row"><span>Extra Long &amp; Crazy Shape</span><b>380 → 304 zł</b></div>', meta: "code SVME20 at Fresha checkout · daily 9–21" } } }
   - { id: S9, type: static, template: static-card, formats: [4x5, 9x16], angle: review, concept: brand, hook: social, source: DZqf93TDGOU,
       image: sources/instagram/raw/DZqf93TDGOU/DZqf93TDGOU_01.jpg, vars: { place: under, bg: black, hook_size: 96 },
       langs: {

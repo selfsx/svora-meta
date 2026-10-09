@@ -38,6 +38,7 @@ overlays:
   o11: "PROCESS → <b>RESULT</b>"
   o12: "NUDE, FRENCH OR <b>GLAZED</b>?"
   o13: "AUTUMN IN <b>BURGUNDY</b>"
+  o14: "HYBRID 190 → <b>152 ZŁ</b>"
 ctas:
   c01: "Book online"
   c02: "Check slots"

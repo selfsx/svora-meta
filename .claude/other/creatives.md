@@ -69,7 +69,16 @@ menu, location, proof, meme; `bg=cream|black`, `kicker`, `lines` HTML).
 across the clip, scores every horizontal band by edge energy plus skin coverage (hands are never "empty"), keeps the
 maximum over time and returns the emptiest band for a block of the CTA's height, with the Reels UI zones penalised.
 `wave.mjs` feeds that band to the overlay as `cta_top`; when no band scores under 60 (hands fill the frame) the body
-stays clean and the CTA appears only on the 1.5 s outro card. Every intro-style video gets that outro (hook + CTA).
+stays clean and the CTA appears only on the outro card. Every intro-style video gets that outro.
+
+**The offer slot** (since 2026-10-09, `settings/brand.yaml → offers.meta-20`, code SVME20): a wave file's
+`defaults.offer` is the per-language offer line ("-20% з кодом <b>SVME20</b>"). `wave.mjs` puts it where the viewer
+reads it last: on videos the outro card (2 s) closes on it — kicker = the service line, hook = the offer, CTA — and the
+body CTA's meta line carries it when the frame has a free band; on `static-card` it is the `lines` row under the hook,
+on `static-pick` the meta line. `vars.offer_slot = lines|meta|kicker|off` per job or per format overrides that
+(`off` when the hook already is the offer: the price card "190 → 152 zł", the menu card). Fresha cannot prefill a
+code from a link, so the code has to be legible on the creative and repeated in the primary text (`copy/mix/*.yaml`
+h09/h10, p09/p10, d05).
 
 Every variant is cheap after step 3: one clip × 4 languages × 2 hooks = 8 creatives for one video job.
 
