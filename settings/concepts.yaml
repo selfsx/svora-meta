@@ -22,6 +22,24 @@ hooks:
   art-closeup: "macro close-up on one nail's art, then pull out"
   team:       "the master at work, face visible, speaks the client's language"
 
+# Angles — the diversity axis Meta's retrieval actually separates (research/andromeda-creative-diversity.md §5).
+# A creative carries exactly one angle in its manifest entry; an ad set should hold ≥ 6 distinct angles.
+# Overlay language, hook text, crop, colour grade do NOT change the angle — if the overlay is removed and two
+# creatives look the same, they are the same angle AND the same ad.
+angles:
+  hero:         { label: "Hero close-up (motion or still): the finished set, no talking", from_closeups: true }
+  before-after: { label: "Bare/old nails → finished set, split or hard cut", from_closeups: partly }
+  process:      { label: "Process / ASMR: filing, gel, top coat, hands at work, tool sounds", from_closeups: false }
+  founder:      { label: "Founder talking head (UA): what to expect, why SVORA", from_closeups: false }
+  studio:       { label: "Studio life / POV 'your 90 minutes': walk-in, chair, atmosphere", from_closeups: false }
+  ugc:          { label: "Client shows the nails / reacts — needs written permission", from_closeups: false }
+  review:       { label: "One real review as a text card on a brand background", from_closeups: false }
+  price:        { label: "One offer/price from settings/brand.yaml, text-led", from_closeups: partly }
+  pick:         { label: "'Which would you pick?' — three sets side by side, question hook", from_closeups: true }
+  location:     { label: "Wola street, entrance, how to find us, hours, booking steps", from_closeups: false }
+  meme:         { label: "Plain-text relatable nail-day line, no photo", from_closeups: false }
+  seasonal:     { label: "Season / event palette, refreshable slot", from_closeups: true }
+
 # Statics render at 1080; videos are delivered at 720p (Seedance's native 720x1280 — enough for an ad, no upscaling).
 formats:
   9x16: { w: 1080, h: 1920, video: { w: 720, h: 1280 }, placements: [reels, stories], primary: true }

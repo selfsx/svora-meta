@@ -1,0 +1,37 @@
+/* Shared typography for every SVORA template. Designed at 1080-wide canvases (9:16 = 1080×1920) and
+   scaled to 720 for video — so everything is big: a hook line ≈ 11% of the width, CTA ≈ 6%.
+   Sticker style (each line in its own dark box) stays legible on light and dark footage alike;
+   the orange <b> accent is the only colour inside the text. */
+@font-face { font-family: 'Roboto Condensed'; src: url('{{fontsDir}}/roboto-condensed/RobotoCondensed.ttf'); font-weight: 100 900; }
+@font-face { font-family: 'Antonio'; src: url('{{fontsDir}}/antonio/Antonio-Bold.ttf'); font-weight: 700; }
+
+.stage { font-family: 'Roboto Condensed', sans-serif; color: {{color_cream}}; }
+
+/* The copy group: hook → sub → CTA → meta, stacked. Placed by `place` = top | middle | bottom (safe zone). */
+.group { position: absolute; left: 56px; right: 56px; display: flex; flex-direction: column; align-items: flex-start; gap: 26px; }
+.group.top    { top: {{group_top}}; }
+.group.middle { top: 50%; transform: translateY(-50%); }
+.group.bottom { bottom: {{group_bottom}}; }
+.group.top.with-logo { right: 300px; }
+
+.hook-wrap { display: block; max-width: 100%; }
+.hook {
+  display: inline; font-weight: 800; font-size: {{hook_size}}px; line-height: 1.32; text-transform: uppercase; letter-spacing: -0.005em;
+  color: {{color_cream}}; background: rgba(26,26,26,.88); padding: 4px 26px; border-radius: 14px;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+.hook b { color: {{color_orange}}; font-weight: 800; }
+.stage.tone-light .hook { background: rgba(247,241,235,.94); color: {{color_black}}; }
+
+.sub { font-size: {{sub_size}}px; font-weight: 600; color: {{color_black}}; background: {{color_peach}}; padding: 8px 24px; border-radius: 12px; display: inline-block; max-width: 100%; }
+
+.cta {
+  display: inline-flex; align-items: center; gap: 20px; background: {{color_orange}}; color: {{color_black}};
+  font-weight: 800; font-size: {{cta_size}}px; line-height: 1; padding: 30px 52px; border-radius: 999px; text-transform: uppercase;
+  letter-spacing: .01em; white-space: nowrap; box-shadow: 0 14px 34px rgba(0,0,0,.4);
+}
+.cta::after { content: '→'; font-weight: 800; }
+.meta { font-size: {{meta_size}}px; font-weight: 600; color: {{color_cream}}; background: rgba(26,26,26,.72); padding: 8px 20px; border-radius: 10px; display: inline-block; }
+
+.logo { position: absolute; right: 56px; top: {{logo_top}}; width: 210px; filter: drop-shadow(0 2px 12px rgba(0,0,0,.55)); }
+.badge { position: absolute; left: 56px; top: {{logo_top}}; display: {{badge_display}}; background: {{color_orange}}; color: {{color_black}}; font-weight: 800; font-size: 36px; padding: 10px 24px; border-radius: 999px; text-transform: uppercase; }

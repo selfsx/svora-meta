@@ -13,8 +13,10 @@
  *   node scripts/render-overlay.mjs --spec spec.json   (same keys: template, format, vars, image, out, transparent)
  *
  * Templates get {{key}} substitutions plus {{fontsDir}}, {{logosDir}}, {{image}} (file:// URL),
- * {{w}}, {{h}}, and every brand color as {{color_orange}} etc. Safe zones: templates keep text
- * out of the top 14% and bottom 35% for 9:16 (Meta Reels/Stories UI).
+ * {{w}}, {{h}}, every brand color as {{color_orange}} etc., and the layout vars below (place, tone,
+ * sizes). The shared type sheet creatives/templates/_type.css is substituted the same way.
+ * Safe zones: 9:16 keeps text out of the top 14% and bottom 35% (Meta Reels/Stories UI).
+ * Pick `place` and `tone` from `describe-image.mjs` (what is where in the photo), never by default.
  */
 
 import {existsSync, mkdirSync, readFileSync, unlinkSync, writeFileSync} from 'node:fs';
@@ -37,21 +39,35 @@ const tplFile = rel('creatives', 'templates', `${o.template}.html`);
 if (!existsSync(tplFile)) { console.error(`template not found: ${tplFile}`); process.exit(2); }
 
 const b = brand();
+const v916 = o.format === '9x16';
 const vars = {
   ...Object.fromEntries(Object.entries(b.colors).map(([k, v]) => [`color_${k}`, v])),
   fontsDir: pathToFileURL(rel('brand', 'fonts')).href,
   logosDir: pathToFileURL(rel('brand', 'logos')).href,
   image: o.image ? pathToFileURL(path.resolve(o.image)).href : '',
-  w: fmt.w, h: fmt.h, format: o.format, lang: 'pl', hook: '', sub: '', cta: '', price: '', badge: '',
-  // Layout defaults per format for the static templates: 9:16 keeps copy above the bottom 35% Meta UI zone.
-  ...(o.format === '9x16' ? {copy_bottom: '37%', photo_top: '15%', photo_h: '34%', copy_top: '51%', logo_top: '15%'} : {copy_bottom: '72px', photo_top: '14%', photo_h: '52%', copy_top: '69%', logo_top: '56px'}),
-  layout: '',  // static-hero: 'copy-top' puts the copy under the logo instead of at the bottom (nails low in the photo)
+  w: fmt.w, h: fmt.h, format: o.format, lang: 'pl', hook: '', sub: '', cta: '', meta: '', price: '', badge: '',
+  // Layout defaults per format (templates share creatives/templates/_type.css). 9:16 keeps everything
+  // inside the Meta safe zone: logo at 15%, group `top` starts under it, group `bottom` ends above 35%.
+  place: 'top', tone: 'dark',
+  hook_size: v916 ? 112 : 92, sub_size: v916 ? 46 : 40, cta_size: v916 ? 58 : 50, meta_size: v916 ? 36 : 32,
+  logo_top: v916 ? '15%' : '48px', group_top: v916 ? 'calc(15% + 120px)' : '160px', group_bottom: v916 ? '37%' : '72px',
+  // static-blur-pad: foreground width / vertical position (MAAG tuning for 9:16; smaller + higher for 4:5 so the copy fits under)
+  fg_w: v916 ? '92%' : '70%', fg_top: v916 ? '15%' : '56px', fg_shift: '-50%, 0',  // top of the safe zone; copy goes under/over per `place`
+  photo_pos: 'center',
   ...o.vars,
 };
+if (vars.price && !vars.meta) vars.meta = vars.price;  // older callers passed --var price=
 vars.badge_display = vars.badge ? 'inline-block' : 'none';
+vars.sub_display = vars.sub ? 'inline-block' : 'none';
+vars.meta_display = vars.meta ? 'inline-block' : 'none';
+mkdirSync(path.dirname(o.out), {recursive: true});
+// The shared stylesheet is itself a template: substitute, write beside the page, link it.
+const cssSrc = readFileSync(rel('creatives', 'templates', '_type.css'), 'utf8').replace(/\{\{(\w+)\}\}/g, (_, k) => (vars[k] ?? ''));
+const cssFile = path.resolve(`${o.out}.css`);
+writeFileSync(cssFile, cssSrc);
+vars.typeCss = pathToFileURL(cssFile).href;
 const html = readFileSync(tplFile, 'utf8').replace(/\{\{(\w+)\}\}/g, (_, k) => (vars[k] ?? ''));
 
-mkdirSync(path.dirname(o.out), {recursive: true});
 // Written to disk and opened as file:// so the template can load brand fonts, logos and the photo
 // from file:// URLs (an about:blank page from setContent cannot).
 const htmlFile = path.resolve(`${o.out}.html`);
@@ -64,5 +80,6 @@ await page.waitForTimeout(150);
 await page.screenshot({path: o.out, omitBackground: !!o.transparent, type: 'png', clip: {x: 0, y: 0, width: fmt.w, height: fmt.h}});
 await browser.close();
 unlinkSync(htmlFile);
+unlinkSync(cssFile);
 writeFileSync(`${o.out}.json`, JSON.stringify({template: o.template, format: o.format, image: o.image || null, transparent: !!o.transparent, vars: o.vars, created: new Date().toISOString()}, null, 2));
 console.log(`${o.out} (${fmt.w}×${fmt.h}${o.transparent ? ', transparent' : ''})`);

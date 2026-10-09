@@ -1,0 +1,16 @@
+{
+  "step": "finish",
+  "input": "creatives/_work/w1/Ddv-7k6DQJg-clip.mp4",
+  "overlay": "creatives/_work/st/ov2-n002.png",
+  "overlay_from": 0.6,
+  "trim": null,
+  "music": null,
+  "music_gain": null,
+  "mute": false,
+  "loop_to": null,
+  "pad": null,
+  "loudnorm": true,
+  "format": "9x16",
+  "size": "720x1280",
+  "created": "2026-10-09T11:23:46.284Z"
+}

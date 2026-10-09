@@ -62,12 +62,22 @@
           "loop_to": null,
           "format": "9x16",
           "size": "720x1280",
-          "created": "2026-10-09T09:40:26.536Z"
+          "created": "2026-10-09T09:40:26.536Z",
+          "overlay_system": "v2-sticker",
+          "loudnorm": true
         }
       ],
       "cost_usd": 1.9218273,
       "created": "2026-10-09T09:44:21.903Z",
-      "notes": ""
+      "notes": "overlay v2 (sticker system, 2026-10-09);",
+      "angle": "hero",
+      "look": {
+        "place": "top",
+        "tone": "dark",
+        "avoid": "the nails and hand in center frame, the rings",
+        "baked_text": false,
+        "risks": "none"
+      }
     },
     {
       "name": "art_art-closeup_Ddv-7k6DQJg_vd_n002_v1_9x16_ua",
@@ -129,12 +139,22 @@
           "loop_to": null,
           "format": "9x16",
           "size": "720x1280",
-          "created": "2026-10-09T09:40:28.109Z"
+          "created": "2026-10-09T09:40:28.109Z",
+          "overlay_system": "v2-sticker",
+          "loudnorm": true
         }
       ],
       "cost_usd": 1.9218273,
       "created": "2026-10-09T09:44:21.952Z",
-      "notes": ""
+      "notes": "overlay v2 (sticker system, 2026-10-09);",
+      "angle": "hero",
+      "look": {
+        "place": "top",
+        "tone": "mixed",
+        "avoid": "the hands, nails, and rings in the center and lower portions",
+        "baked_text": false,
+        "risks": "none"
+      }
     },
     {
       "name": "crazy_social_DZTCpxHDUJE_vd_n003_v1_9x16_ua",
@@ -196,12 +216,22 @@
           "loop_to": null,
           "format": "9x16",
           "size": "720x1280",
-          "created": "2026-10-09T09:40:29.640Z"
+          "created": "2026-10-09T09:40:29.640Z",
+          "overlay_system": "v2-sticker",
+          "loudnorm": true
         }
       ],
       "cost_usd": 1.9219473,
       "created": "2026-10-09T09:44:22.003Z",
-      "notes": ""
+      "notes": "overlay v2 (sticker system, 2026-10-09);",
+      "angle": "hero",
+      "look": {
+        "place": "top",
+        "tone": "light",
+        "avoid": "the nails and hand, especially the detailed nail art and ring",
+        "baked_text": false,
+        "risks": "none"
+      }
     },
     {
       "name": "classic_found_DbMR6_ttcnF_vd_n004_v1_9x16_ua",
@@ -263,12 +293,22 @@
           "loop_to": null,
           "format": "9x16",
           "size": "720x1280",
-          "created": "2026-10-09T09:43:58.830Z"
+          "created": "2026-10-09T09:43:58.830Z",
+          "overlay_system": "v2-sticker",
+          "loudnorm": true
         }
       ],
       "cost_usd": 1.9220013,
       "created": "2026-10-09T09:44:22.055Z",
-      "notes": ""
+      "notes": "overlay v2 (sticker system, 2026-10-09);",
+      "angle": "hero",
+      "look": {
+        "place": "top",
+        "tone": "light",
+        "avoid": "the nails and hands in center and lower portion",
+        "baked_text": false,
+        "risks": "none"
+      }
     },
     {
       "name": "art_art-closeup_Ddv-7k6DQJg_st_n005_v1_4x5_ua",
@@ -305,7 +345,15 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T11:00:02.592Z",
-      "notes": ""
+      "notes": "overlay v2 (sticker system, 2026-10-09);",
+      "angle": "hero",
+      "look": {
+        "place": "top",
+        "tone": "mixed",
+        "avoid": "the hands, nails, and rings in the center and lower portions",
+        "baked_text": false,
+        "risks": "none"
+      }
     },
     {
       "name": "art_reveal_Ddv-7k6DQJg_st_n006_v1_9x16_ua",
@@ -343,7 +391,15 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T11:00:02.644Z",
-      "notes": ""
+      "notes": "overlay v2 (sticker system, 2026-10-09);",
+      "angle": "hero",
+      "look": {
+        "place": "top",
+        "tone": "mixed",
+        "avoid": "the hands, nails, and rings in the center and lower portions",
+        "baked_text": false,
+        "risks": "none"
+      }
     },
     {
       "name": "crazy_reveal_DY99E3XjWQK_st_n007_v1_9x16_ua",
@@ -380,7 +436,15 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T11:00:02.693Z",
-      "notes": ""
+      "notes": "overlay v2 (sticker system, 2026-10-09);",
+      "angle": "hero",
+      "look": {
+        "place": "bottom",
+        "tone": "mixed",
+        "avoid": "the nails, face, and rings",
+        "baked_text": false,
+        "risks": "Extreme nail length may appear impractical or intimidating to some audiences; close-up of face with hands covering mouth could be seen as slightly unsettling; overall dark/edgy aesthetic may not appeal to classic/conservative clientele"
+      }
     },
     {
       "name": "classic_price_DV5ZDohDBx0_st_n008_v1_4x5_pl",
@@ -417,7 +481,15 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T11:00:02.744Z",
-      "notes": ""
+      "notes": "overlay v2 (sticker system, 2026-10-09);",
+      "angle": "price",
+      "look": {
+        "place": "top",
+        "tone": "light",
+        "avoid": "the nails and hand in center and lower portion",
+        "baked_text": false,
+        "risks": "none"
+      }
     },
     {
       "name": "classic_reveal_DOofqjpDaTt_st_n009_v1_4x5_pl",
@@ -454,7 +526,15 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T11:00:02.798Z",
-      "notes": ""
+      "notes": "overlay v2 (sticker system, 2026-10-09);",
+      "angle": "hero",
+      "look": {
+        "place": "bottom",
+        "tone": "mixed",
+        "avoid": "the hands, nails, and engagement ring in the center",
+        "baked_text": false,
+        "risks": "none"
+      }
     },
     {
       "name": "classic_reveal_DOofqjpDaTt_st_n010_v1_9x16_pl",
@@ -491,7 +571,15 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T11:00:02.851Z",
-      "notes": ""
+      "notes": "overlay v2 (sticker system, 2026-10-09);",
+      "angle": "hero",
+      "look": {
+        "place": "bottom",
+        "tone": "mixed",
+        "avoid": "the hands, nails, and engagement ring in the center",
+        "baked_text": false,
+        "risks": "none"
+      }
     },
     {
       "name": "art_art-closeup_DZqf93TDGOU_st_n011_v1_4x5_pl",
@@ -528,7 +616,15 @@
       ],
       "cost_usd": 0,
       "created": "2026-10-09T11:00:02.901Z",
-      "notes": ""
+      "notes": "overlay v2 (sticker system, 2026-10-09);",
+      "angle": "hero",
+      "look": {
+        "place": "bottom",
+        "tone": "mixed",
+        "avoid": "the nails, hand, and decorative nail art details",
+        "baked_text": false,
+        "risks": "visible tattoos on fingers, another person visible in background (privacy concern), small skin blemishes visible - otherwise professional nail work"
+      }
     }
   ],
   "updated": "2026-10-09T11:00:02.902Z"

@@ -28,3 +28,21 @@
   `layout=copy-top` for photos with the nails low in the frame.
 - Skipped DJZ8KfbtZS8 (red cat claws, 300 likes) for statics: the photo has "CLAWS"/"WTF" text baked in.
 - Overlay facts used: hybryda 190 zł, Cat Claws od 420 zł, art od 10 zł, address Jana Kazimierza 25B — all from `settings/brand.yaml`.
+
+## 2026-10-09 — operator review of wave-1 drafts → overlay system v2, angles, music
+
+- Operator's concerns: (1) all videos one concept, product only, very similar → "investigate Andromeda";
+  (2) music weak; (3) overlays weak, small on 9:16, CTA not understandable; statics: weak overlays, look at MAAG's
+  1:1→9:16 approach, understand the picture before overlaying.
+- Done: `research/andromeda-creative-diversity.md` (researcher agent; 12-angle matrix) → `settings/concepts.yaml →
+  angles`, `angle` + `look` fields in manifests (`creatives.mjs add --angle --look`, validate refuses missing angle);
+  `scripts/describe-image.mjs` (vision pass, ≈ $0.01/photo: place/tone/avoid/baked_text/risks);
+  `creatives/templates/_type.css` sticker system (hook ≈ 11% of width at 9:16, boxed lines, pill CTA with arrow,
+  meta sticker) used by all three templates; `static-blur-pad` and `video-finish --pad blur` on MAAG tuning
+  (σ28 blur, 18% dim, 92% foreground, r16, shadow); `video-finish` loudnorm −14 LUFS + `--music` bed with ducking;
+  `brand/music/README.md` (owner to supply cleared tracks — none in the repo yet).
+- All 11 wave-1 drafts re-finished with v2 overlays in place (v stays 1: nothing shipped). Angle audit: hero 11,
+  price 1 → the batch fails the one-sentence test by design; next production is by angle (process/founder/
+  studio/pick cuts from archive reels, free), not more heroes.
+- Facts recorded: Seedance audio ≈ −27 dB mean before normalisation; 2 of 4 clips had audio dropped by the
+  copyright filter — a music bed is required for consistent sound.

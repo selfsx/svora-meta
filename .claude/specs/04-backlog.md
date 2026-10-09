@@ -12,13 +12,17 @@ Edited in place. Move an item to the journal when it is done.
 - [ ] Instagram session for the full archive: `node scripts/ig-login.mjs` (operator types the password).
 - [ ] Confirm or drop the "-20% first visit" offer (`settings/brand.yaml → offers`).
 - [ ] Target cost per confirmed booking (owner's number).
+- [ ] Footage for the non-close-up angles (`03-creative-portfolio-plan.md` → Diversity first): a "before" photo
+      or mid-process still (before-after), 60 s of phone video at the entrance / street / chair (location, studio),
+      2–3 real reviews with permission to quote (review), written OK from tagged clients to reuse their posts (ugc).
+- [ ] Music beds: 3–5 tracks cleared for ads into `brand/music/` (Meta Sound Collection is free) — `brand/music/README.md`.
 - [ ] Decide whether to add a 14-day repair guarantee / "Nude Duo" bundle (competitor gaps 3–4) — copy can only
       say it once it is real on Fresha.
 
 ## Agent work, in order
 
 - [ ] `/ingest` (12 posts now; full archive after login) → `sources/instagram/selected/` by concept.
-- [ ] `/creatives` wave 1: 8 ua + 4 ru + 6 pl (`03-creative-portfolio-plan.md`).
+- [ ] `/creatives` wave 1 by angle: process / founder / studio / pick cuts from the archive reels (free, no generation), then the remaining hero clips within the $25 cap (`03-creative-portfolio-plan.md`).
 - [ ] creative-director review → `approved`.
 - [ ] `/launch campaigns/specs/001-prospect-uaru.yaml`, then 002.
 - [ ] Week 2: `/creatives` DM-CTA variants → `/launch 004`.

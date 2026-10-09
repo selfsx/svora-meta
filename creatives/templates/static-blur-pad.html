@@ -2,35 +2,30 @@
 <html lang="{{lang}}">
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" href="{{typeCss}}">
 <style>
-  /* Square (or any) photo fitted whole into a 4:5 / 9:16 frame over a blurred, darkened copy of itself.
-     Copy sits in the free band at the bottom; the logo top-left. Safe zone respected for 9:16. */
-  @font-face { font-family: 'Roboto Condensed'; src: url('{{fontsDir}}/roboto-condensed/RobotoCondensed.ttf'); font-weight: 100 900; }
+  /* A square / 4:5 / landscape photo shown whole inside a 9:16 or 4:5 frame, over a blurred, lightly dimmed
+     copy of itself (tuning from the MAAG Snap uploader: blur σ28, dim 18%, foreground 92% wide, r16 corners,
+     shadow 0/18/20 @ .5). The copy group overlays the photo where it is free (place=top|middle|bottom). */
   html, body { margin: 0; width: {{w}}px; height: {{h}}px; background: {{color_black}}; overflow: hidden; }
-  .stage { position: relative; width: {{w}}px; height: {{h}}px; font-family: 'Roboto Condensed', sans-serif; color: {{color_cream}}; }
-  .bg { position: absolute; inset: -60px; background: url('{{image}}') center / cover no-repeat; filter: blur(28px) brightness(.55) saturate(1.1); }
-  .photo { position: absolute; left: 0; right: 0; top: {{photo_top}}; height: {{photo_h}}; background: url('{{image}}') center / contain no-repeat; }
-  .logo { position: absolute; left: 56px; top: {{logo_top}}; width: 220px; filter: drop-shadow(0 2px 10px rgba(0,0,0,.5)); }
-  .badge { position: absolute; right: 56px; top: calc({{logo_top}} + 8px); display: {{badge_display}}; background: {{color_orange}}; color: {{color_black}}; font-weight: 800; font-size: 32px; padding: 10px 22px; border-radius: 999px; text-transform: uppercase; }
-  .copy { position: absolute; left: 56px; right: 56px; top: {{copy_top}}; }
-  .hook { font-weight: 800; font-size: 78px; line-height: 1.02; text-transform: uppercase; letter-spacing: -0.01em; text-shadow: 0 2px 20px rgba(0,0,0,.5); }
-  .hook b { color: {{color_orange}}; }
-  .sub { margin-top: 16px; font-size: 38px; font-weight: 500; color: {{color_peach}}; }
-  .row { margin-top: 30px; display: flex; align-items: center; gap: 26px; }
-  .cta { background: {{color_orange}}; color: {{color_black}}; font-weight: 800; font-size: 40px; padding: 18px 38px; border-radius: 999px; text-transform: uppercase; white-space: nowrap; }
-  .price { font-size: 38px; font-weight: 700; }
+  .stage { position: relative; width: {{w}}px; height: {{h}}px; }
+  .bg { position: absolute; inset: -80px; background: url('{{image}}') center / cover no-repeat; filter: blur(28px); }
+  .dim { position: absolute; inset: 0; background: rgba(0,0,0,.18); }
+  .fg { position: absolute; left: 50%; top: {{fg_top}}; transform: translate({{fg_shift}}); width: {{fg_w}}; border-radius: 16px; box-shadow: 0 18px 20px rgba(0,0,0,.5); display: block; }
 </style>
 </head>
 <body>
-<div class="stage">
+<div class="stage tone-{{tone}}">
   <div class="bg"></div>
-  <div class="photo"></div>
+  <div class="dim"></div>
+  <img class="fg" src="{{image}}" alt="">
   <img class="logo" src="{{logosDir}}/light.png" alt="">
   <div class="badge">{{badge}}</div>
-  <div class="copy">
-    <div class="hook">{{hook}}</div>
-    <div class="sub">{{sub}}</div>
-    <div class="row"><div class="cta">{{cta}}</div><div class="price">{{price}}</div></div>
+  <div class="group {{place}} with-logo">
+    <div class="hook-wrap"><span class="hook">{{hook}}</span></div>
+    <div class="sub" style="display:{{sub_display}}">{{sub}}</div>
+    <div class="cta">{{cta}}</div>
+    <div class="meta" style="display:{{meta_display}}">{{meta}}</div>
   </div>
 </div>
 </body>
